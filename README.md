@@ -175,9 +175,9 @@ The most frequently used servers reflect the output-heavy nature of the tasks. `
 
 `howtocook` exposes a recipe and nutrition database used for catering, meal planning, and nutrition analysis tasks. `pdf-tools` appears both as a reader (reference PDFs supplied as input) and a writer (formatted reports generated as output). `memory` enables multi-round research tasks where the agent must track search progress across iterations and avoid re-querying data it has already retrieved. `youtube-transcript` extracts raw transcript text from video recordings, which the agent then processes to produce structured documents or surveys.
 
-### Input file types
+### Initial Workspace Files
 
-Input files provided to the agent at task start span 11 distinct formats, covering the full range of documents an agent would encounter in real enterprise workflows. The distribution reflects realistic task composition: Markdown briefs and PDF reference documents are most common, followed by structured data formats like JSON and Excel that agents must read, transform, and write back:
+Initial workspace files provided to the agent at task start span 11 distinct formats, covering the full range of documents an agent would encounter in real enterprise workflows. The distribution reflects realistic task composition: Markdown briefs and PDF reference documents are most common, followed by structured data formats like JSON and Excel that agents must read, transform, and write back:
 
 <img width="1425" height="704" alt="image" src="https://github.com/user-attachments/assets/3c0bf6ed-a909-4698-b368-d69f330c153f" />
 
