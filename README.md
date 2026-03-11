@@ -2,7 +2,7 @@
 
 — 503 multi-tool tasks backed by a local PostgreSQL database, no external APIs required
 
-Training and evaluating LLM agents on real-world tool use is hard. Most existing datasets are either too narrow in tool coverage, too small in scale, or depend on live external APIs that change over time. We introduce [Toolathlon-GYM](https://github.com/eigent-ai/toolathlon_gym), a large-scale, self-contained environment with 503 tasks, 25 MCP servers, and a rich mock database. It runs entirely locally, with no external API calls required at evaluation time.
+Training and evaluating LLM agents on real-world tool use is hard. Most existing datasets are either too narrow in tool coverage, too small in scale, or depend on live external APIs that change over time. We introduce [Toolathlon-GYM](https://github.com/eigent-ai/toolathlon_gym), a large-scale, self-contained environment with 503 tasks, 25 MCP servers, and a rich mock database. It runs entirely locally, with no external API calls required at running time.
 
 Toolathlon-GYM is built on and extends the infrastructure from [Toolathlon](https://github.com/hkust-nlp/Toolathlon) by HKUST-NLP. The task format, evaluation framework, MCP server interfaces, and database schema design all originate from the Toolathlon project. This dataset applies the same format at larger scale, producing a substantially bigger and more diverse task pool for training and evaluation. Each task asks an agent to complete an end-to-end goal such as pulling data from a mock enterprise database, producing a spreadsheet report, scheduling a calendar event, and sending a summary email, using a fixed set of MCP (Model Context Protocol) servers as tools.
 
