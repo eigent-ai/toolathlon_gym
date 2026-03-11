@@ -1,0 +1,29 @@
+{
+  "suppliers": [
+    {
+      "name": "TechWorld",
+      "lead_time_days": 14,
+      "min_order_qty": 50,
+      "reliability_score": 4.2
+    },
+    {
+      "name": "ElectroMart",
+      "lead_time_days": 7,
+      "min_order_qty": 25,
+      "reliability_score": 4.8
+    },
+    {
+      "name": "GadgetPro",
+      "lead_time_days": 21,
+      "min_order_qty": 100,
+      "reliability_score": 3.9
+    },
+    {
+      "name": "AudioTech",
+      "lead_time_days": 10,
+      "min_order_qty": 30,
+      "reliability_score": 4.5
+    }
+  ],
+  "report_date": "2026-03-01"
+}

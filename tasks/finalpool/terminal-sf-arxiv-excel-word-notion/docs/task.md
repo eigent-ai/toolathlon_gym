@@ -1,0 +1,23 @@
+You are an HR director building a research-backed employee retention strategy. Your goal is to combine internal workforce data with academic research findings to produce a comprehensive analysis and action plan.
+
+Start by reading the retention_targets.pdf file in your workspace, which contains departmental retention targets and acceptable attrition thresholds. Also review the analysis_methodology.md file that describes how flight risk scores should be calculated, and the department_contacts.json file listing department head contact information.
+
+Query the company data warehouse for employee data from the HR Analytics database, specifically the employees table. A "flight risk" employee is defined as someone with a job satisfaction score of 4 or below and a performance rating of 4 or above. These are high-performing but dissatisfied employees who are most likely to leave. For each of the seven departments (Engineering, Finance, HR, Operations, R&D, Sales, and Support), determine the total headcount, the number of flight-risk employees, the flight-risk percentage, and the average job satisfaction score.
+
+Write a Python script called flight_risk_analysis.py in your workspace that connects to the data warehouse, computes the flight-risk metrics per department, and outputs the results to a file called flight_risk_analysis.json. Run this script using command-line tools.
+
+Next, search the academic paper archive for research on "employee retention" to find relevant studies. Read the abstracts of the top three most relevant papers (those that specifically address retention strategies, predictive models, or intervention programs). Ignore papers that are about unrelated topics.
+
+Write a second Python script called synthesis.py that reads the flight_risk_analysis.json file, combines it with research insights you have gathered, and outputs a synthesis.json file containing department-level strategies informed by both the internal data and research findings. Run this script using command-line tools.
+
+Create an Excel workbook called Retention_Strategy.xlsx in your workspace with three sheets.
+
+The first sheet should be named Department_Analysis and contain columns for department, headcount, flight_risk_count, flight_risk_pct, and avg_satisfaction. Include one row per department with the computed statistics. Round flight_risk_pct to two decimal places and avg_satisfaction to two decimal places.
+
+The second sheet should be named Research_Summary and contain columns for paper_title, key_finding, and applicability_score. Include one row for each of the three relevant papers you identified. The applicability_score should be an integer from 1 to 10 rating how applicable the paper's findings are to the organization's situation.
+
+The third sheet should be named Action_Plan and contain columns for department, strategy, priority, and estimated_cost. Include one row per department. The priority should be assigned as follows: departments with a flight risk percentage above 8.3 percent get "High" priority, departments between 7.9 and 8.3 percent inclusive get "Medium" priority, and departments below 7.9 percent get "Low" priority. The strategy should be a brief description of the recommended retention intervention for that department. The estimated_cost should be a dollar amount estimate for implementing the strategy.
+
+Create a Word document called Retention_Strategy_Report.docx in your workspace. The document should have a title "Employee Retention Strategy Report". It should contain an executive summary section describing the overall flight risk situation across the organization, a data analysis section presenting department-by-department findings including headcount and flight risk percentages, a research findings section summarizing the three relevant academic papers and their key insights, and a recommendations section listing specific strategies for each department with their assigned priorities.
+
+Create a knowledge base database called "Retention Action Items" with the following properties: Department as the title property, Strategy as a rich text property, Priority as a select property with options High, Medium, and Low, Status as a select property with options Not Started, In Progress, and Done, and Owner as a rich text property. Add one page per department to this database. Set the Priority based on the flight risk percentage thresholds described above. Set all Status values to "Not Started". Set the Owner to the department head name from the department_contacts.json file. Set the Strategy to match the strategy you put in the Action_Plan sheet of the Excel workbook.

@@ -1,0 +1,12 @@
+{
+  "workload_thresholds": {
+    "heavy": 12,
+    "moderate": 8,
+    "light": 0
+  },
+  "enrollment_alert_threshold": 2000,
+  "recipients": {
+    "department_chairs": "department-chairs@university.edu",
+    "academic_affairs": "academic-affairs@university.edu"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-03-01",
+  "source": "Economic Research Division",
+  "indicators": [
+    {
+      "name": "GDP Growth Rate",
+      "value": 2.1,
+      "unit": "%",
+      "period": "Q4 2025"
+    },
+    {
+      "name": "Inflation Rate",
+      "value": 3.4,
+      "unit": "%",
+      "period": "February 2026"
+    },
+    {
+      "name": "Unemployment Rate",
+      "value": 4.2,
+      "unit": "%",
+      "period": "February 2026"
+    },
+    {
+      "name": "Consumer Confidence Index",
+      "value": 98.5,
+      "unit": "index",
+      "period": "February 2026"
+    },
+    {
+      "name": "PMI",
+      "value": 51.2,
+      "unit": "index",
+      "period": "February 2026"
+    }
+  ]
+}

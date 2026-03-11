@@ -1,0 +1,56 @@
+{
+  "source": "National Higher Education Course Benchmark Report 2025",
+  "last_updated": "2025-11-30",
+  "description": "National averages for course metrics by discipline area",
+  "benchmarks": [
+    {
+      "course_type": "Applied Analytics & Algorithms",
+      "discipline": "Computer Science",
+      "national_avg_enrollment": 250,
+      "national_avg_assignments": 8,
+      "national_avg_quizzes": 4
+    },
+    {
+      "course_type": "Biochemistry & Bioinformatics",
+      "discipline": "Life Sciences",
+      "national_avg_enrollment": 1500,
+      "national_avg_assignments": 12,
+      "national_avg_quizzes": 6
+    },
+    {
+      "course_type": "Creative Computing & Culture",
+      "discipline": "Interdisciplinary",
+      "national_avg_enrollment": 1800,
+      "national_avg_assignments": 8,
+      "national_avg_quizzes": 3
+    },
+    {
+      "course_type": "Data-Driven Design",
+      "discipline": "Design & Technology",
+      "national_avg_enrollment": 1200,
+      "national_avg_assignments": 10,
+      "national_avg_quizzes": 5
+    },
+    {
+      "course_type": "Environmental Economics & Ethics",
+      "discipline": "Social Sciences",
+      "national_avg_enrollment": 800,
+      "national_avg_assignments": 7,
+      "national_avg_quizzes": 3
+    },
+    {
+      "course_type": "Foundations of Finance",
+      "discipline": "Business",
+      "national_avg_enrollment": 1600,
+      "national_avg_assignments": 11,
+      "national_avg_quizzes": 5
+    },
+    {
+      "course_type": "Global Governance & Geopolitics",
+      "discipline": "Political Science",
+      "national_avg_enrollment": 600,
+      "national_avg_assignments": 9,
+      "national_avg_quizzes": 4
+    }
+  ]
+}

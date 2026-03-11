@@ -1,0 +1,207 @@
+{
+  "survey_title": "Q1 2026 Customer Support Satisfaction Survey",
+  "collection_period": "January 1 - February 28, 2026",
+  "total_respondents": 20,
+  "responses": [
+    {
+      "respondent_id": "RESP-001",
+      "overall_satisfaction": 5,
+      "response_time_rating": 5,
+      "resolution_quality_rating": 5,
+      "agent_professionalism": 5,
+      "priority_experienced": "High",
+      "issue_type": "Bug",
+      "comment": "Fast resolution of critical bug. Excellent support team."
+    },
+    {
+      "respondent_id": "RESP-002",
+      "overall_satisfaction": 2,
+      "response_time_rating": 1,
+      "resolution_quality_rating": 3,
+      "agent_professionalism": 4,
+      "priority_experienced": "Low",
+      "issue_type": "Feature Request",
+      "comment": "Took way too long to get a response. Over 24 hours for a simple request."
+    },
+    {
+      "respondent_id": "RESP-003",
+      "overall_satisfaction": 4,
+      "response_time_rating": 4,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 5,
+      "priority_experienced": "Medium",
+      "issue_type": "Performance Issue",
+      "comment": "Good experience overall, resolution was thorough."
+    },
+    {
+      "respondent_id": "RESP-004",
+      "overall_satisfaction": 1,
+      "response_time_rating": 1,
+      "resolution_quality_rating": 1,
+      "agent_professionalism": 2,
+      "priority_experienced": "High",
+      "issue_type": "Incident",
+      "comment": "Critical incident took 6+ hours. Unacceptable for high priority."
+    },
+    {
+      "respondent_id": "RESP-005",
+      "overall_satisfaction": 3,
+      "response_time_rating": 3,
+      "resolution_quality_rating": 3,
+      "agent_professionalism": 4,
+      "priority_experienced": "Medium",
+      "issue_type": "Bug",
+      "comment": "Average experience. Nothing special but issue was resolved."
+    },
+    {
+      "respondent_id": "RESP-006",
+      "overall_satisfaction": 5,
+      "response_time_rating": 5,
+      "resolution_quality_rating": 5,
+      "agent_professionalism": 5,
+      "priority_experienced": "High",
+      "issue_type": "Performance Issue",
+      "comment": "Amazingly fast response for a critical performance issue."
+    },
+    {
+      "respondent_id": "RESP-007",
+      "overall_satisfaction": 2,
+      "response_time_rating": 2,
+      "resolution_quality_rating": 2,
+      "agent_professionalism": 3,
+      "priority_experienced": "Low",
+      "issue_type": "Service Request",
+      "comment": "Had to follow up multiple times. Frustrating process."
+    },
+    {
+      "respondent_id": "RESP-008",
+      "overall_satisfaction": 4,
+      "response_time_rating": 4,
+      "resolution_quality_rating": 5,
+      "agent_professionalism": 5,
+      "priority_experienced": "Medium",
+      "issue_type": "Bug",
+      "comment": "Quick turnaround and the fix was solid. Appreciated the follow-up."
+    },
+    {
+      "respondent_id": "RESP-009",
+      "overall_satisfaction": 3,
+      "response_time_rating": 2,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 4,
+      "priority_experienced": "Low",
+      "issue_type": "Feature Request",
+      "comment": "Resolution was good but initial response was slow."
+    },
+    {
+      "respondent_id": "RESP-010",
+      "overall_satisfaction": 4,
+      "response_time_rating": 4,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 4,
+      "priority_experienced": "High",
+      "issue_type": "Incident",
+      "comment": "Good handling of the incident. Would appreciate faster escalation."
+    },
+    {
+      "respondent_id": "RESP-011",
+      "overall_satisfaction": 1,
+      "response_time_rating": 1,
+      "resolution_quality_rating": 2,
+      "agent_professionalism": 3,
+      "priority_experienced": "Medium",
+      "issue_type": "Performance Issue",
+      "comment": "Issue not fully resolved after two weeks. Very disappointed."
+    },
+    {
+      "respondent_id": "RESP-012",
+      "overall_satisfaction": 5,
+      "response_time_rating": 5,
+      "resolution_quality_rating": 5,
+      "agent_professionalism": 5,
+      "priority_experienced": "High",
+      "issue_type": "Bug",
+      "comment": "Perfect support experience. Issue resolved within the hour."
+    },
+    {
+      "respondent_id": "RESP-013",
+      "overall_satisfaction": 3,
+      "response_time_rating": 3,
+      "resolution_quality_rating": 3,
+      "agent_professionalism": 3,
+      "priority_experienced": "Medium",
+      "issue_type": "Technical Issue",
+      "comment": "Adequate support but could be more proactive."
+    },
+    {
+      "respondent_id": "RESP-014",
+      "overall_satisfaction": 2,
+      "response_time_rating": 2,
+      "resolution_quality_rating": 3,
+      "agent_professionalism": 4,
+      "priority_experienced": "Low",
+      "issue_type": "Maintenance",
+      "comment": "Waited 3 days for a simple maintenance request."
+    },
+    {
+      "respondent_id": "RESP-015",
+      "overall_satisfaction": 4,
+      "response_time_rating": 4,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 5,
+      "priority_experienced": "Medium",
+      "issue_type": "Bug",
+      "comment": "Efficient resolution. Agent was very knowledgeable."
+    },
+    {
+      "respondent_id": "RESP-016",
+      "overall_satisfaction": 3,
+      "response_time_rating": 3,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 4,
+      "priority_experienced": "High",
+      "issue_type": "Performance Issue",
+      "comment": "Decent experience but expected faster response for high priority."
+    },
+    {
+      "respondent_id": "RESP-017",
+      "overall_satisfaction": 5,
+      "response_time_rating": 5,
+      "resolution_quality_rating": 5,
+      "agent_professionalism": 5,
+      "priority_experienced": "Medium",
+      "issue_type": "Service Request",
+      "comment": "Outstanding service. Request handled within hours."
+    },
+    {
+      "respondent_id": "RESP-018",
+      "overall_satisfaction": 2,
+      "response_time_rating": 1,
+      "resolution_quality_rating": 2,
+      "agent_professionalism": 3,
+      "priority_experienced": "Low",
+      "issue_type": "Feature Request",
+      "comment": "No updates for days. Poor communication."
+    },
+    {
+      "respondent_id": "RESP-019",
+      "overall_satisfaction": 4,
+      "response_time_rating": 4,
+      "resolution_quality_rating": 4,
+      "agent_professionalism": 4,
+      "priority_experienced": "High",
+      "issue_type": "Incident",
+      "comment": "Well-handled incident. Timely updates throughout."
+    },
+    {
+      "respondent_id": "RESP-020",
+      "overall_satisfaction": 3,
+      "response_time_rating": 3,
+      "resolution_quality_rating": 3,
+      "agent_professionalism": 3,
+      "priority_experienced": "Medium",
+      "issue_type": "Bug",
+      "comment": "Standard experience. Nothing to complain about."
+    }
+  ]
+}

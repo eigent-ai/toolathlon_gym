@@ -1,0 +1,7 @@
+Our logistics team wants a shipping performance analysis based on our sales data warehouse. We need to understand how each shipping mode is performing for orders that have been delivered, and we want the results in both a data file and a formatted document.
+
+Start by querying the SALES_DW database and focus on orders with a status of "Delivered". For each shipping mode, calculate how many orders were delivered, the average number of days it took to deliver (calculated as the difference between the ship date and order date), the total revenue, and the average order value.
+
+Create an Excel file called Shipping_Analysis.xlsx in the workspace with one sheet named "By Ship Mode". The columns should be Ship_Mode, Order_Count, Avg_Delivery_Days (rounded to 1 decimal place), Total_Revenue (rounded to 2 decimal places), and Avg_Order_Value (rounded to 2 decimal places). Sort the rows by Order_Count in descending order.
+
+Then create a Word document called Shipping_Report.docx in the workspace. The document should start with a heading "Shipping Performance Report". Below the heading, include a summary paragraph that states the total number of delivered orders across all shipping modes and the combined total revenue. After the summary, add a section for each shipping mode. Each section should have the ship mode name as a subheading, followed by a paragraph listing that mode's order count, average delivery days, total revenue, and average order value.

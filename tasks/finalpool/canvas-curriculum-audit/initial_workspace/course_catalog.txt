@@ -1,0 +1,19 @@
+University Course Catalog
+
+The following courses are offered across the university:
+
+Foundations of Finance: Covers financial analysis, investment strategies, and corporate finance principles. Offered in Fall and Spring semesters.
+
+Data-Driven Design: Focuses on user experience research, data visualization, and design thinking methodologies. Offered in Fall and Spring semesters.
+
+Biochemistry and Bioinformatics: Explores molecular biology, computational biology, and genomic data analysis. Offered in Fall and Spring semesters.
+
+Global Governance and Geopolitics: Examines international relations, policy analysis, and geopolitical dynamics. Offered in Fall and Spring semesters.
+
+Creative Computing and Culture: Combines digital media production, programming fundamentals, and cultural studies. Offered in Fall and Spring semesters.
+
+Environmental Economics and Ethics: Studies sustainable development, environmental policy, and ethical frameworks. Offered in Fall and Spring semesters.
+
+Applied Analytics and Algorithms: Teaches statistical methods, algorithmic thinking, and data science applications. Offered in Fall semester.
+
+Expected outcomes include development of critical thinking skills, domain-specific competencies, and practical application abilities relevant to each discipline.

@@ -1,0 +1,5 @@
+Product Cost Structure:
+- Electronics: 60-75% of retail price is COGS
+- Accessories: 40-55% of retail price is COGS
+- Premium items: 50-65% of retail price is COGS
+- Average margin target: 30%

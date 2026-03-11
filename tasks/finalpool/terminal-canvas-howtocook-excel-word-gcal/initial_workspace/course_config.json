@@ -1,0 +1,11 @@
+{
+  "courses": [
+    {"id": 3, "name": "Biochemistry & Bioinformatics (Fall 2013)"},
+    {"id": 4, "name": "Biochemistry & Bioinformatics (Fall 2014)"}
+  ],
+  "grading_start_date": "2026-03-10",
+  "grading_time": "09:00",
+  "session_duration_minutes": 60,
+  "weekdays_only": true,
+  "calendar_name": "Grading Schedule"
+}

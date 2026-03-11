@@ -1,0 +1,31 @@
+{
+  "total_slow_response_tickets": 1160,
+  "total_tickets": 31588,
+  "slow_response_percentage": 3.67,
+  "by_priority": [
+    {
+      "priority": "High",
+      "count": 37,
+      "avg_response_hours": 12.43,
+      "avg_sla_hours": 24.0,
+      "avg_utilization_pct": 51.81,
+      "avg_csat": 2.51
+    },
+    {
+      "priority": "Low",
+      "count": 1043,
+      "avg_response_hours": 41.93,
+      "avg_sla_hours": 72.0,
+      "avg_utilization_pct": 58.24,
+      "avg_csat": 2.88
+    },
+    {
+      "priority": "Medium",
+      "count": 80,
+      "avg_response_hours": 24.81,
+      "avg_sla_hours": 48.0,
+      "avg_utilization_pct": 51.69,
+      "avg_csat": 1.89
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "channel": "Fireship",
+  "quarters": [
+    "2024-Q1",
+    "2024-Q2",
+    "2024-Q3",
+    "2024-Q4",
+    "2025-Q1",
+    "2025-Q2"
+  ],
+  "quarter_date_ranges": {
+    "2024-Q1": {"start": "2024-01-01", "end": "2024-03-31"},
+    "2024-Q2": {"start": "2024-04-01", "end": "2024-06-30"},
+    "2024-Q3": {"start": "2024-07-01", "end": "2024-09-30"},
+    "2024-Q4": {"start": "2024-10-01", "end": "2024-12-31"},
+    "2025-Q1": {"start": "2025-01-01", "end": "2025-03-31"},
+    "2025-Q2": {"start": "2025-04-01", "end": "2025-06-30"}
+  },
+  "output_files": {
+    "csv": "fireship_raw.csv",
+    "json": "quarterly_stats.json",
+    "excel": "Fireship_Analytics.xlsx",
+    "pdf": "Fireship_Analytics_Report.pdf"
+  },
+  "excel_sheets": [
+    "Raw_Data",
+    "Quarterly_Stats",
+    "Summary"
+  ],
+  "metrics": [
+    "video_count",
+    "total_views",
+    "total_likes",
+    "avg_views_per_video",
+    "avg_engagement_rate"
+  ]
+}

@@ -1,0 +1,11 @@
+I need to optimize our supply chain by analyzing inventory levels against supplier lead times and demand patterns. There is a supplier directory API at http://localhost:30344/api/supplier_directory.json with supplier details, lead times, reliability ratings, and minimum order quantities.
+
+Pull our current product inventory from the online store including stock levels, prices, and sales performance.
+
+Use the terminal to create and run a Python script called supply_chain_optimizer.py in the workspace that reads supplier_data.json and inventory_data.json (create both first), calculates reorder points based on daily sales rate and supplier lead time, identifies products at risk of stockout, and outputs supply_chain_plan.json. Reorder point formula: daily_sales_rate * lead_time_days * safety_factor (use 1.5 as safety factor).
+
+Create an Excel file called Supply_Chain_Optimization.xlsx with four sheets. The first sheet Inventory_Status should have columns Product_Name, Current_Stock, Daily_Sales_Rate (round to 2 decimals), Days_Until_Stockout (round to 0 decimals), Reorder_Point (round to 0 decimals), and Status ("Critical" if stock below reorder point, "Warning" if within 20% above, "Healthy" otherwise), sorted by Days_Until_Stockout ascending. The second sheet Supplier_Analysis should have columns Supplier_Name, Lead_Time_Days, Reliability_Score, Min_Order_Qty, and Products_Supplied, sorted by Reliability_Score descending. The third sheet Reorder_Plan should have columns Product_Name, Current_Stock, Reorder_Qty (round to 0 decimals), Supplier, Expected_Delivery_Date, and Urgency ("Immediate", "This Week", "This Month"). The fourth sheet Summary should have Metric and Value columns with Total_Products, Critical_Products, Warning_Products, Healthy_Products, Total_Reorder_Value (round to 2 decimals), and Avg_Days_Until_Stockout (round to 1 decimal).
+
+Create a Word document called Supply_Chain_Report.docx with heading "Supply Chain Optimization Report", sections for "Inventory Health Assessment", "Supplier Performance Review", "Reorder Recommendations", and "Risk Mitigation Plan".
+
+Schedule a calendar event "Supply Chain Review Meeting" on March 19, 2026 from 9:00 AM to 10:30 AM UTC with description listing critical stockout risks.

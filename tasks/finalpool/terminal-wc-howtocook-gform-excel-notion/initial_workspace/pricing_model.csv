@@ -1,0 +1,5 @@
+tier,min_price,max_price,target_margin_pct,description
+Budget,0,10,25,Entry-level kits for beginners
+Standard,10,30,30,Mid-range kits with popular appliances
+Premium,30,100,35,High-end kits with advanced appliances
+Luxury,100,500,40,Professional-grade kits

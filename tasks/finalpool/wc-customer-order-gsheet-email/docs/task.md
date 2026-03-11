@@ -1,0 +1,7 @@
+I need a loyalty analysis for our online store. Please find the top 10 customers who have spent the most money overall. Once you have that list, create an online spreadsheet titled "VIP Customer Tracker" with two sheets inside it.
+
+The first sheet should be called "Top Customers" and it should contain one row per VIP customer, with columns for Name (first and last name combined), Email, Orders_Count, Total_Spent (rounded to 2 decimal places), and Avg_Order_Value (calculated as total spent divided by orders count, rounded to 2 decimal places). Sort all rows by total spent in descending order so the biggest spender appears first.
+
+The second sheet should be called "Store Summary" and it should present four key metrics, each on its own row with a Metric column and a Value column. The metrics I need are Total_Customers (the total number of customers in the store), Total_Revenue (the sum of all customer spending rounded to 2 decimal places), VIP_Revenue_Share_Pct (the percentage of total revenue that the top 10 customers account for, rounded to 1 decimal place), and Avg_Customer_Spend (the overall average spending per customer rounded to 2 decimal places).
+
+After creating the spreadsheet, please send a personalized thank-you email to each of the top 5 customers. Each email should be sent from vip-program@store.example.com to the customer's email address. The subject line should be "Thank You for Being a VIP Customer!" and the body should address the customer by their first name, thanking them for their loyalty and patronage.

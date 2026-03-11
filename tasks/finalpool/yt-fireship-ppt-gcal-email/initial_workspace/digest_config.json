@@ -1,0 +1,21 @@
+{
+  "channel": "Fireship",
+  "period": "2025-01 to 2025-06",
+  "slides_per_month": 1,
+  "total_slides": 6,
+  "slide_content": {
+    "include": ["top_video_title", "top_video_views", "top_video_likes", "month_total_videos", "month_total_views"]
+  },
+  "calendar_events": {
+    "day_of_week": "Tuesday",
+    "start_time": "09:00",
+    "end_time": "09:30",
+    "title_format": "Monthly Tech Digest Review - {Month Year}",
+    "description": "Team review of monthly Fireship digest slides"
+  },
+  "email_recipient": "team@company.com",
+  "email_subject": "Monthly Tech Digest - Fireship {Month Year}",
+  "output_files": {
+    "ppt": "Fireship_Monthly_Digest.pptx"
+  }
+}

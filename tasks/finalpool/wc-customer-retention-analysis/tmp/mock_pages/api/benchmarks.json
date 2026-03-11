@@ -1,0 +1,31 @@
+{
+  "industry": "E-Commerce Electronics",
+  "report_date": "2026-03-01",
+  "avg_repeat_rate": 35.0,
+  "avg_order_frequency_days": 45,
+  "avg_lifetime_value": 250.0,
+  "churn_threshold_days": 90,
+  "segments": {
+    "vip": {
+      "min_spend": 500,
+      "expected_repeat_rate": 60.0,
+      "expected_frequency_days": 30
+    },
+    "regular": {
+      "min_spend": 100,
+      "max_spend": 500,
+      "expected_repeat_rate": 35.0,
+      "expected_frequency_days": 60
+    },
+    "new": {
+      "max_spend": 100,
+      "expected_repeat_rate": 15.0,
+      "expected_frequency_days": 90
+    }
+  },
+  "retention_strategies": [
+    "Personalized email outreach for VIP customers inactive > 90 days",
+    "Discount coupon for customers approaching churn threshold",
+    "Re-engagement campaign for customers with single purchase history"
+  ]
+}

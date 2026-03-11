@@ -1,0 +1,10 @@
+{
+  "agent": {
+    "model_name": "gemini-2.5-flash",
+    "provider": "aihubmix"
+  },
+  "global_task_config": {
+    "max_steps_under_single_turn_mode": 100
+  },
+  "dump_path": "./dumps/"
+}

@@ -1,0 +1,16 @@
+{
+  "destination": "Qufu",
+  "outbound_date": "2026-03-12",
+  "return_date": "2026-03-15",
+  "origin": "Beijing",
+  "purpose": "Cultural visit to Confucius birthplace",
+  "num_travelers": 1,
+  "preferred_class": "second",
+  "meal_preferences": {
+    "dietary_restrictions": "none",
+    "cuisine_style": "Chinese",
+    "meals_to_plan": ["breakfast", "lunch", "dinner"]
+  },
+  "trip_duration_days": 4,
+  "budget_per_day_cny": 200
+}

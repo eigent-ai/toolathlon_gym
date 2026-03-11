@@ -1,0 +1,8 @@
+Sales Territory Performance Dashboard - Google Sheets Reference File
+This file references a Google Sheet containing real-time sales performance metrics:
+- Dashboard Title: Sales Territory Performance Dashboard
+- Sheets: Overview, Territory Detail, Coaching Progress, Forecast
+- Key Metrics: YTD Sales, % to Quota, Sales Velocity, Customer Acquisition
+- Auto-refresh: Connected to data warehouse for real-time updates
+- Access: Shared with all regional management team members
+- URL: https://docs.google.com/spreadsheets/d/[dashboard-id]/edit

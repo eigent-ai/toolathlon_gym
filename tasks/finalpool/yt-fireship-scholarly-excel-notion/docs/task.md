@@ -1,0 +1,9 @@
+Our research team is studying the relationship between popular technology video content and peer-reviewed academic research on the same subjects. We want to build a mapping between the most-viewed technology videos in our database and the research papers that address the same topics.
+
+Step one: retrieve the top 8 most-viewed videos from the Fireship channel in our video database, ordered by view count descending. For each video identify the primary technology topic it covers based on the video title and content. Assign each video to one of these topic categories: AI and Large Language Models, Linux and Systems, Software Engineering, Hardware and Computing, or Security (use the category that best fits each video's subject matter).
+
+Step two: for each of the eight topics, search our academic paper database to find relevant research papers. Note the paper title, authors (first author name only), publication year, citation count, and a short excerpt of the abstract (first 200 characters).
+
+Step three: create an Excel file called Tech_Research_Map.xlsx in your workspace with two sheets. The first sheet is called Video_Paper_Mapping with columns Video_Rank, Video_Title, Video_Views, Tech_Topic, Paper_Count, Top_Paper_Title, Top_Paper_Year, Top_Paper_Citations. For Top_Paper_Title and related columns use the paper with the highest citation count for that topic. The second sheet is called All_Papers with columns Tech_Topic, Paper_Title, First_Author, Year, Citations, Abstract_Snippet. The rows in All_Papers should be sorted by Tech_Topic and then by Citations descending within each topic.
+
+Step four: create a page in our team knowledge base titled Tech Content Research Bridge. The page body should begin with a summary paragraph (two to three sentences) explaining the purpose of this mapping exercise. Below the summary, list each of the eight videos with its rank, title, and the title of the most relevant academic paper found for that topic.

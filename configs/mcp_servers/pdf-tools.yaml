@@ -1,0 +1,20 @@
+# pdf-tools
+# Source: https://github.com/lockon-n/pdf-tools-mcp
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/pdf-tools-mcp
+type: stdio
+name: pdf-tools
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/pdf-tools-mcp"
+    - "run"
+    - "pdf-tools-mcp"
+    - "--workspace_path"
+    - "${agent_workspace}"
+    - "--tempfile_dir"
+    - "${agent_workspace}/.pdf_tools_tempfiles"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 120
+cache_tools_list: true

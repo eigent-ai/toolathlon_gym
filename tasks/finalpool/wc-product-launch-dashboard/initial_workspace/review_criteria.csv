@@ -1,0 +1,8 @@
+Metric,Description,Weight
+Revenue,Total category revenue,High
+Units_Sold,Total units sold in category,Medium
+Avg_Price,Average selling price per unit,Medium
+Avg_Rating,Average customer review rating,High
+Market_Growth,Year-over-year market growth rate,High
+Opportunity_Score,Growth rate times rating,High
+Target_Achievement,Revenue vs target percentage,Medium

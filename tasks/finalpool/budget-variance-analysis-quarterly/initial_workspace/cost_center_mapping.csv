@@ -1,0 +1,5 @@
+Cost_Center,Department,Location,Budget_Owner,Manager_Email
+10,Operations,Headquarters,Robert Clark,robert.clark@company.com
+20,Sales,Multiple,Thomas Lee,thomas.lee@company.com
+30,Marketing,Headquarters,Susan Kim,susan.kim@company.com
+40,IT,Headquarters,James Johnson,james.johnson@company.com

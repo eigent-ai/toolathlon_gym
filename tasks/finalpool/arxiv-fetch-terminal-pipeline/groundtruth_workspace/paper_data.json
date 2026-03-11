@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Evaluating Large Language Models Trained on Code",
+    "arxiv_id": "2107.03374",
+    "authors": [
+      "Mark Chen",
+      "Jerry Tworek",
+      "Heewoo Jun"
+    ],
+    "citation_count": 3500,
+    "abstract": "We introduce Codex, a GPT language model fine-tuned on publicly available code from GitHub, and study its Python code-writing capabilities. A distinct production version of Codex powers GitHub Copilot. On HumanEval, a new evaluation set we release to measure functional correctness for synthesizing programs from docstrings, our model solves 28.8% of the problems, while GPT-3 solves 0% and GPT-J solves 11.4%. Furthermore, we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts."
+  },
+  {
+    "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+    "arxiv_id": "2002.08155",
+    "authors": [
+      "Zhangyin Feng",
+      "Daya Guo",
+      "Duyu Tang"
+    ],
+    "citation_count": 2200,
+    "abstract": "We present CodeBERT, a bimodal pre-trained model for programming language and natural language. CodeBERT learns general-purpose representations that support downstream NL-PL applications such as natural language code search, code documentation generation, and other tasks. We develop CodeBERT with Transformer-based neural architecture, and train it with a hybrid objective function that incorporates the pre-training task of replaced token detection, which is to detect plausible alternatives sampled from generators."
+  },
+  {
+    "title": "Competition-Level Code Generation with AlphaCode",
+    "arxiv_id": "2203.07814",
+    "authors": [
+      "Yujia Li",
+      "David Choi",
+      "Junyoung Chung"
+    ],
+    "citation_count": 1800,
+    "abstract": "Programming is a powerful and ubiquitous problem-solving tool. Developing systems that can assist programmers or even generate programs independently could make programming more productive and accessible. We introduce AlphaCode, a system for code generation that can create novel solutions to competitive programming problems that require deeper reasoning. In simulated evaluations on recent programming competitions on the Codeforces platform, AlphaCode achieved on average a ranking within the top 54.3% of participants."
+  },
+  {
+    "title": "StarCoder: May the Source Be with You!",
+    "arxiv_id": "2305.06161",
+    "authors": [
+      "Raymond Li",
+      "Loubna Ben Allal",
+      "Yangtian Zi"
+    ],
+    "citation_count": 1500,
+    "abstract": "The BigCode community, an open-scientific collaboration working on the responsible development of large language models for code, introduces StarCoder and StarCoderBase. StarCoderBase is a 15.5B parameter model trained on 1 trillion tokens sourced from The Stack, a large collection of permissively licensed GitHub repositories. StarCoder is a fine-tuned version of StarCoderBase on 35B Python tokens. We evaluate StarCoder on a comprehensive set of code generation benchmarks and find that it outperforms every open code LLM that supports multiple programming languages."
+  }
+]

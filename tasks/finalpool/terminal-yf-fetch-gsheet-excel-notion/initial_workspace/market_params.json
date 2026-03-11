@@ -1,0 +1,24 @@
+{
+  "tickers": ["AMZN", "GOOGL", "JPM"],
+  "lookback_days": 30,
+  "signal_rules": {
+    "buy": {
+      "return_positive": true,
+      "consumer_confidence_above": 95
+    },
+    "sell": {
+      "return_negative": true,
+      "inflation_above": 3.0
+    },
+    "default": "HOLD"
+  },
+  "correlation_assessment": "qualitative",
+  "economic_indicators_url": "http://localhost:30180/api/indicators.json",
+  "favorable_thresholds": {
+    "gdp_growth_above": 2.0,
+    "inflation_below": 3.0,
+    "unemployment_below": 5.0,
+    "consumer_confidence_above": 95,
+    "pmi_above": 50
+  }
+}

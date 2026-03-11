@@ -1,0 +1,9 @@
+The provost has asked for a year-over-year academic performance comparison between Fall 2013 and Fall 2014. We need to identify courses that were offered in both semesters and compare their enrollment numbers, assignment counts, and average student grades.
+
+Please query the Canvas LMS data to find courses with course codes ending in "2013J" and "2014J". Match courses that share the same prefix (for example AAA-2013J and AAA-2014J are the same course offered in different years). For each matched pair, compare the enrollment (total_students), the number of assignments, and the average submission score.
+
+Create an Excel file called Year_Over_Year_Comparison.xlsx in the workspace with two sheets. The first sheet should be named "Course Comparison" with columns Course_Name (the common course name without the year suffix), Fall_2013_Enrollment, Fall_2014_Enrollment, Enrollment_Change (2014 minus 2013), Fall_2013_Assignments, Fall_2014_Assignments, Fall_2013_Avg_Grade (rounded to 2 decimal places), Fall_2014_Avg_Grade (rounded to 2 decimal places), and Grade_Change (2014 avg minus 2013 avg, rounded to 2 decimal places). Sort rows alphabetically by Course_Name. The second sheet should be named "Summary" with two columns, Metric and Value, containing these rows: Courses_Compared (number of course pairs), Avg_Enrollment_Change (average of all enrollment changes, rounded to 1 decimal), Avg_Grade_Change (average of all grade changes, rounded to 2 decimal places).
+
+Create a Word document called Academic_Year_Comparison.docx in the workspace. The document should have the title "Fall 2013 vs Fall 2014 Academic Performance Review" followed by a narrative paragraph for each course pair describing the enrollment and grade changes. Conclude with a summary paragraph.
+
+Create a Google Sheet titled "Academic Year Comparison" with a sheet called "Comparison Data" containing the same data as the Excel Course Comparison sheet.

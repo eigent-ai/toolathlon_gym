@@ -1,0 +1,56 @@
+{
+  "title": "Industry Salary Benchmarks 2026",
+  "source": "National Compensation Survey",
+  "last_updated": "2026-01-15",
+  "departments": [
+    {
+      "department": "Engineering",
+      "median_salary": 72000,
+      "percentile_25": 58000,
+      "percentile_75": 92000,
+      "market_trend": "growing"
+    },
+    {
+      "department": "Finance",
+      "median_salary": 65000,
+      "percentile_25": 52000,
+      "percentile_75": 85000,
+      "market_trend": "stable"
+    },
+    {
+      "department": "HR",
+      "median_salary": 60000,
+      "percentile_25": 48000,
+      "percentile_75": 78000,
+      "market_trend": "stable"
+    },
+    {
+      "department": "Operations",
+      "median_salary": 58000,
+      "percentile_25": 45000,
+      "percentile_75": 75000,
+      "market_trend": "declining"
+    },
+    {
+      "department": "R&D",
+      "median_salary": 70000,
+      "percentile_25": 56000,
+      "percentile_75": 90000,
+      "market_trend": "growing"
+    },
+    {
+      "department": "Sales",
+      "median_salary": 62000,
+      "percentile_25": 48000,
+      "percentile_75": 82000,
+      "market_trend": "growing"
+    },
+    {
+      "department": "Support",
+      "median_salary": 52000,
+      "percentile_25": 40000,
+      "percentile_75": 68000,
+      "market_trend": "stable"
+    }
+  ]
+}

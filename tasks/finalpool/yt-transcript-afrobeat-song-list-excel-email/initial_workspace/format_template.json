@@ -1,0 +1,23 @@
+{
+  "excel_file": "Afrobeat_Tracklist.xlsx",
+  "sheets": [
+    "Tracklist",
+    "Artist_Summary"
+  ],
+  "tracklist_columns": [
+    "Track_Number",
+    "Song_Title",
+    "Artist",
+    "Start_Time_Sec",
+    "Duration_Sec",
+    "Notes"
+  ],
+  "artist_summary_columns": [
+    "Artist",
+    "Song_Count",
+    "Total_Duration_Sec"
+  ],
+  "word_file": "Curator_Notes.docx",
+  "notion_page_title": "Afrobeat Mix 2024 Tracklist",
+  "email_recipient": "music@label.com"
+}

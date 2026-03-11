@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sector Volatility Research Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 30px; }
+        table { border-collapse: collapse; margin: 15px 0; background: white; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px 16px; text-align: left; }
+        th { background: #2c3e50; color: white; }
+        tr:nth-child(even) { background: #ecf0f1; }
+        .note { color: #7f8c8d; font-size: 0.9em; margin-top: 5px; }
+        .section { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Sector Volatility Research Portal</h1>
+    <p>Updated: March 2026 | Annual volatility benchmarks and risk classification thresholds</p>
+
+    <div class="section">
+        <h2>Sector Volatility Benchmarks (Annualized)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sector</th>
+                    <th>Benchmark Annualized Volatility (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Consumer Cyclical</td><td>28.0</td></tr>
+                <tr><td>Communication Services</td><td>25.5</td></tr>
+                <tr><td>Healthcare</td><td>18.0</td></tr>
+                <tr><td>Financial Services</td><td>22.0</td></tr>
+                <tr><td>Energy</td><td>30.0</td></tr>
+            </tbody>
+        </table>
+        <p class="note">Source: Internal research team analysis based on trailing 3-year sector averages.</p>
+    </div>
+
+    <div class="section">
+        <h2>Risk Category Thresholds (Maximum Drawdown)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk Category</th>
+                    <th>Maximum Drawdown Threshold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Conservative</td><td>Max drawdown &lt; 15%</td></tr>
+                <tr><td>Moderate</td><td>Max drawdown 15% - 25%</td></tr>
+                <tr><td>Aggressive</td><td>Max drawdown &gt; 25%</td></tr>
+            </tbody>
+        </table>
+        <p class="note">Classification is based on the stock's maximum drawdown over the trailing 1-year period.</p>
+    </div>
+</body>
+</html>

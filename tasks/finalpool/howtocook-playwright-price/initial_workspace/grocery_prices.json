@@ -1,0 +1,28 @@
+{
+  "prices": [
+    {"ingredient_cn": "鸡翅", "ingredient_en": "Chicken Wings", "price_per_unit": 15.0, "unit": "500g"},
+    {"ingredient_cn": "可乐", "ingredient_en": "Cola", "price_per_unit": 5.0, "unit": "500ml"},
+    {"ingredient_cn": "金针菇", "ingredient_en": "Enoki Mushroom", "price_per_unit": 6.0, "unit": "150g"},
+    {"ingredient_cn": "年糕", "ingredient_en": "Rice Cake", "price_per_unit": 8.0, "unit": "250g"},
+    {"ingredient_cn": "白蘑菇", "ingredient_en": "White Mushroom", "price_per_unit": 10.0, "unit": "200g"},
+    {"ingredient_cn": "巴沙鱼", "ingredient_en": "Basa Fish", "price_per_unit": 25.0, "unit": "500g"},
+    {"ingredient_cn": "洋葱", "ingredient_en": "Onion", "price_per_unit": 3.0, "unit": "500g"},
+    {"ingredient_cn": "黄油", "ingredient_en": "Butter", "price_per_unit": 12.0, "unit": "100g"},
+    {"ingredient_cn": "牛奶", "ingredient_en": "Milk", "price_per_unit": 8.0, "unit": "1L"},
+    {"ingredient_cn": "酱油", "ingredient_en": "Soy Sauce", "price_per_unit": 6.0, "unit": "500ml"},
+    {"ingredient_cn": "面粉", "ingredient_en": "Flour", "price_per_unit": 4.0, "unit": "500g"},
+    {"ingredient_cn": "食用油", "ingredient_en": "Cooking Oil", "price_per_unit": 15.0, "unit": "1L"},
+    {"ingredient_cn": "生姜", "ingredient_en": "Ginger", "price_per_unit": 5.0, "unit": "100g"},
+    {"ingredient_cn": "大蒜", "ingredient_en": "Garlic", "price_per_unit": 4.0, "unit": "100g"},
+    {"ingredient_cn": "淡奶油", "ingredient_en": "Light Cream", "price_per_unit": 18.0, "unit": "200ml"},
+    {"ingredient_cn": "豆腐", "ingredient_en": "Tofu", "price_per_unit": 3.5, "unit": "300g"},
+    {"ingredient_cn": "猪肉", "ingredient_en": "Pork", "price_per_unit": 18.0, "unit": "500g"},
+    {"ingredient_cn": "花椒", "ingredient_en": "Sichuan Pepper", "price_per_unit": 8.0, "unit": "50g"},
+    {"ingredient_cn": "豆瓣酱", "ingredient_en": "Doubanjiang", "price_per_unit": 7.0, "unit": "250g"},
+    {"ingredient_cn": "葱", "ingredient_en": "Green Onion", "price_per_unit": 2.0, "unit": "200g"},
+    {"ingredient_cn": "鸡蛋", "ingredient_en": "Egg", "price_per_unit": 10.0, "unit": "10pcs"},
+    {"ingredient_cn": "白糖", "ingredient_en": "Sugar", "price_per_unit": 5.0, "unit": "500g"},
+    {"ingredient_cn": "盐", "ingredient_en": "Salt", "price_per_unit": 2.0, "unit": "500g"},
+    {"ingredient_cn": "料酒", "ingredient_en": "Cooking Wine", "price_per_unit": 5.0, "unit": "500ml"}
+  ]
+}

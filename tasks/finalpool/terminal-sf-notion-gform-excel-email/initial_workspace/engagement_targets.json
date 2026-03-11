@@ -1,0 +1,29 @@
+{
+  "engagement_index_target": 5.5,
+  "satisfaction_target": 7.0,
+  "performance_target": 3.5,
+  "work_life_balance_target": 4.5,
+  "department_targets": {
+    "Engineering": {
+      "engagement_index": 5.6
+    },
+    "Finance": {
+      "engagement_index": 5.55
+    },
+    "HR": {
+      "engagement_index": 5.5
+    },
+    "Operations": {
+      "engagement_index": 5.45
+    },
+    "R&D": {
+      "engagement_index": 5.55
+    },
+    "Sales": {
+      "engagement_index": 5.5
+    },
+    "Support": {
+      "engagement_index": 5.45
+    }
+  }
+}

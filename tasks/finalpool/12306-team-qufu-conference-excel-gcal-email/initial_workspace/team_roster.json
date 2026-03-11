@@ -1,0 +1,14 @@
+{
+  "beijing_team": [
+    "Prof. Li",
+    "Dr. Wang",
+    "Ms. Zhang"
+  ],
+  "shanghai_team": [
+    "Prof. Chen",
+    "Dr. Liu"
+  ],
+  "coordinator": "conference@confucius-institute.org",
+  "conference_dates": "2026-03-12 to 2026-03-15",
+  "venue": "Qufu International Conference Center"
+}

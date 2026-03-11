@@ -1,0 +1,31 @@
+{
+  "market_projections": [
+    {
+      "region": "Asia Pacific",
+      "growth_rate": 8.5,
+      "market_size_m": 450
+    },
+    {
+      "region": "Europe",
+      "growth_rate": 3.2,
+      "market_size_m": 380
+    },
+    {
+      "region": "Latin America",
+      "growth_rate": 6.8,
+      "market_size_m": 210
+    },
+    {
+      "region": "Middle East",
+      "growth_rate": 5.4,
+      "market_size_m": 180
+    },
+    {
+      "region": "North America",
+      "growth_rate": 4.1,
+      "market_size_m": 520
+    }
+  ],
+  "forecast_period": "Q2 2026",
+  "source": "Global Market Intelligence"
+}

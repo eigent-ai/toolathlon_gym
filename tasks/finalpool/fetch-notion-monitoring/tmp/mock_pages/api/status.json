@@ -1,0 +1,7 @@
+{
+  "services": [
+    {"name": "API Gateway", "status": "healthy", "uptime_pct": 99.95, "last_incident": "2026-03-01"},
+    {"name": "Database Cluster", "status": "degraded", "uptime_pct": 98.50, "last_incident": "2026-03-05"},
+    {"name": "Storage Service", "status": "healthy", "uptime_pct": 99.99, "last_incident": "2026-02-15"}
+  ]
+}

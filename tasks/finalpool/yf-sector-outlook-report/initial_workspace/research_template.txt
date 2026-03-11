@@ -1,0 +1,23 @@
+Research Report Structure Template
+
+Title: [Report Title]
+
+1. Executive Summary
+   Brief overview of the analysis and key findings.
+
+2. Sector Analysis
+   For each sector:
+   - Sector name and outlook rating
+   - Representative stock performance
+   - Growth forecast and risk assessment
+   - Investment implications
+
+3. Cross-Sector Comparison
+   - Which sectors are performing best/worst
+   - How outlooks align with recent performance
+   - Risk distribution across the portfolio
+
+4. Conclusion and Recommendations
+   - Synthesis of findings
+   - Sector allocation recommendations
+   - Key risks to monitor

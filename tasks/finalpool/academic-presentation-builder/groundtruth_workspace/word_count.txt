@@ -1,0 +1,2 @@
+LLM_Reasoning_Review.docx: 250 words
+LLM_Reasoning_Slides.pptx: 120 words

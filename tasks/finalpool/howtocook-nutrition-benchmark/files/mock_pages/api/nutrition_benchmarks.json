@@ -1,0 +1,8 @@
+{
+  "calories": {"min": 1800, "max": 2200, "unit": "kcal"},
+  "protein": {"min": 50, "max": 80, "unit": "g"},
+  "carbs": {"min": 225, "max": 325, "unit": "g"},
+  "fat": {"min": 44, "max": 78, "unit": "g"},
+  "fiber": {"min": 25, "max": 35, "unit": "g"},
+  "sodium": {"min": 0, "max": 2300, "unit": "mg"}
+}

@@ -1,0 +1,72 @@
+{
+  "name": "@lockon0927/playwright-mcp-with-chunk",
+  "version": "0.1.2",
+  "description": "Playwright Tools for MCP",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/playwright-mcp.git"
+  },
+  "homepage": "https://playwright.dev",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "lint": "npm run update-readme && eslint . && tsc --noEmit",
+    "lint-fix": "eslint . --fix",
+    "update-readme": "node utils/update-readme.js",
+    "watch": "tsc --watch",
+    "test": "playwright test",
+    "ctest": "playwright test --project=chrome",
+    "ftest": "playwright test --project=firefox",
+    "wtest": "playwright test --project=webkit",
+    "run-server": "node lib/browserServer.js",
+    "clean": "rm -rf lib",
+    "npm-publish": "npm run clean && npm run build && npm run test && npm publish"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "commander": "^13.1.0",
+    "debug": "^4.4.1",
+    "dotenv": "^17.2.0",
+    "mime": "^4.0.7",
+    "playwright": "1.55.0-alpha-1752701791000",
+    "playwright-core": "1.55.0-alpha-1752701791000",
+    "ws": "^8.18.1",
+    "zod-to-json-schema": "^3.24.4"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.57.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.19.0",
+    "@playwright/test": "1.55.0-alpha-1752701791000",
+    "@stylistic/eslint-plugin": "^3.0.1",
+    "@types/debug": "^4.1.12",
+    "@types/node": "^22.13.10",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "@typescript-eslint/utils": "^8.26.1",
+    "esbuild": "^0.20.1",
+    "eslint": "^9.19.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-notice": "^1.0.0",
+    "openai": "^5.10.2",
+    "typescript": "^5.8.2"
+  },
+  "bin": {
+    "mcp-server-playwright": "cli.js"
+  }
+}

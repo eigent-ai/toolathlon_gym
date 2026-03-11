@@ -1,0 +1,54 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: toolathlon_pg
+    environment:
+      POSTGRES_DB: toolathlon_gym
+      POSTGRES_USER: eigent
+      POSTGRES_PASSWORD: camel
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/init.sql.gz:/docker-entrypoint-initdb.d/init.sql.gz
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U eigent -d toolathlon_gym"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - toolathlon_net
+
+  # Development shell: mounts live source code, connects to shared postgres.
+  # For isolated per-task runs use scripts/run_containerized.sh instead.
+  toolathlon:
+    build: .
+    container_name: toolathlon_agent
+    depends_on:
+      postgres:
+        condition: service_healthy
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+      PGHOST: postgres
+      PG_HOST: postgres
+      PGPORT: "5432"
+      PGUSER: eigent
+      PGPASSWORD: camel
+      PGDATABASE: toolathlon_gym
+      LOCAL_SERVERS_PATH: /opt/local_servers
+      PYTHON_BIN: /opt/venv/bin/python3
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    networks:
+      - toolathlon_net
+
+volumes:
+  pg_data:
+
+networks:
+  # Shared bridge network so ephemeral task containers can reach toolathlon_pg.
+  toolathlon_net:
+    name: toolathlon_net

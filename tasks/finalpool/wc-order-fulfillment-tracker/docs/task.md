@@ -1,0 +1,7 @@
+The operations manager needs visibility into how well the online store is fulfilling customer orders. Please connect to the store and pull all order data, then create a report that breaks down orders by their current status and calculates key fulfillment metrics.
+
+Create an Excel file called Fulfillment_Report.xlsx in the workspace with two sheets. The first sheet should be named "Order Status" and contain columns Status (in lowercase), Order_Count, Total_Revenue (rounded to two decimal places), and Avg_Order_Value (revenue divided by count, rounded to two decimal places). Sort the rows alphabetically by status.
+
+The second sheet should be named "Fulfillment Summary" with columns Metric and Value. Include the following entries: Total_Orders (total number of orders across all statuses), Completed_Orders (count of orders with completed status), Fulfillment_Rate (percentage of completed orders out of total orders, rounded to two decimal places), Pending_Processing_Count (combined count of orders that are pending, processing, or on-hold), Cancellation_Count (combined count of cancelled and failed orders), and Cancellation_Rate (percentage of cancelled plus failed orders out of total, rounded to two decimal places).
+
+Also create a Google Sheet spreadsheet titled "Order Fulfillment Dashboard" with a sheet called "Status Breakdown" containing the same Order Status data for the team to review collaboratively.

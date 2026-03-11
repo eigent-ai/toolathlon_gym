@@ -1,0 +1,32 @@
+{
+  "entities": [
+    {
+      "name": "Recipe Selection Criteria",
+      "entityType": "criteria",
+      "observations": [
+        "Selected categories: Meat, Vegetable, Soup, Staple, Breakfast",
+        "Chose 10 recipes across 5 categories to ensure variety",
+        "Prioritized recipes with a range of difficulty levels",
+        "Filtering criteria: popular dishes, diverse cooking methods, accessible ingredients"
+      ]
+    },
+    {
+      "name": "Category Overview",
+      "entityType": "category_list",
+      "observations": [
+        "Meat: Hong Shao Rou, Kung Pao Chicken",
+        "Vegetable: Mapo Tofu, Stir-Fried Bok Choy",
+        "Soup: Tomato Egg Drop Soup, Winter Melon Pork Rib Soup",
+        "Staple: Egg Fried Rice, Scallion Pancakes",
+        "Breakfast: Congee with Century Egg, Chinese Crepes (Jianbing)"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "Recipe Selection Criteria",
+      "to": "Category Overview",
+      "relationType": "informed_by"
+    }
+  ]
+}

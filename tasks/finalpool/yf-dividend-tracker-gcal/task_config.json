@@ -1,0 +1,5 @@
+{
+  "needed_mcp_servers": ["yahoo-finance", "google_calendar", "excel", "google_sheet", "filesystem"],
+  "needed_local_tools": ["claim_done", "python_execute", "handle_overlong_tool_outputs", "manage_context", "history"],
+  "meta": {}
+}

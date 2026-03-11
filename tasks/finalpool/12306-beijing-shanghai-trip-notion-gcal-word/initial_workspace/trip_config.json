@@ -1,0 +1,9 @@
+{
+  "origin": "Beijing",
+  "destination": "Shanghai",
+  "travel_date": "2026-03-10",
+  "return_same_day": true,
+  "preferred_class": "二等座",
+  "budget_per_person": 1200,
+  "traveler": "consultant@company.com"
+}

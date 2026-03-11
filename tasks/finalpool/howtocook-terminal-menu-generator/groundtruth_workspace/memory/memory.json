@@ -1,0 +1,32 @@
+{
+  "entities": [
+    {
+      "name": "dietary_preferences",
+      "entityType": "preference",
+      "observations": [
+        "No dishes with difficulty above 3",
+        "Prefer variety across categories",
+        "At least one soup and one vegetable dish per week",
+        "Avoid repeating categories on consecutive days"
+      ]
+    },
+    {
+      "name": "weekly_menu_selections",
+      "entityType": "menu",
+      "observations": [
+        "Monday: 可乐鸡翅 (Cola Chicken Wings) - meat",
+        "Tuesday: 水煮鱼 (Boiled Fish in Spicy Sauce) - seafood",
+        "Wednesday: 凉拌金针菇 (Cold Enoki Mushroom Salad) - vegetable",
+        "Thursday: 炒年糕 (Stir-fried Rice Cake) - staple",
+        "Friday: 奶油蘑菇汤 (Cream of Mushroom Soup) - soup"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "weekly_menu_selections",
+      "to": "dietary_preferences",
+      "relationType": "guided_by"
+    }
+  ]
+}

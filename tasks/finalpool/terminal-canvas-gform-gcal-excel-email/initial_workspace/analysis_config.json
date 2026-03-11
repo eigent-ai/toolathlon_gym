@@ -1,0 +1,20 @@
+{
+  "program": "Data-Driven Design",
+  "courses": [
+    {"id": 11, "name": "Data-Driven Design (Spring 2013)", "code": "DDD-2013B"},
+    {"id": 9, "name": "Data-Driven Design (Fall 2013)", "code": "DDD-2013J"}
+  ],
+  "thresholds": {
+    "passing_score": 70,
+    "intervention_threshold": 75
+  },
+  "remediation": {
+    "session_duration_hours": 1,
+    "start_time": "14:00",
+    "first_date": "2026-03-16"
+  },
+  "contacts": {
+    "coordinator": "coordinator@ddd-program.example.com",
+    "faculty": "faculty@ddd-program.example.com"
+  }
+}

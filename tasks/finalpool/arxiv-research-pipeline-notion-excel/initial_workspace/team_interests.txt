@@ -1,0 +1,7 @@
+Team Research Interests:
+- Prompt engineering techniques
+- In-context learning mechanisms
+- Reasoning capabilities of LLMs
+- Efficient fine-tuning methods
+- Evaluation methodologies
+- Hallucination mitigation

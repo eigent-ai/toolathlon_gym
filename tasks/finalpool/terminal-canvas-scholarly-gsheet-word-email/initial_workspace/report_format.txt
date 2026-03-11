@@ -1,0 +1,30 @@
+Research-Teaching Integration Report Format
+============================================
+
+The report document should contain the following sections in order:
+
+1. Executive Summary
+   - Overall average alignment score across all faculty
+   - Total number of faculty analyzed
+   - Number of faculty flagged for curriculum review (score below 30%)
+
+2. Per-Faculty Analysis
+   - For each faculty member:
+     - Faculty name
+     - Department
+     - Course taught
+     - Research area
+     - Alignment score (percentage)
+     - Status: "Aligned" or "Review Needed"
+
+3. Department Summary
+   - For each department:
+     - Department name
+     - Average alignment score
+     - Number of faculty in department
+     - Number flagged for review
+
+4. Recommendations
+   - Specific names of faculty with scores below 30%
+   - Suggestion for curriculum review process
+   - Any department-wide observations

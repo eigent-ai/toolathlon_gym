@@ -1,0 +1,3 @@
+server/lib/
+server/__pycache__/
+*.dxt

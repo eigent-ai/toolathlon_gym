@@ -1,0 +1,7 @@
+We need to put together a Q4 2024 performance review covering October through December. There is a page in our knowledge base titled "Q4 2024 Sales Targets" that contains the revenue targets management set for each region at the beginning of the quarter. Please find and read that page to extract the regional targets.
+
+Next, pull the actual Q4 2024 sales figures from our company data warehouse. You should aggregate total revenue by region for all orders placed between October 1 and December 31 of 2024 inclusive, regardless of order status.
+
+Once you have both the targets and the actuals, create an Excel file named Q4_Performance.xlsx in the workspace with a single sheet called "Regional Comparison". The sheet should have the following columns in this order: Region, Target, Actual, Variance, Achievement_Pct. The Actual column should contain the total revenue for each region rounded to 2 decimal places. Variance is calculated as Actual minus Target, rounded to 2 decimal places. Achievement_Pct is calculated as Actual divided by Target multiplied by 100, rounded to 1 decimal place. Sort all rows alphabetically by Region name.
+
+Finally, create or update a shared spreadsheet titled "Q4 Dashboard" with a sheet called "Summary" that contains exactly the same data as the Excel file so the rest of the team can access it. The Summary sheet should have the same column headers in row 1 and the same five data rows below, with all values matching the Excel output.

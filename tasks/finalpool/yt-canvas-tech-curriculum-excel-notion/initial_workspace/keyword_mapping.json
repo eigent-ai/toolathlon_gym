@@ -1,0 +1,21 @@
+{
+  "keywords": {
+    "web": ["javascript", "react", "css", "html", "node"],
+    "ai": ["ai", "gpt", "llm", "neural", "deepseek"],
+    "systems": ["linux", "docker", "kubernetes", "rust", "python"],
+    "mobile": ["flutter", "swift", "android", "ios"]
+  },
+  "match_instructions": {
+    "case_sensitive": false,
+    "match_in": ["title", "description"],
+    "strategy": "any_keyword_match",
+    "fallback_category": "general"
+  },
+  "canvas_course_mapping": {
+    "web": "Web Development Fundamentals",
+    "ai": "Introduction to Artificial Intelligence",
+    "systems": "Systems Programming and DevOps",
+    "mobile": "Mobile Application Development",
+    "general": "Computer Science Electives"
+  }
+}

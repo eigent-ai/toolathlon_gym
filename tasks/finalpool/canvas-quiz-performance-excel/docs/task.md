@@ -1,0 +1,7 @@
+I need an analysis of quiz performance for the course "Biochemistry and Bioinformatics" which is offered in Fall 2013 and has a course ID of 3 in the learning management system. Please look up all quizzes for this course and gather the submission data for each quiz.
+
+Create an Excel file called Quiz_Performance.xlsx in the workspace with two sheets. The first sheet should be called "Quiz Stats" with columns Quiz_Title, Total_Submissions, Avg_Score (rounded to 2 decimal places), Min_Score, Max_Score, and Pass_Rate (the percentage of submissions scoring 60 or above, rounded to 2 decimal places). Sort the rows by quiz title.
+
+The second sheet should be called "Summary" with two columns Metric and Value. Include the following rows: Total_Quizzes (the number of distinct quizzes), Overall_Avg_Score (the average score across all submissions in all quizzes for this course, rounded to 2 decimal places), Highest_Avg_Quiz (the title of the quiz with the highest average score), and Lowest_Avg_Quiz (the title of the quiz with the lowest average score).
+
+After creating the Excel file, send a summary email to instructor@university.example.com from quiz-analytics@university.example.com with the subject "Quiz Performance Summary - Biochemistry and Bioinformatics (Fall 2013)". The email body should include the total number of quizzes analyzed, the overall average score, and the names of the highest and lowest performing quizzes.

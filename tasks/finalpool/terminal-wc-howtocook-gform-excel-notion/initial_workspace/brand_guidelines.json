@@ -1,0 +1,18 @@
+{
+  "brand_name": "KitchenCraft Kits",
+  "tagline": "Cook smarter, eat better",
+  "color_palette": {
+    "primary": "#2E7D32",
+    "secondary": "#FF8F00",
+    "accent": "#1565C0"
+  },
+  "kit_naming_convention": "Use descriptive cooking-style names (e.g., 'Smoothie Starter Kit', 'Stir-Fry Master Kit')",
+  "packaging_requirements": {
+    "include_qr_code": true,
+    "recipe_card_size": "5x7 inches",
+    "max_recipes_per_kit": 10,
+    "min_recipes_per_kit": 3
+  },
+  "photography_style": "Overhead flat-lay with natural lighting",
+  "launch_timeline": "Q2 2026"
+}

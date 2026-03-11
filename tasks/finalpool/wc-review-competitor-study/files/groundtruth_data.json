@@ -1,0 +1,68 @@
+{
+  "comparisons": [
+    {
+      "category": "Electronics",
+      "our_avg_rating": 4.57,
+      "our_review_count": 149,
+      "competitor_avg_rating": 4.71,
+      "competitor_review_count": 177,
+      "competitor_sentiment": 0.71,
+      "rating_difference": -0.14,
+      "status": "Below"
+    },
+    {
+      "category": "Audio",
+      "our_avg_rating": 4.47,
+      "our_review_count": 78,
+      "competitor_avg_rating": 4.06,
+      "competitor_review_count": 106,
+      "competitor_sentiment": 0.79,
+      "rating_difference": 0.41,
+      "status": "Above"
+    },
+    {
+      "category": "TV & Home Theater",
+      "our_avg_rating": 4.78,
+      "our_review_count": 63,
+      "competitor_avg_rating": 4.4,
+      "competitor_review_count": 98,
+      "competitor_sentiment": 0.78,
+      "rating_difference": 0.38,
+      "status": "Above"
+    },
+    {
+      "category": "Cameras",
+      "our_avg_rating": 4.69,
+      "our_review_count": 49,
+      "competitor_avg_rating": 4.21,
+      "competitor_review_count": 95,
+      "competitor_sentiment": 0.69,
+      "rating_difference": 0.48,
+      "status": "Above"
+    },
+    {
+      "category": "Home Appliances",
+      "our_avg_rating": 4.72,
+      "our_review_count": 29,
+      "competitor_avg_rating": 4.63,
+      "competitor_review_count": 52,
+      "competitor_sentiment": 0.7,
+      "rating_difference": 0.09,
+      "status": "Above"
+    },
+    {
+      "category": "Watches",
+      "our_avg_rating": 4.43,
+      "our_review_count": 28,
+      "competitor_avg_rating": 4.0,
+      "competitor_review_count": 48,
+      "competitor_sentiment": 0.78,
+      "rating_difference": 0.43,
+      "status": "Above"
+    }
+  ],
+  "products_below_count": 18,
+  "categories_above": 5,
+  "categories_below": 1,
+  "total_categories": 6
+}

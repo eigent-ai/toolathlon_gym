@@ -1,0 +1,7 @@
+Our academic affairs team needs a comprehensive report on late submissions across all courses in the learning management system. Please query all submissions that are flagged as late and compile the results.
+
+Create an Excel file called Late_Submissions.xlsx in the workspace with two sheets. The first sheet "By Course" should have columns Course_Name, Late_Count showing the total number of late submissions per course, and Unique_Students showing how many distinct students submitted late work in that course. Sort the rows by Late_Count in descending order. The second sheet "Top Offenders" should list the top 10 student-course combinations with the most late submissions, having columns Student_Name, Course, and Late_Count, sorted by Late_Count descending.
+
+For each course that has late submissions, create a calendar event titled "Review Meeting - [course name]" scheduled for March 13, 2026 at 10:00 AM lasting one hour. The event description should mention the number of late submissions and unique students affected in that course.
+
+Finally, send an email to academic.affairs@university.example.com with the subject "Late Submission Report" summarizing the findings. The email body should mention the total number of courses with late submissions, the total count of late submissions across all courses, and the names of the top 3 courses with the most late submissions.

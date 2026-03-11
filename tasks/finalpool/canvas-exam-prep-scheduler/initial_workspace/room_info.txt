@@ -1,0 +1,9 @@
+Available Review Rooms
+
+Room 101 - Main Building, Capacity 30, AV equipment available
+Room 203 - Science Building, Capacity 25, Whiteboard only
+Room 305 - Library, Capacity 35, Projector and screen
+Room 410 - Student Center, Capacity 40, Full multimedia setup
+Room 512 - Computing Center, Capacity 20, Computer terminals available
+
+All rooms are available for booking Monday through Saturday. Sunday bookings require special approval from the Facilities Office.

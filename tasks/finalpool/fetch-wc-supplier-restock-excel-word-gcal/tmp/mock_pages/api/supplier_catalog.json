@@ -1,0 +1,50 @@
+{
+  "supplier": "TechWholesale International",
+  "catalog_date": "2026-03-01",
+  "currency": "USD",
+  "products": [
+    {
+      "category": "Audio",
+      "wholesale_price": 45.00,
+      "lead_time_days": 14,
+      "min_order_qty": 50,
+      "description": "Headphones, earbuds, and audio accessories"
+    },
+    {
+      "category": "Cameras",
+      "wholesale_price": 12.00,
+      "lead_time_days": 21,
+      "min_order_qty": 20,
+      "description": "Digital cameras, accessories, and tripods"
+    },
+    {
+      "category": "Electronics",
+      "wholesale_price": 30.00,
+      "lead_time_days": 10,
+      "min_order_qty": 100,
+      "description": "General electronics, phone cases, chargers, adapters"
+    },
+    {
+      "category": "Home Appliances",
+      "wholesale_price": 18.00,
+      "lead_time_days": 18,
+      "min_order_qty": 30,
+      "description": "Small home appliances and kitchen gadgets"
+    },
+    {
+      "category": "TV & Home Theater",
+      "wholesale_price": 180.00,
+      "lead_time_days": 28,
+      "min_order_qty": 10,
+      "description": "Televisions, monitors, and home theater equipment"
+    },
+    {
+      "category": "Watches",
+      "wholesale_price": 3.50,
+      "lead_time_days": 12,
+      "min_order_qty": 40,
+      "description": "Wrist watches and smart watches"
+    }
+  ],
+  "terms": "Net 30 payment terms. Free shipping on orders over $5,000. Volume discounts available for orders exceeding 3x minimum quantity."
+}

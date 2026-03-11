@@ -1,0 +1,8 @@
+{
+  "company_ticker": "AAPL",
+  "comparison_ticker": "MSFT",
+  "roadshow_dates": ["2026-03-10"],
+  "cities": ["Shanghai", "Guangzhou"],
+  "departure_city": "Beijing",
+  "seat_class": "商务座"
+}

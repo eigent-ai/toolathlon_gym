@@ -1,0 +1,17 @@
+{
+  "needed_mcp_servers": [
+    "scholarly",
+    "arxiv_local",
+    "pptx",
+    "google_sheet",
+    "word"
+  ],
+  "needed_local_tools": [
+    "claim_done",
+    "handle_overlong_tool_outputs",
+    "manage_context",
+    "history",
+    "python_execute"
+  ],
+  "meta": {}
+}

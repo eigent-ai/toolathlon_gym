@@ -1,0 +1,5 @@
+There is a PDF file called Q4_Targets.pdf in the workspace that contains our approved quarterly sales targets for Q4 2025 broken down by customer segment. Please read that file first to get the target amounts for Enterprise, SMB, Consumer, and Government segments.
+
+Next, query the company data warehouse to pull the actual sales figures for Q4 2025, which covers orders placed between October 1, 2025 and December 31, 2025 inclusive. Aggregate the total sales amount and order count by customer segment.
+
+Create a Word document called Q4_Segment_Report.docx in the workspace. The document should have a heading "Q4 2025 Sales Performance by Segment" at the top. Then include a table with columns Segment, Q4_Target, Q4_Actual (rounded to 2 decimal places), Order_Count, Variance (actual minus target, rounded to 2 decimals), and Achievement_Pct (actual divided by target times 100, rounded to 1 decimal place). Sort the rows alphabetically by segment name. After the table, add a summary paragraph that states the overall total target, total actual sales, and how many segments met or exceeded their targets.

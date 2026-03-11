@@ -1,0 +1,50 @@
+{
+  "name": "12306-mcp",
+  "version": "0.3.5",
+  "main": "build/index.js",
+  "scripts": {
+    "prebuild": "run-script-os",
+    "prebuild:win32": "del /q /s build\\* >nul 2>&1",
+    "prebuild:default": "rm -rf build/*",
+    "build": "tsc",
+    "postbuild": "run-script-os",
+    "postbuild:darwin:linux": "chmod +x build/index.js",
+    "postbuild:default": "",
+    "prepare": "npm run build",
+    "test": "tsc && node ./build/index.js",
+    "test:http": "tsc && node ./build/index.js --port 8080",
+    "debug": "tsc && npx @modelcontextprotocol/inspector node ./build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "12306",
+    "mcp-server"
+  ],
+  "author": "joooook",
+  "license": "MIT",
+  "description": "This is a 12306 ticket search server based on the Model Context Protocol (MCP). ",
+  "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.5",
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "@types/pg": "^8.18.0",
+    "axios": "^1.8.4",
+    "commander": "^14.0.0",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "mcp-http-server": "^1.1.5",
+    "pg": "^8.20.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "run-script-os": "^1.1.6",
+    "typescript": "^5.8.3"
+  },
+  "type": "module",
+  "bin": {
+    "12306-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ]
+}

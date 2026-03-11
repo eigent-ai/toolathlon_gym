@@ -1,0 +1,26 @@
+{
+  "target_courses": [
+    {
+      "id": 7,
+      "note": "High enrollment course 1"
+    },
+    {
+      "id": 17,
+      "note": "High enrollment course 2"
+    },
+    {
+      "id": 4,
+      "note": "High enrollment course 3"
+    },
+    {
+      "id": 16,
+      "note": "High enrollment course 4"
+    },
+    {
+      "id": 3,
+      "note": "High enrollment course 5"
+    }
+  ],
+  "study_week": "2026-03-09 to 2026-03-13",
+  "session_start_time": "09:00"
+}

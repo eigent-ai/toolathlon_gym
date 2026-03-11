@@ -1,0 +1,190 @@
+{
+  "by_course": [
+    {
+      "course": "Biochemistry & Bioinformatics (Fall 2013)",
+      "late_count": 7696,
+      "unique_students": 1564
+    },
+    {
+      "course": "Creative Computing & Culture (Fall 2014)",
+      "late_count": 6638,
+      "unique_students": 1965
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "late_count": 6350,
+      "unique_students": 1286
+    },
+    {
+      "course": "Data-Driven Design (Spring 2013)",
+      "late_count": 5907,
+      "unique_students": 1048
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Spring 2014)",
+      "late_count": 5493,
+      "unique_students": 1117
+    },
+    {
+      "course": "Creative Computing & Culture (Spring 2014)",
+      "late_count": 4529,
+      "unique_students": 1398
+    },
+    {
+      "course": "Foundations of Finance (Fall 2014)",
+      "late_count": 1669,
+      "unique_students": 794
+    },
+    {
+      "course": "Foundations of Finance (Fall 2013)",
+      "late_count": 1623,
+      "unique_students": 814
+    },
+    {
+      "course": "Foundations of Finance (Spring 2013)",
+      "late_count": 1384,
+      "unique_students": 635
+    },
+    {
+      "course": "Foundations of Finance (Spring 2014)",
+      "late_count": 1025,
+      "unique_students": 483
+    },
+    {
+      "course": "Data-Driven Design (Fall 2013)",
+      "late_count": 988,
+      "unique_students": 586
+    },
+    {
+      "course": "Data-Driven Design (Fall 2014)",
+      "late_count": 961,
+      "unique_students": 589
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Fall 2014)",
+      "late_count": 906,
+      "unique_students": 627
+    },
+    {
+      "course": "Data-Driven Design (Spring 2014)",
+      "late_count": 648,
+      "unique_students": 392
+    },
+    {
+      "course": "Global Governance & Geopolitics (Fall 2013)",
+      "late_count": 561,
+      "unique_students": 323
+    },
+    {
+      "course": "Global Governance & Geopolitics (Spring 2014)",
+      "late_count": 508,
+      "unique_students": 267
+    },
+    {
+      "course": "Global Governance & Geopolitics (Fall 2014)",
+      "late_count": 463,
+      "unique_students": 262
+    },
+    {
+      "course": "Environmental Economics & Ethics (Fall 2014)",
+      "late_count": 442,
+      "unique_students": 303
+    },
+    {
+      "course": "Applied Analytics & Algorithms (Fall 2014)",
+      "late_count": 429,
+      "unique_students": 202
+    },
+    {
+      "course": "Environmental Economics & Ethics (Fall 2013)",
+      "late_count": 426,
+      "unique_students": 296
+    },
+    {
+      "course": "Applied Analytics & Algorithms (Fall 2013)",
+      "late_count": 386,
+      "unique_students": 204
+    },
+    {
+      "course": "Environmental Economics & Ethics (Spring 2014)",
+      "late_count": 286,
+      "unique_students": 193
+    }
+  ],
+  "top_offenders": [
+    {
+      "student": "David Lee",
+      "course": "Data-Driven Design (Spring 2013)",
+      "late_count": 30
+    },
+    {
+      "student": "Hannah Green",
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "late_count": 26
+    },
+    {
+      "student": "Daisy Carter",
+      "course": "Biochemistry & Bioinformatics (Fall 2013)",
+      "late_count": 24
+    },
+    {
+      "student": "Dylan Walker",
+      "course": "Data-Driven Design (Spring 2013)",
+      "late_count": 24
+    },
+    {
+      "student": "Victoria Harris",
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "late_count": 24
+    },
+    {
+      "student": "Alice Miller",
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "late_count": 23
+    },
+    {
+      "student": "Martha Jackson",
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "late_count": 23
+    },
+    {
+      "student": "Daniel Allen",
+      "course": "Data-Driven Design (Spring 2013)",
+      "late_count": 23
+    },
+    {
+      "student": "Daisy Phillips",
+      "course": "Biochemistry & Bioinformatics (Fall 2013)",
+      "late_count": 22
+    },
+    {
+      "student": "Natasha Rogers",
+      "course": "Biochemistry & Bioinformatics (Fall 2013)",
+      "late_count": 22
+    }
+  ],
+  "courses_affected": [
+    "Biochemistry & Bioinformatics (Fall 2013)",
+    "Creative Computing & Culture (Fall 2014)",
+    "Biochemistry & Bioinformatics (Spring 2013)",
+    "Data-Driven Design (Spring 2013)",
+    "Biochemistry & Bioinformatics (Spring 2014)",
+    "Creative Computing & Culture (Spring 2014)",
+    "Foundations of Finance (Fall 2014)",
+    "Foundations of Finance (Fall 2013)",
+    "Foundations of Finance (Spring 2013)",
+    "Foundations of Finance (Spring 2014)",
+    "Data-Driven Design (Fall 2013)",
+    "Data-Driven Design (Fall 2014)",
+    "Biochemistry & Bioinformatics (Fall 2014)",
+    "Data-Driven Design (Spring 2014)",
+    "Global Governance & Geopolitics (Fall 2013)",
+    "Global Governance & Geopolitics (Spring 2014)",
+    "Global Governance & Geopolitics (Fall 2014)",
+    "Environmental Economics & Ethics (Fall 2014)",
+    "Applied Analytics & Algorithms (Fall 2014)",
+    "Environmental Economics & Ethics (Fall 2013)",
+    "Applied Analytics & Algorithms (Fall 2013)",
+    "Environmental Economics & Ethics (Spring 2014)"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "target_topics": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "AI/ML",
+    "Rust",
+    "DevOps/Cloud"
+  ],
+  "survey_title": "Fireship Community Preference Survey",
+  "report_title": "Community Report",
+  "top_videos_count": 8,
+  "community_email": "community@devclub.io"
+}

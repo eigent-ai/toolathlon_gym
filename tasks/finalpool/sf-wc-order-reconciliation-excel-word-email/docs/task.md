@@ -1,0 +1,9 @@
+I need help reconciling our data warehouse sales records against our online store orders for an end-of-quarter audit. Our company data warehouse has detailed order records with dates, customer segments, regions, and amounts. Our online store also has its own order records with customer details, line items, and totals.
+
+I need you to pull data from both systems and cross-reference them. Use the terminal to create and run a Python script called reconciler.py in the workspace that reads both datasets (save them as dw_orders.json and store_orders.json first), compares total revenue, average order values, and identifies any significant discrepancies between the two systems. Output the analysis to reconciliation_results.json.
+
+Put everything into an Excel file called Order_Reconciliation_Report.xlsx with four sheets. The first sheet DW_Summary should have columns for Region, Total_Orders, Total_Revenue (round to 2 decimals), and Avg_Order_Value (round to 2 decimals), sorted by Region alphabetically. The second sheet Store_Summary should have columns for Status, Order_Count, and Total_Amount (round to 2 decimals), sorted by Status alphabetically. The third sheet Cross_Reference should have columns Metric, DW_Value, Store_Value, and Difference with rows for Total_Revenue, Total_Orders, and Avg_Order_Value (all rounded to 2 decimals). The fourth sheet Audit_Notes should have Finding and Detail columns with at least 3 observations about the data comparison.
+
+Also create a Word document called Reconciliation_Audit.docx with a heading "Q1 Order Reconciliation Audit Report", an executive summary paragraph, sections for "Data Warehouse Analysis", "Online Store Analysis", and "Reconciliation Findings" with the key metrics and observations.
+
+Send an email to finance@company.com with subject "Q1 Order Reconciliation Complete" summarizing the key findings from the audit.

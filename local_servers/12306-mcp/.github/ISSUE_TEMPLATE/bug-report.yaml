@@ -1,0 +1,30 @@
+name: Bug反馈
+description: 反馈使用遇到的问题。
+title: "[BUG] 请在标题中简短描述问题，便于查看。"
+labels: bug
+
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: BUG描述
+      description: 尽量详细描述BUG问题。A clear and concise description of what the bug is.
+      placeholder: 尽量详细描述BUG问题。A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot截图
+      description: 尽量提供运行时报错或者结果错误的参数截图，包括调用参数。Please try to provide screenshots of the parameters that cause runtime errors or incorrect results, including the invocation parameters.
+      placeholder: 尽量提供运行时报错或者结果错误的参数截图，包括调用参数。Please try to provide screenshots of the parameters that cause runtime errors or incorrect results, including the invocation parameters.
+    validations:
+      required: true
+  - type: textarea
+    id: addtional-context
+    attributes:
+      label: Additional context其他信息
+      description: 其他信息。Add any other context about the problem here.
+      placeholder: 其他信息。Add any other context about the problem here.
+    validations:
+      required: true

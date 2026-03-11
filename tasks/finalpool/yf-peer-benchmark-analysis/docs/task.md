@@ -1,0 +1,13 @@
+You are a portfolio manager preparing a peer benchmark analysis for the investment committee. Your workspace contains two reference files. The file benchmark_methodology.md explains how to calculate upside potential as the percentage difference between the analyst target price and the current market price, and how to compare a stock's trailing PE ratio against the sector benchmark PE. The file peer_list.json lists the peer group composition for each sector.
+
+Start by visiting the analyst consensus portal at http://localhost:30223/index.html which contains a table of analyst consensus data for the five portfolio holdings: GOOGL, AMZN, JPM, JNJ, and XOM. The table provides each stock's target price, consensus rating (Buy, Strong Buy, Hold, etc.), and the sector PE benchmark value used for relative valuation comparisons. Read all the data from that page carefully.
+
+Next connect to the stock data source and retrieve the current market price and trailing PE ratio for each of the five stocks. You will need these actual prices to calculate the upside or downside potential relative to the analyst targets.
+
+Create an Excel workbook called Peer_Benchmark.xlsx in your workspace with two sheets. The first sheet should be named "Consensus Analysis" with columns Symbol, Current_Price, Target_Price, Upside_Pct, Consensus, Trailing_PE, PE_Benchmark, and PE_vs_Benchmark. Populate it with the five stocks sorted alphabetically by symbol. The Upside_Pct should be calculated as (Target_Price minus Current_Price) divided by Current_Price times 100, rounded to two decimal places. The PE_vs_Benchmark column should contain "Premium" if the stock's trailing PE exceeds its sector PE benchmark, or "Discount" if it is at or below the benchmark.
+
+The second sheet should be named "Summary" with columns Metric and Value. Include the following rows: Avg_Upside_Pct with the simple average of all five stocks' upside percentages rounded to two decimal places, Stocks_Above_Target counting how many stocks have a current price above the target price meaning negative upside, Stocks_Below_Target counting how many have a current price below the target meaning positive upside, Avg_PE_Premium calculated as the average of each stock's trailing PE minus its benchmark PE rounded to two decimal places, and Most_Undervalued with the symbol of the stock with the highest positive upside percentage.
+
+Also create a Google Sheet spreadsheet called "Peer Benchmark Data" with a single sheet named "Benchmark" containing the same columns and data as the Consensus Analysis sheet in the Excel file so the investment committee can access it online.
+
+When you are finished, call claim_done.

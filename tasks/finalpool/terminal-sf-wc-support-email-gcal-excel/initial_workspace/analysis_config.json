@@ -1,0 +1,8 @@
+{
+  "quality_team_email": "quality-team@company.com",
+  "operations_email": "operations@company.com",
+  "review_meeting_date": "2026-03-19",
+  "planning_session_date": "2026-03-21",
+  "defect_rate_threshold": 5.0,
+  "response_time_sla_hours": {"High": 4, "Medium": 12, "Low": 24}
+}

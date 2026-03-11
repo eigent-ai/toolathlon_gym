@@ -1,0 +1,7 @@
+Our research team wants to hold a paper reading group focused on transformer architecture papers. Please search our academic database for foundational papers about transformer model architectures and attention mechanisms, and select the most relevant ones. Skip any papers that are mainly about instruction-following or reinforcement learning from human feedback rather than core transformer architecture.
+
+Create a Google Sheet called Transformer Reading Group Schedule with columns for Week, Date, Paper_Title, Authors, and Discussion_Lead. Use TBD for all Discussion_Lead entries. The sheet should have one row per paper, with each paper assigned to a different week.
+
+Schedule three reading group sessions in the calendar. Create an event on March 16 2026 from 3pm to 4:30pm titled Reading Group: Transformers Week 1. Create a second event on March 23 2026 from 3pm to 4:30pm titled Reading Group: Transformers Week 2. Create a third event on March 30 2026 from 3pm to 4:30pm titled Reading Group: Transformers Week 3.
+
+Create a Word document called Transformer_Reading_List.docx in my workspace. The document should begin with a heading called Transformer Architecture Reading Group, followed by an introduction paragraph explaining the criteria used to select these papers. Then include a numbered reading list section where each entry provides the paper title, the authors, the publication year, and a one-sentence summary of the paper's main contribution. Assign one paper per reading group session so the document clearly maps each paper to its corresponding week.

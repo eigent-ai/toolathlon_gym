@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Analysis Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #1a2530; border-bottom: 3px solid #2980b9; padding-bottom: 12px; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+        table { border-collapse: collapse; width: 70%; margin: 15px 0; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px 15px; text-align: left; }
+        th { background-color: #2980b9; color: white; }
+        tr:nth-child(even) { background-color: #ecf0f1; }
+        .benchmark-box { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 15px 0; width: 65%; }
+        .benchmark-item { margin: 12px 0; font-size: 16px; }
+        .threshold { font-weight: bold; color: #c0392b; }
+        .info { color: #7f8c8d; font-size: 14px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Credit Analysis Portal</h1>
+    <p>Corporate credit ratings and financial health benchmarks. Last updated: 2026-03-05.</p>
+
+    <h2>Credit Ratings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Credit Rating</th>
+                <th>Rating Outlook</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AMZN</td>
+                <td>Amazon.com, Inc.</td>
+                <td>AA</td>
+                <td>Stable</td>
+            </tr>
+            <tr>
+                <td>GOOGL</td>
+                <td>Alphabet Inc.</td>
+                <td>AA+</td>
+                <td>Stable</td>
+            </tr>
+            <tr>
+                <td>JNJ</td>
+                <td>Johnson &amp; Johnson</td>
+                <td>AAA</td>
+                <td>Positive</td>
+            </tr>
+            <tr>
+                <td>JPM</td>
+                <td>JP Morgan Chase &amp; Co.</td>
+                <td>A+</td>
+                <td>Stable</td>
+            </tr>
+            <tr>
+                <td>XOM</td>
+                <td>Exxon Mobil Corporation</td>
+                <td>AA-</td>
+                <td>Negative</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Financial Health Benchmarks</h2>
+    <div class="benchmark-box">
+        <p class="info">Profit Margin is defined as Net Income divided by Total Revenue, expressed as a percentage.</p>
+        <div class="benchmark-item">Profit Margin greater than <span class="threshold">15%</span>: <strong>Strong</strong></div>
+        <div class="benchmark-item">Profit Margin between <span class="threshold">5%</span> and <span class="threshold">15%</span> (inclusive of 5%): <strong>Adequate</strong></div>
+        <div class="benchmark-item">Profit Margin less than <span class="threshold">5%</span>: <strong>Weak</strong></div>
+    </div>
+    <p class="info">Use these benchmarks to classify each company's margin health in your financial health assessment.</p>
+</body>
+</html>

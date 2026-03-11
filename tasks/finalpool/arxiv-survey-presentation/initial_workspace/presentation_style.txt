@@ -1,0 +1,10 @@
+Conference Presentation Guidelines
+
+Format: Standard 16:9 slides, 12-15 slides recommended for a 20-minute talk.
+Font: Use clear, readable fonts. Title should be prominent.
+Content: Each slide should have a clear takeaway message.
+Figures: Include comparison tables where appropriate.
+Structure: Title -> Motivation -> Methodology -> Key Papers -> Summary -> Future Work
+Colors: Use consistent color scheme throughout.
+Text: Avoid long paragraphs on slides. Use bullet points sparingly.
+Timing: Spend about 2 minutes per slide on average.

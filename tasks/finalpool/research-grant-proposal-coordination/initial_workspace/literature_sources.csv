@@ -1,0 +1,7 @@
+ArxivID,Title,Authors,Year,Topic,Keywords
+2401.12345,Transformer Optimization,"Lee, S.",2024,ML,"optimization, transformers, efficiency"
+2312.54321,Few-Shot Learning,"Wang, T.",2023,ML,"few-shot, meta-learning, generalization"
+2311.98765,Vision Transformers,"Kumar, R.",2023,CV,"vision, transformers, attention"
+2310.11111,Prompt Engineering,"Zhang, Q.",2023,NLP,"prompting, language models, in-context"
+2309.22222,Multimodal Learning,"Taylor, J.",2023,ML,"multimodal, vision-language, fusion"
+2308.33333,Knowledge Distillation,"Anderson, L.",2023,ML,"distillation, compression, teacher-student"

@@ -1,0 +1,36 @@
+{
+  "excel_file": "Survey_Analysis.xlsx",
+  "pptx_file": "Team_Report.pptx",
+  "survey_responses": {
+    "count": 8,
+    "respondents": ["Alice", "Bob", "Carol", "David", "Eva", "Frank", "Grace", "Henry"],
+    "dimensions": ["Leadership", "Workload", "Communication", "Growth"],
+    "ratings": {
+      "Alice":  {"Leadership": 4, "Workload": 3, "Communication": 5, "Growth": 4},
+      "Bob":    {"Leadership": 3, "Workload": 4, "Communication": 3, "Growth": 3},
+      "Carol":  {"Leadership": 5, "Workload": 2, "Communication": 4, "Growth": 5},
+      "David":  {"Leadership": 3, "Workload": 3, "Communication": 3, "Growth": 2},
+      "Eva":    {"Leadership": 4, "Workload": 4, "Communication": 4, "Growth": 4},
+      "Frank":  {"Leadership": 2, "Workload": 5, "Communication": 3, "Growth": 3},
+      "Grace":  {"Leadership": 4, "Workload": 3, "Communication": 4, "Growth": 4},
+      "Henry":  {"Leadership": 3, "Workload": 4, "Communication": 3, "Growth": 3}
+    },
+    "averages": {
+      "Leadership": 3.5,
+      "Workload": 3.5,
+      "Communication": 3.625,
+      "Growth": 3.5
+    }
+  },
+  "notion_projects": [
+    {"name": "Project Alpha", "status": "Active", "lead": "Alice Chen", "deadline": "March 30, 2026"},
+    {"name": "Project Beta", "status": "Completed", "lead": "Bob Wang", "deadline": "February 28, 2026"},
+    {"name": "Project Gamma", "status": "Active", "lead": "Carol Li", "deadline": "April 15, 2026"},
+    {"name": "Project Delta", "status": "On Hold", "lead": "David Zhang", "deadline": "May 1, 2026"},
+    {"name": "Project Epsilon", "status": "Planning", "lead": "Eva Liu", "deadline": "June 1, 2026"}
+  ],
+  "email": {
+    "to": "management@company.com",
+    "subject": "Engineering Team Quarterly Report"
+  }
+}

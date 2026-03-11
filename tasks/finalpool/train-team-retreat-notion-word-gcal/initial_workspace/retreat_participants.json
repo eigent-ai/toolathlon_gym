@@ -1,0 +1,15 @@
+{
+  "event": "Company Team Retreat",
+  "destination": "Qufu, Shandong Province",
+  "outbound_date": "2026-03-12",
+  "return_date": "2026-03-15",
+  "participants": [
+    {"name": "Alice Chen", "departure_city": "Beijing"},
+    {"name": "Bob Liu", "departure_city": "Beijing"},
+    {"name": "Carol Wang", "departure_city": "Beijing"},
+    {"name": "David Zhang", "departure_city": "Shanghai"},
+    {"name": "Emma Li", "departure_city": "Shanghai"}
+  ],
+  "group_email": "hr@company.com",
+  "instructions": "Look up available high-speed rail options for Beijing to Qufu and Shanghai to Qufu on the outbound date, and reverse routes on the return date."
+}

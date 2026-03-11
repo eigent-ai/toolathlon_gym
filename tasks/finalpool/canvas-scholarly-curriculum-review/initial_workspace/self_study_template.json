@@ -1,0 +1,41 @@
+{
+  "report_title": "HEQC Accreditation Self-Study Report",
+  "institution": "University",
+  "review_period": "2013-2014 Academic Years",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Institutional Overview",
+      "description": "Brief overview of the institution, mission, and academic programs"
+    },
+    {
+      "id": "2",
+      "title": "Curriculum Compliance",
+      "description": "Course-by-course analysis against accreditation standards",
+      "required_data": ["course_list", "assessment_types", "faculty_counts", "enrollment_data"]
+    },
+    {
+      "id": "3",
+      "title": "Faculty Adequacy",
+      "description": "Analysis of student-to-faculty ratios and instructor qualifications",
+      "required_data": ["faculty_per_course", "student_faculty_ratio"]
+    },
+    {
+      "id": "4",
+      "title": "Scholarly Foundation",
+      "description": "Literature review supporting pedagogical approaches",
+      "required_data": ["relevant_papers", "topic_coverage"]
+    },
+    {
+      "id": "5",
+      "title": "Recommendations",
+      "description": "Areas for improvement and action plan"
+    }
+  ],
+  "formatting": {
+    "max_pages": 50,
+    "font": "Times New Roman",
+    "font_size": 12,
+    "margins": "1 inch"
+  }
+}

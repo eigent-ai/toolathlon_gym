@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "Prompt Engineering Literature Review",
+      "type": "project",
+      "observations": [
+        "Systematic review of 5 papers on prompt engineering for LLM reasoning",
+        "Papers cover chain-of-thought prompting, self-consistency, auto-CoT, zero-shot-CoT, and tree of thoughts",
+        "All papers focus on improving reasoning capabilities of large language models",
+        "Key themes: step-by-step reasoning, sampling diversity, automation of demonstrations, zero-shot approaches, tree-based exploration"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "type": "technique",
+      "observations": [
+        "Paper ID: 2201.11903 by Jason Wei et al.",
+        "Published at NeurIPS 2022 with 6500 citations",
+        "Few-shot prompting with intermediate reasoning steps",
+        "Works on arithmetic, commonsense, and symbolic reasoning tasks"
+      ]
+    },
+    {
+      "name": "Self-Consistency",
+      "type": "technique",
+      "observations": [
+        "Paper ID: 2203.11171 by Xuezhi Wang et al.",
+        "Published at ICLR 2023 with 3200 citations",
+        "Samples multiple reasoning paths and uses majority voting",
+        "Improves CoT accuracy without additional training"
+      ]
+    },
+    {
+      "name": "Auto-CoT",
+      "type": "technique",
+      "observations": [
+        "Paper ID: 2210.03493 by Zhuosheng Zhang et al.",
+        "Published at ICLR 2023 with 1800 citations",
+        "Automatically constructs CoT demonstrations using clustering and zero-shot CoT",
+        "Eliminates need for manual demonstration design"
+      ]
+    },
+    {
+      "name": "Zero-shot-CoT",
+      "type": "technique",
+      "observations": [
+        "Paper ID: 2205.11916 by Takeshi Kojima et al.",
+        "Published at NeurIPS 2022 with 4100 citations",
+        "Uses 'Let's think step by step' prompt without few-shot examples",
+        "Two-stage prompting: elicit reasoning then extract answer"
+      ]
+    },
+    {
+      "name": "Tree of Thoughts",
+      "type": "technique",
+      "observations": [
+        "Paper ID: 2305.10601 by Shunyu Yao et al.",
+        "Published at NeurIPS 2023 with 2400 citations",
+        "Generalizes CoT with tree-based exploration using BFS/DFS",
+        "Enables backtracking and deliberate planning for complex tasks"
+      ]
+    }
+  ],
+  "relations": [
+    {"from": "Self-Consistency", "to": "Chain-of-Thought Prompting", "type": "extends"},
+    {"from": "Auto-CoT", "to": "Chain-of-Thought Prompting", "type": "automates"},
+    {"from": "Zero-shot-CoT", "to": "Chain-of-Thought Prompting", "type": "simplifies"},
+    {"from": "Tree of Thoughts", "to": "Chain-of-Thought Prompting", "type": "generalizes"}
+  ]
+}

@@ -1,0 +1,3530 @@
+[
+  {
+    "timestamp": "2026-02-27T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 115,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 61,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 24,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 80,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 43,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 53,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 67,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 105,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 53,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 15,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 100,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 42,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 101,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 22,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 152,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 85,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 119,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 132,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 65,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 19,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 100,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 68,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 136,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 35,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 162,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 98,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 17,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 141,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 40,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 120,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 110,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 49,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 137,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 103,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 22,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 62,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 35,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 103,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 67,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 15,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 104,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 42,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 34,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 88,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 138,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-27T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 135,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 113,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 119,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 53,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 63,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 107,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 88,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 98,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 107,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 142,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 64,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 101,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 117,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 12,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 125,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 81,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 27,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 61,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 125,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 172,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 80,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 162,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 80,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 61,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 104,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 147,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 76,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 24,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 80,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 95,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 41,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 68,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 36,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 17,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 84,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 110,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 153,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 106,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 14,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 143,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 164,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 97,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 47,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 117,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 117,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-02-28T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 113,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 67,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "down",
+    "response_time_ms": 7591,
+    "error_message": "Connection timeout - upstream server not responding"
+  },
+  {
+    "timestamp": "2026-03-01T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 88,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 10,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "down",
+    "response_time_ms": 9315,
+    "error_message": "Connection timeout - upstream server not responding"
+  },
+  {
+    "timestamp": "2026-03-01T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 90,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 121,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 111,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 42,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 95,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 49,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 86,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 99,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 180,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 127,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 92,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 11,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 76,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 29,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 106,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 25,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 65,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 40,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 169,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 77,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 166,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 100,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 97,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 153,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 96,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 69,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 35,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 140,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 86,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 43,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 160,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 25,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 102,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 50,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 105,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 103,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 105,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-01T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 24,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 55,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 14,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 53,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 72,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 14,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 176,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 27,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 169,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 103,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 166,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 61,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 166,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 82,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 22,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 69,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "degraded",
+    "response_time_ms": 998,
+    "error_message": "High latency detected on authentication requests"
+  },
+  {
+    "timestamp": "2026-03-02T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 155,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "degraded",
+    "response_time_ms": 1525,
+    "error_message": "High latency detected on authentication requests"
+  },
+  {
+    "timestamp": "2026-03-02T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 150,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 89,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 70,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 35,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 131,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 43,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 25,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 54,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 159,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 47,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 91,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 65,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 108,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 70,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 36,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 41,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 105,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 36,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 169,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 91,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 23,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 147,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 142,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-02T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 34,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 88,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 28,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 153,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 119,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 169,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 49,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 22,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 120,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 13,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 70,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 13,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 104,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 40,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 173,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 97,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 95,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 15,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 92,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 62,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 25,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 148,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 108,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 104,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 55,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 109,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 15,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 152,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 114,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 47,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 178,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 70,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 97,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 115,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 55,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 125,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 146,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 46,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 121,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 88,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 63,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 70,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 99,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 14,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 107,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 77,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-03T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 28,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "down",
+    "response_time_ms": 7584,
+    "error_message": "502 Bad Gateway - backend service unavailable"
+  },
+  {
+    "timestamp": "2026-03-04T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 86,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "down",
+    "response_time_ms": 9956,
+    "error_message": "502 Bad Gateway - backend service unavailable"
+  },
+  {
+    "timestamp": "2026-03-04T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 108,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 180,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 121,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 114,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 79,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 63,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 17,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 72,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 100,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 19,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 114,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 66,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 98,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 23,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 41,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 109,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 36,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 15,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 153,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 65,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 12,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 72,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 111,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 26,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 86,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 86,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 154,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 101,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 10,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 73,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 39,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 54,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 83,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 99,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 12,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 139,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 104,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 45,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 82,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 85,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 18,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 55,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 69,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 55,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 75,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 23,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 108,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 115,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 135,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 101,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 36,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 84,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-04T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T00:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 90,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T00:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 82,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T00:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 11,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T01:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 90,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T01:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 72,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T01:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 60,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T02:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 150,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T02:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 115,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T02:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 57,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T03:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 108,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T03:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 64,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T03:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 20,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T04:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 72,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T04:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 78,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T04:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 12,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T05:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 165,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T05:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T05:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 22,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T06:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 162,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T06:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T06:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 29,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T07:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 103,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T07:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 58,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T07:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 11,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T08:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T08:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 81,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T08:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T09:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T09:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 38,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T09:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 59,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T10:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 116,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T10:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T10:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 51,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T11:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 175,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T11:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 81,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T11:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 53,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T12:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 129,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T12:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 33,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T12:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 17,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T13:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 111,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T13:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 52,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T13:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 47,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T14:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 112,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T14:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 34,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T14:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 16,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T15:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 156,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T15:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 74,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T15:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 56,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T16:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 125,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T16:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 85,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T16:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 48,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T17:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 175,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T17:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 44,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T17:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 34,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T18:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 93,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T18:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 62,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T18:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 12,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T19:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 156,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T19:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 30,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T19:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 43,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T20:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 95,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T20:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 76,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T20:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 37,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T21:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 62,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T21:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 115,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T21:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 31,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T22:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 125,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T22:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 114,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T22:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 17,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T23:00:00Z",
+    "service_name": "API Gateway",
+    "status": "up",
+    "response_time_ms": 121,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T23:00:00Z",
+    "service_name": "Auth Service",
+    "status": "up",
+    "response_time_ms": 94,
+    "error_message": null
+  },
+  {
+    "timestamp": "2026-03-05T23:00:00Z",
+    "service_name": "Database",
+    "status": "up",
+    "response_time_ms": 29,
+    "error_message": null
+  }
+]

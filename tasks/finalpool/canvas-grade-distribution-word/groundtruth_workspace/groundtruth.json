@@ -1,0 +1,90 @@
+{
+  "course_id": 16,
+  "course_name": "Foundations of Finance (Fall 2013)",
+  "course_code": "FFF-2013J",
+  "total_submissions": 16228,
+  "grade_distribution": {
+    "A": {
+      "count": 9477,
+      "percentage": 58.4
+    },
+    "B": {
+      "count": 2802,
+      "percentage": 17.27
+    },
+    "C": {
+      "count": 2196,
+      "percentage": 13.53
+    },
+    "D": {
+      "count": 1113,
+      "percentage": 6.86
+    },
+    "F": {
+      "count": 640,
+      "percentage": 3.94
+    }
+  },
+  "assignments": [
+    {
+      "name": "CMA 34878",
+      "avg_score": 83.32,
+      "submission_count": 1470
+    },
+    {
+      "name": "CMA 34879",
+      "avg_score": 87.97,
+      "submission_count": 1352
+    },
+    {
+      "name": "CMA 34880",
+      "avg_score": 76.5,
+      "submission_count": 1252
+    },
+    {
+      "name": "CMA 34881",
+      "avg_score": 78.3,
+      "submission_count": 1224
+    },
+    {
+      "name": "CMA 34882",
+      "avg_score": 78.65,
+      "submission_count": 1193
+    },
+    {
+      "name": "CMA 34883",
+      "avg_score": 76.8,
+      "submission_count": 1196
+    },
+    {
+      "name": "CMA 34884",
+      "avg_score": 76.16,
+      "submission_count": 1160
+    },
+    {
+      "name": "TMA 34873",
+      "avg_score": 78.16,
+      "submission_count": 1856
+    },
+    {
+      "name": "TMA 34874",
+      "avg_score": 72.45,
+      "submission_count": 1658
+    },
+    {
+      "name": "TMA 34875",
+      "avg_score": 70.49,
+      "submission_count": 1401
+    },
+    {
+      "name": "TMA 34876",
+      "avg_score": 71.05,
+      "submission_count": 1311
+    },
+    {
+      "name": "TMA 34877",
+      "avg_score": 75.89,
+      "submission_count": 1155
+    }
+  ]
+}

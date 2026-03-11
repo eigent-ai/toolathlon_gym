@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arxiv-mcp-server"
+version = "0.3.2"
+description = "A flexible arXiv search and analysis service with MCP protocol support"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Joseph Blazick", email = "blazickjp@amazon.com" }
+]
+dependencies = [
+    "arxiv>=2.1.0",
+    "httpx>=0.24.0",
+    "python-dateutil>=2.8.2",
+    "pydantic>=2.8.0",
+    "mcp>=1.2.0",
+    "pymupdf4llm>=0.0.17",
+    "aiohttp>=3.9.1",
+    "python-dotenv>=1.0.0",
+    "pydantic-settings>=2.1.0",
+    "aiofiles>=23.2.1",
+    "uvicorn>=0.30.0",
+    "sse-starlette>=1.8.2",
+    "anyio>=4.2.0",
+    "black>=25.1.0",
+    "pymupdf-layout>=1.26.6",
+    "psycopg2-binary>=2.9.11",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.5",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.10.0",
+    "aioresponses>=0.7.6"
+]
+dev = [
+    "black>=23.3.0"
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_fixture_loop_scope = "function"  # Added this line
+testpaths = ["tests"]
+addopts = "-v --cov=arxiv_mcp_server"
+
+[project.scripts]
+arxiv-mcp-server = "arxiv_mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arxiv_mcp_server"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

@@ -1,0 +1,15 @@
+I am a health coach creating a wellness program for a client. I need to evaluate recipes based on wellness criteria, create tracking tools, and produce program documentation.
+
+Start by visiting the wellness portal at http://localhost:30235 to learn about daily wellness targets. The main page shows targets for sleep, water intake, exercise, vegetable servings, and maximum sugar intake. Then visit http://localhost:30235/nutrition.html for detailed food group recommendations per meal including recommended servings for grains, protein, vegetables, and fruits.
+
+Next, browse the recipe database and select at least eight recipes from at least three different categories. For each recipe, analyze its ingredients to estimate how many vegetable servings it provides and how much sugar it might contain. Score each recipe on a wellness scale from 1 to 10 where higher scores mean more vegetable servings, lower sugar content, and better alignment with the food group recommendations from the wellness portal.
+
+Review the wellness goals file and tracking template in the workspace for the client's specific goals and the desired tracking format.
+
+Create three outputs in the workspace.
+
+First, create an Excel workbook called Wellness_Tracker.xlsx with three sheets. The first sheet should be named "Recipe Wellness Score" with columns Recipe_Name, Category, Veggie_Servings, Est_Sugar_g, Wellness_Score, and Recommended. Recipe names should be in English. Veggie_Servings should estimate the number of vegetable servings in the recipe. Est_Sugar_g should estimate the sugar content in grams. Wellness_Score should be a number from 1 to 10. Recommended should be Yes for recipes with a Wellness_Score of 7 or above and No otherwise. Include at least eight recipes. The second sheet should be named "Weekly Plan" with columns Day, Meal, Recipe_Name, Wellness_Score. Plan five days of meals with two meals per day, selecting from the recommended recipes. The third sheet should be named "Progress Metrics" with columns Metric and Target, including Daily_Veggie_Target (5 servings), Daily_Sugar_Limit (25g), Weekly_Recommended_Meals (target count of recommended meals), and Average_Wellness_Score (average across all analyzed recipes rounded to one decimal).
+
+Second, create a Word document called Wellness_Guide.docx that serves as the program guide for the client. It should explain the wellness targets from the portal, describe how recipes were evaluated, list the top recommended recipes with their scores and why they are good choices, present the weekly meal plan with rationale, and include tips for maintaining the wellness goals. The document should have at least four paragraphs.
+
+Third, create a page in the knowledge base with the title "Client Wellness Dashboard". The page should contain a summary of the wellness program, the top recommended recipes with their scores, the weekly meal plan overview, and progress tracking guidance. The page should have substantive content with at least five content blocks.

@@ -1,0 +1,31 @@
+{
+  "source": "TechTalent Skills Benchmark Portal",
+  "date": "2026-03-07",
+  "skills": [
+    {
+      "name": "Python",
+      "demand_score": 95,
+      "benchmark_salary": 125000
+    },
+    {
+      "name": "JavaScript",
+      "demand_score": 90,
+      "benchmark_salary": 120000
+    },
+    {
+      "name": "SQL",
+      "demand_score": 88,
+      "benchmark_salary": 110000
+    },
+    {
+      "name": "Machine Learning",
+      "demand_score": 85,
+      "benchmark_salary": 140000
+    },
+    {
+      "name": "Cloud Computing",
+      "demand_score": 92,
+      "benchmark_salary": 135000
+    }
+  ]
+}

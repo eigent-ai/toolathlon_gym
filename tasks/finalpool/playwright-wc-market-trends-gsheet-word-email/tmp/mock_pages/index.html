@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Intelligence Dashboard - Category Trends</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #f0f4f8; }
+        .header { background: linear-gradient(135deg, #1e3a5f, #2d5f8a); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        h1 { margin: 0; }
+        nav { margin: 15px 0; }
+        nav a { display: inline-block; padding: 8px 16px; background: #2d5f8a; color: white; text-decoration: none; border-radius: 4px; margin-right: 8px; }
+        nav a:hover { background: #3a7ab5; }
+        nav a.active { background: #00a676; }
+        table { border-collapse: collapse; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 20px 0; }
+        th { background: #1e3a5f; color: white; padding: 12px 15px; text-align: left; }
+        td { padding: 10px 15px; border-bottom: 1px solid #e8e8e8; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .info-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 10px 0; }
+        .noise { background: #fff8e1; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 15px 0; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Market Intelligence Dashboard</h1>
+        <p>Consumer Electronics Industry Analysis | Q1 2026</p>
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">Category Trends</a>
+        <a href="emerging-trends.html">Emerging Trends</a>
+    </nav>
+
+    <div class="noise">
+        <strong>Data Quality Notice:</strong> Market size estimates incorporate both online and offline retail channels. Growth rates are year-over-year comparisons using Q1 2025 as the baseline. Some categories may show seasonal variance of +/- 2 percentage points.
+    </div>
+
+    <h2>Industry Category Trends Overview</h2>
+    <table id="category-trends">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Industry Growth Rate (%)</th>
+                <th>Market Size ($M)</th>
+                <th>Consumer Sentiment (1-10)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Audio</td>
+                <td>8.2</td>
+                <td>12,400</td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>Cameras</td>
+                <td>-2.1</td>
+                <td>6,800</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Electronics</td>
+                <td>12.5</td>
+                <td>45,000</td>
+                <td>9.6</td>
+            </tr>
+            <tr>
+                <td>Home Appliances</td>
+                <td>5.4</td>
+                <td>28,000</td>
+                <td>8.8</td>
+            </tr>
+            <tr>
+                <td>TV & Home Theater</td>
+                <td>3.8</td>
+                <td>18,500</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Watches</td>
+                <td>15.3</td>
+                <td>9,200</td>
+                <td>9.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="info-card">
+        <h3>Key Highlights</h3>
+        <p>Watches category shows strongest growth at 15.3% driven by smartwatch adoption. Electronics maintains the largest market at $45B with very high consumer satisfaction at 9.6. Cameras segment continues to contract as smartphone cameras improve.</p>
+    </div>
+
+    <div class="noise">
+        <strong>Regional Breakdown (FYI):</strong> North America accounts for 38% of global market, followed by Europe at 28% and Asia-Pacific at 24%. Emerging markets represent the remaining 10% but growing at 2.3x the rate of developed markets.
+    </div>
+
+    <div class="info-card">
+        <h3>Advertising Spend by Category (Not Required)</h3>
+        <table>
+            <thead><tr><th>Category</th><th>Ad Spend ($M)</th><th>ROI</th></tr></thead>
+            <tbody>
+                <tr><td>Audio</td><td>450</td><td>3.2x</td></tr>
+                <tr><td>Electronics</td><td>1,800</td><td>2.8x</td></tr>
+                <tr><td>Watches</td><td>380</td><td>4.1x</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p style="color:#888; margin-top:30px;">Source: Global Market Intelligence Corp. | Report ID: GMI-2026-Q1-CE | Confidential</p>
+</body>
+</html>

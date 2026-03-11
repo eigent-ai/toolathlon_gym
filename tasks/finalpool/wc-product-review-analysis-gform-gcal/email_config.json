@@ -1,0 +1,11 @@
+{
+  "email": "store@company.example.com",
+  "password": "password123",
+  "name": "Store Admin",
+  "imap_server": "localhost",
+  "imap_port": 1143,
+  "smtp_server": "localhost",
+  "smtp_port": 1587,
+  "use_ssl": false,
+  "use_starttls": false
+}

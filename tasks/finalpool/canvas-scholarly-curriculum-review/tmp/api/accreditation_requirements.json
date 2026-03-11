@@ -1,0 +1,17 @@
+{
+  "min_courses": 15,
+  "min_faculty_per_course": 1,
+  "assessment_types_required": ["quiz", "assignment", "discussion"],
+  "research_integration_required": true,
+  "min_scholarly_references": 5,
+  "student_faculty_ratio_max": 600,
+  "review_body": "Higher Education Quality Council",
+  "standards_version": "2025.1",
+  "notes": [
+    "Each course must have at least one form of assessment (quiz or assignment)",
+    "Student to faculty ratio must not exceed 600:1 for any individual course",
+    "Faculty includes both teachers and teaching assistants",
+    "At least 15 courses must be offered across the institution",
+    "Research integration is evidenced by scholarly literature supporting pedagogical approaches"
+  ]
+}

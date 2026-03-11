@@ -1,0 +1,72 @@
+{
+  "dept_data": [
+    {
+      "department": "Engineering",
+      "budget": 633555641.27,
+      "actual_spend": 418604451.0,
+      "variance": 214951190.27,
+      "variance_pct": 33.93,
+      "employee_count": 7096,
+      "avg_salary": 58991.61
+    },
+    {
+      "department": "Finance",
+      "budget": 616980984.11,
+      "actual_spend": 413713333.0,
+      "variance": 203267651.11,
+      "variance_pct": 32.95,
+      "employee_count": 7148,
+      "avg_salary": 57878.19
+    },
+    {
+      "department": "HR",
+      "budget": 697911374.65,
+      "actual_spend": 416980025.0,
+      "variance": 280931349.65,
+      "variance_pct": 40.25,
+      "employee_count": 7077,
+      "avg_salary": 58920.45
+    },
+    {
+      "department": "Operations",
+      "budget": 572668189.63,
+      "actual_spend": 411598247.0,
+      "variance": 161069942.63,
+      "variance_pct": 28.13,
+      "employee_count": 7120,
+      "avg_salary": 57808.74
+    },
+    {
+      "department": "R&D",
+      "budget": 715914847.42,
+      "actual_spend": 410147671.0,
+      "variance": 305767176.42,
+      "variance_pct": 42.71,
+      "employee_count": 7083,
+      "avg_salary": 57905.93
+    },
+    {
+      "department": "Sales",
+      "budget": 642575220.92,
+      "actual_spend": 425710161.0,
+      "variance": 216865059.92,
+      "variance_pct": 33.75,
+      "employee_count": 7232,
+      "avg_salary": 58864.79
+    },
+    {
+      "department": "Support",
+      "budget": 684741486.31,
+      "actual_spend": 423053067.0,
+      "variance": 261688419.31,
+      "variance_pct": 38.22,
+      "employee_count": 7244,
+      "avg_salary": 58400.48
+    }
+  ],
+  "total_budget": 4564347744.31,
+  "total_spend": 2919806955.0,
+  "overall_variance": 1644540789.31,
+  "depts_over": 0,
+  "depts_under": 7
+}

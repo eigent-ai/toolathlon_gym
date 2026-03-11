@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "Codex",
+      "entityType": "paper",
+      "observations": [
+        "Title: Evaluating Large Language Models Trained on Code",
+        "ArXiv ID: 2107.03374",
+        "Authors: Mark Chen, Jerry Tworek, Heewoo Jun",
+        "Citation count: 3500",
+        "Introduces Codex, a GPT model fine-tuned on code from GitHub"
+      ]
+    },
+    {
+      "name": "CodeBERT",
+      "entityType": "paper",
+      "observations": [
+        "Title: CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+        "ArXiv ID: 2002.08155",
+        "Authors: Zhangyin Feng, Daya Guo, Duyu Tang",
+        "Citation count: 2200"
+      ]
+    },
+    {
+      "name": "AlphaCode",
+      "entityType": "paper",
+      "observations": [
+        "Title: Competition-Level Code Generation with AlphaCode",
+        "ArXiv ID: 2203.07814",
+        "Authors: Yujia Li, David Choi, Junyoung Chung",
+        "Citation count: 1800"
+      ]
+    },
+    {
+      "name": "StarCoder",
+      "entityType": "paper",
+      "observations": [
+        "Title: StarCoder: May the Source Be with You!",
+        "ArXiv ID: 2305.06161",
+        "Authors: Raymond Li, Loubna Ben Allal, Yangtian Zi",
+        "Citation count: 1500"
+      ]
+    },
+    {
+      "name": "research_session",
+      "entityType": "session",
+      "observations": [
+        "Date: 2026-03-06",
+        "Topic: code generation",
+        "Number of papers found: 4",
+        "Total citation count: 9000"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "research_session",
+      "to": "Codex",
+      "relationType": "analyzed"
+    },
+    {
+      "from": "research_session",
+      "to": "CodeBERT",
+      "relationType": "analyzed"
+    },
+    {
+      "from": "research_session",
+      "to": "AlphaCode",
+      "relationType": "analyzed"
+    },
+    {
+      "from": "research_session",
+      "to": "StarCoder",
+      "relationType": "analyzed"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "task": "Beijing Train Route Analysis",
+  "query_date": "2026-03-10",
+  "departure_station": "Beijing South",
+  "purpose": "Business trip route selection",
+  "priority": "Speed (shortest journey duration)",
+  "output_files": [
+    "Route_Analysis.xlsx",
+    "Route_Analysis_Report.docx"
+  ],
+  "email_recipient": "logistics@company.com",
+  "email_subject": "Beijing Train Route Analysis 2026-03-10",
+  "instructions": "Query all available high-speed trains departing from Beijing South station on the specified date. Compare routes by duration, price, and availability."
+}

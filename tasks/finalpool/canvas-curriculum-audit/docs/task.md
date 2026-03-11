@@ -1,0 +1,9 @@
+The provost's office has requested a comprehensive curriculum compliance audit ahead of the upcoming accreditation review. The accreditation standards are published on a portal at http://localhost:30217 which lists the minimum structural requirements that each course must meet. Visit this portal to retrieve the current accreditation standards, and also follow the link to the content quality standards page for additional context on assessment difficulty targets.
+
+Once the standards are retrieved, audit each course in the learning management system by counting the number of assignments, quizzes, and modules, and checking whether a syllabus has been published. Compare these counts against the accreditation thresholds from the portal to determine compliance status.
+
+Review the accreditation checklist file in the workspace for the scoring methodology and the course catalog file for reference information about the university's course offerings.
+
+Create an Excel file called Curriculum_Audit.xlsx with two sheets. The first sheet named "Compliance Matrix" should contain columns for Course, Assignments_Count, Quizzes_Count, Modules_Count, Has_Syllabus (Yes or No), Compliant_YN (Yes if all standards are met, No otherwise), and Issues (a semicolon-separated list of specific deficiencies, or "None" if compliant). Include all 22 courses sorted alphabetically by course name. The second sheet named "Summary" should contain rows for Total_Courses, Compliant_Courses, Non_Compliant_Courses, and Compliance_Rate (as a percentage).
+
+Also create a Word document called Audit_Report.docx containing a narrative compliance report. The document should include an executive summary describing the overall compliance rate and key findings, a section detailing the most common areas of non-compliance, and recommendations for bringing non-compliant courses into alignment before the accreditation review.

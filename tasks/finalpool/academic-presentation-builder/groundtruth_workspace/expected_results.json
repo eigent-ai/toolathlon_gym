@@ -1,0 +1,23 @@
+{
+  "review_doc": {
+    "filename": "LLM_Reasoning_Review.docx",
+    "required_headings": ["Introduction", "Chain-of-Thought Methods", "Tree-Based Reasoning", "Verification and Reward Models", "Summary Table", "Conclusion"],
+    "required_table_rows": 5,
+    "required_table_columns": ["Paper Title", "Year", "Key Method", "Main Result"],
+    "required_mentions": ["chain-of-thought", "self-consistency", "tree of thoughts", "RAP", "process supervision", "GSM8K", "MATH"]
+  },
+  "slides": {
+    "filename": "LLM_Reasoning_Slides.pptx",
+    "required_slide_count": 7,
+    "required_title": "Advances in LLM Reasoning",
+    "required_mentions": ["chain-of-thought", "tree of thoughts", "process supervision"]
+  },
+  "word_count_file": "word_count.txt",
+  "papers_used": [
+    {"arxiv_id": "2201.11903", "title_keyword": "Chain-of-Thought"},
+    {"arxiv_id": "2203.11171", "title_keyword": "Self-Consistency"},
+    {"arxiv_id": "2305.10601", "title_keyword": "Tree of Thoughts"},
+    {"arxiv_id": "2305.14992", "title_keyword": "Planning"},
+    {"arxiv_id": "2305.20050", "title_keyword": "Verify Step by Step"}
+  ]
+}

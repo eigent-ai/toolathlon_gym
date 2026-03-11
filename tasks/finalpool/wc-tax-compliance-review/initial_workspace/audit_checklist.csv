@@ -1,0 +1,16 @@
+Item,Description,Required
+1,Retrieve all tax rates from e-commerce platform,Yes
+2,Visit state tax authority portal for official rates,Yes
+3,Compare each state rate against official rate,Yes
+4,Calculate absolute differences for each state,Yes
+5,Apply compliance threshold of 0.25 percentage points,Yes
+6,Flag non-compliant rates,Yes
+7,Document discrepancies with details,Yes
+8,Prepare Excel workbook with Rate Comparison sheet,Yes
+9,Prepare Excel workbook with Discrepancies sheet,Yes
+10,Prepare Excel workbook with Summary sheet,Yes
+11,Create Word compliance report with findings,Yes
+12,Include recommendations for corrective actions,Yes
+13,Review district-level rates for awareness,Optional
+14,Check for newly added states,Optional
+15,Verify tax class assignments,Optional

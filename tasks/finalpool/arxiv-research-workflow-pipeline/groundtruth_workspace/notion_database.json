@@ -1,0 +1,187 @@
+{
+  "parent_page": {
+    "id": "dml-hub-001",
+    "type": "page",
+    "title": "Distributed Machine Learning Research Hub",
+    "description": "Central hub for organizing research on distributed machine learning systems",
+    "content": "This workspace organizes a comprehensive review of distributed machine learning literature, focusing on federated learning, communication efficiency, privacy preservation, and system design. Contains curated papers, methodology comparisons, and research synthesis.",
+    "sections": [
+      {
+        "type": "heading",
+        "level": 1,
+        "content": "Distributed Machine Learning Research Hub"
+      },
+      {
+        "type": "paragraph",
+        "content": "Welcome to the Distributed Machine Learning Research Hub. This workspace contains a curated collection of influential papers and research on federated learning, distributed training, and related topics. Papers are organized by theme, methodology, and reading status to facilitate systematic review."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "content": "Research Themes"
+      },
+      {
+        "type": "paragraph",
+        "content": "Papers are categorized into major research themes including: Federated Learning Foundations, Communication Efficiency, Privacy and Security, System Design, Optimization Methods, and Emerging Applications."
+      }
+    ]
+  },
+  "database": {
+    "id": "dml-papers-db-001",
+    "parent_id": "dml-hub-001",
+    "title": "Paper Library",
+    "description": "Organized database of distributed ML research papers",
+    "schema": {
+      "title": {
+        "id": "title",
+        "name": "Title",
+        "type": "title",
+        "description": "Paper title"
+      },
+      "authors": {
+        "id": "authors",
+        "name": "Authors",
+        "type": "rich_text",
+        "description": "Paper authors"
+      },
+      "abstract": {
+        "id": "abstract",
+        "name": "Abstract",
+        "type": "rich_text",
+        "description": "Paper abstract or summary"
+      },
+      "year": {
+        "id": "year",
+        "name": "Year",
+        "type": "number",
+        "description": "Publication year"
+      },
+      "citation_count": {
+        "id": "citations",
+        "name": "Citation Count",
+        "type": "number",
+        "description": "Number of citations"
+      },
+      "category": {
+        "id": "category",
+        "name": "Category",
+        "type": "select",
+        "options": [
+          {"name": "Federated Learning", "color": "blue"},
+          {"name": "Communication Efficiency", "color": "green"},
+          {"name": "Privacy and Security", "color": "red"},
+          {"name": "System Design", "color": "purple"},
+          {"name": "Optimization", "color": "yellow"},
+          {"name": "Survey", "color": "gray"},
+          {"name": "Emerging Applications", "color": "pink"}
+        ]
+      },
+      "methodology": {
+        "id": "methodology",
+        "name": "Methodology",
+        "type": "select",
+        "options": [
+          {"name": "Algorithm Design", "color": "blue"},
+          {"name": "Theoretical Analysis", "color": "green"},
+          {"name": "System Implementation", "color": "purple"},
+          {"name": "Empirical Evaluation", "color": "orange"},
+          {"name": "Survey/Review", "color": "gray"}
+        ]
+      },
+      "status": {
+        "id": "status",
+        "name": "Reading Status",
+        "type": "select",
+        "options": [
+          {"name": "To Read", "color": "gray"},
+          {"name": "Reading", "color": "orange"},
+          {"name": "Read", "color": "green"},
+          {"name": "Reviewed", "color": "blue"}
+        ]
+      },
+      "priority": {
+        "id": "priority",
+        "name": "Priority",
+        "type": "select",
+        "options": [
+          {"name": "High", "color": "red"},
+          {"name": "Medium", "color": "yellow"},
+          {"name": "Low", "color": "gray"}
+        ]
+      },
+      "key_contributions": {
+        "id": "contributions",
+        "name": "Key Contributions",
+        "type": "rich_text",
+        "description": "Main contributions and innovations"
+      }
+    }
+  },
+  "sample_entries": [
+    {
+      "id": "dml-paper-001",
+      "title": "Federated Machine Learning: Concept and Applications",
+      "authors": "Konecny, Jakub; McMahan, H. Brendan; Yu, Felix X.",
+      "year": 2020,
+      "citation_count": 1250,
+      "category": "Federated Learning",
+      "methodology": "Survey/Review",
+      "status": "Read",
+      "priority": "High",
+      "abstract": "This foundational paper introduces the concept of federated machine learning, where training is distributed across decentralized clients without centralizing data. It discusses the federated learning paradigm, communication challenges, privacy considerations, and practical applications.",
+      "key_contributions": "Defines federated learning framework; Identifies key system and algorithmic challenges; Presents application domains in mobile and edge computing"
+    },
+    {
+      "id": "dml-paper-002",
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "authors": "McMahan, H. Brendan; Moore, Eider; Ramage, Daniel; Hampson, Seth; Arcas, Blaise Aguera y",
+      "year": 2021,
+      "citation_count": 3200,
+      "category": "Communication Efficiency",
+      "methodology": "Algorithm Design",
+      "status": "Read",
+      "priority": "High",
+      "abstract": "Proposes FedAvg algorithm that averages client model updates for efficient distributed learning. Provides convergence analysis showing linear convergence for strongly convex objectives with communication rounds.",
+      "key_contributions": "FedAvg algorithm; Convergence analysis; Demonstrates practical communication efficiency gains"
+    },
+    {
+      "id": "dml-paper-003",
+      "title": "Towards Federated Learning at Scale: System Design",
+      "authors": "Bonawitz, Keith; Eichner, Hubert; Grieskamp, Wolfgang; Huba, Dustin",
+      "year": 2021,
+      "citation_count": 2150,
+      "category": "System Design",
+      "methodology": "System Implementation",
+      "status": "Read",
+      "priority": "High",
+      "abstract": "Describes practical system architecture for federated learning at production scale. Addresses handling heterogeneous devices, unreliable networks, fault tolerance, privacy, and security in real deployments.",
+      "key_contributions": "Production system design; Practical deployment considerations; Real-world federated learning infrastructure"
+    },
+    {
+      "id": "dml-paper-004",
+      "title": "Adaptive Federated Optimization",
+      "authors": "Reddi, Sashank J.; Charles, Zachary; Zaheer, Manzil; Garrett, Zachary; Gordon, Geoff J.; Poczos, Barnabas",
+      "year": 2020,
+      "citation_count": 890,
+      "category": "Optimization",
+      "methodology": "Algorithm Design",
+      "status": "Reading",
+      "priority": "Medium",
+      "abstract": "Extends federated learning with adaptive optimization methods including FedAdam and FedYogi. Develops algorithms tailored to federated settings that improve convergence over FedAvg.",
+      "key_contributions": "Adaptive optimization algorithms; Improved convergence analysis; Better performance than standard FedAvg"
+    },
+    {
+      "id": "dml-paper-005",
+      "title": "Communication-Efficient Distributed Deep Learning: A Comprehensive Survey",
+      "authors": "Vogels, Thijs; Karimireddy, Sai Praneeth; Jaggi, Martin",
+      "year": 2020,
+      "citation_count": 950,
+      "category": "Survey",
+      "methodology": "Survey/Review",
+      "status": "To Read",
+      "priority": "High",
+      "abstract": "Comprehensive survey of communication-efficient methods for distributed deep learning. Covers gradient compression, quantization, sparsification, and other techniques to reduce communication overhead.",
+      "key_contributions": "Taxonomy of communication-efficient methods; Theoretical and empirical analysis; Practical implementation guidelines"
+    }
+  ]
+}

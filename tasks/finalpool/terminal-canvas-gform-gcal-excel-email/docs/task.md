@@ -1,0 +1,15 @@
+You are the academic assessment coordinator responsible for monitoring quiz performance across multiple courses. You have been asked to analyze two courses that share a similar student population: Creative Computing and Culture from Fall 2014 (course ID 7) and Data-Driven Design from Spring 2013 (course ID 11). Both courses have quizzes and the department needs a comprehensive performance review.
+
+Start by retrieving all quizzes and their submission scores for course 7 and course 11. For each quiz in each course, calculate the average score and the pass rate, where passing means scoring 70 or above.
+
+Write and run a Python script that processes the quiz data. The script should identify which quizzes have an average score below 75 and flag them for intervention. It should also compute the overall average across all quizzes from both courses combined and determine the performance gap between the two courses (the difference in their course-level averages).
+
+Create a feedback survey titled "Academic Performance Self-Assessment" to gather student input. The survey needs exactly 5 questions. The first question should ask which course topics were most challenging (free text). The second should ask how many hours per week the student spends studying, with choices "Less than 3", "3 to 5", "5 to 8", and "More than 8". The third question should ask about preferred learning format with choices "Lectures", "Hands-on labs", "Group projects", and "Self-paced online". The fourth question should ask the student to rate overall course difficulty on a scale from 1 to 5. The fifth question should ask for suggestions for improvement (free text).
+
+For each quiz that has an average score below 75, schedule a one-hour review session in the calendar. Title each event "Quiz Review: [Quiz Title]" where the quiz title is the actual title of the quiz from the system. Schedule the first session on March 16, 2026 at 2:00 PM and each subsequent session one day later at the same time.
+
+Create an Excel file called Quiz_Performance_Report.xlsx in the workspace with three sheets. The first sheet should be named "Quiz_Performance" with columns Course_ID, Course_Name, Quiz_ID, Quiz_Title, Avg_Score, Pass_Rate, and Needs_Review (Yes if average below 75, No otherwise). Include all quizzes from both courses. The second sheet should be named "Feedback_Summary" listing the 5 survey questions with columns Question_Number, Question_Text, and Question_Type. The third sheet should be named "Remediation_Schedule" listing the scheduled review sessions with columns Quiz_Title, Session_Date, Start_Time, and Duration_Hours.
+
+Finally, send an email from coordinator@assessment.example.com to faculty@assessment.example.com with the subject "Quiz Performance Analysis - Cross-Course Review". The email body should include the total number of quizzes reviewed across both courses, the number flagged for remediation, the overall program average score, and mention that the feedback survey has been created and review sessions have been scheduled.
+
+Your workspace contains Program_Guidelines.pdf and analysis_config.json for reference.

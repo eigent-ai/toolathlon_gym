@@ -1,0 +1,41 @@
+{
+  "courses": [
+    {
+      "id": 20,
+      "name": "Global Governance & Geopolitics (Fall 2013)"
+    },
+    {
+      "id": 21,
+      "name": "Global Governance & Geopolitics (Fall 2014)"
+    }
+  ],
+  "grading_scale": {
+    "A": [
+      90,
+      100
+    ],
+    "B": [
+      80,
+      89
+    ],
+    "C": [
+      70,
+      79
+    ],
+    "D": [
+      60,
+      69
+    ],
+    "F": [
+      0,
+      59
+    ]
+  },
+  "pass_threshold": 60,
+  "advising_week": "2026-03-16",
+  "slots_per_day": [
+    "09:00",
+    "11:00",
+    "14:00"
+  ]
+}

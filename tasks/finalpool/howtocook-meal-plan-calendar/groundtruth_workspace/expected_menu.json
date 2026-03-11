@@ -1,0 +1,96 @@
+{
+  "description": "Reference weekly lunch menu for verification. The agent may pick different dishes but must cover different categories.",
+  "week": "2026-03-09 to 2026-03-13",
+  "menu": [
+    {
+      "day": "Monday",
+      "date": "2026-03-09",
+      "dish_id": "dishes-meat_dish-可乐鸡翅",
+      "dish_name": "可乐鸡翅的做法",
+      "category": "荤菜",
+      "difficulty": 3,
+      "ingredients": [
+        "鸡翅 10-12只",
+        "可乐 500ml",
+        "白糖 10克",
+        "生抽 15克",
+        "老抽 3克",
+        "盐 2克",
+        "生姜 2片",
+        "料酒 20毫升",
+        "小葱"
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-03-10",
+      "dish_id": "dishes-aquatic-水煮鱼",
+      "dish_name": "水煮鱼的做法",
+      "category": "水产",
+      "difficulty": 4,
+      "ingredients": [
+        "巴沙鱼 500g",
+        "蔬菜 300-500g",
+        "红油豆瓣酱 40g",
+        "藤椒油 10ml",
+        "菜籽油 25ml",
+        "白胡椒粉 3g",
+        "大蒜 2瓣",
+        "盐 5g",
+        "糖 2g"
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-03-11",
+      "dish_id": "dishes-vegetable_dish-凉拌金针菇",
+      "dish_name": "凉拌金针菇的做法",
+      "category": "素菜",
+      "difficulty": 2,
+      "ingredients": [
+        "金针菇 150g",
+        "小葱 5g",
+        "大蒜 2瓣",
+        "生抽 15ml",
+        "醋 10ml",
+        "白糖 3g",
+        "香油 5ml",
+        "辣椒油 5ml"
+      ]
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-03-12",
+      "dish_id": "dishes-staple-炒年糕",
+      "dish_name": "炒年糕的做法",
+      "category": "主食",
+      "difficulty": 3,
+      "ingredients": [
+        "年糕 250g",
+        "小葱 2根",
+        "食用油 50ml",
+        "酱油 15ml",
+        "盐 1-2g"
+      ]
+    },
+    {
+      "day": "Friday",
+      "date": "2026-03-13",
+      "dish_id": "dishes-soup-奶油蘑菇汤",
+      "dish_name": "奶油蘑菇汤的做法",
+      "category": "汤",
+      "difficulty": 1,
+      "ingredients": [
+        "白蘑菇 200克",
+        "洋葱 50克",
+        "黄油 15克",
+        "面粉 10克",
+        "牛奶 200毫升",
+        "淡奶油 30毫升",
+        "清水 100毫升",
+        "盐 2克",
+        "黑胡椒碎 1克"
+      ]
+    }
+  ]
+}

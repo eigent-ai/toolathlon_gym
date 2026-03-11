@@ -1,0 +1,10 @@
+{
+  "thresholds": {
+    "high_iv_threshold": 40,
+    "expiry_alert_days": 7,
+    "max_delta_exposure": 0.7,
+    "max_gamma_exposure": 0.1,
+    "max_theta_daily_loss": 500
+  },
+  "notes": "Implied volatility is expressed as a percentage. Alert if average IV across contracts exceeds the threshold."
+}

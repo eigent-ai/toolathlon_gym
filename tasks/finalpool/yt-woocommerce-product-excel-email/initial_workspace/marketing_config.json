@@ -1,0 +1,29 @@
+{
+  "video_source": "Fireship",
+  "date_filter": "2024-01-01",
+  "top_n_videos": 10,
+  "keyword_categories": [
+    "javascript",
+    "python",
+    "ai",
+    "linux",
+    "react",
+    "docker",
+    "rust",
+    "node",
+    "typescript",
+    "kubernetes"
+  ],
+  "product_match_strategy": "keyword_overlap",
+  "output": {
+    "excel": "Marketing_Opportunity_Report.xlsx",
+    "sheets": ["Video_Topics", "Product_Matches", "Summary"]
+  },
+  "excel_columns": {
+    "Video_Topics": ["Rank", "Video_Title", "View_Count", "Published_Date", "Tech_Keyword", "Trend_Score"],
+    "Product_Matches": ["Video_Title", "Tech_Keyword", "Product_ID", "Product_Name", "Product_Category", "Price", "Match_Reason"],
+    "Summary": ["Tech_Keyword", "Video_Count", "Total_Views", "Matched_Products", "Marketing_Priority"]
+  },
+  "email_recipient": "marketing@company.com",
+  "email_subject": "YouTube Tech Trends - Product Marketing Opportunities Report"
+}

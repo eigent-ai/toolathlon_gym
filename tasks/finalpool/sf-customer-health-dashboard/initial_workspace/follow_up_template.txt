@@ -1,0 +1,23 @@
+FOLLOW-UP CALL AGENDA
+=====================
+
+Customer: [Customer Name]
+Segment: [Customer Segment]
+Region: [Customer Region]
+Health Score: [Score]
+Status: [Critical/At Risk/Healthy]
+
+Discussion Points:
+1. Review recent order history and engagement
+2. Identify pain points or barriers to purchasing
+3. Discuss product/service satisfaction
+4. Explore expansion opportunities
+5. Agree on next steps and timeline
+
+Action Items:
+- [ ] Document key findings
+- [ ] Update Notion dashboard
+- [ ] Schedule follow-up if needed
+
+Notes:
+_______________________________________________

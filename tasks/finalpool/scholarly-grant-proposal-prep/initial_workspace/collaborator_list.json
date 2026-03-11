@@ -1,0 +1,32 @@
+{
+  "collaborators": [
+    {
+      "name": "Dr. James Park",
+      "email": "jpark@mit.edu",
+      "institution": "MIT",
+      "expertise": ["machine learning", "AI safety", "language models"],
+      "past_collaboration": true
+    },
+    {
+      "name": "Dr. Sarah Thompson",
+      "email": "sthompson@stanford.edu",
+      "institution": "Stanford",
+      "expertise": ["interpretability", "explainable AI", "neural networks"],
+      "past_collaboration": false
+    },
+    {
+      "name": "Dr. Michael Chen",
+      "email": "mchen@mayo.edu",
+      "institution": "Mayo Clinic",
+      "expertise": ["medical imaging", "radiology AI", "clinical trials"],
+      "past_collaboration": true
+    },
+    {
+      "name": "Dr. Lisa Wang",
+      "email": "lwang@berkeley.edu",
+      "institution": "UC Berkeley",
+      "expertise": ["drug discovery", "molecular modeling", "graph neural networks"],
+      "past_collaboration": false
+    }
+  ]
+}

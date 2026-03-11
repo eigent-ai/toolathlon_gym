@@ -1,0 +1,43 @@
+{
+  "report_period": "Q1 2026",
+  "generated": "2026-03-15",
+  "territories": [
+    {
+      "region": "Asia Pacific",
+      "quota": 620000.00,
+      "pipeline_value": 850000.00,
+      "sales_reps": 12,
+      "territory_manager": "Sarah Chen"
+    },
+    {
+      "region": "Europe",
+      "quota": 650000.00,
+      "pipeline_value": 920000.00,
+      "sales_reps": 14,
+      "territory_manager": "Marcus Weber"
+    },
+    {
+      "region": "Latin America",
+      "quota": 580000.00,
+      "pipeline_value": 680000.00,
+      "sales_reps": 10,
+      "territory_manager": "Carlos Mendez"
+    },
+    {
+      "region": "Middle East",
+      "quota": 600000.00,
+      "pipeline_value": 750000.00,
+      "sales_reps": 8,
+      "territory_manager": "Ahmed Al-Rashid"
+    },
+    {
+      "region": "North America",
+      "quota": 620000.00,
+      "pipeline_value": 880000.00,
+      "sales_reps": 15,
+      "territory_manager": "Jennifer Brooks"
+    }
+  ],
+  "company_total_quota": 3070000.00,
+  "notes": "Quotas set based on historical performance and market opportunity. Pipeline values represent weighted pipeline as of report date."
+}

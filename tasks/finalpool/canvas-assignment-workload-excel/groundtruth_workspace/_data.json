@@ -1,0 +1,255 @@
+{
+  "course_workload": [
+    {
+      "course": "Data-Driven Design (Spring 2013)",
+      "assignments": 14,
+      "avg_subs": 740.9,
+      "latest_due": "2013-09-29"
+    },
+    {
+      "course": "Foundations of Finance (Fall 2014)",
+      "assignments": 13,
+      "avg_subs": 1348.7,
+      "latest_due": "2015-05-30"
+    },
+    {
+      "course": "Foundations of Finance (Fall 2013)",
+      "assignments": 13,
+      "avg_subs": 1353.3,
+      "latest_due": "2014-05-25"
+    },
+    {
+      "course": "Foundations of Finance (Spring 2013)",
+      "assignments": 13,
+      "avg_subs": 1016.3,
+      "latest_due": "2013-09-11"
+    },
+    {
+      "course": "Foundations of Finance (Spring 2014)",
+      "assignments": 13,
+      "avg_subs": 849.7,
+      "latest_due": "2014-09-16"
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Spring 2013)",
+      "assignments": 12,
+      "avg_subs": 1023.3,
+      "latest_due": "2013-08-07"
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Fall 2013)",
+      "assignments": 12,
+      "avg_subs": 1306.8,
+      "latest_due": "2014-04-27"
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Spring 2014)",
+      "assignments": 12,
+      "avg_subs": 908.5,
+      "latest_due": "2014-08-14"
+    },
+    {
+      "course": "Global Governance & Geopolitics (Spring 2014)",
+      "assignments": 10,
+      "avg_subs": 544.0,
+      "latest_due": "2014-09-11"
+    },
+    {
+      "course": "Global Governance & Geopolitics (Fall 2013)",
+      "assignments": 10,
+      "avg_subs": 661.1,
+      "latest_due": "2014-05-18"
+    },
+    {
+      "course": "Global Governance & Geopolitics (Fall 2014)",
+      "assignments": 10,
+      "avg_subs": 485.9,
+      "latest_due": "2015-05-18"
+    },
+    {
+      "course": "Creative Computing & Culture (Fall 2014)",
+      "assignments": 10,
+      "avg_subs": 1272.3,
+      "latest_due": "2015-05-03"
+    },
+    {
+      "course": "Creative Computing & Culture (Spring 2014)",
+      "assignments": 10,
+      "avg_subs": 832.1,
+      "latest_due": "2014-08-27"
+    },
+    {
+      "course": "Data-Driven Design (Spring 2014)",
+      "assignments": 7,
+      "avg_subs": 648.9,
+      "latest_due": "2014-09-30"
+    },
+    {
+      "course": "Data-Driven Design (Fall 2013)",
+      "assignments": 7,
+      "avg_subs": 1133.7,
+      "latest_due": "2014-06-19"
+    },
+    {
+      "course": "Data-Driven Design (Fall 2014)",
+      "assignments": 7,
+      "avg_subs": 1144.7,
+      "latest_due": "2015-04-14"
+    },
+    {
+      "course": "Applied Analytics & Algorithms (Fall 2013)",
+      "assignments": 6,
+      "avg_subs": 326.6,
+      "latest_due": "2014-05-04"
+    },
+    {
+      "course": "Biochemistry & Bioinformatics (Fall 2014)",
+      "assignments": 6,
+      "avg_subs": 1481.6,
+      "latest_due": "2015-04-20"
+    },
+    {
+      "course": "Applied Analytics & Algorithms (Fall 2014)",
+      "assignments": 6,
+      "avg_subs": 303.2,
+      "latest_due": "2015-05-04"
+    },
+    {
+      "course": "Environmental Economics & Ethics (Spring 2014)",
+      "assignments": 5,
+      "avg_subs": 445.0,
+      "latest_due": "2014-09-17"
+    },
+    {
+      "course": "Environmental Economics & Ethics (Fall 2014)",
+      "assignments": 5,
+      "avg_subs": 807.3,
+      "latest_due": "2015-05-24"
+    },
+    {
+      "course": "Environmental Economics & Ethics (Fall 2013)",
+      "assignments": 5,
+      "avg_subs": 721.0,
+      "latest_due": "2014-05-24"
+    }
+  ],
+  "busiest_periods": [
+    {
+      "month": "2014-05",
+      "count": 23
+    },
+    {
+      "month": "2015-05",
+      "count": 18
+    },
+    {
+      "month": "2014-09",
+      "count": 17
+    },
+    {
+      "month": "2014-03",
+      "count": 13
+    },
+    {
+      "month": "2014-02",
+      "count": 10
+    },
+    {
+      "month": "2014-04",
+      "count": 10
+    },
+    {
+      "month": "2013-09",
+      "count": 9
+    },
+    {
+      "month": "2014-07",
+      "count": 7
+    },
+    {
+      "month": "2013-11",
+      "count": 6
+    },
+    {
+      "month": "2014-11",
+      "count": 6
+    },
+    {
+      "month": "2013-05",
+      "count": 5
+    },
+    {
+      "month": "2013-03",
+      "count": 5
+    },
+    {
+      "month": "2015-02",
+      "count": 5
+    },
+    {
+      "month": "2013-07",
+      "count": 5
+    },
+    {
+      "month": "2014-08",
+      "count": 5
+    },
+    {
+      "month": "2015-03",
+      "count": 5
+    },
+    {
+      "month": "2014-10",
+      "count": 5
+    },
+    {
+      "month": "2015-01",
+      "count": 5
+    },
+    {
+      "month": "2013-02",
+      "count": 4
+    },
+    {
+      "month": "2013-08",
+      "count": 4
+    },
+    {
+      "month": "2013-10",
+      "count": 4
+    },
+    {
+      "month": "2015-04",
+      "count": 4
+    },
+    {
+      "month": "2013-06",
+      "count": 4
+    },
+    {
+      "month": "2014-12",
+      "count": 4
+    },
+    {
+      "month": "2014-01",
+      "count": 4
+    },
+    {
+      "month": "2013-12",
+      "count": 3
+    },
+    {
+      "month": "2014-06",
+      "count": 3
+    },
+    {
+      "month": "2013-04",
+      "count": 2
+    }
+  ],
+  "heavy_months": [
+    "2014-05",
+    "2015-05",
+    "2014-09"
+  ]
+}

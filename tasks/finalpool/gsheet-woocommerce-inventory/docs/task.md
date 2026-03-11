@@ -1,0 +1,11 @@
+You are the inventory manager for our electronics online store. It is time for a weekly inventory review. Please complete the following workflow to produce an inventory report, update the shared dashboard, and notify the warehouse team about products that need restocking.
+
+First, pull the current product catalog from our online store. For each product category, gather the number of products, total stock on hand, and average regular price across the category. There are eight categories in the store.
+
+Next, check the financial data service for the latest gold futures closing prices. Gold is a proxy for raw material costs in electronics manufacturing. Retrieve the five most recent trading days of gold closing price data so we can monitor the cost trend.
+
+Now create an Excel workbook named Inventory_Restock_Report.xlsx in the workspace with three sheets. The first sheet should be called "Category Inventory" and must contain the columns Category, Product_Count, Total_Stock, and Avg_Price. List all eight product categories sorted alphabetically by category name. Round Avg_Price to two decimal places. The second sheet should be called "Restock Alerts" and must list every product whose current stock quantity is below ten units. Include the columns Product_Name, SKU, Current_Stock, Category, and Regular_Price. For products that belong to multiple categories, use the first category listed. Sort this sheet by current stock ascending, then by product name ascending. The third sheet should be called "Gold Trend" with columns Date and Close_Price, listing the five most recent trading days of gold futures closing prices sorted from newest to oldest.
+
+After the Excel file is ready, sync the Category Inventory data to a shared spreadsheet. Create a new spreadsheet titled "Inventory Dashboard" with a sheet named "Category Inventory" containing the same columns and data as the first sheet of the Excel file.
+
+Finally, send an email alert to warehouse@company.com with the subject "Low Stock Alert". The body of the email should list each product that has fewer than ten units in stock, including the product name, its SKU, and the current stock quantity. This gives the warehouse team a clear list of items that need to be reordered.

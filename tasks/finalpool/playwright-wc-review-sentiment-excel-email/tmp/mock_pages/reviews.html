@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consumer Review Aggregator - Product Ratings</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background: #f8f9fa; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        h1 { color: #1a237e; }
+        h2 { color: #283593; border-bottom: 2px solid #283593; padding-bottom: 5px; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 14px; }
+        th { background: #1a237e; color: white; padding: 10px; text-align: left; }
+        td { padding: 8px 10px; border-bottom: 1px solid #ddd; }
+        tr:nth-child(even) { background: #e8eaf6; }
+        .low-rating { color: #c62828; font-weight: bold; }
+        .high-rating { color: #2e7d32; font-weight: bold; }
+        .update-info { color: #666; font-size: 12px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Consumer Review Aggregator</h1>
+    <p>Aggregated consumer ratings from major review platforms. Last updated: March 5, 2026.</p>
+
+    <h2>Electronics</h2>
+    <table id="electronics-reviews">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>External Avg Rating</th>
+                <th>External Review Count</th>
+                <th>Top Complaint</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>boAt Wave Lite Smartwatch</td><td>3.80</td><td>142</td><td>Battery life</td></tr>
+            <tr><td>Robustrion Smart Trifold Hard Back Flip Stand Case</td><td>4.20</td><td>89</td><td>Fit issues</td></tr>
+            <tr><td>ZEBRONICS Zeb-100HB 4 Ports USB Hub</td><td>3.50</td><td>67</td><td>Connection drops</td></tr>
+            <tr><td>boAt Wave Call Smart Watch</td><td>3.60</td><td>112</td><td>Screen quality</td></tr>
+            <tr><td>OnePlus Buds Pro Bluetooth Earbuds</td><td>4.50</td><td>203</td><td>Noise cancellation</td></tr>
+            <tr><td>Canon M50 Mark II Camera</td><td>4.70</td><td>178</td><td>Autofocus speed</td></tr>
+            <tr><td>NIHARA Wood Smart Multipurpose Foldable Laptop Table</td><td>3.90</td><td>95</td><td>Stability</td></tr>
+            <tr><td>Dell S2721HNM 27 inch FHD Monitor</td><td>4.30</td><td>156</td><td>Color accuracy</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Cameras</h2>
+    <table id="cameras-reviews">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>External Avg Rating</th>
+                <th>External Review Count</th>
+                <th>Top Complaint</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>NP-BN1 Rechargeable Camera Battery</td><td>3.70</td><td>84</td><td>Capacity fading</td></tr>
+            <tr><td>SONATA GOLD CCTV Mini WiFi Camera</td><td>4.10</td><td>63</td><td>WiFi range</td></tr>
+            <tr><td>Eloies Tripod for Mobile and Camera</td><td>4.80</td><td>121</td><td>Height adjustment</td></tr>
+            <tr><td>AGARO Adjustable Camera Tripod Stand</td><td>4.30</td><td>77</td><td>Weight capacity</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Home Appliances</h2>
+    <table id="appliances-reviews">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>External Avg Rating</th>
+                <th>External Review Count</th>
+                <th>Top Complaint</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Craftwings Handheld Press Fan</td><td>3.80</td><td>56</td><td>Durability</td></tr>
+            <tr><td>ZETONES Electric Mini Cooking Pot</td><td>4.00</td><td>88</td><td>Temperature control</td></tr>
+            <tr><td>LIMBANI BROTHERS Vacuum Sealing Machine</td><td>4.20</td><td>72</td><td>Seal strength</td></tr>
+            <tr><td>Nikrim Portable Blender</td><td>4.60</td><td>93</td><td>Blade sharpness</td></tr>
+        </tbody>
+    </table>
+
+    <p class="update-info">Data sourced from ConsumerReports, TrustPilot, and Amazon aggregated reviews. Rating scale: 1.0 - 5.0.</p>
+</div>
+</body>
+</html>

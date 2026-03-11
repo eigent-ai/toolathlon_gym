@@ -1,0 +1,8 @@
+Department Priority Areas for Q2 2026:
+- Engineering: Platform modernization, API improvements
+- Sales: CRM enhancement, pipeline optimization
+- Marketing: Brand refresh, analytics dashboard
+- HR: Performance review system, onboarding automation
+- Finance: Reporting automation, compliance audit
+- Operations: Supply chain optimization
+- Support: Ticket triage improvement

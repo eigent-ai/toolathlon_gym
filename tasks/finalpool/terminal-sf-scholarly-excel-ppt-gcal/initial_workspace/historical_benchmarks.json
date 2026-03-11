@@ -1,0 +1,124 @@
+{
+  "quarters": [
+    {
+      "quarter": "Q1 2025",
+      "regions": {
+        "Europe": {
+          "revenue": 580000,
+          "orders": 3600,
+          "avg_order": 161.11
+        },
+        "Asia Pacific": {
+          "revenue": 570000,
+          "orders": 3700,
+          "avg_order": 154.05
+        },
+        "North America": {
+          "revenue": 550000,
+          "orders": 3500,
+          "avg_order": 157.14
+        },
+        "Middle East": {
+          "revenue": 530000,
+          "orders": 3400,
+          "avg_order": 155.88
+        },
+        "Latin America": {
+          "revenue": 490000,
+          "orders": 3200,
+          "avg_order": 153.13
+        }
+      }
+    },
+    {
+      "quarter": "Q2 2025",
+      "regions": {
+        "Europe": {
+          "revenue": 600000,
+          "orders": 3750,
+          "avg_order": 160.0
+        },
+        "Asia Pacific": {
+          "revenue": 590000,
+          "orders": 3800,
+          "avg_order": 155.26
+        },
+        "North America": {
+          "revenue": 560000,
+          "orders": 3600,
+          "avg_order": 155.56
+        },
+        "Middle East": {
+          "revenue": 545000,
+          "orders": 3500,
+          "avg_order": 155.71
+        },
+        "Latin America": {
+          "revenue": 500000,
+          "orders": 3300,
+          "avg_order": 151.52
+        }
+      }
+    },
+    {
+      "quarter": "Q3 2025",
+      "regions": {
+        "Europe": {
+          "revenue": 620000,
+          "orders": 3900,
+          "avg_order": 158.97
+        },
+        "Asia Pacific": {
+          "revenue": 610000,
+          "orders": 3950,
+          "avg_order": 154.43
+        },
+        "North America": {
+          "revenue": 575000,
+          "orders": 3800,
+          "avg_order": 151.32
+        },
+        "Middle East": {
+          "revenue": 560000,
+          "orders": 3600,
+          "avg_order": 155.56
+        },
+        "Latin America": {
+          "revenue": 515000,
+          "orders": 3400,
+          "avg_order": 151.47
+        }
+      }
+    },
+    {
+      "quarter": "Q4 2025",
+      "regions": {
+        "Europe": {
+          "revenue": 635000,
+          "orders": 4000,
+          "avg_order": 158.75
+        },
+        "Asia Pacific": {
+          "revenue": 625000,
+          "orders": 4050,
+          "avg_order": 154.32
+        },
+        "North America": {
+          "revenue": 590000,
+          "orders": 3900,
+          "avg_order": 151.28
+        },
+        "Middle East": {
+          "revenue": 580000,
+          "orders": 3750,
+          "avg_order": 154.67
+        },
+        "Latin America": {
+          "revenue": 530000,
+          "orders": 3500,
+          "avg_order": 151.43
+        }
+      }
+    }
+  ]
+}

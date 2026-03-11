@@ -1,0 +1,33 @@
+Tax Compliance Notes - Q1 2026 Review
+======================================
+
+Date: February 28, 2026
+Author: Mike Torres, Tax Compliance Analyst
+
+Key changes to watch for this quarter:
+
+1. New York has passed legislation increasing their state sales tax rate
+   effective January 1, 2026. The new rate needs to be verified against
+   our store configuration. This was part of the NY State Budget Act of 2025.
+
+2. Florida also adjusted their base state rate at the start of the year.
+   We need to confirm whether our system has been updated to reflect the
+   new Florida rate.
+
+3. California rate appears unchanged, but we should verify against the
+   authority portal as there were rumors of a mid-year adjustment that
+   did not materialize.
+
+4. Texas and Washington rates are expected to remain stable.
+
+5. Reminder: Our compliance threshold per the Tax Policy is 0.25 percentage
+   points. Any difference larger than that requires immediate correction.
+
+6. The state tax authority portal has been migrated to a new system. The
+   current URL for rate verification is http://localhost:30205
+
+Action items for this review:
+- Pull current rates from our e-commerce platform
+- Cross-reference against state authority portal
+- Document all discrepancies
+- Prepare compliance report for finance team review

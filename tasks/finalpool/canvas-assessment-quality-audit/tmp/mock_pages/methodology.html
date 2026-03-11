@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assessment Methodology</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #fafafa; }
+        h1 { color: #1a202c; }
+        h2 { color: #2d3748; }
+        .formula { background: #edf2f7; padding: 15px; border-radius: 8px; margin: 15px 0; font-family: monospace; }
+        a { color: #805ad5; }
+    </style>
+</head>
+<body>
+    <h1>Assessment Methodology</h1>
+
+    <h2>Difficulty Index Calculation</h2>
+    <div class="formula">
+        difficulty = average_score / points_possible
+    </div>
+    <p>For quizzes where points_possible represents the maximum score per question, the difficulty index is computed as the average total score divided by the total possible points (points_possible multiplied by question_count). This gives a value between 0 and 1, where higher values indicate easier items.</p>
+
+    <h2>Interpreting Difficulty</h2>
+    <p>Items with difficulty below 0.3 are too hard for most students and may indicate unclear wording, content not covered in lectures, or unreasonable expectations. Items above 0.8 are too easy and do not effectively assess student knowledge.</p>
+
+    <h2>Flagging Criteria</h2>
+    <p>A quiz is flagged if its average difficulty index falls outside the acceptable range of 0.3 to 0.8. Additionally, quizzes with fewer than 15 questions are noted as having insufficient content sampling, though this alone does not constitute a flag.</p>
+
+    <p><a href="index.html">Back to Standards</a></p>
+</body>
+</html>

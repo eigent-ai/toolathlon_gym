@@ -1,0 +1,12 @@
+{
+  "audit_period": "Q1 2025",
+  "thresholds": {
+    "max_acceptable_response_hours": 12.0,
+    "min_satisfaction_score": 3.0,
+    "max_problem_rate_pct": 15.0
+  },
+  "email_recipients": [
+    "cs_leadership@company.com"
+  ],
+  "report_title": "Q1 Support Quality Audit Results"
+}

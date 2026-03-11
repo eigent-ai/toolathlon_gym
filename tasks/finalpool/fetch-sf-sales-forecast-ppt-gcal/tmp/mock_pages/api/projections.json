@@ -1,0 +1,40 @@
+{
+  "report": "Market Research Industry Growth Projections 2026",
+  "source": "Global Market Research Associates",
+  "published_date": "2026-03-01",
+  "sector": "Electronics & Consumer Products",
+  "methodology": "Based on macroeconomic indicators, consumer spending trends, and supply chain forecasts",
+  "regional_projections": [
+    {
+      "region": "Asia Pacific",
+      "growth_rate_pct": 8.5,
+      "confidence": "high",
+      "key_drivers": ["Rising middle class", "Tech adoption"]
+    },
+    {
+      "region": "Europe",
+      "growth_rate_pct": 4.2,
+      "confidence": "medium",
+      "key_drivers": ["Economic recovery", "Sustainability focus"]
+    },
+    {
+      "region": "Latin America",
+      "growth_rate_pct": 6.8,
+      "confidence": "medium",
+      "key_drivers": ["Digital transformation", "E-commerce growth"]
+    },
+    {
+      "region": "Middle East",
+      "growth_rate_pct": 7.3,
+      "confidence": "high",
+      "key_drivers": ["Infrastructure investment", "Smart city initiatives"]
+    },
+    {
+      "region": "North America",
+      "growth_rate_pct": 3.5,
+      "confidence": "high",
+      "key_drivers": ["AI integration", "Consumer electronics refresh cycle"]
+    }
+  ],
+  "notes": "Growth rates represent Q2 2026 vs Q1 2026 expected sequential growth. Apply to Q1 revenue baseline for Q2 projections."
+}

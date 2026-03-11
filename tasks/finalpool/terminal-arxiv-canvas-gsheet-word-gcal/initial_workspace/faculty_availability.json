@@ -1,0 +1,45 @@
+{
+  "faculty": [
+    {
+      "name": "Dr. Smith",
+      "department": "Computer Science",
+      "available_days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "preferred_time": "10:00-12:00",
+      "notes": "Available for curriculum review meetings"
+    },
+    {
+      "name": "Dr. Johnson",
+      "department": "Data Science",
+      "available_days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "preferred_time": "13:00-16:00",
+      "notes": "Can lead workshop on new analytics methods"
+    },
+    {
+      "name": "Dr. Davis",
+      "department": "Computer Science",
+      "available_days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "preferred_time": "09:00-11:00",
+      "notes": "Expert in algorithm design, available for consulting"
+    }
+  ],
+  "scheduling_constraints": {
+    "min_notice_days": 7,
+    "max_meeting_duration_hours": 3,
+    "preferred_room": "Conference Room A",
+    "avoid_dates": [
+      "2026-03-15",
+      "2026-03-22"
+    ]
+  }
+}

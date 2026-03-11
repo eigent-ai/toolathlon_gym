@@ -1,0 +1,9 @@
+{
+  "daily_targets": {
+    "calories": {"min": 1800, "max": 2200, "unit": "kcal"},
+    "protein": {"min": 50, "unit": "grams"},
+    "fiber": {"min": 25, "unit": "grams"},
+    "sodium": {"max": 2300, "unit": "mg"}
+  },
+  "notes": "Targets based on USDA Dietary Guidelines for Americans 2020-2025, adjusted for a sedentary to moderately active adult office worker population."
+}

@@ -1,0 +1,18 @@
+{
+  "commodity_sensitivity": {
+    "Watches": 0.40,
+    "Electronics": 0.15,
+    "Audio": 0.10,
+    "Cameras": 0.10,
+    "TV & Home Theater": 0.05,
+    "Home Appliances": 0.08
+  },
+  "gold_ticker": "GC=F",
+  "ecommerce_comparators": ["AMZN", "GOOGL"],
+  "analysis_period_days": 20,
+  "review_threshold_pct": 20,
+  "output_files": {
+    "spreadsheet_title": "Commodity Pricing Dashboard",
+    "word_document": "Pricing_Strategy_Report.docx"
+  }
+}

@@ -1,0 +1,5 @@
+Supplier Contact Information:
+- Orders: orders@supplier.com
+- Urgent requests: urgent@supplier.com
+- Account management: account@supplier.com
+- Quality issues: quality@supplier.com

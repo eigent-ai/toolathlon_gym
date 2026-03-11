@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options Monitoring Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #1a2530; border-bottom: 3px solid #27ae60; padding-bottom: 12px; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+        .param-box { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 15px 0; width: 65%; }
+        .param-item { margin: 12px 0; font-size: 16px; }
+        .threshold { font-weight: bold; color: #c0392b; }
+        .info { color: #7f8c8d; font-size: 14px; margin-top: 5px; }
+        table { border-collapse: collapse; width: 70%; margin: 15px 0; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px 15px; text-align: left; }
+        th { background-color: #27ae60; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Options Position Monitoring Portal</h1>
+    <p>Risk management parameters for options position monitoring. Last updated: 2026-03-05.</p>
+
+    <h2>Risk Classification Thresholds</h2>
+    <div class="param-box">
+        <div class="param-item">High Implied Volatility Threshold: <span class="threshold">40%</span></div>
+        <p class="info">Positions with average implied volatility above 40% are classified as "High IV" and require review.</p>
+
+        <div class="param-item">Near Expiry Alert Window: <span class="threshold">7 days</span></div>
+        <p class="info">Positions expiring within 7 days of the current date (on or before 2026-03-14) need immediate attention.</p>
+
+        <div class="param-item">Deep ITM Threshold: <span class="threshold">0.80</span> (strike / current price)</div>
+        <p class="info">A call option with strike below 80% of the current stock price is "Deep In-The-Money."</p>
+
+        <div class="param-item">Deep OTM Threshold: <span class="threshold">1.20</span> (strike / current price)</div>
+        <p class="info">A call option with strike above 120% of the current stock price is "Deep Out-of-The-Money."</p>
+    </div>
+
+    <h2>Risk Level Classification Rules</h2>
+    <table>
+        <thead>
+            <tr><th>Condition</th><th>Risk Level</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Avg IV above 40% AND expiring within 7 days</td><td>High IV + Near Expiry</td></tr>
+            <tr><td>Avg IV above 40% only</td><td>High IV</td></tr>
+            <tr><td>Expiring within 7 days only</td><td>Near Expiry</td></tr>
+            <tr><td>Neither condition</td><td>Normal</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Position Guidelines</h2>
+    <div class="param-box">
+        <div class="param-item">For "High IV + Near Expiry" positions: Consider closing or rolling immediately.</div>
+        <div class="param-item">For "Near Expiry" positions: Schedule review before expiration.</div>
+        <div class="param-item">For "High IV" positions: Monitor daily for changes in implied volatility.</div>
+        <div class="param-item">Create calendar alerts for all near-expiry positions with event title "Options Expiry Alert: [SYMBOL]" on the expiration date from 09:00 to 09:30.</div>
+    </div>
+</body>
+</html>

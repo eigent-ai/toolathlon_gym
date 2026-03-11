@@ -1,0 +1,22 @@
+{
+  "event_name": "Campus Chinese Cuisine Food Festival",
+  "dates": {
+    "start": "2026-03-09",
+    "end": "2026-03-13",
+    "days": 5
+  },
+  "guests_per_day": 50,
+  "total_budget_yuan": 20000,
+  "required_categories": {
+    "staple": {"cost_per_serving": 15, "est_calories": 400, "est_protein_g": 15},
+    "meat": {"cost_per_serving": 25, "est_calories": 350, "est_protein_g": 30},
+    "vegetable": {"cost_per_serving": 10, "est_calories": 150, "est_protein_g": 5},
+    "soup": {"cost_per_serving": 12, "est_calories": 100, "est_protein_g": 8},
+    "dessert": {"cost_per_serving": 8, "est_calories": 200, "est_protein_g": 3}
+  },
+  "prep_schedule": {
+    "start_time": "07:00",
+    "end_time": "10:00",
+    "event_title_pattern": "Food Festival Prep - Day {n}"
+  }
+}

@@ -1,0 +1,5 @@
+KPI Escalation Policy:
+- 1 missed KPI: Manager review
+- 2+ missed KPIs: Director review
+- Revenue miss > 10%: VP notification
+- Any critical KPI miss: Executive briefing within 48h

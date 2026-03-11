@@ -1,0 +1,25 @@
+# Use Playwright to provide browser automation functionality
+# Source: https://github.com/microsoft/playwright-mcp
+# Toolathlon Version: https://github.com/lockon-n/playwright-mcp
+# Toolathlon_GYM: ../../local_servers/playwright-mcp
+type: stdio
+name: playwright_with_chunk
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/playwright-mcp/cli.js"
+    - "--headless"      # Headless mode
+    - "--isolated"      # Initialize a new session each time, do not save cache
+    - "--browser"
+    - "chromium"        # Please use chromium; other browsers may require sudo installation
+    - "--user-agent"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "--output-dir"
+    - "${agent_workspace}/.playwright_output"
+    - "--image-responses"
+    - "omit"
+    - "--span-size"
+    - "5000"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 120
+cache_tools_list: true

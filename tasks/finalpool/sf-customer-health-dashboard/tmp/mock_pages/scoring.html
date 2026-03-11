@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoring Formula - Customer Health Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f8; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); padding: 40px; }
+        h1 { color: #1a3a5c; border-bottom: 3px solid #e67e22; padding-bottom: 15px; }
+        h2 { color: #e67e22; margin-top: 30px; }
+        .formula-box { background: #f8f9fa; padding: 20px; border-left: 4px solid #e67e22; margin: 15px 0; border-radius: 4px; }
+        .formula-main { font-family: monospace; font-size: 16px; margin: 10px 0; color: #1a3a5c; font-weight: bold; }
+        .component { margin: 15px 0; padding: 15px; background: #fdf2e9; border-radius: 6px; }
+        .component h3 { color: #e67e22; margin-top: 0; }
+        .nav { margin-bottom: 20px; }
+        .nav a { color: #e67e22; text-decoration: none; margin-right: 20px; font-weight: 600; }
+        code { background: #eee; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Health Thresholds</a>
+            <a href="scoring.html">Scoring Formula</a>
+        </div>
+
+        <h1>Health Score Calculation</h1>
+
+        <div class="formula-box">
+            <p class="formula-main">health_score = 0.4 * recency_score + 0.3 * frequency_score + 0.3 * monetary_score</p>
+        </div>
+
+        <h2>Score Components</h2>
+
+        <div class="component">
+            <h3>Recency Score (weight: 0.4)</h3>
+            <p><code>recency_score = max(0, 100 - days_since_last_order)</code></p>
+            <p>Measures how recently the customer placed their last order. A customer who ordered today gets 100 points. The score decreases by 1 point for each day since their last order, with a minimum of 0.</p>
+            <p><strong>Note:</strong> Use the current date at the time of analysis to compute days since last order.</p>
+        </div>
+
+        <div class="component">
+            <h3>Frequency Score (weight: 0.3)</h3>
+            <p><code>frequency_score = min(100, order_count * 10)</code></p>
+            <p>Measures order frequency. Each order contributes 10 points, capped at 100 (10+ orders).</p>
+        </div>
+
+        <div class="component">
+            <h3>Monetary Score (weight: 0.3)</h3>
+            <p><code>monetary_score = min(100, lifetime_value / 50)</code></p>
+            <p>Measures customer spending. The lifetime value from the customer record divided by 50, capped at 100 (lifetime value of $5,000+).</p>
+        </div>
+
+        <h2>Implementation Notes</h2>
+        <p>All three component scores range from 0 to 100. The weighted sum produces a health score also ranging from 0 to 100. Round the final health score to 2 decimal places.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "form": {
+    "title_contains": "lunch and learn",
+    "min_questions": 5,
+    "required_field_keywords": ["full name", "email", "department", "dietary", "dish"]
+  },
+  "calendar_event": {
+    "summary_contains": "lunch and learn",
+    "date": "2026-03-20",
+    "start_hour": 12,
+    "end_hour": 13,
+    "end_minute": 30
+  },
+  "notion_page": {
+    "title_contains": "cooking event planning"
+  },
+  "email": {
+    "to": "all-staff@company.com",
+    "subject_contains": "lunch and learn"
+  }
+}

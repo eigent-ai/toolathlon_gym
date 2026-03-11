@@ -1,0 +1,11 @@
+{
+  "excel_file": "Nutrition_Comparison.xlsx",
+  "excel_sheets": ["Recipe Overview", "Recommendation"],
+  "recipe_overview_columns": ["Recipe_Name", "Category", "Difficulty", "Estimated_Calories", "Protein_Level", "Fiber_Level"],
+  "recommendation_columns": ["Rank", "Recipe_Name", "Health_Score", "Reason"],
+  "pptx_file": "Healthy_Eating_Guide.pptx",
+  "min_slides": 7,
+  "min_recipes": 5,
+  "min_categories": 4,
+  "min_recommendations": 3
+}

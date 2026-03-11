@@ -1,0 +1,16 @@
+{
+  "name": "Alpha Pro",
+  "price": 299,
+  "rating": 4.5,
+  "description": "The Alpha Pro is a mid-range solution designed for small to medium businesses that need reliable performance without breaking the bank. It combines speed with dependability, offering consistent uptime and fast processing for everyday workloads.",
+  "pros": [
+    "Excellent reliability with 99.9% uptime guarantee",
+    "Fast boot and processing times",
+    "Strong customer support with 24/7 availability"
+  ],
+  "cons": [
+    "Limited advanced analytics features",
+    "No built-in AI capabilities"
+  ],
+  "target_market": "Small to medium businesses seeking dependable performance at a reasonable price point."
+}

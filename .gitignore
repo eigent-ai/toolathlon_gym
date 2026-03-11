@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+
+# Runtime outputs
+dumps/
+_test_workspace/
+
+# OS
+.DS_Store

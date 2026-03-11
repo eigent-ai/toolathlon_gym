@@ -1,0 +1,22 @@
+{
+  "pilot_budget_total": 50000,
+  "duration_weeks": 12,
+  "cost_per_meal": {
+    "breakfast": 6.50,
+    "lunch": 9.00,
+    "dinner": 11.50
+  },
+  "daily_cost_estimates": {
+    "full_meal_plan": 15.50,
+    "partial_breakfast_only": 6.50,
+    "control": 0.00
+  },
+  "weekly_cost_estimates": {
+    "full_meal_plan_5_days": 77.50,
+    "partial_breakfast_5_days": 32.50,
+    "control": 0.00
+  },
+  "vendor": "Campus Dining Services",
+  "contact": "dining_services@university.edu",
+  "notes": "Costs are estimates based on average campus meal prices. Actual costs may vary based on menu selection."
+}

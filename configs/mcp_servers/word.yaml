@@ -1,0 +1,16 @@
+# a word mcp server
+# Source: https://github.com/GongRzhe/Office-Word-MCP-Server
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/Office-Word-MCP-Server
+type: stdio
+name: word
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/Office-Word-MCP-Server"
+    - "run"
+    - "word_mcp_server"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 10
+cache_tools_list: true

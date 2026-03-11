@@ -1,0 +1,15 @@
+Hey, I need your help with a customer lifetime value analysis for our online store. We want to understand which customers are most valuable, group them into tiers, and then take action to retain the ones we might be losing.
+
+There is a PDF file in the workspace called CLV_Methodology.pdf that explains our methodology. Please read through it first so you understand how we define tiers and at-risk customers.
+
+Start by pulling all customer data from our online store, including their order history, total spending, and order counts. We have about 50 customers. Then pull order data so you can figure out when each customer last placed an order.
+
+Using terminal and scripting, analyze the data according to the methodology in the PDF. Rank customers by total spending and assign them to tiers. Platinum is the top 10 percent, Gold is the next 20 percent, Silver is the next 30 percent, and Bronze is the bottom 40 percent. Calculate their average order value by dividing total spent by number of orders, using 0 for customers with no orders. A customer is at-risk if they have only 1 order, or if their last order was more than 60 days ago, or if they have zero orders.
+
+Create an Excel file called Customer_CLV_Report.xlsx with three sheets. The first sheet should be called CLV Analysis and contain every customer sorted alphabetically by name with columns Customer_Name (first and last combined), Email, Orders_Count, Total_Spent rounded to 2 decimals, Avg_Order_Value rounded to 2 decimals, CLV_Tier showing Platinum Gold Silver or Bronze, and Is_At_Risk showing Yes or No. The second sheet called Tier Summary should have one row per tier sorted as Platinum Gold Silver Bronze with columns Tier, Customer_Count, Total_Revenue rounded to 2 decimals, Avg_CLV rounded to 2 decimals, At_Risk_Count, and Retention_Strategy. The retention strategies are personal outreach from account manager for Platinum, exclusive offers and early access for Gold, targeted discount codes for Silver, and re-engagement campaign for Bronze. The third sheet At Risk Customers should list only at-risk customers sorted by Total_Spent descending with columns Customer_Name, Email, Orders_Count, Total_Spent, Days_Since_Last_Order, and Recommended_Action based on their tier strategy.
+
+Next, create a Notion database called Customer CRM with these properties: Name as the title, Email as rich text, Tier as a select with options Platinum Gold Silver and Bronze, Total_Spent as a number, and At_Risk as a checkbox. Add all 50 customers as pages in this database with their correct data filled in.
+
+Finally, send personalized retention emails to every at-risk customer. Send the emails from analytics@company.com to each at-risk customer's email address. The subject line should include Customer Retention. In the body, address them by their first name and include the appropriate retention offer based on their tier. For Platinum customers mention personal outreach, for Gold mention exclusive offers, for Silver mention discount codes, and for Bronze mention the re-engagement campaign.
+
+Save the Excel file in the workspace when done.

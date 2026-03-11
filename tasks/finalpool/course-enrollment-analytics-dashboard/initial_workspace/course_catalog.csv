@@ -1,0 +1,11 @@
+Course Code,Course Name,Program,Prerequisites
+CS101,Introduction to Python,Computer Science,None
+CS102,Data Structures,Computer Science,CS101
+CS201,Web Development,Computer Science,CS101
+MATH101,Calculus I,Mathematics,None
+MATH102,Calculus II,Mathematics,MATH101
+PHYS101,Physics I,Physics,None
+CHEM101,Chemistry I,Chemistry,None
+BIO101,Biology I,Biology,None
+ENG101,English Composition,English,None
+PSY101,Psychology 101,Psychology,None

@@ -1,0 +1,20 @@
+{
+  "daily_targets": {
+    "calories_min": 2000,
+    "calories_max": 2500,
+    "protein_min_g": 50,
+    "protein_max_g": 70,
+    "fiber_min_g": 25,
+    "sodium_max_mg": 2300
+  },
+  "meal_distribution": {
+    "breakfast_pct": 25,
+    "lunch_pct": 40,
+    "dinner_pct": 35
+  },
+  "scoring": {
+    "method": "100 minus sum of meal difficulties times 5",
+    "max_score": 100,
+    "min_acceptable": 60
+  }
+}

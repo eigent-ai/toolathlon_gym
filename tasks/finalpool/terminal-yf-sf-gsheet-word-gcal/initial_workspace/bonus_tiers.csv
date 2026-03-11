@@ -1,0 +1,5 @@
+tier,min_revenue,max_revenue,bonus_percentage
+Bronze,0,550000,5
+Silver,550000,620000,8
+Gold,620000,650000,10
+Platinum,650000,999999999,12

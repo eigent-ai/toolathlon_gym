@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Toolathlon-GYM Explorer</title>
+<style>
+  /* ── reset & base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --border: #2e3250;
+    --accent: #6c8ef5;
+    --accent2: #a78bfa;
+    --green: #34d399;
+    --yellow: #fbbf24;
+    --red: #f87171;
+    --text: #e2e8f0;
+    --muted: #8892b0;
+    --radius: 10px;
+    --sidebar: 280px;
+  }
+  html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.6; }
+
+  /* ── layout ───────────────────────────────────────────────── */
+  #app { display: flex; height: 100vh; overflow: hidden; }
+  #sidebar { width: var(--sidebar); min-width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  #topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+  #content { flex: 1; overflow-y: auto; padding: 24px; }
+
+  /* ── sidebar ──────────────────────────────────────────────── */
+  .sidebar-header { padding: 16px 16px 8px; border-bottom: 1px solid var(--border); }
+  .sidebar-header h2 { font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: .05em; text-transform: uppercase; }
+  .sidebar-header p { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .nav-item { display: flex; align-items: center; gap: 8px; padding: 9px 16px; cursor: pointer; color: var(--muted); font-size: 13px; transition: all .15s; border-left: 3px solid transparent; }
+  .nav-item:hover { background: var(--surface2); color: var(--text); }
+  .nav-item.active { background: var(--surface2); color: var(--accent); border-left-color: var(--accent); }
+  .nav-item svg { opacity: .7; flex-shrink: 0; }
+  .nav-section { padding: 12px 16px 4px; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+
+  /* ── topbar ───────────────────────────────────────────────── */
+  #topbar h1 { font-size: 15px; font-weight: 700; background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 2px 10px; font-size: 11px; color: var(--muted); }
+  .spacer { flex: 1; }
+
+  /* ── search & filters ─────────────────────────────────────── */
+  #search-bar { display: flex; gap: 10px; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+  input[type=text], select { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: var(--radius); font-size: 13px; outline: none; transition: border .15s; }
+  input[type=text]:focus, select:focus { border-color: var(--accent); }
+  input[type=text] { flex: 1; min-width: 180px; }
+  select { min-width: 160px; cursor: pointer; }
+  select option { background: var(--surface2); }
+
+  /* ── stat cards ───────────────────────────────────────────── */
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .stat-card .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .stat-card .value { font-size: 28px; font-weight: 700; color: var(--accent); margin: 4px 0 2px; }
+  .stat-card .sub { font-size: 11px; color: var(--muted); }
+
+  /* ── charts area ──────────────────────────────────────────── */
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 28px; }
+  @media (max-width: 900px) { .charts-grid { grid-template-columns: 1fr; } }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+  .chart-card h3 { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 14px; }
+
+  /* ── bar chart ────────────────────────────────────────────── */
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 12px; }
+  .bar-label { width: 130px; flex-shrink: 0; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { flex: 1; height: 14px; background: var(--surface2); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--accent), var(--accent2)); transition: width .4s ease; }
+  .bar-count { width: 40px; text-align: right; color: var(--muted); font-size: 11px; }
+
+  /* ── db schema cards ──────────────────────────────────────── */
+  .db-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .db-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .db-card .schema-name { font-weight: 700; font-size: 14px; color: var(--accent); margin-bottom: 4px; }
+  .db-card .schema-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .db-card .schema-rows { display: inline-block; margin-top: 8px; background: var(--surface2); border-radius: 20px; padding: 2px 10px; font-size: 11px; color: var(--green); }
+  .placeholder-tag { color: var(--yellow) !important; }
+
+  /* ── task list ────────────────────────────────────────────── */
+  #task-count { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+  .task-list { display: flex; flex-direction: column; gap: 8px; }
+  .task-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; cursor: pointer; transition: all .15s; display: flex; align-items: flex-start; gap: 14px; }
+  .task-card:hover { border-color: var(--accent); background: var(--surface2); }
+  .task-card .task-name { font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 6px; }
+  .task-card .mcp-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .mcp-tag { background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 1px 7px; font-size: 10px; color: var(--accent2); }
+  .task-meta { margin-top: 6px; font-size: 11px; color: var(--muted); }
+  .task-num { flex-shrink: 0; width: 32px; height: 32px; background: var(--surface2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--muted); }
+
+  /* ── task detail panel ────────────────────────────────────── */
+  #detail-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 100; display: none; align-items: flex-start; justify-content: center; padding: 24px; overflow-y: auto; }
+  #detail-overlay.open { display: flex; }
+  #detail-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; width: 100%; max-width: 860px; padding: 28px; position: relative; margin: auto; }
+  .panel-close { position: absolute; top: 16px; right: 16px; background: var(--surface2); border: none; color: var(--muted); font-size: 18px; width: 32px; height: 32px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .15s; }
+  .panel-close:hover { color: var(--text); background: var(--border); }
+  .panel-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 4px; padding-right: 40px; word-break: break-word; }
+  .panel-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin: 18px 0 20px; }
+  .tab-btn { padding: 8px 16px; font-size: 12px; font-weight: 600; color: var(--muted); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: all .15s; margin-bottom: -1px; }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  /* ── markdown-ish task description ───────────────────────── */
+  .task-prose { font-size: 13px; line-height: 1.8; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+
+  /* ── file browser ─────────────────────────────────────────── */
+  .file-section { margin-bottom: 20px; }
+  .file-section h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 8px; }
+  .file-list { display: flex; flex-direction: column; gap: 4px; }
+  .file-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; background: var(--surface2); border-radius: 6px; cursor: pointer; transition: all .15s; font-size: 12px; color: var(--text); border: 1px solid transparent; }
+  .file-item:hover { border-color: var(--accent); }
+  .file-ext { font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; flex-shrink: 0; }
+  .ext-md { background: #1e3a5f; color: #60a5fa; }
+  .ext-pdf { background: #3b1a1a; color: #f87171; }
+  .ext-json { background: #1a3b1a; color: #4ade80; }
+  .ext-xlsx { background: #1a3b2a; color: #34d399; }
+  .ext-csv { background: #2a2a1a; color: #fbbf24; }
+  .ext-txt { background: #2a2a2a; color: #9ca3af; }
+  .ext-py { background: #1a2a3b; color: #93c5fd; }
+  .ext-gz { background: #2a1a3b; color: #c4b5fd; }
+  .ext-docx { background: #1a3b3b; color: #5eead4; }
+  .ext-pptx { background: #3b1a2a; color: #f9a8d4; }
+  .ext-bib { background: #2a1a1a; color: #d1d5db; }
+  .ext-default { background: var(--border); color: var(--muted); }
+  .file-path { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* ── file viewer ──────────────────────────────────────────── */
+  #file-viewer { position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 200; display: none; align-items: center; justify-content: center; padding: 32px; }
+  #file-viewer.open { display: flex; }
+  #file-viewer-inner { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 800px; max-height: 80vh; display: flex; flex-direction: column; }
+  #file-viewer-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+  #file-viewer-title { font-size: 13px; font-weight: 600; color: var(--text); }
+  #file-viewer-content { flex: 1; overflow-y: auto; padding: 16px; }
+  #file-viewer-content pre { font-family: 'Fira Code', 'Cascadia Code', monospace; font-size: 12px; line-height: 1.7; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+
+  /* ── mcp pill chip colors ─────────────────────────────────── */
+  .mcp-chip { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; margin: 3px; border: 1px solid; }
+  .mcp-canvas { background: #1a3b1a55; border-color: #34d399; color: #34d399; }
+  .mcp-snowflake { background: #1a2a3b55; border-color: #60a5fa; color: #60a5fa; }
+  .mcp-woocommerce { background: #2a1a3b55; border-color: #a78bfa; color: #a78bfa; }
+  .mcp-yahoo-finance, .mcp-yf { background: #3b2a1a55; border-color: #fbbf24; color: #fbbf24; }
+  .mcp-notion { background: #2a2a2a55; border-color: #9ca3af; color: #9ca3af; }
+  .mcp-excel { background: #1a3b2a55; border-color: #4ade80; color: #4ade80; }
+  .mcp-word { background: #1a2a4a55; border-color: #93c5fd; color: #93c5fd; }
+  .mcp-emails { background: #3b1a1a55; border-color: #f87171; color: #f87171; }
+  .mcp-google_calendar { background: #3b3b1a55; border-color: #facc15; color: #facc15; }
+  .mcp-google_sheet { background: #1a3b3b55; border-color: #5eead4; color: #5eead4; }
+  .mcp-google_forms { background: #3b1a2a55; border-color: #f9a8d4; color: #f9a8d4; }
+  .mcp-default { background: #22263a; border-color: var(--border); color: var(--muted); }
+
+  /* ── empty state ──────────────────────────────────────────── */
+  .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .empty svg { opacity: .3; margin-bottom: 12px; }
+
+  /* ── loading ──────────────────────────────────────────────── */
+  .loading { color: var(--muted); padding: 40px; text-align: center; }
+
+  /* ── scrollbar ────────────────────────────────────────────── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+  .section-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 14px; }
+  .info-note { font-size: 12px; color: var(--muted); background: var(--surface2); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 0 6px 6px 0; margin-bottom: 18px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <h2>Toolathlon-GYM</h2>
+      <p>Task Explorer</p>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding-top:8px;">
+      <div class="nav-section">Views</div>
+      <div class="nav-item active" onclick="showView('overview')" id="nav-overview">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Overview
+      </div>
+      <div class="nav-item" onclick="showView('database')" id="nav-database">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+        Database
+      </div>
+      <div class="nav-item" onclick="showView('tasks')" id="nav-tasks">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Tasks
+      </div>
+      <div class="nav-section" style="margin-top:12px;">Quick Filter</div>
+      <div id="mcp-nav-list" style="padding: 0 8px 8px;"></div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main">
+    <div id="topbar">
+      <h1>Toolathlon-GYM Explorer</h1>
+      <div class="badge" id="topbar-badge">loading…</div>
+      <div class="spacer"></div>
+      <a href="https://github.com/hkust-nlp/Toolathlon" target="_blank" style="font-size:11px;color:var(--muted);text-decoration:none;">↗ Toolathlon</a>
+    </div>
+    <div id="content">
+      <!-- views injected here -->
+    </div>
+  </div>
+</div>
+
+<!-- Task Detail Overlay -->
+<div id="detail-overlay" onclick="closeDetail(event)">
+  <div id="detail-panel">
+    <button class="panel-close" onclick="closeDetail()">✕</button>
+    <div class="panel-title" id="detail-title"></div>
+    <div id="detail-mcp-chips" style="margin-top:10px;"></div>
+    <div class="panel-tabs">
+      <button class="tab-btn active" onclick="switchTab('desc')">Description</button>
+      <button class="tab-btn" onclick="switchTab('files')">Files</button>
+    </div>
+    <div class="tab-pane active" id="tab-desc">
+      <div class="task-prose" id="detail-desc"></div>
+    </div>
+    <div class="tab-pane" id="tab-files">
+      <div id="detail-files"></div>
+    </div>
+  </div>
+</div>
+
+<!-- File Viewer -->
+<div id="file-viewer" onclick="closeFileViewer(event)">
+  <div id="file-viewer-inner">
+    <div id="file-viewer-header">
+      <span id="file-viewer-title"></span>
+      <button class="panel-close" onclick="closeFileViewer()" style="position:static;">✕</button>
+    </div>
+    <div id="file-viewer-content"><pre id="file-viewer-pre"></pre></div>
+  </div>
+</div>
+
+<script>
+const API = '';  // same origin
+let statsData = null;
+let allTasks = [];
+let currentView = 'overview';
+let currentTaskName = null;
+let activeTabId = 'desc';
+
+// ── MCP chip color ──────────────────────────────────────────────────────────
+function mcpClass(m) {
+  const map = { canvas:'mcp-canvas', snowflake:'mcp-snowflake', woocommerce:'mcp-woocommerce',
+    'yahoo-finance':'mcp-yahoo-finance', notion:'mcp-notion', excel:'mcp-excel', word:'mcp-word',
+    emails:'mcp-emails', google_calendar:'mcp-google_calendar', google_sheet:'mcp-google_sheet',
+    google_forms:'mcp-google_forms' };
+  return map[m] || 'mcp-default';
+}
+
+// ── file extension badge ────────────────────────────────────────────────────
+function extBadge(filename) {
+  const ext = filename.split('.').pop().toLowerCase();
+  const cls = { md:'ext-md', pdf:'ext-pdf', json:'ext-json', xlsx:'ext-xlsx',
+    csv:'ext-csv', txt:'ext-txt', py:'ext-py', gz:'ext-gz', docx:'ext-docx',
+    pptx:'ext-pptx', bib:'ext-bib' }[ext] || 'ext-default';
+  return `<span class="file-ext ${cls}">.${ext}</span>`;
+}
+
+// ── fetch helpers ───────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(r.statusText);
+  return r.json();
+}
+
+// ── nav ─────────────────────────────────────────────────────────────────────
+function showView(view) {
+  currentView = view;
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  const navEl = document.getElementById('nav-' + view);
+  if (navEl) navEl.classList.add('active');
+  renderView();
+}
+
+function renderView() {
+  const c = document.getElementById('content');
+  if (currentView === 'overview') renderOverview(c);
+  else if (currentView === 'database') renderDatabase(c);
+  else if (currentView === 'tasks') renderTasks(c);
+}
+
+// ── OVERVIEW ────────────────────────────────────────────────────────────────
+function renderOverview(c) {
+  if (!statsData) { c.innerHTML = '<div class="loading">Loading…</div>'; return; }
+  const s = statsData;
+  const top10mcps = Object.entries(s.mcp_usage).slice(0, 12);
+  const maxMcp = top10mcps[0][1];
+  const fileTypes = Object.entries(s.initial_file_types);
+  const maxFt = fileTypes[0]?.[1] || 1;
+  const mcp_dist = Object.entries(s.mcp_distribution);
+
+  c.innerHTML = `
+    <div class="section-title">Overview</div>
+    <div class="info-note">
+      503 benchmark tasks across enterprise, academic, e-commerce, and financial domains.
+      Built on <a href="https://github.com/hkust-nlp/Toolathlon" target="_blank" style="color:var(--accent);">Toolathlon</a> infrastructure by HKUST-NLP.
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="label">Total Tasks</div><div class="value">${s.total_tasks}</div><div class="sub">benchmark scenarios</div></div>
+      <div class="stat-card"><div class="label">MCP Servers</div><div class="value">${Object.keys(s.mcp_usage).length}</div><div class="sub">unique tools</div></div>
+      <div class="stat-card"><div class="label">DB Schemas</div><div class="value">${Object.keys(s.db_schemas).length}</div><div class="sub">data domains</div></div>
+      <div class="stat-card"><div class="label">File Types</div><div class="value">${fileTypes.length}</div><div class="sub">in initial_workspace</div></div>
+    </div>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Top MCP Servers by Task Count</h3>
+        ${top10mcps.map(([k,v]) => `
+          <div class="bar-row">
+            <div class="bar-label">${k}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${(v/maxMcp*100).toFixed(1)}%"></div></div>
+            <div class="bar-count">${v}</div>
+          </div>`).join('')}
+      </div>
+      <div class="chart-card">
+        <h3>MCPs per Task Distribution</h3>
+        ${mcp_dist.map(([k,v]) => `
+          <div class="bar-row">
+            <div class="bar-label">${k} MCPs</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${(v/Math.max(...mcp_dist.map(x=>x[1]))*100).toFixed(1)}%;background:linear-gradient(90deg,var(--green),var(--accent))"></div></div>
+            <div class="bar-count">${v}</div>
+          </div>`).join('')}
+      </div>
+      <div class="chart-card">
+        <h3>Input File Types (initial_workspace)</h3>
+        ${fileTypes.map(([k,v]) => `
+          <div class="bar-row">
+            <div class="bar-label">${k}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${(v/maxFt*100).toFixed(1)}%;background:linear-gradient(90deg,var(--accent2),var(--accent))"></div></div>
+            <div class="bar-count">${v}</div>
+          </div>`).join('')}
+      </div>
+      <div class="chart-card">
+        <h3>Database Row Counts</h3>
+        ${Object.entries(s.db_schemas).filter(([,v])=>v.rows>10).map(([k,v]) => {
+          const max = Math.max(...Object.values(s.db_schemas).map(x=>x.rows));
+          return `<div class="bar-row">
+            <div class="bar-label">${k}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${(v.rows/max*100).toFixed(1)}%;background:linear-gradient(90deg,var(--yellow),var(--red))"></div></div>
+            <div class="bar-count">${v.rows>=1000?(v.rows/1000).toFixed(0)+'k':v.rows}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+}
+
+// ── DATABASE ─────────────────────────────────────────────────────────────────
+function renderDatabase(c) {
+  if (!statsData) { c.innerHTML = '<div class="loading">Loading…</div>'; return; }
+  const schemas = statsData.db_schemas;
+  const isPlaceholder = name => schemas[name].rows <= 15;
+
+  c.innerHTML = `
+    <div class="section-title">PostgreSQL Mock Database</div>
+    <div class="info-note">
+      Connection: <code style="color:var(--accent)">toolathlon @ localhost:5432</code> (postgres/postgres) &nbsp;·&nbsp;
+      Data sourced from Kaggle OULAD, Kaggle HR Analytics, Yahoo Finance API, Kaggle Amazon + DummyJSON.
+    </div>
+
+    <div class="section-title" style="font-size:13px;margin-bottom:10px;">Data-Rich Schemas</div>
+    <div class="db-grid">
+      ${Object.entries(schemas).filter(([k])=>!isPlaceholder(k)).map(([k,v])=>`
+        <div class="db-card">
+          <div class="schema-name">${k}</div>
+          <div class="schema-desc">${v.description}</div>
+          <span class="schema-rows">${v.rows.toLocaleString()} rows</span>
+        </div>`).join('')}
+    </div>
+
+    <div class="section-title" style="font-size:13px;margin-bottom:10px;margin-top:8px;">Writable / Placeholder Schemas</div>
+    <div class="db-grid">
+      ${Object.entries(schemas).filter(([k])=>isPlaceholder(k)).map(([k,v])=>`
+        <div class="db-card">
+          <div class="schema-name">${k}</div>
+          <div class="schema-desc">${v.description}</div>
+          <span class="schema-rows placeholder-tag">seed data — runtime writable</span>
+        </div>`).join('')}
+    </div>`;
+}
+
+// ── TASKS ────────────────────────────────────────────────────────────────────
+let taskFilter = { q: '', mcp: '', mcp_count: '' };
+let filteredTasks = [];
+let page = 0;
+const PAGE_SIZE = 50;
+
+function renderTasks(c) {
+  c.innerHTML = `
+    <div id="search-bar">
+      <input type="text" id="q-input" placeholder="🔍  Search task name…" oninput="onSearch()" value="${taskFilter.q}" />
+      <select id="mcp-select" onchange="onSearch()">
+        <option value="">All MCP servers</option>
+        ${statsData ? Object.keys(statsData.mcp_usage).map(m => `<option value="${m}" ${taskFilter.mcp===m?'selected':''}>${m}</option>`).join('') : ''}
+      </select>
+      <select id="cnt-select" onchange="onSearch()">
+        <option value="">Any # of MCPs</option>
+        ${[4,5,6,7,8].map(n=>`<option value="${n}" ${taskFilter.mcp_count==n?'selected':''}>${n} MCPs</option>`).join('')}
+      </select>
+    </div>
+    <div id="task-count"></div>
+    <div id="task-list-container"><div class="loading">Loading tasks…</div></div>
+    <div id="load-more-area" style="text-align:center;padding:16px;"></div>
+  `;
+  applyFilter();
+}
+
+function onSearch() {
+  taskFilter.q = document.getElementById('q-input')?.value || '';
+  taskFilter.mcp = document.getElementById('mcp-select')?.value || '';
+  taskFilter.mcp_count = document.getElementById('cnt-select')?.value || '';
+  page = 0;
+  applyFilter();
+}
+
+function applyFilter() {
+  let tasks = allTasks;
+  if (taskFilter.mcp) tasks = tasks.filter(t => t.mcps.includes(taskFilter.mcp));
+  if (taskFilter.mcp_count) tasks = tasks.filter(t => t.mcp_count == taskFilter.mcp_count);
+  if (taskFilter.q) { const q = taskFilter.q.toLowerCase(); tasks = tasks.filter(t => t.name.toLowerCase().includes(q)); }
+  filteredTasks = tasks;
+
+  const countEl = document.getElementById('task-count');
+  if (countEl) countEl.textContent = `Showing ${Math.min((page+1)*PAGE_SIZE, tasks.length)} of ${tasks.length} tasks`;
+
+  const container = document.getElementById('task-list-container');
+  if (!container) return;
+  const slice = tasks.slice(0, (page+1)*PAGE_SIZE);
+  container.innerHTML = slice.length === 0
+    ? '<div class="empty"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><br>No tasks found</div>'
+    : `<div class="task-list">${slice.map((t,i) => `
+        <div class="task-card" onclick="openTask('${t.name}')">
+          <div class="task-num">${i+1}</div>
+          <div style="flex:1;min-width:0;">
+            <div class="task-name">${t.name}</div>
+            <div class="mcp-tags">${t.mcps.map(m=>`<span class="mcp-tag">${m}</span>`).join('')}</div>
+            <div class="task-meta">
+              ${t.mcp_count} MCPs &nbsp;·&nbsp;
+              ${t.initial_files.length} input files &nbsp;·&nbsp;
+              ${t.groundtruth_files.length} groundtruth files
+            </div>
+          </div>
+        </div>`).join('')}</div>`;
+
+  const loadMore = document.getElementById('load-more-area');
+  if (loadMore) {
+    if ((page+1)*PAGE_SIZE < tasks.length) {
+      loadMore.innerHTML = `<button onclick="loadMore()" style="background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:8px 24px;border-radius:6px;cursor:pointer;font-size:13px;">Load more (${tasks.length - (page+1)*PAGE_SIZE} remaining)</button>`;
+    } else {
+      loadMore.innerHTML = '';
+    }
+  }
+}
+
+function loadMore() {
+  page++;
+  applyFilter();
+}
+
+// ── TASK DETAIL ──────────────────────────────────────────────────────────────
+async function openTask(name) {
+  currentTaskName = name;
+  document.getElementById('detail-title').textContent = name;
+  document.getElementById('detail-mcp-chips').innerHTML = '<span style="color:var(--muted);font-size:12px;">Loading…</span>';
+  document.getElementById('detail-desc').textContent = 'Loading…';
+  document.getElementById('detail-files').innerHTML = '';
+  activeTabId = 'desc';
+  switchTab('desc');
+  document.getElementById('detail-overlay').classList.add('open');
+
+  try {
+    const t = await fetchJSON(`/api/tasks/${encodeURIComponent(name)}`);
+    document.getElementById('detail-mcp-chips').innerHTML = t.mcps.map(m => `<span class="mcp-chip ${mcpClass(m)}">${m}</span>`).join('');
+    document.getElementById('detail-desc').textContent = t.task_md || '(No description available)';
+    renderFilePanel(t);
+  } catch(e) {
+    document.getElementById('detail-desc').textContent = 'Error loading task: ' + e.message;
+  }
+}
+
+function renderFilePanel(t) {
+  const el = document.getElementById('detail-files');
+  const section = (title, files, ws) => {
+    if (!files.length) return `<div class="file-section"><h4>${title}</h4><div style="color:var(--muted);font-size:12px;">(empty)</div></div>`;
+    return `<div class="file-section">
+      <h4>${title} (${files.length} files)</h4>
+      <div class="file-list">
+        ${files.map(f => {
+          const textExts = ['md','txt','json','py','csv','bib','yaml','yml','toml'];
+          const ext = f.split('.').pop().toLowerCase();
+          const clickable = textExts.includes(ext);
+          return `<div class="file-item" ${clickable ? `onclick="viewFile('${t.name}','${f.replace(/'/g,"\\'")}','${ws}')"` : ''} title="${clickable?'Click to view':'Binary file'}">
+            ${extBadge(f)}
+            <span class="file-path">${f}</span>
+            ${clickable ? '<span style="color:var(--muted);font-size:10px;flex-shrink:0;">view ›</span>' : ''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  };
+  el.innerHTML = section('Initial Workspace', t.initial_files, 'initial') +
+                 section('Groundtruth Workspace', t.groundtruth_files, 'groundtruth');
+}
+
+function switchTab(id) {
+  activeTabId = id;
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', (i===0&&id==='desc')||(i===1&&id==='files'));
+  });
+  document.getElementById('tab-desc').classList.toggle('active', id==='desc');
+  document.getElementById('tab-files').classList.toggle('active', id==='files');
+}
+
+function closeDetail(e) {
+  if (e && e.target !== document.getElementById('detail-overlay')) return;
+  document.getElementById('detail-overlay').classList.remove('open');
+}
+
+// ── FILE VIEWER ───────────────────────────────────────────────────────────────
+async function viewFile(taskName, path, workspace) {
+  document.getElementById('file-viewer-title').textContent = path;
+  document.getElementById('file-viewer-pre').textContent = 'Loading…';
+  document.getElementById('file-viewer').classList.add('open');
+  try {
+    const data = await fetchJSON(`/api/tasks/${encodeURIComponent(taskName)}/file?path=${encodeURIComponent(path)}&workspace=${workspace}`);
+    document.getElementById('file-viewer-pre').textContent = data.content;
+  } catch(e) {
+    document.getElementById('file-viewer-pre').textContent = 'Error: ' + e.message;
+  }
+}
+
+function closeFileViewer(e) {
+  if (e && e.target !== document.getElementById('file-viewer')) return;
+  document.getElementById('file-viewer').classList.remove('open');
+}
+
+// ── MCP quick-nav ─────────────────────────────────────────────────────────────
+function buildMcpNav() {
+  if (!statsData) return;
+  const top = Object.entries(statsData.mcp_usage).slice(0, 10);
+  document.getElementById('mcp-nav-list').innerHTML = top.map(([m,n]) => `
+    <div class="nav-item" onclick="filterByMcp('${m}')">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg>
+      <span>${m}</span>
+      <span style="margin-left:auto;font-size:10px;color:var(--muted);">${n}</span>
+    </div>`).join('');
+}
+
+function filterByMcp(mcp) {
+  taskFilter.mcp = mcp;
+  taskFilter.q = '';
+  taskFilter.mcp_count = '';
+  showView('tasks');
+}
+
+// ── KEYBOARD ──────────────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('file-viewer').classList.contains('open')) {
+      closeFileViewer();
+    } else if (document.getElementById('detail-overlay').classList.contains('open')) {
+      closeDetail({ target: document.getElementById('detail-overlay') });
+    }
+  }
+});
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+(async () => {
+  try {
+    [statsData, allTasks] = await Promise.all([fetchJSON('/api/stats'), fetchJSON('/api/tasks')]);
+    document.getElementById('topbar-badge').textContent = `${allTasks.length} tasks · ${Object.keys(statsData.mcp_usage).length} MCPs`;
+    buildMcpNav();
+    renderView();
+  } catch(e) {
+    document.getElementById('content').innerHTML = `<div class="loading" style="color:var(--red)">Failed to connect to API server.<br><br><code>${e.message}</code><br><br>Make sure the server is running:<br><code style="color:var(--accent)">uvicorn server:app --reload --port 8765</code></div>`;
+  }
+})();
+</script>
+</body>
+</html>

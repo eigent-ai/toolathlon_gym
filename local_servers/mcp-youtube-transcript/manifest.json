@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/mcpb/refs/heads/main/schemas/mcpb-manifest-v0.4.schema.json",
+  "manifest_version": "0.4",
+  "name": "mcp-youtube-transcript",
+  "display_name": "YouTube Transcript MCP Server",
+  "version": "0.5.11",
+  "description": "MCP server retrieving transcripts of YouTube videos",
+  "author": {
+    "name": "Junpei Kawamoto",
+    "email": "kawamoto.junpei.s64@kyoto-u.jp",
+    "url": "https://github.com/jkawamoto"
+  },
+  "homepage": "https://github.com/jkawamoto/mcp-youtube-transcript",
+  "documentation": "https://github.com/jkawamoto/mcp-youtube-transcript",
+  "support": "https://github.com/jkawamoto/mcp-youtube-transcript/issues",
+  "server": {
+    "type": "python",
+    "entry_point": "src/mcp_youtube_transcript/__main__.py",
+    "mcp_config": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "${__dirname}",
+        "mcp-youtube-transcript",
+        "--response-limit",
+        "${user_config.response_limit}"
+      ],
+      "env": {
+        "WEBSHARE_PROXY_USERNAME": "${user_config.webshare_proxy_username}",
+        "WEBSHARE_PROXY_PASSWORD": "${user_config.webshare_proxy_password}",
+        "HTTP_PROXY": "${user_config.http_proxy}",
+        "HTTPS_PROXY": "${user_config.https_proxy}"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "get_transcript",
+      "description": "Fetches the transcript of a specified YouTube video."
+    },
+    {
+      "name": "get_timed_transcript",
+      "description": "Fetches the transcript of a specified YouTube video with timestamps."
+    },
+    {
+      "name": "get_video_info",
+      "description": "Fetches the metadata of a specified YouTube video."
+    }
+  ],
+  "compatibility": {
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  },
+  "user_config": {
+    "response_limit": {
+      "type": "number",
+      "title": "Maximum response character limit",
+      "description": "Maximum number of characters each response contains. Set a negative value to disable pagination.",
+      "required": false,
+      "default": 50000
+    },
+    "webshare_proxy_username": {
+      "type": "string",
+      "title": "Webshare proxy service username",
+      "description": "Username for authentication with Webshare proxy service",
+      "required": false,
+      "default": ""
+    },
+    "webshare_proxy_password": {
+      "type": "string",
+      "title": "Webshare proxy service password",
+      "description": "Password for authentication with Webshare proxy service",
+      "required": false,
+      "sensitive": true,
+      "default": ""
+    },
+    "http_proxy": {
+      "type": "string",
+      "title": "HTTP proxy server URL",
+      "description": "URL of an HTTP proxy server to use for requests (e.g. http://proxy.example.com:8080)",
+      "required": false,
+      "default": ""
+    },
+    "https_proxy": {
+      "type": "string",
+      "title": "HTTPS proxy server URL",
+      "description": "URL of an HTTPS proxy server to use for secure requests (e.g. https://proxy.example.com:8080)",
+      "required": false,
+      "default": ""
+    }
+  },
+  "keywords": [
+    "youtube"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkawamoto/mcp-youtube-transcript"
+  }
+}

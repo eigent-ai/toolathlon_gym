@@ -1,0 +1,8 @@
+{
+  "project": "Team Learning Initiative",
+  "target_channel": "Fireship",
+  "report_recipient": "analytics@company.com",
+  "output_file": "Fireship_Monthly_Stats.xlsx",
+  "notion_page_title": "Fireship Channel Analysis 2024-2025",
+  "email_subject": "Fireship Channel Analysis Complete"
+}

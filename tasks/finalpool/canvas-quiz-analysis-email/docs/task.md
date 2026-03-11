@@ -1,0 +1,7 @@
+I am an academic coordinator and I need to review quiz performance for the course "Biochemistry & Bioinformatics (Fall 2013)" which has course ID 3. I want to understand how students are doing on their quizzes and then communicate the results to the instructor.
+
+Please look up all quizzes for this course and pull the submission data for each quiz. For every quiz, I need to know the average score, how many students took it, and what percentage of students passed. A passing score is defined as achieving at least 60 percent of the quiz's total points possible.
+
+Create an Excel file called Quiz_Performance.xlsx in the workspace with a single sheet named "Quiz Analysis". The columns should be Quiz_Title, Points_Possible, Avg_Score (rounded to 2 decimal places), Pass_Rate_Pct (rounded to 1 decimal place, representing the percentage of students who scored at or above 60 percent of points possible), and Student_Count. Sort the rows by Pass_Rate_Pct in ascending order so the quizzes where students struggled most appear first.
+
+After creating the report, find out who teaches this course by looking up the instructor enrollment for course ID 3. There should be teacher enrollments associated with it. Send an email to the first instructor you find, using a subject line of "Quiz Performance Report - Biochemistry & Bioinformatics". In the email body, include a brief summary of the findings: how many quizzes were analyzed, the overall range of pass rates observed, and which quiz had the lowest pass rate. The email should come from coordinator@university.edu.

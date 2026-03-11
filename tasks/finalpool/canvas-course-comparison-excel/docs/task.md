@@ -1,0 +1,7 @@
+I am preparing a report for the academic affairs department comparing student performance across our Fall 2013 courses. Please look up all courses that have "Fall 2013" in their name on our learning management system and gather the relevant statistics for each one.
+
+For every Fall 2013 course, I need the course name, course code, the number of enrolled students (only counting student enrollments), the average final score from student enrollment grades rounded to 1 decimal place, the total number of assignments in the course, and the total number of quizzes.
+
+Please create an Excel file called "Course_Comparison_Fall2013.xlsx" in the workspace. It should have a sheet named "Course Stats" with columns Course_Name, Course_Code, Student_Count, Avg_Final_Score, Assignment_Count, and Quiz_Count, with the rows sorted alphabetically by Course_Name. Then add a second sheet called "Summary" with two columns, Metric and Value, containing the following rows: Total_Courses (the number of Fall 2013 courses found), Total_Students (sum of all enrolled students across those courses), Highest_Avg_Score_Course (the name of the course with the highest average final score), and Lowest_Avg_Score_Course (the name of the course with the lowest average final score).
+
+Once the file is ready, send an email to academic-affairs@university.edu with the subject "Fall 2013 Course Performance Summary" giving them a brief overview of the total number of courses analyzed, total students enrolled, and which course performed best and worst by average final score.

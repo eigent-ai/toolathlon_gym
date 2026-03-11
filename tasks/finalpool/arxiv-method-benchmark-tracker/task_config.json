@@ -1,0 +1,16 @@
+{
+  "needed_mcp_servers": [
+    "playwright_with_chunk",
+    "terminal",
+    "arxiv_local",
+    "excel",
+    "notion"
+  ],
+  "needed_local_tools": [
+    "claim_done",
+    "handle_overlong_tool_outputs",
+    "manage_context",
+    "history",
+    "python_execute"
+  ]
+}

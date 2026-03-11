@@ -1,0 +1,9 @@
+Ticket_ID,Customer_ID,Issue_Type,Resolution_Time_Hours,First_Contact_Resolution,Customer_Satisfaction,Product_Line
+T001,C001,Technical Issue,2.5,Yes,4,Premium
+T002,C002,Billing Question,1.0,Yes,5,Standard
+T003,C003,Feature Request,24.0,No,3,Basic
+T004,C004,Technical Issue,4.5,No,2,Premium
+T005,C005,Account Setup,0.5,Yes,5,Standard
+T006,C006,Performance Issue,8.0,No,3,Premium
+T007,C007,Billing Question,1.5,Yes,4,Basic
+T008,C008,Technical Issue,3.0,Yes,4,Standard

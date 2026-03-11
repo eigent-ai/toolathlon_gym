@@ -1,0 +1,34 @@
+{
+  "benchmarks": [
+    {
+      "department": "Engineering",
+      "industry_avg": 66816
+    },
+    {
+      "department": "Finance",
+      "industry_avg": 79324
+    },
+    {
+      "department": "HR",
+      "industry_avg": 67899
+    },
+    {
+      "department": "Operations",
+      "industry_avg": 72812
+    },
+    {
+      "department": "R&D",
+      "industry_avg": 74771
+    },
+    {
+      "department": "Sales",
+      "industry_avg": 77904
+    },
+    {
+      "department": "Support",
+      "industry_avg": 61709
+    }
+  ],
+  "source": "HR Analytics API",
+  "date": "2026-03-01"
+}

@@ -1,0 +1,19 @@
+{
+  "template_version": "1.0",
+  "fields": {
+    "task_name": "Name of the benchmark task",
+    "method_name": "Name of the method or model",
+    "score": "Numerical performance score",
+    "paper_id": "ArXiv paper ID if available",
+    "key_contribution": "One-sentence summary of main contribution",
+    "dataset": "Primary evaluation dataset",
+    "architecture": "Type of neural architecture used",
+    "notes": "Additional observations"
+  },
+  "comparison_dimensions": [
+    "Performance vs. efficiency tradeoff",
+    "Generalization across tasks",
+    "Training data requirements",
+    "Inference speed"
+  ]
+}

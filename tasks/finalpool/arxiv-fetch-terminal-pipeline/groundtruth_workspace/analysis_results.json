@@ -1,0 +1,23 @@
+{
+  "total_papers": 4,
+  "total_citations": 9000,
+  "average_citations": 2250.0,
+  "max_citations": 3500,
+  "min_citations": 1500,
+  "most_cited_paper": "Evaluating Large Language Models Trained on Code",
+  "most_cited_arxiv_id": "2107.03374",
+  "average_abstract_length": 542.8,
+  "average_authors": 3.0,
+  "paper_titles": [
+    "Evaluating Large Language Models Trained on Code",
+    "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+    "Competition-Level Code Generation with AlphaCode",
+    "StarCoder: May the Source Be with You!"
+  ],
+  "paper_arxiv_ids": [
+    "2107.03374",
+    "2002.08155",
+    "2203.07814",
+    "2305.06161"
+  ]
+}

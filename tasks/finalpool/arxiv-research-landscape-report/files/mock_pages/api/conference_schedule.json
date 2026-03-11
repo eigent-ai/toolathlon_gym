@@ -1,0 +1,17 @@
+[
+  {
+    "name": "NeurIPS 2026",
+    "deadline": "2026-05-15",
+    "topics": ["deep learning", "reinforcement learning", "NLP"]
+  },
+  {
+    "name": "ICML 2026",
+    "deadline": "2026-04-20",
+    "topics": ["optimization", "generative models"]
+  },
+  {
+    "name": "AAAI 2026",
+    "deadline": "2026-06-01",
+    "topics": ["knowledge graphs", "planning", "NLP"]
+  }
+]

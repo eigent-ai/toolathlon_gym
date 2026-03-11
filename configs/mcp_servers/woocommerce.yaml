@@ -1,0 +1,17 @@
+# WooCommerce MCP Server
+# Source: https://github.com/lockon-n/woocommerce-mcp
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/woocommerce-mcp
+type: stdio
+name: woocommerce
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/woocommerce-mcp/dist/index.js"
+  env:
+    WORDPRESS_SITE_URL: "http://localhost:8081"
+    WOOCOMMERCE_CONSUMER_KEY: "placeholder"
+    WOOCOMMERCE_CONSUMER_SECRET: "placeholder"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 10
+cache_tools_list: true

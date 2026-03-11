@@ -1,0 +1,34 @@
+{
+  "industry_benchmarks": {
+    "Engineering": {
+      "turnover_rate": 13.2,
+      "risk_threshold_satisfaction": 2.5
+    },
+    "Finance": {
+      "turnover_rate": 11.8,
+      "risk_threshold_satisfaction": 2.8
+    },
+    "HR": {
+      "turnover_rate": 10.5,
+      "risk_threshold_satisfaction": 2.5
+    },
+    "Operations": {
+      "turnover_rate": 12.1,
+      "risk_threshold_satisfaction": 2.6
+    },
+    "R&D": {
+      "turnover_rate": 14.0,
+      "risk_threshold_satisfaction": 2.4
+    },
+    "Sales": {
+      "turnover_rate": 15.3,
+      "risk_threshold_satisfaction": 2.7
+    },
+    "Support": {
+      "turnover_rate": 16.8,
+      "risk_threshold_satisfaction": 2.5
+    }
+  },
+  "report_date": "2026-03-01",
+  "source": "HR Analytics Institute"
+}

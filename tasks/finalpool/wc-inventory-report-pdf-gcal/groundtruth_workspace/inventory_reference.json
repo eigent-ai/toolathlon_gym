@@ -1,0 +1,210 @@
+{
+  "total_products": 82,
+  "out_of_stock": [
+    {
+      "id": 20,
+      "name": "Infinity (JBL Glide 500, 20 Hrs Playtime with Quick Charge, Wireless On Ear Headphone with Mic, Deep Bass, Dual Equalizer,...",
+      "sku": "INFINITY-JBL-GLIDE-1020",
+      "qty": 0,
+      "price": 19.27,
+      "category": "Electronics"
+    },
+    {
+      "id": 39,
+      "name": "BOXTUDIO\u00ae- LIGHTBOX- Tabletop Portable PhotoStudio(40x40x40cms)- Product Photography Light Tent- Think Inside The Box !-10...",
+      "sku": "BOXTUDIO-LIGHTBOX-TA-1039",
+      "qty": 0,
+      "price": 28.9,
+      "category": "Cameras"
+    },
+    {
+      "id": 45,
+      "name": "TYPE-C Earphone for OnePlus 8 Pro , OnePlus Eight Pro in Ear Type C Wired Earphones with Mic, Braided 1.2 Metre Cable, Met...",
+      "sku": "TYPEC-EARPHONE-FOR-1045",
+      "qty": 0,
+      "price": 6.14,
+      "category": "Audio"
+    },
+    {
+      "id": 71,
+      "name": "30kg digital scale for shop and kitchen green display 72hrs battery backup weight machine",
+      "sku": "30KG-DIGITAL-SCALE-1071",
+      "qty": 0,
+      "price": 27.1,
+      "category": "Home Appliances"
+    },
+    {
+      "id": 79,
+      "name": "Silencer Panels, Flame Retardant Sound\u2011Absorption, Polyester Fiber Stable for Recording Studio Home Theater Black",
+      "sku": "SILENCER-PANELS-FLAM-1079",
+      "qty": 0,
+      "price": 27.42,
+      "category": "TV & Home Theater"
+    }
+  ],
+  "low_stock": [
+    {
+      "id": 5,
+      "name": "TheGiftKart Flip Back Cover Case for OnePlus Nord CE 2 LITE 5G | Dual-Color Leather Finish | Inbuilt Stand & Pockets | Wal...",
+      "sku": "THEGIFTKART-FLIP-BAC-1005",
+      "qty": 1,
+      "price": 3.6,
+      "category": "Electronics"
+    },
+    {
+      "id": 22,
+      "name": "CASEOLOGY by Spigen Athlex Back Cover Case Compatible with Samsung Galaxy S23 Ultra (TPU and PC | Active Black)",
+      "sku": "CASEOLOGY-BY-SPIGEN-1022",
+      "qty": 1,
+      "price": 18.3,
+      "category": "Electronics"
+    },
+    {
+      "id": 31,
+      "name": "Eloies\u00ae Tripod for Mobile and Camera Jaguar Series Alluminum Made 3 Way Pan Head Photo Video Tripod Heavy Duty Tripod Stan...",
+      "sku": "ELOIES-TRIPOD-FOR-1031",
+      "qty": 1,
+      "price": 25.9,
+      "category": "Cameras"
+    },
+    {
+      "id": 63,
+      "name": "PFN Analog DW Maroon Colour White dial Mens Watch Womens Watch",
+      "sku": "PFN-ANALOG-DW-1063",
+      "qty": 1,
+      "price": 6.01,
+      "category": "Watches"
+    },
+    {
+      "id": 7,
+      "name": "boAt Dual Port Rapid 5V Car Charger (Qualcomm Certified) Smart Charging with Quick Charge 3.0 for Cellular Phones (Black)...",
+      "sku": "BOAT-DUAL-PORT-1007",
+      "qty": 2,
+      "price": 5.41,
+      "category": "Electronics"
+    },
+    {
+      "id": 50,
+      "name": "XTOUCH XTBC01 XBass Rich Bass and Noise Cancellation Earphone with Type C Port, 13mm Driver, Inline Mic & Volume Controlle...",
+      "sku": "XTOUCH-XTBC01-XBASS-1050",
+      "qty": 2,
+      "price": 3.99,
+      "category": "Audio"
+    },
+    {
+      "id": 70,
+      "name": "(Renewed) Havells FHVVEDXOWH08 200mm Exhaust Fan (White)",
+      "sku": "RENEWED-HAVELLS-FHVV-1070",
+      "qty": 2,
+      "price": 13.63,
+      "category": "Home Appliances"
+    },
+    {
+      "id": 21,
+      "name": "Robustrion Smart Trifold Hard Back Flip Stand Case Cover for Lenovo Tab M10 HD 2nd Gen TB-X306X / Smart Tab M10 HD 2nd Gen...",
+      "sku": "ROBUSTRION-SMART-TRI-1021",
+      "qty": 3,
+      "price": 6.01,
+      "category": "Electronics"
+    },
+    {
+      "id": 30,
+      "name": "Artis 65Watt Universal Laptop Adapter with 8 Interchangeable Connector pins (Power Cord Included) Compatible with Dell/HP/...",
+      "sku": "ARTIS-65WATT-UNIVERS-1030",
+      "qty": 3,
+      "price": 12.04,
+      "category": "Electronics"
+    },
+    {
+      "id": 52,
+      "name": "Samsung 1m 09cm (43\") Smart Monitor with Built-in Speaker - LS43AM704UWXXL",
+      "sku": "SAMSUNG-1M-09CM-1052",
+      "qty": 3,
+      "price": 469.87,
+      "category": "TV & Home Theater"
+    },
+    {
+      "id": 54,
+      "name": "LG 139 cm (55 Inches) Nanocell Series 4K Ultra HD Smart LED TV 55NANO80SQA (Black) (2022 Model)",
+      "sku": "LG-139-CM-1054",
+      "qty": 3,
+      "price": 861.33,
+      "category": "TV & Home Theater"
+    },
+    {
+      "id": 61,
+      "name": "dlx hmt Women Watch Casual Dress Analog Luxury Quartz Wrist Watches Stainless Steel Watch (Silver, Set of 2)",
+      "sku": "DLX-HMT-WOMEN-1061",
+      "qty": 3,
+      "price": 5.95,
+      "category": "Watches"
+    },
+    {
+      "id": 19,
+      "name": "TheGiftKart Shockproof Crystal Clear Back Cover Case for Redmi A1 | 360 Degree Protection | Protective Design | Transparen...",
+      "sku": "THEGIFTKART-SHOCKPRO-1019",
+      "qty": 4,
+      "price": 2.4,
+      "category": "Electronics"
+    },
+    {
+      "id": 32,
+      "name": "TELESIN Battery for GoPro Hero 11/10/9 Camera with 1750mAh Rechargeable Battery | Camera Battery (1 X Charger & 2 X Battery)",
+      "sku": "TELESIN-BATTERY-FOR-1032",
+      "qty": 4,
+      "price": 49.28,
+      "category": "Cameras"
+    },
+    {
+      "id": 77,
+      "name": "Shopnet Wireless Bluetooth Speaker TG113 For Samsung Galaxy Tab A 7.0 9 (2016), Samsung Galaxy Tab A 8.0, Samsung Galaxy T...",
+      "sku": "SHOPNET-WIRELESS-BLU-1077",
+      "qty": 4,
+      "price": 12.04,
+      "category": "Audio"
+    },
+    {
+      "id": 82,
+      "name": "Tronica Super King 40W 5.1 Bluetooth Home Theater System with FM/PenDrive/Sd Card/Mobile/Aux Support & Remote (5.1 Speaker...",
+      "sku": "TRONICA-SUPER-KING-1082",
+      "qty": 4,
+      "price": 29.46,
+      "category": "TV & Home Theater"
+    },
+    {
+      "id": 15,
+      "name": "POPIO Tempered Glass Compatible for iPhone 6; iPhone 6S; iPhone 7; iPhone 8 (Transparent) Full Screen Coverage (Except Edg...",
+      "sku": "POPIO-TEMPERED-GLASS-1015",
+      "qty": 5,
+      "price": 1.81,
+      "category": "Electronics"
+    },
+    {
+      "id": 27,
+      "name": "Mi Extended Warranty (1year) - Brand Authorised Plan for Mi TV Between 13999-19999(Email Delivery, No Physical Kit)",
+      "sku": "MI-EXTENDED-WARRANTY-1027",
+      "qty": 5,
+      "price": 8.42,
+      "category": "Electronics"
+    },
+    {
+      "id": 28,
+      "name": "Dell S2721HNM-Grey 27\" FHD 1920 x 1080 @75 Hz |Minimalistic Design | IPS Panel |Brightness: 300 cd/m\u00b2|Colour Gamut: 99% sR...",
+      "sku": "DELL-S2721HNMGREY-27-1028",
+      "qty": 5,
+      "price": 191.27,
+      "category": "Electronics"
+    },
+    {
+      "id": 53,
+      "name": "INVANTER 2022 Model Smart TV FRAMLESS Android 43 INCH-SR 2 E",
+      "sku": "INVANTER-2022-MODEL-1053",
+      "qty": 5,
+      "price": 433.61,
+      "category": "TV & Home Theater"
+    }
+  ],
+  "oos_count": 5,
+  "low_count": 20,
+  "total_flagged": 25
+}

@@ -1,0 +1,7 @@
+**/*
+README.md
+LICENSE
+!lib/**/*.js
+!cli.js
+!index.*
+!config.d.ts

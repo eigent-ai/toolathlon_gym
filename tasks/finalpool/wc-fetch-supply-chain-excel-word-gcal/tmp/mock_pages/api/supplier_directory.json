@@ -1,0 +1,55 @@
+{
+  "suppliers": [
+    {
+      "name": "TechWorld Electronics",
+      "lead_time_days": 14,
+      "reliability_score": 92,
+      "min_order_qty": 50,
+      "categories": [
+        "Electronics",
+        "TV"
+      ]
+    },
+    {
+      "name": "GlobalParts Inc",
+      "lead_time_days": 21,
+      "reliability_score": 85,
+      "min_order_qty": 100,
+      "categories": [
+        "Accessories",
+        "Parts"
+      ]
+    },
+    {
+      "name": "QuickShip Supplies",
+      "lead_time_days": 7,
+      "reliability_score": 88,
+      "min_order_qty": 25,
+      "categories": [
+        "Accessories",
+        "Small Electronics"
+      ]
+    },
+    {
+      "name": "PremiumTech Ltd",
+      "lead_time_days": 10,
+      "reliability_score": 95,
+      "min_order_qty": 30,
+      "categories": [
+        "Premium Electronics",
+        "Cameras"
+      ]
+    },
+    {
+      "name": "BudgetSource Co",
+      "lead_time_days": 28,
+      "reliability_score": 75,
+      "min_order_qty": 200,
+      "categories": [
+        "Budget Items",
+        "Bulk"
+      ]
+    }
+  ],
+  "last_updated": "2026-03-01"
+}

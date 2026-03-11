@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Compliance Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        table { border-collapse: collapse; width: 60%; margin: 15px 0; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px 15px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #ecf0f1; }
+        .limit-box { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 15px 0; width: 55%; }
+        .limit-item { margin: 10px 0; font-size: 16px; }
+        .limit-value { font-weight: bold; color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Compliance Dashboard</h1>
+    <p>Internal compliance portal for portfolio allocation monitoring. Last updated: 2026-03-05.</p>
+
+    <h2>Allocation Limits</h2>
+    <div class="limit-box">
+        <div class="limit-item">Maximum single-stock allocation: <span class="limit-value">30%</span></div>
+        <div class="limit-item">Maximum sector allocation: <span class="limit-value">40%</span></div>
+    </div>
+
+    <h2>Risk Ratings by Symbol</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Sector</th>
+                <th>Risk Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AMZN</td>
+                <td>Amazon.com Inc.</td>
+                <td>Technology</td>
+                <td>Medium-High</td>
+            </tr>
+            <tr>
+                <td>GOOGL</td>
+                <td>Alphabet Inc.</td>
+                <td>Technology</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>JNJ</td>
+                <td>Johnson &amp; Johnson</td>
+                <td>Healthcare</td>
+                <td>Low</td>
+            </tr>
+            <tr>
+                <td>JPM</td>
+                <td>JPMorgan Chase &amp; Co.</td>
+                <td>Financials</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>XOM</td>
+                <td>Exxon Mobil Corp.</td>
+                <td>Energy</td>
+                <td>Medium-High</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

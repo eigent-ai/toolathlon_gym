@@ -1,0 +1,17 @@
+{
+  "needed_mcp_servers": [
+    "snowflake",
+    "notion",
+    "emails",
+    "excel",
+    "filesystem"
+  ],
+  "needed_local_tools": [
+    "claim_done",
+    "python_execute",
+    "handle_overlong_tool_outputs",
+    "manage_context",
+    "history"
+  ],
+  "meta": {}
+}

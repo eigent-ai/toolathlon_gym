@@ -1,0 +1,19 @@
+# Scholarly Search - search for articles on arxiv and google scholar (but cannot download full text)
+# Source: https://github.com/adityak74/mcp-scholarly
+# Toolathlon Version: https://github.com/lockon-n/mcp-scholarly
+# Toolathlon_GYM: ../../local_servers/mcp-scholarly
+type: stdio
+name: scholarly
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/mcp-scholarly"
+    - "run"
+    - "mcp-scholarly"
+  # env:
+  #   HTTPS_PROXY: "${config.proxy}"
+  #   HTTP_PROXY: "${config.proxy}"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 30
+cache_tools_list: true

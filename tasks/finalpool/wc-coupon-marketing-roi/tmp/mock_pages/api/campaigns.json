@@ -1,0 +1,98 @@
+[
+  {
+    "campaign_name": "Spring Welcome",
+    "channel": "Email",
+    "budget_spent": 500,
+    "impressions": 25000,
+    "clicks": 1200,
+    "coupon_code_used": "WELCOME10"
+  },
+  {
+    "campaign_name": "Cart Saver",
+    "channel": "Retargeting",
+    "budget_spent": 800,
+    "impressions": 40000,
+    "clicks": 2000,
+    "coupon_code_used": "SAVE20"
+  },
+  {
+    "campaign_name": "Free Ship Promo",
+    "channel": "Social Media",
+    "budget_spent": 300,
+    "impressions": 15000,
+    "clicks": 900,
+    "coupon_code_used": "FREESHIP"
+  },
+  {
+    "campaign_name": "Summer Blast",
+    "channel": "Google Ads",
+    "budget_spent": 1200,
+    "impressions": 60000,
+    "clicks": 3000,
+    "coupon_code_used": "SUMMER25"
+  },
+  {
+    "campaign_name": "Flash Deal",
+    "channel": "Email",
+    "budget_spent": 200,
+    "impressions": 10000,
+    "clicks": 500,
+    "coupon_code_used": "FLASH50"
+  },
+  {
+    "campaign_name": "Electronics Focus",
+    "channel": "Social Media",
+    "budget_spent": 600,
+    "impressions": 30000,
+    "clicks": 1800,
+    "coupon_code_used": "ELECTRONICS15"
+  },
+  {
+    "campaign_name": "Holiday Season",
+    "channel": "Google Ads",
+    "budget_spent": 1500,
+    "impressions": 80000,
+    "clicks": 4000,
+    "coupon_code_used": "HOLIDAY30"
+  },
+  {
+    "campaign_name": "New User Offer",
+    "channel": "Referral",
+    "budget_spent": 150,
+    "impressions": 5000,
+    "clicks": 300,
+    "coupon_code_used": "NEWUSER5"
+  },
+  {
+    "campaign_name": "Bulk Buyer",
+    "channel": "Email",
+    "budget_spent": 400,
+    "impressions": 20000,
+    "clicks": 1000,
+    "coupon_code_used": "BULK10"
+  },
+  {
+    "campaign_name": "VIP Exclusive",
+    "channel": "Direct Mail",
+    "budget_spent": 1000,
+    "impressions": 12000,
+    "clicks": 800,
+    "coupon_code_used": "VIP20"
+  },
+  {
+    "campaign_name": "Brand Awareness",
+    "channel": "TV",
+    "budget_spent": 5000,
+    "impressions": 200000,
+    "clicks": 8000,
+    "coupon_code_used": ""
+  },
+  {
+    "campaign_name": "Influencer Collab",
+    "channel": "Instagram",
+    "budget_spent": 2000,
+    "impressions": 100000,
+    "clicks": 5000,
+    "coupon_code_used": "INFLUENCER20"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "Technology Innovation Forum 2026",
+  "dates": ["2026-03-12", "2026-03-13", "2026-03-14"],
+  "venue": "Qufu",
+  "speakers": [
+    {
+      "name": "Dr. Alex Kim",
+      "email": "alex.kim@tech.edu",
+      "from_city": "Beijing"
+    },
+    {
+      "name": "Dr. Maria Chen",
+      "email": "maria.chen@research.org",
+      "from_city": "Beijing"
+    },
+    {
+      "name": "Prof. James Wu",
+      "email": "james.wu@university.edu",
+      "from_city": "Shanghai"
+    }
+  ],
+  "travel": {
+    "outbound_date": "2026-03-11",
+    "return_date": "2026-03-14",
+    "preferred_class": "first"
+  }
+}

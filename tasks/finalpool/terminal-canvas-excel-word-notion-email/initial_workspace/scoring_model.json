@@ -1,0 +1,42 @@
+{
+  "risk_classification": {
+    "high_risk": {
+      "threshold": "below 60",
+      "description": "Students with average score below 60 across all graded submissions"
+    },
+    "medium_risk": {
+      "threshold": "60 to 74.99",
+      "description": "Students with average score between 60 and 74.99"
+    },
+    "low_risk": {
+      "threshold": "75 and above",
+      "description": "Students with average score of 75 or above"
+    }
+  },
+  "score_calculation": {
+    "method": "arithmetic_mean",
+    "basis": "all graded submissions per student per course",
+    "null_handling": "exclude null scores from calculation"
+  },
+  "intervention_actions": {
+    "high": {
+      "action": "One-on-one academic advising",
+      "timeline": "Within 1 week",
+      "responsible": "Academic Advisor"
+    },
+    "medium": {
+      "action": "Group tutoring sessions",
+      "timeline": "Within 2 weeks",
+      "responsible": "Course Tutor"
+    },
+    "low": {
+      "action": "Self-paced study resources email",
+      "timeline": "Within 1 month",
+      "responsible": "Student Success Office"
+    }
+  },
+  "reporting": {
+    "email_recipient": "academic_advisors@university.edu",
+    "subject_prefix": "Student Retention Risk Analysis"
+  }
+}

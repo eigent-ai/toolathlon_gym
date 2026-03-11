@@ -1,0 +1,15 @@
+Hey, I need your help with a refund investigation for our quality assurance team. We've been getting complaints and I want to do a thorough root cause analysis of all our refund activity.
+
+First, take a look at the Quality Policy PDF in the workspace. It explains how we classify refund severity and how to cross-reference refunds with product reviews to determine whether issues are quality-related or service-related. There's also a guide.md with the analysis methodology.
+
+Here's what I need you to do:
+
+Pull all the refund data from our online store. For each refund, I need the refund ID, which order it was for, what products were in that order, the refund amount, and the reason given. Also grab all the product review data so we can cross-reference ratings with refund patterns.
+
+Use the terminal to process and cross-reference the data. Classify each refund by severity following the policy (over $50 is Critical, $20-50 is Major, under $20 is Minor). For each product that's been refunded, calculate its average review rating and determine if it's a Quality Issue (avg rating below 3.0) or a Service Issue (avg rating 3.0 or above). If a product has no reviews, mark it as No Reviews. Flag any product with 2 or more refunds as requiring supplier investigation.
+
+Create an Excel file called Refund_Analysis.xlsx with three sheets. The first sheet "Refund Details" should have columns Refund_ID, Order_ID, Product_Name (all products in the order joined with semicolons), Refund_Amount (rounded to 2 decimals), Severity, Refund_Reason, and Date. Sort by Refund_ID. The second sheet "Product Impact" should list each refunded product with Product_Name, Refund_Count, Total_Refund_Amount (each refund's amount divided equally among its order's products, rounded to 2 decimals), Avg_Review_Rating (rounded to 2 decimals), Review_Count, Issue_Type, and Requires_Investigation (Yes/No). Sort by refund count descending, then product name. The third sheet "Summary" should have label-value pairs in columns A and B: Total_Refunds, Total_Refund_Amount, Critical_Count, Major_Count, Minor_Count, Products_Affected, Quality_Issues, Service_Issues, Products_Requiring_Investigation.
+
+Write a Word document called Root_Cause_Report.docx with these sections: Executive Summary (overview of findings with key numbers), Refund Trend Analysis (breakdown by reason), Product-Level Findings (details on products requiring investigation), Root Cause Classification (mapping reasons to categories like Manufacturing Defect, Shipping Damage, Wrong Item, Customer Expectations, Other), Recommendations (actionable items), and Action Plan (immediate, short-term, and long-term actions).
+
+Finally, send two emails. First, send one to quality_team@company.com with the subject containing "Refund" and "Analysis" summarizing the overall findings including total refunds, total amount, severity breakdown, and key issues found. Second, send one to supplier_relations@company.com with the subject mentioning "Supplier" and "Investigation" listing the specific products that require supplier investigation with their refund counts and amounts.

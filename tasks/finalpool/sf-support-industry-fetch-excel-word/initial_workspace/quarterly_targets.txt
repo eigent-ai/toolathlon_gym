@@ -1,0 +1,5 @@
+Q1 2026 Support Targets:
+- Response time: Meet or exceed industry benchmarks
+- CSAT: Maintain above 4.0 out of 5.0
+- Resolution rate: Target 85%+
+- Agent utilization: Balanced across tiers

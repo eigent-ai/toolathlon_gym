@@ -1,0 +1,33 @@
+{
+  "training_programs": [
+    {
+      "course_id": 9,
+      "course_name": "Data-Driven Design (Fall 2013)",
+      "target_department": "Engineering",
+      "expected_outcomes": [
+        "Improved data literacy",
+        "Better design decision-making",
+        "Enhanced analytical skills"
+      ],
+      "training_hours": 40,
+      "cost_per_participant": 1200
+    },
+    {
+      "course_id": 10,
+      "course_name": "Data-Driven Design (Fall 2014)",
+      "target_department": "R&D",
+      "expected_outcomes": [
+        "Research methodology improvement",
+        "Data-driven experimentation",
+        "Statistical analysis proficiency"
+      ],
+      "training_hours": 40,
+      "cost_per_participant": 1200
+    }
+  ],
+  "evaluation_criteria": {
+    "minimum_completion_rate": 0.70,
+    "target_avg_score": 75,
+    "performance_improvement_threshold": 0.15
+  }
+}

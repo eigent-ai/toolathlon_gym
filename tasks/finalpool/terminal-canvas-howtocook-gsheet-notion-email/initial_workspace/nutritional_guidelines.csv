@@ -1,0 +1,7 @@
+age_group,activity_level,daily_calories,protein_g,carbs_g,fat_g,fiber_g,breakfast_calories,lunch_calories
+18-22,sedentary,2000,50,250,65,25,500,650
+18-22,moderate,2400,60,300,80,30,600,780
+18-22,active,2800,75,350,95,35,700,910
+23-30,sedentary,2200,55,275,72,28,550,715
+23-30,moderate,2600,65,325,87,32,650,845
+23-30,active,3000,80,375,100,38,750,975

@@ -1,0 +1,11 @@
+Standard Sector Classifications:
+- Technology / Communication Services
+- Healthcare
+- Financial Services
+- Energy
+- Consumer Cyclical
+- Consumer Defensive
+- Industrials
+- Utilities
+- Real Estate
+- Materials

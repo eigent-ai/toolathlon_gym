@@ -1,0 +1,10 @@
+{
+  "review_session_duration_minutes": 90,
+  "min_days_before_exam": 7,
+  "focus_threshold": 80,
+  "topics_per_session": 3,
+  "room_capacity": 30,
+  "semester_weeks": 16,
+  "preferred_time_slots": ["16:00-17:30", "10:00-11:30"],
+  "scheduling_notes": "Schedule review sessions on weekdays only. Saturday sessions from 10am-12pm may be used if weekday slots are full."
+}

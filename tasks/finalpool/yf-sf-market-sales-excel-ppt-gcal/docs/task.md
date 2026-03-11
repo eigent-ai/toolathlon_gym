@@ -1,0 +1,9 @@
+I need to analyze the correlation between stock market performance and our sales data. Pull historical stock price data for major market indicators and individual stocks. Also pull our internal sales data from the company data warehouse with monthly revenue and order trends.
+
+Use the terminal to create and run a Python script called market_sales_correlator.py in the workspace that reads market_data.json and sales_data.json (create both first), calculates monthly trends, correlation coefficients between market indices and sales performance, and outputs correlation_analysis.json.
+
+Create an Excel file called Market_Sales_Correlation.xlsx with four sheets. The first sheet Stock_Overview should have columns Symbol, Company, Sector, Latest_Price (round to 2 decimals), and Price_Change_Pct (round to 2 decimals), sorted by Symbol. The second sheet Sales_Trends should have columns Month, Total_Revenue (round to 2 decimals), Order_Count, and Avg_Order_Value (round to 2 decimals). The third sheet Correlation_Matrix should have a matrix with stock symbols as both row headers and column references, showing correlation values (round to 3 decimals). The fourth sheet Key_Insights should have Finding, Data_Point, and Implication columns with at least 4 insights about market-sales relationships.
+
+Create a PowerPoint presentation called Market_Sales_Strategy.pptx with slides for "Market & Sales Correlation Analysis" (title), "Stock Market Overview" (key stock metrics), "Sales Performance Trends" (monthly revenue highlights), "Correlation Findings" (key correlations discovered), and "Strategic Recommendations" (action items based on findings).
+
+Schedule a calendar event "Market-Sales Strategy Review" on March 16, 2026 from 11:00 AM to 12:30 PM UTC with description summarizing key correlation findings.

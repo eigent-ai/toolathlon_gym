@@ -1,0 +1,8 @@
+{
+  "max_single_position_pct": 35,
+  "max_sector_concentration_pct": 40,
+  "max_technology_exposure_pct": 60,
+  "min_diversification_sectors": 3,
+  "risk_tolerance": "moderate",
+  "notes": "Technology and AI exposure should not exceed 60% of total portfolio. No single position above 35%."
+}

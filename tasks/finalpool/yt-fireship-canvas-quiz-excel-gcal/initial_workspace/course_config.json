@@ -1,0 +1,41 @@
+{
+  "course_subject": "TypeScript",
+  "quiz_title": "TypeScript Essentials Quiz",
+  "points_possible": 50,
+  "time_limit_minutes": 30,
+  "questions_per_video": 2,
+  "total_questions": 10,
+  "videos_to_use": 5,
+  "excel_file": "TypeScript_Course_Tracker.xlsx",
+  "sheets": [
+    "Videos",
+    "Quiz_Questions",
+    "Grade_Template"
+  ],
+  "videos_columns": [
+    "Video_ID",
+    "Title",
+    "Topic",
+    "Duration_Min",
+    "Concepts_Count",
+    "Quiz_Question_Count"
+  ],
+  "quiz_questions_columns": [
+    "Question_No",
+    "Video_Source",
+    "Concept",
+    "Question_Text",
+    "Correct_Answer",
+    "Points"
+  ],
+  "grade_template_columns": [
+    "Student_ID",
+    "Student_Name",
+    "Score",
+    "Percentage",
+    "Grade"
+  ],
+  "quiz_deadline": "2026-03-25",
+  "review_session": "2026-03-26 14:00-15:00",
+  "email_recipient": "students@webdev.edu"
+}

@@ -1,0 +1,9 @@
+Hi, I manage the HR analytics team and we need a department-level performance review package for the upcoming leadership meeting. Our company data warehouse has an employees table that includes each person's department, performance rating on a 1 to 5 scale, and salary information.
+
+Please pull the employee data from the data warehouse and create an Excel workbook called Performance_Review.xlsx in the workspace. It should have two sheets.
+
+The first sheet should be named "By Department" and contain columns Department, Total_Employees, Avg_Rating (average performance rating rounded to 2 decimal places), Top_Performers_Count (count of employees with a performance rating of 4 or 5), and Avg_Salary (average salary rounded to 2 decimal places). Sort the rows alphabetically by Department.
+
+The second sheet should be named "Summary" and contain two columns: Metric and Value. Include the following rows: Total_Employees (total number across all departments), Overall_Avg_Rating (overall average performance rating rounded to 2 decimal places), Total_Top_Performers (total count of employees rated 4 or 5), and Overall_Avg_Salary (overall average salary rounded to 2 decimal places).
+
+Next, create a PowerPoint presentation called Performance_Review.pptx in the workspace. Start with a title slide that says "Employee Performance Review" as the title and "Department-Level Analysis" as the subtitle. Then add one slide for each department in alphabetical order, with the department name as the slide title and the body showing that department's total employees, average rating, top performers count, and average salary. End with a summary slide titled "Overall Summary" that shows the company-wide totals for total employees, overall average rating, total top performers, and overall average salary.

@@ -1,0 +1,67 @@
+{
+  "focus_topics": [
+    "nutrition",
+    "biology",
+    "exercise",
+    "sleep",
+    "stress",
+    "immunity",
+    "brain"
+  ],
+  "channel": "Veritasium",
+  "videos_needed": 5,
+  "meal_types": [
+    "Breakfast",
+    "Lunch",
+    "Dinner"
+  ],
+  "plan_days": 7,
+  "day_names": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "excel_file": "Wellness_Plan.xlsx",
+  "sheets": [
+    "Videos",
+    "Recipes",
+    "Weekly_Meal_Plan"
+  ],
+  "videos_columns": [
+    "Video_ID",
+    "Title",
+    "Health_Topic",
+    "Duration_Min",
+    "View_Count"
+  ],
+  "recipes_columns": [
+    "Recipe_Name",
+    "Category",
+    "Cook_Time_Min",
+    "Difficulty",
+    "Key_Ingredient",
+    "Health_Benefit"
+  ],
+  "meal_plan_columns": [
+    "Day",
+    "Breakfast",
+    "Lunch",
+    "Dinner",
+    "Total_Recipes"
+  ],
+  "word_file": "Wellness_Guide.docx",
+  "calendar_event": "Wellness Check-in",
+  "checkin_day": "Wednesday",
+  "checkin_time": "07:00",
+  "checkin_end": "07:30",
+  "april_wednesdays": [
+    "2026-04-01",
+    "2026-04-08",
+    "2026-04-15",
+    "2026-04-22"
+  ]
+}

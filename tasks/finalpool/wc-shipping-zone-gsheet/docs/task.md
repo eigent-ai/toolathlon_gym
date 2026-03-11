@@ -1,0 +1,7 @@
+I need an analysis of our online store's shipping zones and how orders are distributed across them. Please look up the shipping zones configured in the store, including which regions or locations each zone covers and what shipping methods are available for each zone.
+
+Then examine all completed and processing orders, and based on each order's billing address, determine which shipping zone it falls into. For orders billed to California (state CA), they belong to the California zone. For other US orders, they belong to the Domestic US zone. Any non-US orders belong to the International zone. If a zone has no matching orders, it should still appear in the results with zero values.
+
+Create an Excel file called Shipping_Analysis.xlsx in the workspace with two sheets. The first sheet "Zone Summary" should have columns Zone_Name, Order_Count, Total_Revenue rounded to 2 decimals, and Avg_Order_Value rounded to 2 decimals. Sort by Zone_Name alphabetically. The second sheet "Methods" should list all shipping methods with columns Zone, Method showing the method identifier, and Details showing the method title and any cost information available.
+
+Also create a Google Sheet spreadsheet titled "Shipping Zone Dashboard" with a sheet called "Summary" containing the same Zone Summary data so the logistics team can access it online.

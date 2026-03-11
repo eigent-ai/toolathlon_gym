@@ -1,0 +1,5 @@
+I need to compare the performance of stocks from different sectors against our internal targets. There is a PDF file in my workspace called Sector_Targets.pdf that contains the year-to-date return targets for each sector. Please read that file first to understand the benchmarks.
+
+Then look up the most recent closing prices for these four stocks representing different sectors: GOOGL for Technology, JPM for Finance, JNJ for Healthcare, and XOM for Energy. For each stock, also calculate the year-to-date return percentage by comparing the latest close to the closing price on the first trading day of 2026. Round the YTD return to 2 decimal places.
+
+Create an Excel file called Sector_Analysis.xlsx in the workspace with two sheets. The first sheet "Stock Prices" should have columns Symbol, Sector, Latest_Close rounded to 2 decimals, and YTD_Return_Pct rounded to 2 decimals. The second sheet "Sector Comparison" should have columns Sector, Stock, Target_Return from the PDF, Actual_Return being the YTD return, and Met_Target which is Yes if the actual return meets or exceeds the target and No otherwise.

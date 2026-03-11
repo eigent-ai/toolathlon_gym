@@ -1,0 +1,10 @@
+{
+  "program": "Team Video Learning",
+  "channel": "Fireship",
+  "top_n": 10,
+  "session_start_date": "2026-04-07",
+  "session_day": "Tuesday",
+  "session_time": "10:00-11:00",
+  "notification_email": "team@company.com",
+  "output_file": "Top_Videos_Watchlist.xlsx"
+}

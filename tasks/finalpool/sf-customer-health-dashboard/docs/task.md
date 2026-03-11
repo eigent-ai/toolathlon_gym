@@ -1,0 +1,15 @@
+As the customer success manager, I need to build a comprehensive customer health dashboard. The health scoring methodology is documented on our internal portal at http://localhost:30215, which has two pages: the main page showing health status thresholds and the follow-up policy, and a scoring page explaining the exact formula and its components. Please visit both pages to understand the scoring methodology before proceeding.
+
+After reviewing the scoring methodology from the portal, query our sales database to pull all customer data. We have a customers table with fields including customer name, email, segment, region, signup date, and lifetime value. We also have an orders table with order dates, amounts, and customer references. Use these two tables together to compute the health score for every customer using the formula from the portal.
+
+For the recency component, calculate the number of days between today and each customer most recent order. For customers who have no orders, use their signup date instead. Apply the formula components exactly as specified on the scoring page, and round the final health score to two decimal places. Classify each customer into a status category based on the thresholds shown on the portal main page.
+
+Create an Excel workbook called Customer_Health.xlsx with three sheets. The first sheet should be named "Health Scores" and should contain all customers with columns Customer_Name, Segment, Region, Recency_Score rounded to two decimals, Frequency_Score rounded to two decimals, Monetary_Score rounded to two decimals, Health_Score rounded to two decimals, and Status (using the classification from the portal: Healthy, At Risk, or Critical). Sort the rows by Health_Score in ascending order so the most critical accounts appear first.
+
+The second sheet should be named "Critical Accounts" and should list only customers with Critical status, with the same columns as the Health Scores sheet, sorted by Health_Score ascending.
+
+The third sheet should be named "Summary by Segment" with columns Segment, Total_Customers, Healthy_Count, At_Risk_Count, Critical_Count, and Avg_Health_Score rounded to two decimals. Sort by segment alphabetically.
+
+Next, create a Notion page titled "Customer Health Dashboard" to serve as a tracking dashboard. The page content should include a summary of the analysis: total number of customers analyzed, count of Healthy, At Risk, and Critical accounts, and a list of the five customers with the lowest health scores including their names, segments, and scores.
+
+Finally, review the follow-up policy on the portal. For the customers with health scores below 15 (the most critical cases), schedule follow-up calls as Google Calendar events. Each event should be a 30-minute call, with the summary in the format "Follow-up Call: [Customer Name]" and a description that includes the customer segment, region, and health score. Schedule these calls starting from 2026-03-09 (the Monday after the analysis), one per day at 10:00 AM, in chronological order sorted by health score ascending (lowest score gets the earliest slot).

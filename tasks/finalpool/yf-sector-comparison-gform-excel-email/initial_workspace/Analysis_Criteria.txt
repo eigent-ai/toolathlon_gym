@@ -1,0 +1,16 @@
+Sector Comparison Analysis Criteria
+====================================
+
+The following financial metrics should be gathered and compared for each stock:
+
+1. Market Capitalization (in billions USD, rounded to 2 decimal places)
+2. Current Stock Price (USD)
+3. Trailing Price-to-Earnings (P/E) Ratio
+4. 52-Week High Price
+5. 52-Week Low Price
+
+For the Sector_Summary sheet, classify each stock's current price as:
+- Above_Avg: if the stock's price is above the average price of all five stocks
+- Below_Avg: if the stock's price is at or below the average price of all five stocks
+
+Average price reference: (GOOGL + AMZN + JPM + JNJ + XOM prices) / 5

@@ -1,0 +1,91 @@
+{
+  "stock_actions": [
+    {
+      "Symbol": "AMZN",
+      "Action_Type": "Stock Split",
+      "Value": "20:1",
+      "Date": "2022-06-06",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    },
+    {
+      "Symbol": "GOOGL",
+      "Action_Type": "Dividend",
+      "Value": 0.84,
+      "Date": "2026-03-09",
+      "Dividend_Yield": 28.0,
+      "Trailing_Annual_Rate": 0.83
+    },
+    {
+      "Symbol": "GOOGL",
+      "Action_Type": "Stock Split",
+      "Value": "20:1",
+      "Date": "2022-07-18",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    },
+    {
+      "Symbol": "GOOGL",
+      "Action_Type": "DIVIDEND",
+      "Value": "0.21",
+      "Date": "2026-03-09",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    },
+    {
+      "Symbol": "JNJ",
+      "Action_Type": "Dividend",
+      "Value": 5.2,
+      "Date": "2026-02-24",
+      "Dividend_Yield": 212.0,
+      "Trailing_Annual_Rate": 5.14
+    },
+    {
+      "Symbol": "JNJ",
+      "Action_Type": "Stock Split",
+      "Value": "2:1",
+      "Date": "2001-06-13",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    },
+    {
+      "Symbol": "JPM",
+      "Action_Type": "Dividend",
+      "Value": 6.0,
+      "Date": "2026-01-06",
+      "Dividend_Yield": 200.0,
+      "Trailing_Annual_Rate": 5.8
+    },
+    {
+      "Symbol": "JPM",
+      "Action_Type": "Stock Split",
+      "Value": "3:2",
+      "Date": "2000-06-12",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    },
+    {
+      "Symbol": "XOM",
+      "Action_Type": "Dividend",
+      "Value": 4.12,
+      "Date": "2026-02-12",
+      "Dividend_Yield": 275.0,
+      "Trailing_Annual_Rate": 4.0
+    },
+    {
+      "Symbol": "XOM",
+      "Action_Type": "Stock Split",
+      "Value": "2:1",
+      "Date": "2001-07-19",
+      "Dividend_Yield": 0,
+      "Trailing_Annual_Rate": 0
+    }
+  ],
+  "dividend_stocks": [
+    "GOOGL",
+    "JNJ",
+    "JPM",
+    "XOM"
+  ],
+  "total_actions": 10
+}

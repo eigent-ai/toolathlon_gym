@@ -1,0 +1,5 @@
+Report should include:
+- Department-level performance breakdown
+- Course-level enrollment statistics
+- Cross-analysis of training and performance
+- Executive summary with key findings

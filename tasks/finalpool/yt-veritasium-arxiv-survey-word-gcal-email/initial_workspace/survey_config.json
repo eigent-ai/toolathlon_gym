@@ -1,0 +1,12 @@
+{
+  "survey_title": "Bridging Popular Science and Academic Research: A Veritasium Survey",
+  "channel_name": "Veritasium",
+  "target_videos": 5,
+  "papers_per_topic": 1,
+  "total_papers": 7,
+  "output_doc": "Science_Communication_Survey.docx",
+  "seminar_email": "seminar@science.edu",
+  "collab_email": "collab@research.org",
+  "seminar_date": "2026-04-10",
+  "review_date": "2026-04-03"
+}

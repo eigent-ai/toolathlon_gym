@@ -1,0 +1,20 @@
+# 12306 China Railway Ticket Query System (PostgreSQL-backed, no real API calls)
+# Source: https://github.com/Joooook/12306-mcp
+# Toolathlon Version: local pg-backed version in local_mcp_servers_copy/12306-mcp
+# Schema: train (stations, trains, train_seats, train_routes)
+# Toolathlon_GYM: ../../local_servers/12306-mcp
+type: stdio
+name: rail_12306
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/12306-mcp/build/index.js"
+  env:
+    PG_HOST: "postgres"
+    PG_PORT: "5432"
+    PG_DATABASE: "toolathlon"
+    PG_USER: "postgres"
+    PG_PASSWORD: "postgres"
+  # cwd: "${agent_workspace}" # do not add this for compatibility
+cache_tools_list: true
+client_session_timeout_seconds: 20

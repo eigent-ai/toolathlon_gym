@@ -1,0 +1,56 @@
+{
+  "source": "National Compensation Survey 2025",
+  "last_updated": "2025-12-15",
+  "currency": "USD",
+  "departments": [
+    {
+      "department": "Engineering",
+      "avg_salary": 62000.00,
+      "median_salary": 57000.00,
+      "p25_salary": 45000.00,
+      "p75_salary": 75000.00
+    },
+    {
+      "department": "Finance",
+      "avg_salary": 55000.00,
+      "median_salary": 50000.00,
+      "p25_salary": 40000.00,
+      "p75_salary": 68000.00
+    },
+    {
+      "department": "HR",
+      "avg_salary": 54000.00,
+      "median_salary": 49000.00,
+      "p25_salary": 38000.00,
+      "p75_salary": 66000.00
+    },
+    {
+      "department": "Operations",
+      "avg_salary": 56000.00,
+      "median_salary": 51000.00,
+      "p25_salary": 41000.00,
+      "p75_salary": 69000.00
+    },
+    {
+      "department": "R&D",
+      "avg_salary": 61000.00,
+      "median_salary": 56000.00,
+      "p25_salary": 44000.00,
+      "p75_salary": 74000.00
+    },
+    {
+      "department": "Sales",
+      "avg_salary": 57000.00,
+      "median_salary": 52000.00,
+      "p25_salary": 42000.00,
+      "p75_salary": 70000.00
+    },
+    {
+      "department": "Support",
+      "avg_salary": 52000.00,
+      "median_salary": 47000.00,
+      "p25_salary": 36000.00,
+      "p75_salary": 64000.00
+    }
+  ]
+}

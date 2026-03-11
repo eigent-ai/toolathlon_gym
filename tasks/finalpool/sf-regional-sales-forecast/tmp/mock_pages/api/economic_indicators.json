@@ -1,0 +1,37 @@
+{
+    "report_date": "2025-12-20",
+    "source": "Global Economic Monitor",
+    "regions": {
+        "North America": {
+            "gdp_growth": 2.1,
+            "consumer_confidence": 98.5,
+            "inflation": 3.2,
+            "unemployment": 4.1
+        },
+        "Europe": {
+            "gdp_growth": 1.5,
+            "consumer_confidence": 92.0,
+            "inflation": 2.8,
+            "unemployment": 6.5
+        },
+        "Asia Pacific": {
+            "gdp_growth": 3.8,
+            "consumer_confidence": 105.0,
+            "inflation": 2.1,
+            "unemployment": 3.5
+        },
+        "Latin America": {
+            "gdp_growth": 1.2,
+            "consumer_confidence": 85.0,
+            "inflation": 5.5,
+            "unemployment": 7.2
+        },
+        "Middle East": {
+            "gdp_growth": 2.5,
+            "consumer_confidence": 90.0,
+            "inflation": 3.0,
+            "unemployment": 5.0
+        }
+    },
+    "notes": "GDP growth is annual rate in percentage. Consumer confidence is index (100 = neutral). Inflation is annual rate. All figures are projections for Q1 2026."
+}

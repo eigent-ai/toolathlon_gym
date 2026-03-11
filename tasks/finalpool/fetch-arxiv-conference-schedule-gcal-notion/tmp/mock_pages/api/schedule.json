@@ -1,0 +1,82 @@
+{
+  "conference": "AI Methods Conference 2026",
+  "dates": "March 24-26, 2026",
+  "location": "Virtual",
+  "sessions": [
+    {
+      "id": "S1",
+      "title": "Transformer Architectures for Sequence Modeling",
+      "date": "2026-03-24",
+      "time": "09:00-12:00",
+      "room": "Hall A",
+      "chair": "Dr. Sarah Chen",
+      "papers": [
+        {
+          "title": "Efficient Sparse Transformers for Long Document Processing",
+          "authors": ["J. Park", "L. Wang"],
+          "time": "09:00-09:30"
+        },
+        {
+          "title": "Hierarchical Transformer Networks for Multi-Scale Representation",
+          "authors": ["M. Zhang", "K. Patel"],
+          "time": "09:30-10:00"
+        },
+        {
+          "title": "Cross-Modal Transformers for Vision-Language Understanding",
+          "authors": ["R. Kim", "A. Singh"],
+          "time": "10:30-11:00"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Attention Mechanisms and Memory Networks",
+      "date": "2026-03-25",
+      "time": "09:00-12:00",
+      "room": "Hall B",
+      "chair": "Prof. Michael Roberts",
+      "papers": [
+        {
+          "title": "Multi-Head Attention with Dynamic Routing for NLP Tasks",
+          "authors": ["T. Nakamura", "S. Lee"],
+          "time": "09:00-09:30"
+        },
+        {
+          "title": "Memory-Augmented Attention for Few-Shot Learning",
+          "authors": ["Y. Liu", "D. Brown"],
+          "time": "09:30-10:00"
+        },
+        {
+          "title": "Self-Attention Distillation for Efficient Inference",
+          "authors": ["P. Garcia", "N. Okafor"],
+          "time": "10:30-11:00"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Neural Network Optimization and Training Methods",
+      "date": "2026-03-26",
+      "time": "09:00-12:00",
+      "room": "Hall A",
+      "chair": "Dr. Emily Watson",
+      "papers": [
+        {
+          "title": "Adaptive Learning Rate Scheduling for Deep Networks",
+          "authors": ["H. Tanaka", "C. Mueller"],
+          "time": "09:00-09:30"
+        },
+        {
+          "title": "Gradient-Free Optimization for Large Language Models",
+          "authors": ["F. Santos", "B. Johansson"],
+          "time": "09:30-10:00"
+        },
+        {
+          "title": "Mixed Precision Training with Loss Scaling Strategies",
+          "authors": ["V. Petrov", "G. Nair"],
+          "time": "10:30-11:00"
+        }
+      ]
+    }
+  ]
+}

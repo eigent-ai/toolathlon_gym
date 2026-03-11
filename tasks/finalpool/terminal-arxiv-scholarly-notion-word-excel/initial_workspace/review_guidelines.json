@@ -1,0 +1,26 @@
+{
+  "review_topic": "Transformer Architectures in NLP",
+  "methodology_categories": {
+    "Architecture Design": {
+      "description": "Papers proposing new model architectures or structural innovations",
+      "keywords": ["architecture", "model", "layer", "design", "structure", "mechanism"]
+    },
+    "Training Methods": {
+      "description": "Papers about training techniques, optimization, or learning strategies",
+      "keywords": ["training", "pre-training", "fine-tuning", "optimization", "learning", "scaling"]
+    },
+    "Applications": {
+      "description": "Papers applying transformers to specific NLP tasks or domains",
+      "keywords": ["translation", "summarization", "classification", "generation", "task", "benchmark"]
+    },
+    "Survey": {
+      "description": "Papers that review, survey, or comprehensively analyze the field",
+      "keywords": ["survey", "review", "overview", "comprehensive", "challenges", "directions"]
+    }
+  },
+  "output_files": {
+    "word_document": "Transformer_Literature_Review.docx",
+    "excel_analysis": "Research_Paper_Analysis.xlsx"
+  },
+  "notion_database": "Research Paper Tracker"
+}

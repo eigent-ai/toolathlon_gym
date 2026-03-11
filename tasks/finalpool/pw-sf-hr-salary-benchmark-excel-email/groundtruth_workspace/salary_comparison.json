@@ -1,0 +1,13 @@
+{
+  "analysis_date": "2026-03-07",
+  "total_departments": 7,
+  "departments_above_benchmark": 3,
+  "departments_below_benchmark": 2,
+  "departments_at_benchmark": 2,
+  "avg_salary_gap": -2500,
+  "recommendations": [
+    "Increase Sales compensation",
+    "Review Operations pay bands",
+    "Maintain Engineering competitiveness"
+  ]
+}

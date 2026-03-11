@@ -1,0 +1,16 @@
+# Knowledge Graph Memory
+# Source: https://github.com/modelcontextprotocol/servers/tree/main/src/memory
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/servers/src/memory
+type: stdio
+name: memory
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/servers/src/memory/dist/index.js"
+  env:
+    MEMORY_FILE_PATH: "${agent_workspace}/memory/memory.json"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 100
+cache_tools_list: true
+# this server will read/write the memory.json

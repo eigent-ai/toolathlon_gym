@@ -1,0 +1,127 @@
+{
+  "total_campaigns": 10,
+  "meets_roi_count": 0,
+  "below_roi_count": 10,
+  "campaigns": [
+    {
+      "campaign_name": "Spring Welcome",
+      "channel": "Email",
+      "coupon_code": "WELCOME10",
+      "budget": 500,
+      "usage_count": 23,
+      "revenue": 1150,
+      "roi_pct": 130.0,
+      "conversion_rate": 1.92,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Cart Saver",
+      "channel": "Retargeting",
+      "coupon_code": "SAVE20",
+      "budget": 800,
+      "usage_count": 39,
+      "revenue": 1950,
+      "roi_pct": 143.75,
+      "conversion_rate": 1.95,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Free Ship Promo",
+      "channel": "Social Media",
+      "coupon_code": "FREESHIP",
+      "budget": 300,
+      "usage_count": 10,
+      "revenue": 500,
+      "roi_pct": 66.67,
+      "conversion_rate": 1.11,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Summer Blast",
+      "channel": "Google Ads",
+      "coupon_code": "SUMMER25",
+      "budget": 1200,
+      "usage_count": 9,
+      "revenue": 450,
+      "roi_pct": -62.5,
+      "conversion_rate": 0.3,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Flash Deal",
+      "channel": "Email",
+      "coupon_code": "FLASH50",
+      "budget": 200,
+      "usage_count": 2,
+      "revenue": 100,
+      "roi_pct": -50.0,
+      "conversion_rate": 0.4,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Electronics Focus",
+      "channel": "Social Media",
+      "coupon_code": "ELECTRONICS15",
+      "budget": 600,
+      "usage_count": 16,
+      "revenue": 800,
+      "roi_pct": 33.33,
+      "conversion_rate": 0.89,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Holiday Season",
+      "channel": "Google Ads",
+      "coupon_code": "HOLIDAY30",
+      "budget": 1500,
+      "usage_count": 50,
+      "revenue": 2500,
+      "roi_pct": 66.67,
+      "conversion_rate": 1.25,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "New User Offer",
+      "channel": "Referral",
+      "coupon_code": "NEWUSER5",
+      "budget": 150,
+      "usage_count": 2,
+      "revenue": 100,
+      "roi_pct": -33.33,
+      "conversion_rate": 0.67,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "Bulk Buyer",
+      "channel": "Email",
+      "coupon_code": "BULK10",
+      "budget": 400,
+      "usage_count": 17,
+      "revenue": 850,
+      "roi_pct": 112.5,
+      "conversion_rate": 1.7,
+      "meets_roi_target": false,
+      "meets_conversion_target": false
+    },
+    {
+      "campaign_name": "VIP Exclusive",
+      "channel": "Direct Mail",
+      "coupon_code": "VIP20",
+      "budget": 1000,
+      "usage_count": 41,
+      "revenue": 2050,
+      "roi_pct": 105.0,
+      "conversion_rate": 5.12,
+      "meets_roi_target": false,
+      "meets_conversion_target": true
+    }
+  ]
+}

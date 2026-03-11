@@ -1,0 +1,24 @@
+{
+  "ingredients": [
+    {"name": "Tomato", "calories_per_100g": 18, "protein_per_100g": 0.9, "fat_per_100g": 0.2},
+    {"name": "Egg", "calories_per_100g": 155, "protein_per_100g": 13.0, "fat_per_100g": 11.0},
+    {"name": "Tofu", "calories_per_100g": 76, "protein_per_100g": 8.0, "fat_per_100g": 4.8},
+    {"name": "Pork", "calories_per_100g": 242, "protein_per_100g": 27.0, "fat_per_100g": 14.0},
+    {"name": "Rice", "calories_per_100g": 130, "protein_per_100g": 2.7, "fat_per_100g": 0.3},
+    {"name": "Soy Sauce", "calories_per_100g": 53, "protein_per_100g": 8.1, "fat_per_100g": 0.0},
+    {"name": "Garlic", "calories_per_100g": 149, "protein_per_100g": 6.4, "fat_per_100g": 0.5},
+    {"name": "Ginger", "calories_per_100g": 80, "protein_per_100g": 1.8, "fat_per_100g": 0.8},
+    {"name": "Scallion", "calories_per_100g": 32, "protein_per_100g": 1.8, "fat_per_100g": 0.2},
+    {"name": "Sesame Oil", "calories_per_100g": 884, "protein_per_100g": 0.0, "fat_per_100g": 100.0},
+    {"name": "Doubanjiang", "calories_per_100g": 60, "protein_per_100g": 3.5, "fat_per_100g": 1.8},
+    {"name": "Sichuan Pepper", "calories_per_100g": 264, "protein_per_100g": 10.4, "fat_per_100g": 3.6},
+    {"name": "Sugar", "calories_per_100g": 387, "protein_per_100g": 0.0, "fat_per_100g": 0.0},
+    {"name": "Vegetable Oil", "calories_per_100g": 884, "protein_per_100g": 0.0, "fat_per_100g": 100.0},
+    {"name": "Salt", "calories_per_100g": 0, "protein_per_100g": 0.0, "fat_per_100g": 0.0},
+    {"name": "Chicken", "calories_per_100g": 239, "protein_per_100g": 27.3, "fat_per_100g": 13.6},
+    {"name": "Beef", "calories_per_100g": 250, "protein_per_100g": 26.0, "fat_per_100g": 15.0},
+    {"name": "Cabbage", "calories_per_100g": 25, "protein_per_100g": 1.3, "fat_per_100g": 0.1},
+    {"name": "Potato", "calories_per_100g": 77, "protein_per_100g": 2.0, "fat_per_100g": 0.1},
+    {"name": "Mushroom", "calories_per_100g": 22, "protein_per_100g": 3.1, "fat_per_100g": 0.3}
+  ]
+}

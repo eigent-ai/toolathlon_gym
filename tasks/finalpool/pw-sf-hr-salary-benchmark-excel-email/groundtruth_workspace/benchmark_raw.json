@@ -1,0 +1,34 @@
+{
+  "source": "CompAnalytics Industry Benchmark Portal",
+  "date": "2026-03-07",
+  "departments": {
+    "Engineering": {
+      "benchmark_salary": 135000,
+      "market_position": "competitive"
+    },
+    "Sales": {
+      "benchmark_salary": 95000,
+      "market_position": "below_market"
+    },
+    "Marketing": {
+      "benchmark_salary": 88000,
+      "market_position": "at_market"
+    },
+    "HR": {
+      "benchmark_salary": 78000,
+      "market_position": "above_market"
+    },
+    "Finance": {
+      "benchmark_salary": 105000,
+      "market_position": "at_market"
+    },
+    "Operations": {
+      "benchmark_salary": 82000,
+      "market_position": "below_market"
+    },
+    "Support": {
+      "benchmark_salary": 65000,
+      "market_position": "at_market"
+    }
+  }
+}

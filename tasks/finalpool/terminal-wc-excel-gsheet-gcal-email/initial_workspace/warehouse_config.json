@@ -1,0 +1,26 @@
+{
+  "warehouse": {
+    "name": "Central Distribution Center",
+    "capacity_units": 5000,
+    "current_utilization_pct": 62
+  },
+  "lead_times": {
+    "standard_days": 14,
+    "express_days": 7
+  },
+  "demand_estimation": {
+    "lookback_days": 180,
+    "method": "simple_average"
+  },
+  "suppliers": {
+    "primary": {
+      "name": "Primary Supplier",
+      "email": "purchasing@company.com",
+      "min_order_qty": 1
+    }
+  },
+  "alert_recipients": {
+    "purchasing_team": "purchasing@company.com",
+    "warehouse_manager": "warehouse@company.com"
+  }
+}

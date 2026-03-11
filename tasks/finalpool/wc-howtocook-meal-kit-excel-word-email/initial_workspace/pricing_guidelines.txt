@@ -1,0 +1,8 @@
+Pricing Formula:
+Recommended Price = Estimated Cost / (1 - Target Margin)
+Target Margin: 35% for standard kits, 40% for premium kits
+
+Cost Estimation:
+- Base ingredient cost from product prices
+- Add 15% for packaging and handling
+- Consider bulk discount for high-stock items

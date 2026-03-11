@@ -1,0 +1,17 @@
+{
+  "academic_benchmarks": [
+    {
+      "level": "Introductory",
+      "pass_rate": 78.5
+    },
+    {
+      "level": "Intermediate",
+      "pass_rate": 71.2
+    },
+    {
+      "level": "Advanced",
+      "pass_rate": 65.8
+    }
+  ],
+  "source": "Education Analytics API"
+}

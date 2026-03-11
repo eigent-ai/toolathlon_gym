@@ -1,0 +1,17 @@
+RECONCILIATION REPORT TEMPLATE
+
+Section 1: Data Warehouse Summary
+- Regional breakdown of orders and revenue
+- Customer segment distribution
+
+Section 2: Online Store Summary
+- Order status distribution
+- Revenue by payment method
+
+Section 3: Cross-Reference Analysis
+- Side-by-side metric comparison
+- Variance identification
+- Root cause hypotheses
+
+Section 4: Recommendations
+- Action items for discrepancies found

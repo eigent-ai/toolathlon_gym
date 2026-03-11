@@ -1,0 +1,7 @@
+{
+  "email": "analyst@company.com",
+  "imap_server": "imap.company.com",
+  "imap_port": 993,
+  "smtp_server": "smtp.company.com",
+  "smtp_port": 587
+}

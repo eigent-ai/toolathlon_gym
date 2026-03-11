@@ -1,0 +1,36 @@
+{
+  "papers": [
+    {
+      "arxiv_id": "2107.03374",
+      "title": "Evaluating Large Language Models Trained on Code",
+      "code_url": "https://github.com/openai/human-eval",
+      "datasets": ["HumanEval", "MBPP"],
+      "framework": "PyTorch"
+    },
+    {
+      "arxiv_id": "2002.08155",
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "code_url": "https://github.com/microsoft/CodeBERT",
+      "datasets": ["CodeSearchNet", "BigCloneBench"],
+      "framework": "PyTorch"
+    },
+    {
+      "arxiv_id": "2203.07814",
+      "title": "Competition-Level Code Generation with AlphaCode",
+      "code_url": "https://github.com/google-deepmind/code_contests",
+      "datasets": ["CodeContests", "Codeforces"],
+      "framework": "JAX"
+    },
+    {
+      "arxiv_id": "2305.06161",
+      "title": "StarCoder: May the Source Be with You!",
+      "code_url": "https://github.com/bigcode-project/starcoder",
+      "datasets": ["The Stack", "HumanEval"],
+      "framework": "PyTorch"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-03-01",
+    "source": "Code Generation Paper Tracker"
+  }
+}

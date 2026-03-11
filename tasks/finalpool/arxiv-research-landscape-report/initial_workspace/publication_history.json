@@ -1,0 +1,53 @@
+{
+  "group_name": "ML Research Lab",
+  "period": "2024-2025",
+  "publications": [
+    {
+      "year": 2024,
+      "topic": "NLP",
+      "venue": "ACL",
+      "title": "Contextual Embeddings for Low-Resource Languages",
+      "citations": 45
+    },
+    {
+      "year": 2024,
+      "topic": "deep learning",
+      "venue": "NeurIPS",
+      "title": "Adaptive Learning Rate Schedules for Transformer Training",
+      "citations": 82
+    },
+    {
+      "year": 2024,
+      "topic": "reinforcement learning",
+      "venue": "ICML",
+      "title": "Reward Shaping for Multi-Agent Cooperation",
+      "citations": 61
+    },
+    {
+      "year": 2025,
+      "topic": "knowledge graphs",
+      "venue": "AAAI",
+      "title": "Neural-Symbolic Integration for Knowledge Base Completion",
+      "citations": 33
+    },
+    {
+      "year": 2025,
+      "topic": "optimization",
+      "venue": "ICLR",
+      "title": "Second-Order Methods for Large-Scale Neural Network Training",
+      "citations": 27
+    },
+    {
+      "year": 2025,
+      "topic": "generative models",
+      "venue": "CVPR",
+      "title": "Diffusion Models for Controllable Image Generation",
+      "citations": 19
+    }
+  ],
+  "summary": {
+    "total_papers": 6,
+    "primary_topics": ["NLP", "deep learning", "reinforcement learning", "knowledge graphs", "optimization", "generative models"],
+    "top_venues": ["NeurIPS", "ICML", "AAAI", "ACL", "ICLR", "CVPR"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "max_courses_per_semester": 4,
+  "max_students_per_course": 200,
+  "grading_hours_per_student": 0.5,
+  "recommended_assignments_per_course": 10,
+  "max_weekly_hours": 40,
+  "semester_weeks": 16,
+  "overload_criteria": "An instructor is overloaded if they teach more than 4 courses OR if their estimated weekly grading hours exceed 40. Weekly grading hours are calculated as (total_students * grading_hours_per_student) / semester_weeks."
+}

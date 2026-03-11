@@ -1,0 +1,51 @@
+{
+  "zone_stats": {
+    "Domestic US": {
+      "order_count": 100,
+      "total_revenue": 39418.17,
+      "avg_order_value": 394.18
+    },
+    "California": {
+      "order_count": 0,
+      "total_revenue": 0.0,
+      "avg_order_value": 0
+    },
+    "International": {
+      "order_count": 0,
+      "total_revenue": 0.0,
+      "avg_order_value": 0
+    }
+  },
+  "methods": [
+    {
+      "zone": "Domestic US",
+      "method": "flat_rate",
+      "title": "Standard Shipping"
+    },
+    {
+      "zone": "Domestic US",
+      "method": "flat_rate",
+      "title": "Express Shipping"
+    },
+    {
+      "zone": "Domestic US",
+      "method": "free_shipping",
+      "title": "Free Shipping (orders > $100)"
+    },
+    {
+      "zone": "California",
+      "method": "flat_rate",
+      "title": "CA Standard"
+    },
+    {
+      "zone": "California",
+      "method": "local_pickup",
+      "title": "SF Store Pickup"
+    },
+    {
+      "zone": "International",
+      "method": "flat_rate",
+      "title": "International Shipping"
+    }
+  ]
+}

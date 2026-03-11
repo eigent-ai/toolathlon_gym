@@ -1,0 +1,26 @@
+{
+  "ingredients": [
+    {"name": "Tomato", "name_cn": "番茄", "calories_per_100g": 18, "protein_g": 0.9, "fat_g": 0.2, "carbs_g": 3.9},
+    {"name": "Egg", "name_cn": "鸡蛋", "calories_per_100g": 155, "protein_g": 13.0, "fat_g": 11.0, "carbs_g": 1.1},
+    {"name": "Tofu", "name_cn": "豆腐", "calories_per_100g": 76, "protein_g": 8.0, "fat_g": 4.8, "carbs_g": 1.9},
+    {"name": "Pork Belly", "name_cn": "五花肉", "calories_per_100g": 518, "protein_g": 9.0, "fat_g": 53.0, "carbs_g": 0.0},
+    {"name": "Chicken Breast", "name_cn": "鸡胸肉", "calories_per_100g": 165, "protein_g": 31.0, "fat_g": 3.6, "carbs_g": 0.0},
+    {"name": "Rice", "name_cn": "大米", "calories_per_100g": 130, "protein_g": 2.7, "fat_g": 0.3, "carbs_g": 28.2},
+    {"name": "Noodles", "name_cn": "面条", "calories_per_100g": 138, "protein_g": 4.5, "fat_g": 0.6, "carbs_g": 28.6},
+    {"name": "Soy Sauce", "name_cn": "酱油", "calories_per_100g": 53, "protein_g": 8.1, "fat_g": 0.0, "carbs_g": 4.9},
+    {"name": "Garlic", "name_cn": "大蒜", "calories_per_100g": 149, "protein_g": 6.4, "fat_g": 0.5, "carbs_g": 33.1},
+    {"name": "Ginger", "name_cn": "生姜", "calories_per_100g": 80, "protein_g": 1.8, "fat_g": 0.8, "carbs_g": 17.8},
+    {"name": "Scallion", "name_cn": "葱", "calories_per_100g": 32, "protein_g": 1.8, "fat_g": 0.2, "carbs_g": 7.3},
+    {"name": "Cabbage", "name_cn": "白菜", "calories_per_100g": 25, "protein_g": 1.3, "fat_g": 0.1, "carbs_g": 5.8},
+    {"name": "Potato", "name_cn": "土豆", "calories_per_100g": 77, "protein_g": 2.0, "fat_g": 0.1, "carbs_g": 17.5},
+    {"name": "Eggplant", "name_cn": "茄子", "calories_per_100g": 25, "protein_g": 1.0, "fat_g": 0.2, "carbs_g": 5.9},
+    {"name": "Shrimp", "name_cn": "虾", "calories_per_100g": 99, "protein_g": 24.0, "fat_g": 0.3, "carbs_g": 0.2},
+    {"name": "Beef", "name_cn": "牛肉", "calories_per_100g": 250, "protein_g": 26.0, "fat_g": 15.0, "carbs_g": 0.0},
+    {"name": "Mushroom", "name_cn": "蘑菇", "calories_per_100g": 22, "protein_g": 3.1, "fat_g": 0.3, "carbs_g": 3.3},
+    {"name": "Sesame Oil", "name_cn": "芝麻油", "calories_per_100g": 884, "protein_g": 0.0, "fat_g": 100.0, "carbs_g": 0.0},
+    {"name": "Vinegar", "name_cn": "醋", "calories_per_100g": 18, "protein_g": 0.0, "fat_g": 0.0, "carbs_g": 0.6},
+    {"name": "Sugar", "name_cn": "糖", "calories_per_100g": 387, "protein_g": 0.0, "fat_g": 0.0, "carbs_g": 100.0},
+    {"name": "Chili Pepper", "name_cn": "辣椒", "calories_per_100g": 40, "protein_g": 1.9, "fat_g": 0.4, "carbs_g": 8.8},
+    {"name": "Soybean Paste", "name_cn": "豆瓣酱", "calories_per_100g": 196, "protein_g": 12.0, "fat_g": 6.0, "carbs_g": 24.0}
+  ]
+}

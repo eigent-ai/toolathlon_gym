@@ -1,0 +1,16 @@
+{
+  "name": "Zeta Max",
+  "price": 599,
+  "rating": 4.7,
+  "description": "The Zeta Max is the ultimate enterprise solution built for high-performance computing environments. It delivers exceptional throughput and is designed to handle the most demanding workloads at scale with enterprise-grade security and compliance features.",
+  "pros": [
+    "Unparalleled performance for enterprise workloads",
+    "Advanced security and compliance certifications",
+    "Dedicated enterprise support team"
+  ],
+  "cons": [
+    "Most expensive option in the lineup",
+    "Requires dedicated infrastructure for optimal performance"
+  ],
+  "target_market": "Enterprise organizations with high-performance computing needs and strict security requirements."
+}

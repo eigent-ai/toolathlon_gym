@@ -1,0 +1,2 @@
+::1 - - [07/Mar/2026 22:22:40] "GET /index.html HTTP/1.1" 200 -
+::1 - - [07/Mar/2026 22:22:40] "GET /details.html HTTP/1.1" 200 -

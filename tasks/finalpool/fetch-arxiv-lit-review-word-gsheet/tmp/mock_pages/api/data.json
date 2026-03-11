@@ -1,0 +1,17 @@
+{
+  "trending_topics": [
+    {
+      "area": "LLMs",
+      "growth_pct": 45
+    },
+    {
+      "area": "Computer Vision",
+      "growth_pct": 12
+    },
+    {
+      "area": "RL",
+      "growth_pct": 8
+    }
+  ],
+  "source": "Academic Trends API"
+}

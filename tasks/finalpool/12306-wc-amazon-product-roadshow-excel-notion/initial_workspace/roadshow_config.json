@@ -1,0 +1,17 @@
+{
+  "company": "TechStore Online",
+  "roadshow_cities": ["Shanghai", "Guangzhou"],
+  "travel_date": "2026-03-10",
+  "focus_products": 5,
+  "seat_class": "一等座",
+  "meeting_duration_hours": 2,
+  "contacts": {
+    "shanghai": "shanghai_dist@partner.com",
+    "guangzhou": "guangzhou_dist@partner.com",
+    "manager": "manager@company.com"
+  },
+  "preferred_trains": {
+    "beijing_to_shanghai": "G11",
+    "beijing_to_guangzhou": "G105"
+  }
+}

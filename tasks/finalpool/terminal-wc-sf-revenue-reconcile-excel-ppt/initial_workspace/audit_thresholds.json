@@ -1,0 +1,12 @@
+{
+  "variance_calculation": "abs(wc_value - sf_value) / ((wc_value + sf_value) / 2) * 100",
+  "flag_thresholds": {
+    "review": 50,
+    "informational": 20,
+    "acceptable": 0
+  },
+  "confirmed_wc_statuses": ["completed", "processing"],
+  "metrics_to_compare": ["Total_Orders", "Total_Revenue", "Avg_Order_Value"],
+  "findings_required": 5,
+  "presentation_slides_minimum": 5
+}

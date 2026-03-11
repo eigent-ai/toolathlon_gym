@@ -1,0 +1,8 @@
+{
+  "risk_free_rate": 0.05,
+  "target_annual_return": 0.12,
+  "benchmark": "^DJI",
+  "review_period": "Q1 2025",
+  "email_recipients": ["investment_committee@company.com"],
+  "report_title": "Q1 2025 Portfolio Performance Review"
+}

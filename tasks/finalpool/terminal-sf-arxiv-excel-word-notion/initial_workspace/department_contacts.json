@@ -1,0 +1,46 @@
+{
+  "departments": [
+    {
+      "name": "Engineering",
+      "head": "Sarah Chen",
+      "email": "s.chen@company.com",
+      "phone": "+1-555-0101"
+    },
+    {
+      "name": "Finance",
+      "head": "Michael Torres",
+      "email": "m.torres@company.com",
+      "phone": "+1-555-0102"
+    },
+    {
+      "name": "HR",
+      "head": "Jennifer Park",
+      "email": "j.park@company.com",
+      "phone": "+1-555-0103"
+    },
+    {
+      "name": "Operations",
+      "head": "David Kim",
+      "email": "d.kim@company.com",
+      "phone": "+1-555-0104"
+    },
+    {
+      "name": "R&D",
+      "head": "Amanda Foster",
+      "email": "a.foster@company.com",
+      "phone": "+1-555-0105"
+    },
+    {
+      "name": "Sales",
+      "head": "Robert Martinez",
+      "email": "r.martinez@company.com",
+      "phone": "+1-555-0106"
+    },
+    {
+      "name": "Support",
+      "head": "Lisa Wang",
+      "email": "l.wang@company.com",
+      "phone": "+1-555-0107"
+    }
+  ]
+}

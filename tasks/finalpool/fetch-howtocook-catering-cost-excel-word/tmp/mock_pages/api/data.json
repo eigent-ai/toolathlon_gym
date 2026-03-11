@@ -1,0 +1,17 @@
+{
+  "nutrition_guidelines": [
+    {
+      "nutrient": "Protein",
+      "daily_g": 50
+    },
+    {
+      "nutrient": "Fiber",
+      "daily_g": 25
+    },
+    {
+      "nutrient": "Vitamin_C",
+      "daily_mg": 90
+    }
+  ],
+  "source": "Health & Wellness API"
+}

@@ -1,0 +1,33 @@
+{
+  "program": "Corporate Wellness 2026",
+  "daily_targets": {
+    "calories": {
+      "min": 1800,
+      "max": 2200
+    },
+    "protein_pct": {
+      "min": 20,
+      "max": 30
+    },
+    "carb_pct": {
+      "min": 45,
+      "max": 55
+    },
+    "fat_pct": {
+      "min": 25,
+      "max": 35
+    }
+  },
+  "food_groups": {
+    "vegetables": "5+ servings daily",
+    "fruits": "2-3 servings daily",
+    "whole_grains": "3+ servings daily",
+    "lean_protein": "2-3 servings daily"
+  },
+  "budget_per_meal": 10.0,
+  "restrictions": [
+    "low sodium",
+    "balanced macros",
+    "whole foods emphasis"
+  ]
+}

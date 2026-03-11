@@ -1,0 +1,131 @@
+{
+  "matches": [
+    {
+      "name": "boAt Wave Lite Smartwatch with 1.69 Inches(4.29cm) HD Display, Heart Rate & SpO2",
+      "our_price": 84.22,
+      "competitor_price": 65.69,
+      "difference": 18.53,
+      "difference_pct": 28.21,
+      "status": "Overpriced"
+    },
+    {
+      "name": "Vivo Y56 5G (Black Engine, 8GB RAM, 128GB Storage) with No Cost EMI/Additional E",
+      "our_price": 301.19,
+      "competitor_price": 367.45,
+      "difference": -66.26,
+      "difference_pct": -18.03,
+      "status": "Underpriced"
+    },
+    {
+      "name": "Oraimo 25.5W 4 Ports USB Charger, 5.1A USB Wall Charger Phone Adapter Compatible",
+      "our_price": 12.04,
+      "competitor_price": 11.68,
+      "difference": 0.36,
+      "difference_pct": 3.08,
+      "status": "Competitive"
+    },
+    {
+      "name": "Canon M50 Mark II 15-45mm f3.5-6.3 is STM",
+      "our_price": 734.88,
+      "competitor_price": 602.6,
+      "difference": 132.28,
+      "difference_pct": 21.95,
+      "status": "Overpriced"
+    },
+    {
+      "name": "Boult Audio Powerbuds True Wireless in Ear Earbuds with 120H Playtime, in-Built ",
+      "our_price": 108.42,
+      "competitor_price": 127.94,
+      "difference": -19.52,
+      "difference_pct": -15.26,
+      "status": "Underpriced"
+    },
+    {
+      "name": "boAt Wave Call Smart Watch, Smart Talk with Advanced Dedicated Bluetooth Calling",
+      "our_price": 96.27,
+      "competitor_price": 99.16,
+      "difference": -2.89,
+      "difference_pct": -2.91,
+      "status": "Competitive"
+    },
+    {
+      "name": "Sony Extra Bass MDR-XB450AP On-Ear Wired Headphones with Mic (Black)",
+      "our_price": 30.0,
+      "competitor_price": 22.5,
+      "difference": 7.5,
+      "difference_pct": 33.33,
+      "status": "Overpriced"
+    },
+    {
+      "name": "Belkin Ultra HD High Speed HDMI\u00ae Cable, Supports 8K and 4K, HDMI 2.1 Certified, ",
+      "our_price": 60.23,
+      "competitor_price": 75.29,
+      "difference": -15.06,
+      "difference_pct": -20.0,
+      "status": "Underpriced"
+    },
+    {
+      "name": "AGARO Adjustable Camera Tripod Stand with Mobile Phones Clip & Camera Holder, Su",
+      "our_price": 27.7,
+      "competitor_price": 26.31,
+      "difference": 1.39,
+      "difference_pct": 5.28,
+      "status": "Competitive"
+    },
+    {
+      "name": "Levelplus Jack Neckband Bluetooth Headset (Grey in The Ear)",
+      "our_price": 24.08,
+      "competitor_price": 19.26,
+      "difference": 4.82,
+      "difference_pct": 25.03,
+      "status": "Overpriced"
+    },
+    {
+      "name": "Oppo Enco Air 3 True Wireless in-Ear Earbuds with 25hrs Playtime, Fast Charging,",
+      "our_price": 72.28,
+      "competitor_price": 83.12,
+      "difference": -10.84,
+      "difference_pct": -13.04,
+      "status": "Underpriced"
+    },
+    {
+      "name": "Power Guard 80 cm (32 inches) Frameless HD Ready Smart LED TV PG32FSVC (Black)",
+      "our_price": 361.33,
+      "competitor_price": 368.56,
+      "difference": -7.23,
+      "difference_pct": -1.96,
+      "status": "Competitive"
+    },
+    {
+      "name": "LG 139 cm (55 Inches) Nanocell Series 4K Ultra HD Smart LED TV 55NANO80SQA (Blac",
+      "our_price": 1216.75,
+      "competitor_price": 1034.24,
+      "difference": 182.51,
+      "difference_pct": 17.65,
+      "status": "Overpriced"
+    },
+    {
+      "name": "Citizen Eco-Drive Analog Mother of Pearl Dial Women's Watch-EW2543-85D",
+      "our_price": 275.9,
+      "competitor_price": 331.08,
+      "difference": -55.18,
+      "difference_pct": -16.67,
+      "status": "Underpriced"
+    },
+    {
+      "name": "Nikrim\u2122 Portable Blender, Personal Mini Bottle Travel Electric Smoothie Blender ",
+      "our_price": 214.0,
+      "competitor_price": 209.72,
+      "difference": 4.28,
+      "difference_pct": 2.04,
+      "status": "Competitive"
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "overpriced": 5,
+    "underpriced": 5,
+    "competitive": 5,
+    "avg_diff_pct": 3.25
+  }
+}

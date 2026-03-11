@@ -1,0 +1,13 @@
+{
+  "training_date": "2026-03-10",
+  "training_location": "Shanghai",
+  "eligible_departments": [
+    "Sales",
+    "Marketing"
+  ],
+  "min_experience_years": 3,
+  "max_employees": 5,
+  "seat_class": "二等座",
+  "outbound_train": "G11",
+  "return_train": "G2"
+}

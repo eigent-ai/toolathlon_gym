@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdf-tools-mcp"
+version = "0.1.4"
+description = "A FastMCP-based PDF reading and manipulation tool server"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Junlong Li", email = "lockonlvange@gmail.com"},
+]
+maintainers = [
+    {name = "Junlong Li", email = "lockonlvange@gmail.com"},
+]
+keywords = ["pdf", "mcp", "fastmcp", "text-extraction", "pdf-manipulation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "fastmcp>=2.10.5",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.11.0",
+    "pypdf2>=3.0.1",
+    "requests>=2.25.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lockon-n/pdf-tools-mcp"
+Repository = "https://github.com/lockon-n/pdf-tools-mcp"
+Documentation = "https://github.com/lockon-n/pdf-tools-mcp#readme"
+Issues = "https://github.com/lockon-n/pdf-tools-mcp/issues"
+
+[project.scripts]
+pdf-tools-mcp = "pdf_tools_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pdf_tools_mcp"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/pdf_tools_mcp",
+    "/README.md",
+    "/pyproject.toml",
+]

@@ -1,0 +1,57 @@
+{
+  "mapping_rules": {
+    "Quantitative Analysis": {
+      "course_ids": [
+        1,
+        2
+      ],
+      "assessment_weight": "assignments+quizzes"
+    },
+    "Technical Research": {
+      "course_ids": [
+        3,
+        4
+      ],
+      "assessment_weight": "assignments+quizzes"
+    },
+    "Applied Problem Solving": {
+      "course_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessment_weight": "total_assessments"
+    },
+    "Communication & Reporting": {
+      "course_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "assessment_weight": "quiz_based"
+    }
+  },
+  "thresholds": {
+    "critical_gap": 3.0,
+    "high_gap": 1.5,
+    "normalization_max_assessments": 20,
+    "quiz_base_score": 3.0,
+    "quiz_increment": 0.5
+  },
+  "industry_benchmarks": {
+    "Quantitative Analysis": 7.5,
+    "Technical Research": 6.8,
+    "Applied Problem Solving": 8.0,
+    "Communication & Reporting": 5.5
+  },
+  "advisory_board_meetings": {
+    "week_start": "2026-03-16",
+    "meeting_topics": [
+      "Curriculum Review",
+      "Workforce Data Findings",
+      "Gap Analysis Recommendations"
+    ]
+  }
+}

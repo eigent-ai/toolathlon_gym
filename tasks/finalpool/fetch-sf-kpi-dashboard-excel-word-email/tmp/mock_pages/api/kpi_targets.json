@@ -1,0 +1,19 @@
+{
+  "quarter": "Q1 2026",
+  "targets": {
+    "total_revenue": 2500000,
+    "avg_order_value": 85,
+    "support_response_time_hours": 4.0,
+    "customer_satisfaction": 4.2,
+    "employee_satisfaction": 3.8,
+    "ticket_resolution_rate_pct": 90,
+    "revenue_by_region": {
+      "North America": 800000,
+      "Europe": 650000,
+      "Asia Pacific": 550000,
+      "Latin America": 300000,
+      "Middle East": 200000
+    }
+  },
+  "last_updated": "2026-01-01"
+}

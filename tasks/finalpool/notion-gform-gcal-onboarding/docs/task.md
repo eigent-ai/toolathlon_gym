@@ -1,0 +1,9 @@
+We have three new employees starting on March 16th, 2026 and I need to get their onboarding organized. There is an onboarding checklist page in our knowledge base titled "New Employee Onboarding Checklist" that lists all the steps every new hire needs to complete. The new hires have already filled out their information through a registration form called "New Employee Information". Please pull up both of these and then do the following.
+
+First, create a PowerPoint presentation called Onboarding_Presentation.pptx in the workspace. The first slide should be a title slide with the title "Welcome to the Team!" and a subtitle mentioning the onboarding date of March 16, 2026. Then create one slide for each item on the onboarding checklist, where each slide has the checklist item as the title and a brief description of what it involves. After the checklist slides, add a slide titled "New Team Members" that lists the names, departments, and email addresses of all three new hires from the form responses.
+
+Second, schedule two events in the calendar for March 16, 2026. The first event should be called "Orientation Session" from 9:00 AM to 12:00 PM and should include all three new hires as attendees using their email addresses. The second event should be called "Team Lunch" from 12:00 PM to 1:00 PM.
+
+Third, send a welcome email to each of the three new hires individually. The subject of each email should be "Welcome to Our Company - Onboarding Information" and the body should greet them by name, mention their start date of March 16, 2026, confirm their department, and let them know about the orientation session from 9 AM to 12 PM and the team lunch from 12 PM to 1 PM on that day.
+
+Fourth, update the onboarding checklist page in the knowledge base by adding a new section at the bottom titled "March 2026 New Hires" that lists the names of all three new employees.

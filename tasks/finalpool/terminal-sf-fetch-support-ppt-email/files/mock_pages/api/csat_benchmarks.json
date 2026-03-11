@@ -1,0 +1,28 @@
+{
+  "source": "Global Support Industry Benchmark Report 2026",
+  "last_updated": "2026-02-15",
+  "benchmarks": {
+    "High": {
+      "target_satisfaction": 3.50,
+      "target_response_hours": 4.0,
+      "target_resolution_hours": 24.0,
+      "industry_avg_satisfaction": 3.45,
+      "description": "Critical issues requiring immediate attention"
+    },
+    "Medium": {
+      "target_satisfaction": 3.40,
+      "target_response_hours": 8.0,
+      "target_resolution_hours": 48.0,
+      "industry_avg_satisfaction": 3.35,
+      "description": "Standard issues with moderate urgency"
+    },
+    "Low": {
+      "target_satisfaction": 3.20,
+      "target_response_hours": 24.0,
+      "target_resolution_hours": 72.0,
+      "industry_avg_satisfaction": 3.15,
+      "description": "Non-urgent inquiries and feature requests"
+    }
+  },
+  "overall_industry_avg_satisfaction": 3.32
+}

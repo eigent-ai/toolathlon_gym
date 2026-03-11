@@ -1,0 +1,9 @@
+I need your help putting together a Q4 2025 sales reconciliation report. In the workspace you will find a PDF file called Q4_2025_Regional_Targets.pdf that contains the regional revenue targets approved by management for Q4 2025 (October through December). Please read that PDF to extract each region's revenue target.
+
+Next, connect to the company data warehouse and pull the actual Q4 2025 sales figures. You should look at delivered orders only, aggregating total revenue, order count, and unique customer count by region. You should also pull a breakdown of revenue by region and customer segment for all region-segment combinations that have data.
+
+Once you have both the targets and the actuals, create an Excel file named Q4_2025_Sales_Report.xlsx with two sheets. The first sheet should be called "Regional Performance" and should contain the following columns: Region, Target, Actual, Variance, Variance_Pct, Order_Count, and Customer_Count. The Actual column should show total revenue rounded to 2 decimal places. Variance is calculated as Actual minus Target. Variance_Pct is calculated as Variance divided by Target multiplied by 100, rounded to 1 decimal place. Sort the rows alphabetically by Region.
+
+The second sheet should be called "Segment Breakdown" and should contain the following columns: Region, Segment, Revenue, and Orders. Revenue should be rounded to 2 decimal places. Sort the rows first by Region alphabetically, then within each region sort by Revenue in descending order.
+
+Finally, create a Word document named Executive_Summary.docx. Write a brief executive summary paragraph that mentions the total actual revenue across all regions, identifies which regions exceeded their targets and which fell short, and provides a concise overall assessment of Q4 2025 performance.

@@ -1,0 +1,38 @@
+{
+    "source": "Industry Salary Survey 2025",
+    "last_updated": "2025-12-15",
+    "currency": "USD",
+    "benchmarks": {
+        "Engineering": {
+            "DevOps Engineer": 62000,
+            "ML Engineer": 68000,
+            "Software Engineer": 65000
+        },
+        "Finance": {
+            "Analyst": 55000,
+            "Senior Analyst": 63000
+        },
+        "HR": {
+            "HR Executive": 60000,
+            "HR Manager": 65000
+        },
+        "Operations": {
+            "Operations Coordinator": 52000,
+            "Ops Manager": 60000
+        },
+        "R&D": {
+            "Researcher": 64000,
+            "Scientist": 62000
+        },
+        "Sales": {
+            "Account Executive": 58000,
+            "Sales Manager": 66000
+        },
+        "Support": {
+            "Customer Specialist": 50000,
+            "Support Engineer": 55000
+        }
+    },
+    "methodology": "Based on 50th percentile of reported salaries from 500+ companies in the technology sector",
+    "notes": "Benchmarks represent base salary only, excluding bonuses and equity"
+}

@@ -1,0 +1,5 @@
+{
+  "needed_mcp_servers": ["yahoo-finance", "pdf-tools", "excel", "filesystem"],
+  "needed_local_tools": ["claim_done", "handle_overlong_tool_outputs", "manage_context", "history", "python_execute"],
+  "meta": {}
+}

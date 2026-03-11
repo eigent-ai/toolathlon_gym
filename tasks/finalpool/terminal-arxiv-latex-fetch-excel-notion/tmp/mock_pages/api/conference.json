@@ -1,0 +1,52 @@
+{
+  "conference": "International Conference on Machine Learning Methods",
+  "location": "San Francisco, CA",
+  "dates": "March 28-30, 2026",
+  "sessions": [
+    {
+      "session_id": "S1",
+      "title": "Scaling and Efficiency in Large Language Models",
+      "date": "2026-03-28",
+      "time": "09:00-12:00",
+      "room": "Grand Ballroom A",
+      "chair": "Dr. Emily Zhang",
+      "topics": ["scaling laws", "compute efficiency", "model size optimization"]
+    },
+    {
+      "session_id": "S2",
+      "title": "Alignment and Human Feedback Methods",
+      "date": "2026-03-28",
+      "time": "14:00-17:00",
+      "room": "Grand Ballroom B",
+      "chair": "Dr. Marcus Chen",
+      "topics": ["RLHF", "instruction tuning", "human alignment", "safety"]
+    },
+    {
+      "session_id": "S3",
+      "title": "Open-Source Models and Reproducibility",
+      "date": "2026-03-29",
+      "time": "09:00-12:00",
+      "room": "Conference Room 1",
+      "chair": "Dr. Sarah Kim",
+      "topics": ["open source", "reproducibility", "model release", "democratization"]
+    },
+    {
+      "session_id": "S4",
+      "title": "Training Infrastructure and Best Practices",
+      "date": "2026-03-29",
+      "time": "14:00-17:00",
+      "room": "Conference Room 2",
+      "chair": "Dr. James Liu",
+      "topics": ["distributed training", "hardware optimization", "training methodology"]
+    },
+    {
+      "session_id": "S5",
+      "title": "Future Directions and Panel Discussion",
+      "date": "2026-03-30",
+      "time": "09:00-12:00",
+      "room": "Grand Ballroom A",
+      "chair": "Dr. Anna Patel",
+      "topics": ["future research", "AGI", "multimodal", "applications"]
+    }
+  ]
+}

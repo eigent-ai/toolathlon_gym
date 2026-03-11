@@ -1,0 +1,34 @@
+{
+  "common_restrictions": [
+    "Vegetarian",
+    "No Pork",
+    "No Seafood",
+    "Gluten Free",
+    "No Restrictions"
+  ],
+  "allergens_to_consider": [
+    "Shellfish",
+    "Nuts",
+    "Soy",
+    "Gluten"
+  ],
+  "cuisine_preferences": [
+    "Chinese Meat Dishes",
+    "Chinese Vegetable Dishes",
+    "Chinese Staple Foods",
+    "Soups",
+    "Seafood"
+  ],
+  "cost_per_serving": {
+    "meat": 8.00,
+    "seafood": 8.00,
+    "vegetable": 5.00,
+    "staple": 6.00,
+    "soup": 4.00
+  },
+  "servings_per_day": 50,
+  "program_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "email_recipients": {
+    "all_staff": "all_staff@company.com"
+  }
+}

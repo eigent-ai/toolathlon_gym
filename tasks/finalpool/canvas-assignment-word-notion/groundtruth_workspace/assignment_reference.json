@@ -1,0 +1,59 @@
+{
+  "course_name": "Creative Computing & Culture (Fall 2014)",
+  "course_code": "CCC-2014J",
+  "course_id": 7,
+  "assignments": [
+    {
+      "name": "CMA 24295",
+      "due_date": "2014-10-19",
+      "points": 2.0
+    },
+    {
+      "name": "TMA 24291",
+      "due_date": "2014-11-02",
+      "points": 9.0
+    },
+    {
+      "name": "CMA 24296",
+      "due_date": "2014-12-07",
+      "points": 7.0
+    },
+    {
+      "name": "TMA 24292",
+      "due_date": "2015-01-18",
+      "points": 22.0
+    },
+    {
+      "name": "CMA 24297",
+      "due_date": "2015-02-22",
+      "points": 8.0
+    },
+    {
+      "name": "TMA 24293",
+      "due_date": "2015-03-08",
+      "points": 22.0
+    },
+    {
+      "name": "TMA 24294",
+      "due_date": "2015-04-26",
+      "points": 22.0
+    },
+    {
+      "name": "CMA 24298",
+      "due_date": "2015-05-03",
+      "points": 8.0
+    },
+    {
+      "name": "Final Exam 24299",
+      "due_date": null,
+      "points": 100.0
+    },
+    {
+      "name": "Final Exam 40088",
+      "due_date": null,
+      "points": 100.0
+    }
+  ],
+  "total_assignments": 10,
+  "total_points": 300.0
+}

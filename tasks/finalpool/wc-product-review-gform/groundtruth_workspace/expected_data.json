@@ -1,0 +1,113 @@
+{
+  "low_rated_products": [
+    {
+      "id": 61,
+      "name": "dlx hmt Women Watch Casual Dress Analog Luxury Quartz Wrist Watches Stainless Steel Watch (Silver, Set of 2)",
+      "rating": 3.5,
+      "sales": 76,
+      "category": "Watches"
+    },
+    {
+      "id": 21,
+      "name": "Robustrion Smart Trifold Hard Back Flip Stand Case Cover for Lenovo Tab M10 HD 2nd Gen TB-X306X / Smart Tab M10 HD 2nd Gen...",
+      "rating": 3.71,
+      "sales": 135,
+      "category": "Electronics"
+    },
+    {
+      "id": 25,
+      "name": "boAt Wave Call Smart Watch, Smart Talk with Advanced Dedicated Bluetooth Calling Chip, 1.69\u201d HD Display with 550 NITS & 7...",
+      "rating": 4.0,
+      "sales": 170,
+      "category": "Electronics"
+    },
+    {
+      "id": 76,
+      "name": "DALI ALTECO C-1 100 Watt 2.0 Channel Speaker with Dolby Atmos (Black)",
+      "rating": 4.0,
+      "sales": 167,
+      "category": "Audio"
+    },
+    {
+      "id": 13,
+      "name": "ZEBRONICS Zeb-100HB 4 Ports USB Hub for Laptop, PC Computers, Plug & Play, Backward Compatible - Black",
+      "rating": 4.0,
+      "sales": 166,
+      "category": "Electronics"
+    }
+  ],
+  "affected_customers": [
+    {
+      "id": 1,
+      "email": "emily.johnson@x.dummyjson.com",
+      "first_name": "Emily",
+      "last_name": "Johnson"
+    },
+    {
+      "id": 2,
+      "email": "michael.williams@x.dummyjson.com",
+      "first_name": "Michael",
+      "last_name": "Williams"
+    },
+    {
+      "id": 12,
+      "email": "mia.rodriguez@x.dummyjson.com",
+      "first_name": "Mia",
+      "last_name": "Rodriguez"
+    },
+    {
+      "id": 13,
+      "email": "noah.hernandez@x.dummyjson.com",
+      "first_name": "Noah",
+      "last_name": "Hernandez"
+    },
+    {
+      "id": 14,
+      "email": "charlotte.lopez@x.dummyjson.com",
+      "first_name": "Charlotte",
+      "last_name": "Lopez"
+    },
+    {
+      "id": 21,
+      "email": "madison.collins@x.dummyjson.com",
+      "first_name": "Madison",
+      "last_name": "Collins"
+    },
+    {
+      "id": 25,
+      "email": "harper.kelly@x.dummyjson.com",
+      "first_name": "Harper",
+      "last_name": "Kelly"
+    },
+    {
+      "id": 29,
+      "email": "henry.hill@x.dummyjson.com",
+      "first_name": "Henry",
+      "last_name": "Hill"
+    },
+    {
+      "id": 31,
+      "email": "gabriel.adams@x.dummyjson.com",
+      "first_name": "Gabriel",
+      "last_name": "Adams"
+    },
+    {
+      "id": 35,
+      "email": "jack.ward@x.dummyjson.com",
+      "first_name": "Jack",
+      "last_name": "Ward"
+    },
+    {
+      "id": 42,
+      "email": "avery.carter@x.dummyjson.com",
+      "first_name": "Avery",
+      "last_name": "Carter"
+    },
+    {
+      "id": 44,
+      "email": "scarlett.wright@x.dummyjson.com",
+      "first_name": "Scarlett",
+      "last_name": "Wright"
+    }
+  ]
+}

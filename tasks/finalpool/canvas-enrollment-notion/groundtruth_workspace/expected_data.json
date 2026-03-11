@@ -1,0 +1,182 @@
+{
+  "courses": [
+    {
+      "course_id": 1,
+      "course_name": "Applied Analytics & Algorithms (Fall 2013)",
+      "students": 383,
+      "teachers": 1,
+      "tas": 1,
+      "total": 385
+    },
+    {
+      "course_id": 2,
+      "course_name": "Applied Analytics & Algorithms (Fall 2014)",
+      "students": 365,
+      "teachers": 2,
+      "tas": 2,
+      "total": 369
+    },
+    {
+      "course_id": 3,
+      "course_name": "Biochemistry & Bioinformatics (Fall 2013)",
+      "students": 2237,
+      "teachers": 3,
+      "tas": 1,
+      "total": 2241
+    },
+    {
+      "course_id": 4,
+      "course_name": "Biochemistry & Bioinformatics (Fall 2014)",
+      "students": 2292,
+      "teachers": 2,
+      "tas": 2,
+      "total": 2296
+    },
+    {
+      "course_id": 5,
+      "course_name": "Biochemistry & Bioinformatics (Spring 2013)",
+      "students": 1767,
+      "teachers": 3,
+      "tas": 0,
+      "total": 1770
+    },
+    {
+      "course_id": 6,
+      "course_name": "Biochemistry & Bioinformatics (Spring 2014)",
+      "students": 1613,
+      "teachers": 0,
+      "tas": 2,
+      "total": 1615
+    },
+    {
+      "course_id": 7,
+      "course_name": "Creative Computing & Culture (Fall 2014)",
+      "students": 2498,
+      "teachers": 1,
+      "tas": 2,
+      "total": 2501
+    },
+    {
+      "course_id": 8,
+      "course_name": "Creative Computing & Culture (Spring 2014)",
+      "students": 1936,
+      "teachers": 2,
+      "tas": 2,
+      "total": 1940
+    },
+    {
+      "course_id": 9,
+      "course_name": "Data-Driven Design (Fall 2013)",
+      "students": 1938,
+      "teachers": 1,
+      "tas": 3,
+      "total": 1942
+    },
+    {
+      "course_id": 10,
+      "course_name": "Data-Driven Design (Fall 2014)",
+      "students": 1803,
+      "teachers": 2,
+      "tas": 2,
+      "total": 1807
+    },
+    {
+      "course_id": 11,
+      "course_name": "Data-Driven Design (Spring 2013)",
+      "students": 1303,
+      "teachers": 2,
+      "tas": 2,
+      "total": 1307
+    },
+    {
+      "course_id": 12,
+      "course_name": "Data-Driven Design (Spring 2014)",
+      "students": 1228,
+      "teachers": 3,
+      "tas": 1,
+      "total": 1232
+    },
+    {
+      "course_id": 13,
+      "course_name": "Environmental Economics & Ethics (Fall 2013)",
+      "students": 1052,
+      "teachers": 1,
+      "tas": 1,
+      "total": 1054
+    },
+    {
+      "course_id": 14,
+      "course_name": "Environmental Economics & Ethics (Fall 2014)",
+      "students": 1188,
+      "teachers": 2,
+      "tas": 1,
+      "total": 1191
+    },
+    {
+      "course_id": 15,
+      "course_name": "Environmental Economics & Ethics (Spring 2014)",
+      "students": 694,
+      "teachers": 1,
+      "tas": 1,
+      "total": 696
+    },
+    {
+      "course_id": 16,
+      "course_name": "Foundations of Finance (Fall 2013)",
+      "students": 2283,
+      "teachers": 1,
+      "tas": 1,
+      "total": 2285
+    },
+    {
+      "course_id": 17,
+      "course_name": "Foundations of Finance (Fall 2014)",
+      "students": 2365,
+      "teachers": 4,
+      "tas": 0,
+      "total": 2369
+    },
+    {
+      "course_id": 18,
+      "course_name": "Foundations of Finance (Spring 2013)",
+      "students": 1614,
+      "teachers": 2,
+      "tas": 1,
+      "total": 1617
+    },
+    {
+      "course_id": 19,
+      "course_name": "Foundations of Finance (Spring 2014)",
+      "students": 1500,
+      "teachers": 2,
+      "tas": 0,
+      "total": 1502
+    },
+    {
+      "course_id": 20,
+      "course_name": "Global Governance & Geopolitics (Fall 2013)",
+      "students": 952,
+      "teachers": 2,
+      "tas": 2,
+      "total": 956
+    },
+    {
+      "course_id": 21,
+      "course_name": "Global Governance & Geopolitics (Fall 2014)",
+      "students": 749,
+      "teachers": 3,
+      "tas": 0,
+      "total": 752
+    },
+    {
+      "course_id": 22,
+      "course_name": "Global Governance & Geopolitics (Spring 2014)",
+      "students": 833,
+      "teachers": 1,
+      "tas": 2,
+      "total": 836
+    }
+  ],
+  "total_courses": 22,
+  "total_enrollments": 32663
+}

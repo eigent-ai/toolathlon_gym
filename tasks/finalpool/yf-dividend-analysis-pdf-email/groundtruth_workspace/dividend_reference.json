@@ -1,0 +1,37 @@
+{
+  "stocks": [
+    {
+      "symbol": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "div_yield_pct": 275.0,
+      "div_rate": 4.12,
+      "current_price": 150.76
+    },
+    {
+      "symbol": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "div_yield_pct": 212.0,
+      "div_rate": 5.2,
+      "current_price": 239.63
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "div_yield_pct": 200.0,
+      "div_rate": 6.0,
+      "current_price": 293.55
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "div_yield_pct": 28.0,
+      "div_rate": 0.84,
+      "current_price": 300.88
+    }
+  ],
+  "avg_yield_pct": 178.75
+}

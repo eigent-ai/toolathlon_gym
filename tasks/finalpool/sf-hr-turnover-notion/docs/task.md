@@ -1,0 +1,9 @@
+Our HR leadership has requested an analysis of department workforce composition and compensation from our company data warehouse. They want to see the information organized in a collaborative workspace page so the entire HR team can review and discuss it.
+
+Please connect to our data warehouse and pull the employee data by department. For each of the seven departments, I need the total number of employees, the average salary rounded to two decimal places, the minimum salary, and the maximum salary. Also calculate the salary range for each department, which is simply the maximum minus the minimum salary.
+
+Create a page in our team workspace titled "HR Department Workforce Analysis" with a description "Comprehensive department-level workforce and compensation overview as of March 2026". On this page, create a database called "Department Metrics" with the following properties: Department (title), Employee_Count (number), Avg_Salary (number), Min_Salary (number), Max_Salary (number), and Salary_Range (number). Populate the database with one entry per department, covering all seven departments.
+
+Below the database, add a paragraph block that states the department with the highest average salary and the department with the lowest average salary, along with their respective values.
+
+After the workspace page is set up, send an email to hr-director@company.com from hr-analytics@company.com with the subject "HR Department Workforce Analysis Ready" and a body that says "Hello, The HR Department Workforce Analysis page has been created and is ready for review. The analysis covers all 7 departments with a total of [TOTAL] employees. The department with the highest average salary is [DEPT] at $[AVG]. Please review at your earliest convenience. Best regards, HR Analytics Team" where you fill in the actual total employee count, department name, and average salary value.

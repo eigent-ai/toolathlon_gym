@@ -1,0 +1,10 @@
+Service Monitoring Report
+========================
+
+Service Status Summary:
+- Database Cluster: degraded (Uptime: 98.50%, Last Incident: 2026-03-05) - ALERT TRIGGERED
+- API Gateway: healthy (Uptime: 99.95%, Last Incident: 2026-03-01)
+- Storage Service: healthy (Uptime: 99.99%, Last Incident: 2026-02-15)
+
+Alerts:
+- Database Cluster is in a degraded state. An alert email was sent and a calendar event was created for the outage window.

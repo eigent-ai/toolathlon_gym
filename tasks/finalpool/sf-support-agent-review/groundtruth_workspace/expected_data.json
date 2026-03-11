@@ -1,0 +1,138 @@
+{
+  "agents": [
+    {
+      "name": "Ava",
+      "team": "Specialist",
+      "skill": "senior"
+    },
+    {
+      "name": "David",
+      "team": "Specialist",
+      "skill": "mid"
+    },
+    {
+      "name": "Emma",
+      "team": "Specialist",
+      "skill": "junior"
+    },
+    {
+      "name": "James",
+      "team": "Specialist",
+      "skill": "junior"
+    },
+    {
+      "name": "Michael",
+      "team": "Specialist",
+      "skill": "senior"
+    },
+    {
+      "name": "Olivia",
+      "team": "Tier 2",
+      "skill": "junior"
+    },
+    {
+      "name": "Sam",
+      "team": "Tier 2",
+      "skill": "senior"
+    },
+    {
+      "name": "Sarah",
+      "team": "Tier 3",
+      "skill": "senior"
+    },
+    {
+      "name": "William",
+      "team": "Tier 3",
+      "skill": "junior"
+    }
+  ],
+  "priority_stats": [
+    {
+      "priority": "High",
+      "count": 6466,
+      "avg_resp": 6.23,
+      "avg_sat": 3.26
+    },
+    {
+      "priority": "Low",
+      "count": 9348,
+      "avg_resp": 25.76,
+      "avg_sat": 3.25
+    },
+    {
+      "priority": "Medium",
+      "count": 15774,
+      "avg_resp": 12.28,
+      "avg_sat": 3.26
+    }
+  ],
+  "issue_stats": [
+    {
+      "type": "Performance Issue",
+      "count": 8128,
+      "avg_resp": 15.2,
+      "avg_sat": 3.38
+    },
+    {
+      "type": "Bug",
+      "count": 6804,
+      "avg_resp": 15.96,
+      "avg_sat": 2.96
+    },
+    {
+      "type": "Feature Request",
+      "count": 6118,
+      "avg_resp": 14.63,
+      "avg_sat": 3.31
+    },
+    {
+      "type": "Incident",
+      "count": 4463,
+      "avg_resp": 14.61,
+      "avg_sat": 3.31
+    },
+    {
+      "type": "Service Request",
+      "count": 3002,
+      "avg_resp": 14.27,
+      "avg_sat": 3.31
+    },
+    {
+      "type": "Maintenance",
+      "count": 1558,
+      "avg_resp": 14.67,
+      "avg_sat": 3.33
+    },
+    {
+      "type": "Technical Issue",
+      "count": 1515,
+      "avg_resp": 14.7,
+      "avg_sat": 3.35
+    }
+  ],
+  "sla_stats": [
+    {
+      "priority": "High",
+      "total": 6466,
+      "met": 778,
+      "pct": 12.03
+    },
+    {
+      "priority": "Low",
+      "total": 9348,
+      "met": 4204,
+      "pct": 44.97
+    },
+    {
+      "priority": "Medium",
+      "total": 15774,
+      "met": 1645,
+      "pct": 10.43
+    }
+  ],
+  "overall": {
+    "total": 31588,
+    "avg_resp": 15.03,
+    "avg_sat": 3.26
+  }
+}

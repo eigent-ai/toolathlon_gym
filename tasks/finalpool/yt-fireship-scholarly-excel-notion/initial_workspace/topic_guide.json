@@ -1,0 +1,19 @@
+{
+  "topics": {
+    "AI/LLM": ["deepseek", "openai", "gpt", "llm", "claude", "ai"],
+    "DevOps": ["docker", "kubernetes", "linux", "server"],
+    "WebDev": ["javascript", "react", "css", "node"],
+    "Security": ["hack", "breach", "security", "bug"],
+    "Systems": ["rust", "python", "c++", "compiler"]
+  },
+  "match_instructions": {
+    "case_sensitive": false,
+    "match_in": "title",
+    "fallback_topic": "General"
+  },
+  "scholarly_search": {
+    "papers_per_topic": 3,
+    "sort_by": "citations",
+    "min_year": 2018
+  }
+}

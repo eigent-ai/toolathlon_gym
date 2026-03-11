@@ -1,0 +1,10 @@
+{
+  "channels": [
+    "Fireship",
+    "Veritasium"
+  ],
+  "spreadsheet_title": "Channel Comparison Analysis",
+  "output_doc": "Channel_Analysis_Report.docx",
+  "email_to": "media@company.com",
+  "email_subject": "YouTube Channel Comparison Report"
+}

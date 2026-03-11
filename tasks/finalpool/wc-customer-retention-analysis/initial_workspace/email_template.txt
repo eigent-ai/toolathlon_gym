@@ -1,0 +1,15 @@
+Subject: We miss you, {first_name}!
+
+Dear {first_name},
+
+We noticed it has been {days_inactive} days since your last purchase with us, and we wanted to reach out personally.
+
+As one of our valued VIP customers, we truly appreciate your loyalty and want to make sure you know about the great products we have available.
+
+We would love to see you back soon. If there is anything we can help with or if you have any questions about our latest offerings, please do not hesitate to reach out.
+
+Thank you for being a valued member of our community.
+
+Warm regards,
+The Customer Success Team
+retention@store.com

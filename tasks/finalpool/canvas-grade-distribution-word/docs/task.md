@@ -1,0 +1,7 @@
+I am preparing a grade analysis report for the Foundations of Finance course from the Fall 2013 semester. The course code is FFF-2013J. Please look up this course in the learning management system and pull all graded submissions for it.
+
+For each submission that has a score, calculate the percentage grade based on the score divided by the assignment's total points possible, then classify it into standard letter grade bands: A is 90 percent or above, B is 80 to 89 percent, C is 70 to 79 percent, D is 60 to 69 percent, and F is below 60 percent.
+
+Create an Excel workbook called Grade_Data.xlsx in the workspace with two sheets. The first sheet should be named "Distribution" with columns Grade_Band, Count, and Percentage, listing each grade band from A through F with the number of submissions in that band and what percentage of all graded submissions it represents. The second sheet should be named "Assignment Averages" with columns Assignment_Name, Avg_Score, and Submission_Count, showing the average raw score and number of graded submissions for each assignment in the course, sorted alphabetically by assignment name.
+
+Then create a Word document called Grade_Report.docx in the workspace. It should have a heading "Grade Distribution Report: FFF-2013J" followed by a table showing the grade distribution (Grade Band, Count, Percentage), and then a summary paragraph stating the total number of graded submissions, the most common grade band, and the overall class performance trend.

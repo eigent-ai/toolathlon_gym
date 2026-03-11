@@ -1,0 +1,38 @@
+[
+  {
+    "Quarter": "2024-Q1",
+    "Video_Count": 6,
+    "Total_Views": 7076664,
+    "Avg_Engagement_Rate": 4.03
+  },
+  {
+    "Quarter": "2024-Q2",
+    "Video_Count": 11,
+    "Total_Views": 11525169,
+    "Avg_Engagement_Rate": 4.001
+  },
+  {
+    "Quarter": "2024-Q3",
+    "Video_Count": 15,
+    "Total_Views": 20838553,
+    "Avg_Engagement_Rate": 4.094
+  },
+  {
+    "Quarter": "2024-Q4",
+    "Video_Count": 14,
+    "Total_Views": 16110202,
+    "Avg_Engagement_Rate": 3.885
+  },
+  {
+    "Quarter": "2025-Q1",
+    "Video_Count": 24,
+    "Total_Views": 37546490,
+    "Avg_Engagement_Rate": 3.811
+  },
+  {
+    "Quarter": "2025-Q2",
+    "Video_Count": 13,
+    "Total_Views": 11648311,
+    "Avg_Engagement_Rate": 3.415
+  }
+]

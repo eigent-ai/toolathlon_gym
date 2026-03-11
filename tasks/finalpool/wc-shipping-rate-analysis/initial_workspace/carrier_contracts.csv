@@ -1,0 +1,7 @@
+Carrier,Contract_Start,Contract_End,Discount_Pct,Notes
+FedEx,2025-01-01,2025-12-31,5%,Expired
+
+UPS,01/15/2026,12/31/2026,8%,Active
+USPS,2026-03-01,2027-02-28,3%,New contract
+
+FedEx,"March 1, 2026","Feb 28, 2027",6%,Renewed

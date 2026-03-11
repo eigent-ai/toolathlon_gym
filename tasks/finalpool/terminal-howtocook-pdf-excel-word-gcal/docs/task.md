@@ -1,0 +1,17 @@
+The campus dining services team is organizing a five-day themed food festival featuring Chinese cuisine. There is a PDF file called Dietary_Guidelines.pdf in the workspace that outlines the nutritional requirements and budget constraints for the event. There is also a JSON file called event_config.json that specifies the number of guests per day, the budget per person per meal, and the required meal categories. Please read both files first to understand the event parameters.
+
+Search the recipe database for dishes across five categories: a main course (staple food), a meat dish, a vegetable dish, a soup, and a dessert. Select exactly one recipe from each category. For each selected recipe, note its name, category, difficulty rating, estimated preparation time, and ingredient list.
+
+Write and run a Python script called budget_calculator.py in the workspace. The script should read from a file called selected_recipes.json (which you create with the five selected recipes and their details). For each recipe, estimate the cost per serving at 15 yuan for staple dishes, 25 yuan for meat dishes, 10 yuan for vegetable dishes, 12 yuan for soups, and 8 yuan for desserts. The script should calculate the total daily cost for 50 guests (each guest gets one serving of each dish), the total five-day cost, and whether the total stays within the event budget of 20000 yuan. Output budget_analysis.json with the results.
+
+Create an Excel file called Campus_Dining_Plan.xlsx in the workspace with three sheets.
+
+The first sheet should be called Weekly_Menu with columns Day (Monday through Friday), Category, Recipe_Name, Servings (50 for each), and Cost_Per_Serving (using the rates above). Each day should have the same five recipes, resulting in 25 total rows (5 days times 5 categories). Sort by Day then by Category alphabetically.
+
+The second sheet should be called Nutrition_Estimate with columns Category, Recipe_Name, Estimated_Calories (use 400 for staple, 350 for meat, 150 for vegetable, 100 for soup, 200 for dessert), Estimated_Protein_g (use 15 for staple, 30 for meat, 5 for vegetable, 8 for soup, 3 for dessert), and Difficulty. Include the five recipes sorted by Category alphabetically.
+
+The third sheet should be called Budget_Overview with columns Category, Cost_Per_Serving, Daily_Servings (50), Daily_Cost, Five_Day_Cost, and Pct_of_Budget (the percentage of 20000 yuan rounded to one decimal place). Include the five categories sorted alphabetically, plus a total row at the bottom. Calculate the total daily cost based on 50 guests and the sum of per-serving costs across all five categories, then multiply by five days for the total five-day cost.
+
+Create a Word document called Meal_Plan_Report.docx in the workspace. The report should have a title about the campus food festival, a section describing the event parameters (50 guests per day, 5 days, 20000 yuan budget), a section listing each selected recipe with its category and key ingredients, a budget analysis section showing the total costs and confirming the plan is within budget, and a section with preparation recommendations.
+
+Finally, create five calendar events, one for each day from Monday March 9 through Friday March 13, 2026. Each event should be titled "Food Festival Prep - Day N" (where N is 1 through 5), scheduled from 7:00 AM to 10:00 AM, and include a description listing the five recipes being prepared that day.

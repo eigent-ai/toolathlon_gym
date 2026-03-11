@@ -1,0 +1,13 @@
+Our company is preparing for the annual compensation review and the VP of HR has asked for a detailed comparison of our internal salary data against published industry benchmarks. We have an industry benchmarking service that provides salary data through a REST API endpoint at http://localhost:30201/api/benchmarks.json which returns benchmark salary information for seven departments including average salary, median salary, and percentile ranges.
+
+We also maintain our own employee records in the company data warehouse with salary information for approximately 50,000 employees across seven departments: R&D, Finance, Operations, Sales, HR, Support, and Engineering.
+
+Please start by fetching the industry benchmark data from the API endpoint. Then pull the actual employee salary data from the data warehouse, grouped by department. For each department, compute the average salary, median salary, minimum salary, maximum salary, and total headcount.
+
+Create an Excel file called "HR_Salary_Benchmark.xlsx" in the workspace with three sheets. The first sheet should be called "Industry Benchmarks" and contain the benchmark data retrieved from the API, with columns for Department, Benchmark_Avg_Salary, Benchmark_Median_Salary, Benchmark_P25, and Benchmark_P75. The second sheet should be called "Internal Data" and include columns for Department, Internal_Avg_Salary, Internal_Median_Salary, Min_Salary, Max_Salary, and Headcount, populated with actual data from the data warehouse. The third sheet should be called "Variance Analysis" and contain columns for Department, Benchmark_Avg, Internal_Avg, Variance_Amount (the difference between internal average and benchmark average), and Variance_Pct (the percentage difference calculated as the variance amount divided by the benchmark average, multiplied by 100). A positive variance means our salaries are above benchmark and negative means below benchmark.
+
+Next, create a Word document called "Salary_Benchmark_Report.docx" in the workspace. This executive summary should include a title, an overview paragraph describing the purpose of the analysis, a section listing each department with its benchmark versus internal average salary and the variance percentage, a section identifying which departments are above benchmark and which are below, and a concluding recommendation paragraph.
+
+Finally, send an email from hr-analytics@company.com to vp-hr@company.com with the subject "Annual Salary Benchmark Analysis Report". The body should summarize the key findings, mentioning the department with the largest positive variance (most above benchmark) and the department with the largest negative variance (most below benchmark).
+
+Save all output files to the workspace directory.

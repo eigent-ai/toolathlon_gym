@@ -1,0 +1,21 @@
+# arxiv paper search, download to local, and read
+# Source: https://github.com/blazickjp/arxiv-mcp-server
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/arxiv-mcp-server
+type: stdio
+name: arxiv_local
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/arxiv-mcp-server"
+    - "run"
+    - "arxiv-mcp-server"
+    - "--storage-path"
+    - "${agent_workspace}/arxiv_local_storage"
+  # env:
+  #   HTTPS_PROXY: "${config.proxy}"
+  #   HTTP_PROXY: "${config.proxy}"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 60
+cache_tools_list: true

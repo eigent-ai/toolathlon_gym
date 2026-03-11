@@ -1,0 +1,30 @@
+{
+  "market_data": [
+    {
+      "category": "Electronics",
+      "avg_price": 61.13,
+      "trend": "stable"
+    },
+    {
+      "category": "TV & Home Theater",
+      "avg_price": 304.9,
+      "trend": "stable"
+    },
+    {
+      "category": "Audio",
+      "avg_price": 78.05,
+      "trend": "up"
+    },
+    {
+      "category": "Cameras",
+      "avg_price": 23.91,
+      "trend": "up"
+    },
+    {
+      "category": "Home Appliances",
+      "avg_price": 35.77,
+      "trend": "up"
+    }
+  ],
+  "source": "E-Commerce Analytics API"
+}

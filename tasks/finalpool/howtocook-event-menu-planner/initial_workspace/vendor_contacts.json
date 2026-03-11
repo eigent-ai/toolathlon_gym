@@ -1,0 +1,14 @@
+{
+  "catering": {
+    "company": "Golden Kitchen Catering",
+    "contact": "Maria Santos",
+    "email": "catering@vendor.com",
+    "phone": "555-0123"
+  },
+  "supplies": {
+    "company": "Event Supply Co",
+    "contact": "Tom Richards",
+    "email": "supplies@vendor.com",
+    "phone": "555-0456"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "channel": "Veritasium",
+  "top_n_videos": 5,
+  "papers_per_topic": 3,
+  "output_file": "Science_Resource_Map.xlsx",
+  "notion_page_title": "Science Video-Paper Resource Map"
+}

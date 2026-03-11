@@ -1,0 +1,61 @@
+{
+  "pptx_file": "RLHF_Conference_Report.pptx",
+  "expected_slides": [
+    {
+      "type": "title",
+      "title": "RLHF Summit 2026 Conference Preparation Report",
+      "subtitle": "Key Papers in Reinforcement Learning from Human Feedback"
+    },
+    {
+      "type": "overview",
+      "title": "RLHF Overview",
+      "content": "Introduction to reinforcement learning from human feedback and its importance for language model alignment"
+    },
+    {
+      "type": "paper",
+      "title": "Training language models to follow instructions with human feedback",
+      "arxiv_id": "2203.02155",
+      "key_contribution": "InstructGPT - RLHF pipeline with SFT, reward model, and PPO"
+    },
+    {
+      "type": "paper",
+      "title": "Learning to summarize from human feedback",
+      "arxiv_id": "2009.01325",
+      "key_contribution": "Reward model from human comparisons for summarization"
+    },
+    {
+      "type": "paper",
+      "title": "Constitutional AI: Harmlessness from AI Feedback",
+      "arxiv_id": "2212.08073",
+      "key_contribution": "RLAIF - using AI feedback instead of human feedback"
+    },
+    {
+      "type": "paper",
+      "title": "Direct Preference Optimization",
+      "arxiv_id": "2305.18290",
+      "key_contribution": "DPO - simpler alternative to PPO-based RLHF"
+    },
+    {
+      "type": "paper",
+      "title": "Proximal Policy Optimization Algorithms",
+      "arxiv_id": "1707.06347",
+      "key_contribution": "PPO - foundation algorithm for RLHF"
+    },
+    {
+      "type": "summary",
+      "title": "Summary and Key Themes",
+      "content": "Synthesis of RLHF approaches and key themes"
+    }
+  ],
+  "calendar_event": {
+    "summary": "RLHF Summit 2026",
+    "date": "2026-04-10",
+    "start_time": "09:00",
+    "end_time": "17:00",
+    "location": "San Francisco Convention Center"
+  },
+  "email": {
+    "to": "collaborators@rlhf-lab.org",
+    "subject": "RLHF Summit 2026 Preparation Materials"
+  }
+}

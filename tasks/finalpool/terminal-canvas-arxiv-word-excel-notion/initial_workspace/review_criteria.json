@@ -1,0 +1,28 @@
+{
+  "relevance_scoring": {
+    "high": {
+      "min_score": 7,
+      "label": "Covered"
+    },
+    "medium": {
+      "min_score": 4,
+      "max_score": 6,
+      "label": "Partial"
+    },
+    "low": {
+      "max_score": 3,
+      "label": "Gap"
+    }
+  },
+  "priority_thresholds": {
+    "high": {
+      "min_gaps": 3
+    },
+    "medium": {
+      "min_gaps": 1
+    },
+    "low": {
+      "min_gaps": 0
+    }
+  }
+}

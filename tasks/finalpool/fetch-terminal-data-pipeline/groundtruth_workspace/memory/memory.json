@@ -1,0 +1,16 @@
+{
+  "entities": [
+    {
+      "name": "Data_Pipeline",
+      "entityType": "project",
+      "observations": [
+        "Read sales and inventory API response JSON files from workspace",
+        "Created clean_data.py to deduplicate and normalize data",
+        "Cleaned data: 18 unique sales records, 5 unique inventory products after removing duplicates",
+        "Created Data_Pipeline_Report.xlsx with Sales Analysis, Inventory Status, and Combined View sheets",
+        "Created Google Sheet Pipeline Dashboard with combined view data"
+      ]
+    }
+  ],
+  "relations": []
+}

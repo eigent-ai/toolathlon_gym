@@ -1,0 +1,16 @@
+# a ppt mcp server
+# Source: https://github.com/GongRzhe/Office-PowerPoint-MCP-Server
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/Office-PowerPoint-MCP-Server
+type: stdio
+name: pptx
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/Office-PowerPoint-MCP-Server"
+    - "run"
+    - "ppt_mcp_server"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 10
+cache_tools_list: true

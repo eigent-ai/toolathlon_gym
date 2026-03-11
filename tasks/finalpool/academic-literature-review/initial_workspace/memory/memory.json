@@ -1,0 +1,29 @@
+{
+  "entities": [
+    {
+      "name": "RAG Research",
+      "entityType": "project",
+      "observations": [
+        "Focus on retrieval-augmented generation methods",
+        "Key interest: how retrieval improves factual accuracy",
+        "Track citation counts and publication venues"
+      ]
+    },
+    {
+      "name": "Thesis Chapter 2",
+      "entityType": "document",
+      "observations": [
+        "Literature review section",
+        "Need 5 key papers",
+        "Focus on methodology comparison"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "RAG Research",
+      "to": "Thesis Chapter 2",
+      "relationType": "produces"
+    }
+  ]
+}

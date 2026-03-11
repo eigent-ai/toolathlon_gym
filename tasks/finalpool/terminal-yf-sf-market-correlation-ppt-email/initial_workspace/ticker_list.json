@@ -1,0 +1,16 @@
+{
+  "stocks": [
+    "AMZN",
+    "GOOGL",
+    "JNJ",
+    "JPM",
+    "XOM"
+  ],
+  "benchmarks": [
+    "GC=F",
+    "^DJI"
+  ],
+  "analysis_period": "YTD",
+  "presentation_slides_min": 6,
+  "email_recipient": "cfo@company.com"
+}

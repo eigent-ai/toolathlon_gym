@@ -1,0 +1,19 @@
+{
+  "total_departments": 7,
+  "total_skills_tracked": 17,
+  "critical_gaps": [
+    "Machine Learning",
+    "Cloud Computing"
+  ],
+  "departments_with_gaps": [
+    "Engineering",
+    "Marketing",
+    "Operations"
+  ],
+  "avg_skill_coverage": 72.5,
+  "recommendations": [
+    "Invest in ML training",
+    "Cloud certification program",
+    "Cross-department skill sharing"
+  ]
+}

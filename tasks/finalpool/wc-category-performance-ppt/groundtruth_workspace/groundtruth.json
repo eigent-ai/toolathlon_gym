@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "category": "Audio",
+      "product_count": 15,
+      "avg_price": 78.05,
+      "total_units_sold": 1553,
+      "avg_rating": 4.54
+    },
+    {
+      "category": "Cameras",
+      "product_count": 10,
+      "avg_price": 23.91,
+      "total_units_sold": 1041,
+      "avg_rating": 4.72
+    },
+    {
+      "category": "Electronics",
+      "product_count": 30,
+      "avg_price": 61.13,
+      "total_units_sold": 2987,
+      "avg_rating": 4.58
+    },
+    {
+      "category": "Headphones",
+      "product_count": 10,
+      "avg_price": 49.49,
+      "total_units_sold": 873,
+      "avg_rating": 4.58
+    },
+    {
+      "category": "Home Appliances",
+      "product_count": 8,
+      "avg_price": 35.77,
+      "total_units_sold": 860,
+      "avg_rating": 4.78
+    },
+    {
+      "category": "Speakers",
+      "product_count": 5,
+      "avg_price": 135.16,
+      "total_units_sold": 680,
+      "avg_rating": 4.44
+    },
+    {
+      "category": "TV & Home Theater",
+      "product_count": 13,
+      "avg_price": 304.9,
+      "total_units_sold": 1565,
+      "avg_rating": 4.78
+    },
+    {
+      "category": "Watches",
+      "product_count": 6,
+      "avg_price": 60.69,
+      "total_units_sold": 411,
+      "avg_rating": 4.35
+    }
+  ],
+  "total_categories": 8,
+  "expected_slides": 10
+}

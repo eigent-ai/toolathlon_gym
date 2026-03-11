@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sector Performance Research Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        h1 {
+            color: #1a3a5c;
+            border-bottom: 2px solid #1a3a5c;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c5f8a;
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 15px 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #1a3a5c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .updated {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sector Performance Research Portal</h1>
+    <p>Internal research dashboard for sector rotation analysis. Data reflects analyst consensus as of March 2026.</p>
+
+    <h2>Sector Benchmark Target Returns (1-Year)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sector</th>
+                <th>Benchmark Target Return (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Consumer Cyclical</td><td>18.5</td></tr>
+            <tr><td>Communication Services</td><td>22.0</td></tr>
+            <tr><td>Healthcare</td><td>8.5</td></tr>
+            <tr><td>Financial Services</td><td>15.0</td></tr>
+            <tr><td>Energy</td><td>12.0</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Analyst Consensus Ratings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Sector</th>
+                <th>Analyst Rating</th>
+                <th>Target Price ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>AMZN</td><td>Consumer Cyclical</td><td>Overweight</td><td>230</td></tr>
+            <tr><td>GOOGL</td><td>Communication Services</td><td>Buy</td><td>195</td></tr>
+            <tr><td>JNJ</td><td>Healthcare</td><td>Hold</td><td>165</td></tr>
+            <tr><td>JPM</td><td>Financial Services</td><td>Outperform</td><td>260</td></tr>
+            <tr><td>XOM</td><td>Energy</td><td>Neutral</td><td>115</td></tr>
+        </tbody>
+    </table>
+
+    <p class="updated">Last updated: 2026-03-05 16:00 EST</p>
+</body>
+</html>

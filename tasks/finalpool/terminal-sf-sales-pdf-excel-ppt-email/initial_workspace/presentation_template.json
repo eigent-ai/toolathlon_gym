@@ -1,0 +1,14 @@
+{
+  "slides": [
+    {"type": "title", "content": "Q1 2025 Sales Territory Performance Review"},
+    {"type": "regional", "content": "Regional Performance vs Targets"},
+    {"type": "segments", "content": "Customer Segment Analysis"},
+    {"type": "products", "content": "Top Products by Revenue"},
+    {"type": "recommendations", "content": "Recommendations and Next Steps"}
+  ],
+  "style": {
+    "font": "Calibri",
+    "title_size": 32,
+    "body_size": 18
+  }
+}

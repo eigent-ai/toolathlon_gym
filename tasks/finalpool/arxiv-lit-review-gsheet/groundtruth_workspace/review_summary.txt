@@ -1,0 +1,11 @@
+Prompt Engineering Literature Review - Summary of Findings
+
+Papers Reviewed:
+1. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models (Wei et al., 2022)
+2. Self-Consistency Improves Chain of Thought Reasoning in Language Models (Wang et al., 2022)
+3. Automatic Chain of Thought Prompting in Large Language Models (Zhang et al., 2022)
+4. Large Language Models are Zero-Shot Reasoners (Kojima et al., 2022)
+5. Tree of Thoughts: Deliberate Problem Solving with Large Language Models (Yao et al., 2023)
+
+Synthesis:
+This literature review examines five seminal papers on prompt engineering techniques for improving reasoning in large language models. The foundational work on chain-of-thought prompting by Wei et al. demonstrated that providing step-by-step reasoning exemplars significantly enhances LLM performance on arithmetic, commonsense, and symbolic reasoning tasks. Building on this, self-consistency by Wang et al. improved results by sampling multiple reasoning paths and using majority voting, while Auto-CoT by Zhang et al. automated the demonstration construction process using clustering. Kojima et al. showed that even without few-shot examples, simply appending "Let's think step by step" enables effective zero-shot reasoning. Finally, Tree of Thoughts by Yao et al. generalized chain-of-thought prompting into a tree-based exploration framework with backtracking capabilities, enabling deliberate problem solving for tasks requiring strategic lookahead. Together, these papers trace the evolution of prompt engineering from manual few-shot chain-of-thought to automated, zero-shot, and structured exploration approaches for eliciting reasoning in large language models.

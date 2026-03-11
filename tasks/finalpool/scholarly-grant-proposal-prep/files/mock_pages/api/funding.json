@@ -1,0 +1,23 @@
+[
+  {
+    "agency": "NSF",
+    "program": "AI Research Institutes",
+    "deadline": "2026-06-15",
+    "amount_range": "$2M-$5M",
+    "topics": ["machine learning", "AI safety"]
+  },
+  {
+    "agency": "DARPA",
+    "program": "Explainable AI",
+    "deadline": "2026-05-01",
+    "amount_range": "$1M-$3M",
+    "topics": ["interpretability", "robust AI"]
+  },
+  {
+    "agency": "NIH",
+    "program": "AI for Health",
+    "deadline": "2026-07-01",
+    "amount_range": "$500K-$2M",
+    "topics": ["medical imaging", "drug discovery"]
+  }
+]

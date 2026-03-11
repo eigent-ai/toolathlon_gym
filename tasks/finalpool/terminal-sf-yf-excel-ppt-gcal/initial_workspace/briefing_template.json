@@ -1,0 +1,56 @@
+{
+  "report_title": "Q4 2025 Investment Committee Briefing",
+  "sections": [
+    {
+      "name": "Revenue Overview",
+      "description": "Quarterly revenue by product brand with QoQ growth"
+    },
+    {
+      "name": "Customer Analysis",
+      "description": "Top 10 customers by total spend with segment breakdown"
+    },
+    {
+      "name": "Market Context",
+      "description": "Stock performance for key market indicators"
+    },
+    {
+      "name": "Combined Outlook",
+      "description": "Internal growth vs market performance comparison"
+    },
+    {
+      "name": "Next Steps",
+      "description": "Action items and scheduled follow-up"
+    }
+  ],
+  "kpis": [
+    "Total Q4 Revenue",
+    "Overall QoQ Growth Rate",
+    "Top Brand by Revenue",
+    "Number of Growing Brands",
+    "Market Benchmark Comparison"
+  ],
+  "output_files": {
+    "excel": "Investment_Committee_Briefing.xlsx",
+    "pptx": "Committee_Briefing.pptx",
+    "notes": "briefing_notes.txt"
+  },
+  "market_symbols": [
+    "GOOGL",
+    "AMZN",
+    "JPM",
+    "XOM",
+    "GC=F"
+  ],
+  "quarters": {
+    "current": {
+      "label": "Q4 2025",
+      "start": "2025-10-01",
+      "end": "2025-12-31"
+    },
+    "previous": {
+      "label": "Q3 2025",
+      "start": "2025-07-01",
+      "end": "2025-09-30"
+    }
+  }
+}

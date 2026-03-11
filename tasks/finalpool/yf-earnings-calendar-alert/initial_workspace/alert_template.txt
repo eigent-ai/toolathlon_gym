@@ -1,0 +1,15 @@
+Subject: Earnings Season Alert - [Quarter] [Year]
+
+Dear Investment Team,
+
+This alert summarizes the upcoming earnings announcements for our portfolio holdings.
+
+[Stock summaries with dates, expected EPS, and historical comparison]
+
+Key observations:
+[Highlight any stocks where expected EPS deviates significantly from historical averages]
+
+Please review and adjust positions as needed per the earnings playbook.
+
+Best regards,
+Portfolio Analytics Team

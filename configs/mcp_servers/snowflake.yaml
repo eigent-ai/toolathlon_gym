@@ -1,0 +1,34 @@
+# snowflake
+# Source: https://github.com/isaacwasserman/mcp-snowflake-server
+# Toolathlon Version: https://github.com/lockon-n/mcp-snowflake-server
+# Toolathlon_GYM: ../../local_servers/mcp-snowflake-server
+type: stdio
+name: snowflake
+params:
+  command: uv
+  args:
+    - "--directory"
+    - "${local_servers_paths}/mcp-snowflake-server"
+    - "run"
+    - "mcp_snowflake_server"
+    - "--account"
+    - "local_pg"
+    - "--warehouse"
+    - "local"
+    - "--user"
+    - "postgres"
+    - "--private_key_path"
+    - ""
+    - "--role"
+    - "PUBLIC"
+    - "--database"
+    - "toolathlon"
+    - "--schema"
+    - "sf"
+    - "--allowed_databases"
+    - "toolathlon"
+    - "--allow_write"
+    - "--exclude-json-results"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 120
+cache_tools_list: true

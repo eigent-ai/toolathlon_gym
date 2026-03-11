@@ -1,0 +1,7 @@
+I am the VP of Sales and I need to build a sales performance dashboard using our historical order data from the data warehouse. Please query the sales database to retrieve monthly revenue data by aggregating all orders grouped by month. For each month, I need the total number of orders and the total revenue amount rounded to two decimal places. Also retrieve the sales data broken down by customer region, showing the total orders and total revenue per region.
+
+Create a page in our team knowledge base titled "Sales Performance Dashboard" to serve as the main dashboard. Under this page, create a database called "Monthly Revenue" with the following properties: Month as a title field, Order Count as a number, and Revenue as a number. Add one entry for each month from the historical data, using the format YYYY-MM for the month value. Only include months that have complete data, meaning exclude any month where the data appears to be partial compared to other months.
+
+Also create a second database under the dashboard page called "Regional Performance" with properties Region as a title, Order Count as a number, and Revenue as a number. Add one entry per region.
+
+Finally, create an Excel backup file called Sales_Dashboard_Backup.xlsx in the workspace. It should have two sheets. The first sheet named "Monthly Revenue" should contain Month, Order Count, and Revenue columns with the same monthly data used in the knowledge base. The second sheet named "Regional Performance" should contain Region, Order Count, and Revenue columns matching the regional data.

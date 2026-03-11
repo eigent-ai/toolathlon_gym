@@ -1,0 +1,24 @@
+{
+  "conference": "International Conference on Classical Studies",
+  "venue": "Qufu, Shandong Province",
+  "outbound_date": "2026-03-12",
+  "return_date": "2026-03-15",
+  "attendees": [
+    {
+      "name": "Dr. Zhang Wei",
+      "email": "zhang.wei@uni.edu",
+      "departure_city": "Beijing"
+    },
+    {
+      "name": "Prof. Liu Mei",
+      "email": "liu.mei@institute.org",
+      "departure_city": "Shanghai"
+    },
+    {
+      "name": "Dr. Wang Fang",
+      "email": "wang.fang@college.cn",
+      "departure_city": "Beijing"
+    }
+  ],
+  "instructions": "Please book second class seats for all attendees. Query the rail system for available trains on the required dates."
+}

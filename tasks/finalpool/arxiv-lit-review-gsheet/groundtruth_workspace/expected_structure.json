@@ -1,0 +1,80 @@
+{
+  "spreadsheet_title": "Prompt Engineering Literature Review",
+  "sheets": {
+    "Paper Comparison": {
+      "columns": ["Paper_ID", "Title", "Authors", "Year", "Venue", "Citation_Count", "Primary_Category", "Methodology_Summary"],
+      "expected_rows": [
+        {
+          "Paper_ID": "2201.11903",
+          "Title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "Year": 2022,
+          "Citation_Count": 6500,
+          "Venue": "NeurIPS 2022"
+        },
+        {
+          "Paper_ID": "2203.11171",
+          "Title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+          "Year": 2022,
+          "Citation_Count": 3200,
+          "Venue": "ICLR 2023"
+        },
+        {
+          "Paper_ID": "2210.03493",
+          "Title": "Automatic Chain of Thought Prompting in Large Language Models",
+          "Year": 2022,
+          "Citation_Count": 1800,
+          "Venue": "ICLR 2023"
+        },
+        {
+          "Paper_ID": "2205.11916",
+          "Title": "Large Language Models are Zero-Shot Reasoners",
+          "Year": 2022,
+          "Citation_Count": 4100,
+          "Venue": "NeurIPS 2022"
+        },
+        {
+          "Paper_ID": "2305.10601",
+          "Title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+          "Year": 2023,
+          "Citation_Count": 2400,
+          "Venue": "NeurIPS 2023"
+        }
+      ]
+    },
+    "Technique Analysis": {
+      "columns": ["Technique_Name", "Paper_ID", "Key_Innovation", "Reasoning_Type", "Requires_Examples"],
+      "expected_rows": [
+        {
+          "Technique_Name": "Chain-of-Thought",
+          "Paper_ID": "2201.11903",
+          "Reasoning_Type": "arithmetic, commonsense, symbolic",
+          "Requires_Examples": "Yes"
+        },
+        {
+          "Technique_Name": "Self-Consistency",
+          "Paper_ID": "2203.11171",
+          "Reasoning_Type": "arithmetic, commonsense",
+          "Requires_Examples": "Yes"
+        },
+        {
+          "Technique_Name": "Auto-CoT",
+          "Paper_ID": "2210.03493",
+          "Reasoning_Type": "arithmetic, general",
+          "Requires_Examples": "No"
+        },
+        {
+          "Technique_Name": "Zero-shot-CoT",
+          "Paper_ID": "2205.11916",
+          "Reasoning_Type": "arithmetic, commonsense, symbolic, general",
+          "Requires_Examples": "No"
+        },
+        {
+          "Technique_Name": "Tree of Thoughts",
+          "Paper_ID": "2305.10601",
+          "Reasoning_Type": "general, creative",
+          "Requires_Examples": "No"
+        }
+      ]
+    }
+  }
+}

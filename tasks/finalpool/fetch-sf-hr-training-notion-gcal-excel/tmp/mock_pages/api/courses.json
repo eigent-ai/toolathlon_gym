@@ -1,0 +1,115 @@
+{
+  "catalog_version": "2026-Q1",
+  "provider": "Corporate Learning Solutions",
+  "last_updated": "2026-02-28",
+  "courses": [
+    {
+      "course_name": "Advanced Operations Management",
+      "skill_area": "Operations",
+      "duration_hours": 40,
+      "cost_per_attendee": 850,
+      "max_capacity": 25,
+      "format": "In-person",
+      "certification": true
+    },
+    {
+      "course_name": "Sales Excellence Program",
+      "skill_area": "Sales",
+      "duration_hours": 32,
+      "cost_per_attendee": 750,
+      "max_capacity": 30,
+      "format": "Hybrid",
+      "certification": true
+    },
+    {
+      "course_name": "R&D Innovation Workshop",
+      "skill_area": "Research & Development",
+      "duration_hours": 24,
+      "cost_per_attendee": 1200,
+      "max_capacity": 20,
+      "format": "In-person",
+      "certification": false
+    },
+    {
+      "course_name": "Financial Analysis Fundamentals",
+      "skill_area": "Finance",
+      "duration_hours": 36,
+      "cost_per_attendee": 650,
+      "max_capacity": 35,
+      "format": "Online",
+      "certification": true
+    },
+    {
+      "course_name": "HR Business Partner Certification",
+      "skill_area": "Human Resources",
+      "duration_hours": 28,
+      "cost_per_attendee": 900,
+      "max_capacity": 20,
+      "format": "Hybrid",
+      "certification": true
+    },
+    {
+      "course_name": "Technical Support Mastery",
+      "skill_area": "Support",
+      "duration_hours": 20,
+      "cost_per_attendee": 550,
+      "max_capacity": 40,
+      "format": "Online",
+      "certification": false
+    },
+    {
+      "course_name": "Software Engineering Best Practices",
+      "skill_area": "Engineering",
+      "duration_hours": 48,
+      "cost_per_attendee": 1100,
+      "max_capacity": 25,
+      "format": "In-person",
+      "certification": true
+    },
+    {
+      "course_name": "Leadership Development Program",
+      "skill_area": "Management",
+      "duration_hours": 40,
+      "cost_per_attendee": 1500,
+      "max_capacity": 15,
+      "format": "In-person",
+      "certification": true
+    },
+    {
+      "course_name": "Data Analytics for Business",
+      "skill_area": "Analytics",
+      "duration_hours": 30,
+      "cost_per_attendee": 800,
+      "max_capacity": 30,
+      "format": "Online",
+      "certification": true
+    },
+    {
+      "course_name": "Project Management Professional",
+      "skill_area": "Management",
+      "duration_hours": 35,
+      "cost_per_attendee": 950,
+      "max_capacity": 25,
+      "format": "Hybrid",
+      "certification": true
+    },
+    {
+      "course_name": "Communication Skills Workshop",
+      "skill_area": "Soft Skills",
+      "duration_hours": 16,
+      "cost_per_attendee": 400,
+      "max_capacity": 50,
+      "format": "Online",
+      "certification": false
+    },
+    {
+      "course_name": "Compliance and Ethics Training",
+      "skill_area": "Compliance",
+      "duration_hours": 8,
+      "cost_per_attendee": 200,
+      "max_capacity": 100,
+      "format": "Online",
+      "certification": false
+    }
+  ]
+}

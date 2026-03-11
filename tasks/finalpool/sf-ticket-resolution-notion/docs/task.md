@@ -1,0 +1,7 @@
+Our support team needs to identify tickets with slow response times that are at risk of breaching their SLA targets. Please query the support ticket system and find all tickets where the response time used more than 50 percent of the allotted SLA hours (that is, where the response time divided by the SLA hours exceeds 0.5). These are considered slow response tickets that need management attention.
+
+Group these slow response tickets by priority level and for each priority calculate the total count of such tickets, the average response time in hours, the average SLA hours, the average SLA utilization percentage, and the average customer satisfaction score.
+
+Create a database in Notion called "Slow Response Tickets Tracker" with one page for each priority level (High, Medium, Low). Each page should be titled with the priority name and contain the statistics for that priority: the number of slow response tickets, average response time, average SLA hours, average utilization percentage, and average customer satisfaction score.
+
+After setting up the Notion tracker, send an email to support.manager@company.example.com from escalations@support.example.com with the subject "Slow Response Tickets Report". The body should summarize the total number of slow response tickets found across all priorities, the overall percentage of tickets that are slow response out of all tickets, and a breakdown by priority level showing the count and average utilization for each.

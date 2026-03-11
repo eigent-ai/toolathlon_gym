@@ -1,0 +1,22 @@
+{
+  "Communication Services": {
+    "primary": "GOOGL",
+    "peers": ["META", "NFLX", "DIS", "CMCSA"]
+  },
+  "Consumer Cyclical": {
+    "primary": "AMZN",
+    "peers": ["TSLA", "HD", "NKE", "MCD"]
+  },
+  "Financial Services": {
+    "primary": "JPM",
+    "peers": ["BAC", "GS", "MS", "WFC"]
+  },
+  "Healthcare": {
+    "primary": "JNJ",
+    "peers": ["UNH", "PFE", "ABT", "MRK"]
+  },
+  "Energy": {
+    "primary": "XOM",
+    "peers": ["CVX", "COP", "SLB", "EOG"]
+  }
+}

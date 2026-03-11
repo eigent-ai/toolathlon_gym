@@ -1,0 +1,36 @@
+{
+  "title": "Cross-Platform Business Intelligence Dashboard",
+  "kpis": [
+    {
+      "name": "Enterprise_Total_Revenue",
+      "target": 3200000,
+      "weight": 0.4,
+      "source": "Enterprise DW",
+      "calculation": "Sum of all segment revenues"
+    },
+    {
+      "name": "Ecommerce_Total_Revenue",
+      "target": 70000,
+      "weight": 0.3,
+      "source": "E-Commerce Platform",
+      "calculation": "Sum of all order totals"
+    },
+    {
+      "name": "Market_Index",
+      "target": 45000,
+      "weight": 0.3,
+      "source": "Financial Markets",
+      "calculation": "Latest DJI closing price"
+    }
+  ],
+  "health_score_weights": {
+    "enterprise_revenue": 0.4,
+    "ecommerce_growth": 0.3,
+    "market_position": 0.3
+  },
+  "market_symbols": [
+    "^DJI",
+    "AMZN",
+    "JPM"
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Satisfaction Portal - Benchmarks & Targets</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fa; }
+        h1 { color: #1a237e; }
+        .nav { background: #1a237e; padding: 10px 20px; margin-bottom: 20px; }
+        .nav a { color: white; text-decoration: none; margin-right: 20px; }
+        .metric-card { display: inline-block; background: white; padding: 20px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 200px; text-align: center; }
+        .metric-value { font-size: 2em; color: #1a237e; font-weight: bold; }
+        .metric-label { color: #666; margin-top: 5px; }
+        .metric-status { margin-top: 8px; font-size: 0.9em; }
+        .status-green { color: #2e7d32; }
+        .status-red { color: #c62828; }
+        table { border-collapse: collapse; width: 100%; background: white; margin-top: 20px; }
+        th { background: #283593; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; }
+        .info-box { background: #e3f2fd; border: 1px solid #90caf9; padding: 12px; border-radius: 5px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Benchmarks</a>
+        <a href="trends.html">Trends & Competitive Analysis</a>
+    </div>
+
+    <h1>Customer Satisfaction Portal</h1>
+    <p>Current performance benchmarks and targets for the Customer Experience team.</p>
+
+    <div class="info-box">
+        <strong>Report Period:</strong> Q1 2026 | <strong>Last Updated:</strong> March 1, 2026
+    </div>
+
+    <h2>Key Targets</h2>
+    <div>
+        <div class="metric-card">
+            <div class="metric-value">4.2</div>
+            <div class="metric-label">Overall CSAT Target</div>
+            <div class="metric-status">(Scale: 1-5)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value">4h</div>
+            <div class="metric-label">Response Time Target</div>
+            <div class="metric-status">(High Priority)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value">95%</div>
+            <div class="metric-label">Resolution Rate Target</div>
+            <div class="metric-status">(All Priorities)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value">50</div>
+            <div class="metric-label">NPS Target</div>
+            <div class="metric-status">(Net Promoter Score)</div>
+        </div>
+    </div>
+
+    <h2>Response Time Targets by Priority</h2>
+    <table id="response-targets">
+        <thead>
+            <tr>
+                <th>Priority Level</th>
+                <th>Target Response Time (Hours)</th>
+                <th>Target Resolution Time (Hours)</th>
+                <th>SLA Compliance Target</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>High</td>
+                <td>4</td>
+                <td>24</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>12</td>
+                <td>48</td>
+                <td>95%</td>
+            </tr>
+            <tr>
+                <td>Low</td>
+                <td>24</td>
+                <td>72</td>
+                <td>90%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "sender": {
+    "ops-manager@mcp.com": {
+      "password": "opsmanager$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    }
+  },
+  "should_receive": {
+    "trade@asiatech.com": {
+      "password": "asiatech$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    },
+    "b2b@smarthome-ws.com": {
+      "password": "smarthome$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    },
+    "wholesale@digitaldreams.com": {
+      "password": "digitaldreams$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    }
+  },
+  "shouldnt_receive": {
+    "verkauf@euroelec.de": {
+      "password": "euroelec$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    },
+    "supply@premiumgadgets.com": {
+      "password": "premgadgets$2026",
+      "imap_server": "localhost",
+      "imap_port": 1143,
+      "smtp_server": "localhost",
+      "smtp_port": 1587,
+      "use_ssl": false,
+      "use_starttls": false
+    }
+  }
+}

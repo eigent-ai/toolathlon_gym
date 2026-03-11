@@ -1,0 +1,7 @@
+I need a regional sales performance report from our data warehouse. Please pull all-time sales figures broken down by region and create an Excel file called Regional_Sales_Report.xlsx. The file should have two sheets. The first sheet called Regional Performance should have columns Region, Order_Count, Total_Revenue rounded to 2 decimals, Avg_Order_Value rounded to 2 decimals which is total revenue divided by order count, and Revenue_Share_Pct which is each region's revenue as a percentage of total revenue rounded to 2 decimals. Sort by total revenue descending. The second sheet called Summary should have Metric and Value rows for Total_Revenue, Total_Orders, Top_Region which is the region with the highest revenue, Bottom_Region which is the region with the lowest revenue, and Avg_Regional_Revenue rounded to 2 decimals.
+
+After the Excel file, create a Google Sheet called Sales Regional Performance with the same regional breakdown data.
+
+Then send individual emails to each regional manager: europe.manager@company.com for Europe, apac.manager@company.com for Asia Pacific, na.manager@company.com for North America, me.manager@company.com for Middle East, and latam.manager@company.com for Latin America. Each email subject should mention the region name and sales performance, and the body should include the region's revenue and order count figures.
+
+Finally create a Word document called Regional_Summary.docx with a heading Regional Sales Summary and a table showing the regional breakdown.

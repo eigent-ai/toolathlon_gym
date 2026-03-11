@@ -1,0 +1,33 @@
+{
+  "show_title": "Afrobeat Sunday Show",
+  "station": "Radio Africa FM",
+  "show_duration_hours": 2,
+  "broadcast_day": "Sunday",
+  "start_time": "20:00",
+  "end_time": "22:00",
+  "months": "April 2026",
+  "april_sundays": [
+    "2026-04-05",
+    "2026-04-12",
+    "2026-04-19",
+    "2026-04-26"
+  ],
+  "script_file": "Radio_Show_Script.docx",
+  "spreadsheet_name": "Radio_Broadcast_Schedule",
+  "playlist_columns": [
+    "Segment_No",
+    "Track_Title",
+    "Artist",
+    "Start_Min",
+    "Duration_Sec",
+    "DJ_Notes"
+  ],
+  "show_schedule_columns": [
+    "Date",
+    "Start_Time",
+    "End_Time",
+    "Show_Title",
+    "Status"
+  ],
+  "email_recipient": "station@radioafrica.fm"
+}

@@ -1,0 +1,25 @@
+Subject: Important Safety Notice - Product Recall Notification
+
+Dear Valued Customer,
+
+We are writing to inform you about a voluntary product recall that may affect a recent purchase you made from our store.
+
+Product: {product_name}
+Order Date: {order_date}
+Order Number: {order_id}
+
+The manufacturer has identified a potential defect: {defect_description}
+
+For your safety, we recommend that you immediately stop using the affected product and contact our customer service team to arrange a return.
+
+We are offering the following remediation options:
+- Full refund to your original payment method
+- Replacement with an equivalent or upgraded product
+- Store credit with an additional 10% bonus
+
+To initiate your return, please reply to this email or call our customer service hotline at 1-800-555-0100.
+
+We sincerely apologize for any inconvenience and appreciate your understanding. Your safety is our top priority.
+
+Best regards,
+Customer Service Team

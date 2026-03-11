@@ -1,0 +1,262 @@
+{
+  "matched_data": [
+    {
+      "student_name": "Harry Taylor",
+      "student_id": 208,
+      "avg_score": 78.2,
+      "submission_count": 5,
+      "bookstore_customer_id": 9,
+      "total_electronics_spend": 3159.96,
+      "electronics_order_count": 4,
+      "electronics_item_count": 10
+    },
+    {
+      "student_name": "Evan Parker",
+      "student_id": 107,
+      "avg_score": 78.0,
+      "submission_count": 5,
+      "bookstore_customer_id": 6,
+      "total_electronics_spend": 1163.15,
+      "electronics_order_count": 2,
+      "electronics_item_count": 9
+    },
+    {
+      "student_name": "Alice Campbell",
+      "student_id": 399,
+      "avg_score": 60.6,
+      "submission_count": 5,
+      "bookstore_customer_id": 35,
+      "total_electronics_spend": 2148.25,
+      "electronics_order_count": 2,
+      "electronics_item_count": 6
+    },
+    {
+      "student_name": "Joseph Johnson",
+      "student_id": 361,
+      "avg_score": 66.5,
+      "submission_count": 8,
+      "bookstore_customer_id": 43,
+      "total_electronics_spend": 84.33,
+      "electronics_order_count": 3,
+      "electronics_item_count": 8
+    },
+    {
+      "student_name": "Joseph Campbell",
+      "student_id": 338,
+      "avg_score": 66.2,
+      "submission_count": 5,
+      "bookstore_customer_id": 18,
+      "total_electronics_spend": 3.62,
+      "electronics_order_count": 1,
+      "electronics_item_count": 2
+    },
+    {
+      "student_name": "Alice Evans",
+      "student_id": 238,
+      "avg_score": 86.88,
+      "submission_count": 8,
+      "bookstore_customer_id": 45,
+      "total_electronics_spend": 359.29,
+      "electronics_order_count": 2,
+      "electronics_item_count": 4
+    },
+    {
+      "student_name": "Sean Wright",
+      "student_id": 196,
+      "avg_score": 79.2,
+      "submission_count": 5,
+      "bookstore_customer_id": 46,
+      "total_electronics_spend": 485.28,
+      "electronics_order_count": 2,
+      "electronics_item_count": 5
+    },
+    {
+      "student_name": "Thomas Morris",
+      "student_id": 728,
+      "avg_score": 66.0,
+      "submission_count": 5,
+      "bookstore_customer_id": 23,
+      "total_electronics_spend": 797.04,
+      "electronics_order_count": 2,
+      "electronics_item_count": 7
+    },
+    {
+      "student_name": "Nathan Cook",
+      "student_id": 179,
+      "avg_score": 58.4,
+      "submission_count": 5,
+      "bookstore_customer_id": 41,
+      "total_electronics_spend": 36.12,
+      "electronics_order_count": 1,
+      "electronics_item_count": 2
+    },
+    {
+      "student_name": "Oscar Bailey",
+      "student_id": 785,
+      "avg_score": 64.8,
+      "submission_count": 5,
+      "bookstore_customer_id": 21,
+      "total_electronics_spend": 780.29,
+      "electronics_order_count": 3,
+      "electronics_item_count": 7
+    },
+    {
+      "student_name": "Oscar Smith",
+      "student_id": 565,
+      "avg_score": 85.2,
+      "submission_count": 5,
+      "bookstore_customer_id": 25,
+      "total_electronics_spend": 36.07,
+      "electronics_order_count": 1,
+      "electronics_item_count": 7
+    },
+    {
+      "student_name": "Sophia White",
+      "student_id": 115,
+      "avg_score": 71.8,
+      "submission_count": 5,
+      "bookstore_customer_id": 29,
+      "total_electronics_spend": 1068.51,
+      "electronics_order_count": 5,
+      "electronics_item_count": 22
+    },
+    {
+      "student_name": "Charlotte Bailey",
+      "student_id": 113,
+      "avg_score": 81.0,
+      "submission_count": 3,
+      "bookstore_customer_id": 33,
+      "total_electronics_spend": 18.66,
+      "electronics_order_count": 1,
+      "electronics_item_count": 1
+    },
+    {
+      "student_name": "Andrew Moore",
+      "student_id": 185,
+      "avg_score": 71.4,
+      "submission_count": 5,
+      "bookstore_customer_id": 47,
+      "total_electronics_spend": 62.5,
+      "electronics_order_count": 2,
+      "electronics_item_count": 4
+    },
+    {
+      "student_name": "Joseph Davis",
+      "student_id": 330,
+      "avg_score": 77.5,
+      "submission_count": 2,
+      "bookstore_customer_id": 14,
+      "total_electronics_spend": 65.82,
+      "electronics_order_count": 2,
+      "electronics_item_count": 8
+    }
+  ],
+  "correlation": -0.0681,
+  "p_value": 0.8093,
+  "mean_score": 72.78,
+  "mean_spend": 684.59,
+  "recommendation": "Implement student discount program to make electronics more accessible",
+  "num_matched": 15,
+  "mapping": [
+    {
+      "student_id": 411,
+      "bookstore_customer_id": 34,
+      "department": "General Studies"
+    },
+    {
+      "student_id": 185,
+      "bookstore_customer_id": 47,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 196,
+      "bookstore_customer_id": 46,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 399,
+      "bookstore_customer_id": 35,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 728,
+      "bookstore_customer_id": 23,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 115,
+      "bookstore_customer_id": 29,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 208,
+      "bookstore_customer_id": 9,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 473,
+      "bookstore_customer_id": 28,
+      "department": "General Studies"
+    },
+    {
+      "student_id": 263,
+      "bookstore_customer_id": 31,
+      "department": "General Studies"
+    },
+    {
+      "student_id": 238,
+      "bookstore_customer_id": 45,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 785,
+      "bookstore_customer_id": 21,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 565,
+      "bookstore_customer_id": 25,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 338,
+      "bookstore_customer_id": 18,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 179,
+      "bookstore_customer_id": 41,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 202,
+      "bookstore_customer_id": 16,
+      "department": "General Studies"
+    },
+    {
+      "student_id": 113,
+      "bookstore_customer_id": 33,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 361,
+      "bookstore_customer_id": 43,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 334,
+      "bookstore_customer_id": 49,
+      "department": "General Studies"
+    },
+    {
+      "student_id": 330,
+      "bookstore_customer_id": 14,
+      "department": "Applied Analytics"
+    },
+    {
+      "student_id": 107,
+      "bookstore_customer_id": 6,
+      "department": "Applied Analytics"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "market_overview": {
+    "total_market_size": 5000000,
+    "year_over_year_growth": 12.5,
+    "report_date": "2026-03-01"
+  },
+  "categories": [
+    {
+      "name": "Electronics",
+      "market_avg_price": 85.0,
+      "market_revenue": 1200000,
+      "growth_rate": 15.0
+    },
+    {
+      "name": "Audio",
+      "market_avg_price": 45.0,
+      "market_revenue": 800000,
+      "growth_rate": 8.5
+    },
+    {
+      "name": "Cameras",
+      "market_avg_price": 350.0,
+      "market_revenue": 600000,
+      "growth_rate": -2.0
+    },
+    {
+      "name": "Headphones",
+      "market_avg_price": 75.0,
+      "market_revenue": 500000,
+      "growth_rate": 20.0
+    },
+    {
+      "name": "Home Appliances",
+      "market_avg_price": 120.0,
+      "market_revenue": 700000,
+      "growth_rate": 5.0
+    },
+    {
+      "name": "Speakers",
+      "market_avg_price": 90.0,
+      "market_revenue": 400000,
+      "growth_rate": 12.0
+    },
+    {
+      "name": "TV & Home Theater",
+      "market_avg_price": 450.0,
+      "market_revenue": 500000,
+      "growth_rate": 3.0
+    },
+    {
+      "name": "Watches",
+      "market_avg_price": 55.0,
+      "market_revenue": 300000,
+      "growth_rate": 18.0
+    }
+  ]
+}

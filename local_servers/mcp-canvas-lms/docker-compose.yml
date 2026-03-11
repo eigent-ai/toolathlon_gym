@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  canvas-mcp:
+    build: .
+    environment:
+      - CANVAS_API_TOKEN=${CANVAS_API_TOKEN}
+      - CANVAS_DOMAIN=${CANVAS_DOMAIN}
+      - NODE_ENV=production
+      - LOG_LEVEL=info
+      - CANVAS_MAX_RETRIES=3
+      - CANVAS_RETRY_DELAY=1000
+      - CANVAS_TIMEOUT=30000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "import('./build/client.js').then(m => new m.CanvasClient(process.env.CANVAS_API_TOKEN, process.env.CANVAS_DOMAIN).healthCheck()).then(() => process.exit(0)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    volumes:
+      - ./logs:/app/logs:rw
+    networks:
+      - canvas-network
+
+networks:
+  canvas-network:
+    driver: bridge
+
+volumes:
+  logs:

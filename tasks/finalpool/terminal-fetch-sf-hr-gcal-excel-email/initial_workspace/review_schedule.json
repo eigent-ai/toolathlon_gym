@@ -1,0 +1,19 @@
+{
+  "review_week": "2026-03-16 to 2026-03-20",
+  "meeting_duration_minutes": 60,
+  "time_slots": [
+    "10:00",
+    "14:00"
+  ],
+  "departments": [
+    "Engineering",
+    "Finance",
+    "HR",
+    "Operations",
+    "R&D",
+    "Sales",
+    "Support"
+  ],
+  "email_recipient": "hr_team@company.com",
+  "gap_threshold_pct": 10
+}

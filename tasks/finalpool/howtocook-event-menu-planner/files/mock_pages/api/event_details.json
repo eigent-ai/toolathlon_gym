@@ -1,0 +1,12 @@
+{
+  "event_name": "Annual Company Dinner",
+  "date": "2026-04-15",
+  "guest_count": 50,
+  "budget_per_person": 30,
+  "dietary_restrictions": {
+    "vegetarian": 10,
+    "gluten_free": 5,
+    "nut_allergy": 3
+  },
+  "courses_required": ["appetizer", "main", "dessert"]
+}

@@ -1,0 +1,18 @@
+{
+  "presentation": {
+    "title": "Support Performance Benchmark Review",
+    "min_slides": 7,
+    "filename": "Support_Performance_Review.pptx"
+  },
+  "email": {
+    "from": "analytics@support-team.example.com",
+    "to": "managers@support-team.example.com",
+    "subject_prefix": "Support Performance Benchmark Analysis"
+  },
+  "analysis": {
+    "compliance_thresholds": {
+      "satisfaction_tolerance": 0.10,
+      "response_time_tolerance_pct": 10
+    }
+  }
+}

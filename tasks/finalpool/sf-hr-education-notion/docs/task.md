@@ -1,0 +1,9 @@
+I am an HR analyst and I need to prepare a workforce education analysis report for our leadership team. We have an HR data warehouse that contains employee records across all departments, and I need you to analyze the education level distribution.
+
+Please query the employee data from the HR analytics system to understand the education breakdown by department. I need to know how many employees hold each level of education in each department and what percentage of each department that represents.
+
+Create an Excel file called Education_Analysis.xlsx in the workspace with two sheets. The first sheet should be named "By Department" and have the following columns: Department, Total_Employees, Bachelors_Count, Masters_Count, PhD_Count, Bachelors_Pct (rounded to 1 decimal place), Masters_Pct (rounded to 1 decimal place), and PhD_Pct (rounded to 1 decimal place). Sort the rows alphabetically by Department.
+
+The second sheet should be named "Summary" and have two columns, Metric and Value, with the following rows: Total_Employees (total headcount across all departments), Most_Common_Education (the education level with the highest count overall), Department_Highest_PhD_Pct (the department name with the highest percentage of PhD holders), Avg_Salary_PhD (average salary for PhD holders, rounded to 0 decimal places), and Avg_Salary_Bachelors (average salary for employees with a bachelor's degree, rounded to 0 decimal places).
+
+Additionally, create a page in Notion titled "Workforce Education Analysis" that summarizes the key findings. Include a heading for each department followed by a paragraph noting that department's total headcount and PhD percentage. At the end, add a paragraph highlighting which department has the highest proportion of PhD holders and what the overall most common education level is across the company.

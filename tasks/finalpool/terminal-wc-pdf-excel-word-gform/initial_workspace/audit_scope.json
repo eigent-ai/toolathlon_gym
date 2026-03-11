@@ -1,0 +1,22 @@
+{
+  "categories_in_scope": [
+    "Audio",
+    "Cameras",
+    "Electronics",
+    "Home Appliances",
+    "TV & Home Theater",
+    "Watches"
+  ],
+  "rating_thresholds": {
+    "low_review_cutoff": 3,
+    "acceptable_avg_rating": 4.5,
+    "warning_avg_rating": 4.0
+  },
+  "quality_score": {
+    "formula": "(avg_rating / 5.0) * 100 - 2 * pct_below_3stars",
+    "high_risk_threshold": 70,
+    "medium_risk_threshold": 85
+  },
+  "survey_min_questions": 5,
+  "audit_date": "2026-03-07"
+}

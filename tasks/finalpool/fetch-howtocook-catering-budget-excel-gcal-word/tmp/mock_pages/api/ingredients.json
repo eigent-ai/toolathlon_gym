@@ -1,0 +1,41 @@
+{
+  "supplier": "FreshFoods Wholesale Co.",
+  "last_updated": "2026-03-01",
+  "currency": "CNY",
+  "bulk_discount_tiers": [
+    {"min_kg": 50, "discount_pct": 10},
+    {"min_kg": 100, "discount_pct": 15}
+  ],
+  "ingredients": [
+    {"name": "Rice", "price_per_kg": 6.5, "unit": "kg", "availability": "year-round", "category": "grains"},
+    {"name": "Flour", "price_per_kg": 4.8, "unit": "kg", "availability": "year-round", "category": "grains"},
+    {"name": "Pork Belly", "price_per_kg": 35.0, "unit": "kg", "availability": "year-round", "category": "meat"},
+    {"name": "Chicken Breast", "price_per_kg": 22.0, "unit": "kg", "availability": "year-round", "category": "meat"},
+    {"name": "Chicken Thigh", "price_per_kg": 18.0, "unit": "kg", "availability": "year-round", "category": "meat"},
+    {"name": "Beef Chuck", "price_per_kg": 55.0, "unit": "kg", "availability": "year-round", "category": "meat"},
+    {"name": "Eggs", "price_per_kg": 12.0, "unit": "kg", "availability": "year-round", "category": "dairy"},
+    {"name": "Tofu", "price_per_kg": 8.0, "unit": "kg", "availability": "year-round", "category": "protein"},
+    {"name": "Soy Sauce", "price_per_kg": 10.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Vegetable Oil", "price_per_kg": 9.5, "unit": "kg", "availability": "year-round", "category": "oil"},
+    {"name": "Garlic", "price_per_kg": 15.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Ginger", "price_per_kg": 12.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Green Onion", "price_per_kg": 8.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Napa Cabbage", "price_per_kg": 4.0, "unit": "kg", "availability": "fall-spring", "category": "vegetable"},
+    {"name": "Tomatoes", "price_per_kg": 7.5, "unit": "kg", "availability": "summer", "category": "vegetable"},
+    {"name": "Potatoes", "price_per_kg": 5.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Sugar", "price_per_kg": 7.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Salt", "price_per_kg": 3.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Vinegar", "price_per_kg": 6.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Sesame Oil", "price_per_kg": 40.0, "unit": "kg", "availability": "year-round", "category": "oil"},
+    {"name": "Noodles (Dried)", "price_per_kg": 8.5, "unit": "kg", "availability": "year-round", "category": "grains"},
+    {"name": "Mushrooms", "price_per_kg": 20.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Chili Peppers", "price_per_kg": 18.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Bean Sprouts", "price_per_kg": 6.0, "unit": "kg", "availability": "year-round", "category": "vegetable"},
+    {"name": "Shrimp", "price_per_kg": 65.0, "unit": "kg", "availability": "year-round", "category": "seafood"},
+    {"name": "Fish Fillet", "price_per_kg": 45.0, "unit": "kg", "availability": "year-round", "category": "seafood"},
+    {"name": "Cooking Wine", "price_per_kg": 8.0, "unit": "kg", "availability": "year-round", "category": "seasoning"},
+    {"name": "Star Anise", "price_per_kg": 50.0, "unit": "kg", "availability": "year-round", "category": "spice"},
+    {"name": "Sichuan Peppercorn", "price_per_kg": 80.0, "unit": "kg", "availability": "year-round", "category": "spice"},
+    {"name": "Milk", "price_per_kg": 10.0, "unit": "kg", "availability": "year-round", "category": "dairy"}
+  ]
+}

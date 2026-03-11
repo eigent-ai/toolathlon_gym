@@ -1,0 +1,12 @@
+{
+  "source": "Global Research Associates",
+  "report_date": "2026-03-01",
+  "region": "United States",
+  "forecasts": [
+    {"quarter": "Q1 2026", "gdp_growth_pct": 2.3, "inflation_rate_pct": 3.1, "interest_rate_pct": 4.75},
+    {"quarter": "Q2 2026", "gdp_growth_pct": 2.1, "inflation_rate_pct": 2.9, "interest_rate_pct": 4.50},
+    {"quarter": "Q3 2026", "gdp_growth_pct": 1.8, "inflation_rate_pct": 2.7, "interest_rate_pct": 4.25},
+    {"quarter": "Q4 2026", "gdp_growth_pct": 2.0, "inflation_rate_pct": 2.5, "interest_rate_pct": 4.00}
+  ],
+  "notes": "GDP growth expected to moderate through 2026. Inflation trending downward toward 2.5%. Federal Reserve anticipated to cut rates gradually."
+}

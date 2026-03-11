@@ -1,0 +1,12 @@
+{
+  "task": "Travel Budget Planning",
+  "trip_date": "2026-03-10",
+  "route": "Beijing to Shanghai",
+  "num_employees": 8,
+  "purpose": "Business conference in Shanghai",
+  "output_files": ["Travel_Budget.xlsx"],
+  "survey_title": "Business Trip Travel Preference Survey",
+  "email_recipient": "finance@company.com",
+  "email_subject": "Travel Budget Analysis for Beijing-Shanghai Conference",
+  "instructions": "Query Beijing-Shanghai trains on the trip date. Create budget scenarios for 8 people using 3 seat classes. Create a preference survey for employees. Send budget summary email to finance team."
+}

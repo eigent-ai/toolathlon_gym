@@ -1,0 +1,13 @@
+# How to Cook
+# Source: https://github.com/worryzyy/HowToCook-mcp
+# Toolathlon Version: https://github.com/lockon-n/HowToCook-mcp
+# Toolathlon_GYM: ../../local_servers/HowToCook-mcp
+type: stdio
+name: howtocook
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/HowToCook-mcp/build/index.js"
+  cwd: "${agent_workspace}"
+client_session_timeout_seconds: 1000
+cache_tools_list: true

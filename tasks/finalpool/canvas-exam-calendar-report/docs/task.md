@@ -1,0 +1,11 @@
+I am a student at Open University preparing for final exams. I need you to help me compile an exam review plan by pulling information from our learning management system, setting up a study schedule on my calendar, and sending myself a summary email.
+
+First, look up all courses from the Fall 2013 semester. These are the courses whose course code ends with "2013J". For each of these courses, find the assignment whose name starts with "Final Exam".
+
+For each course that has a Final Exam assignment, I need the following information gathered: the course name, the course code, the Final Exam assignment name along with its points possible and due date, and the instructor's name and email. The instructor is the teacher enrolled in the course. If a course has multiple teachers, use the first one alphabetically by name.
+
+For each Final Exam that has a due date set, please create study sessions on Google Calendar. The first study session should be two days before the exam date, from 3:00 PM to 5:00 PM in the America/New_York timezone, titled "Study: [Course Code] - Session 1", for example "Study: DDD-2013J - Session 1". The second study session should be one day before the exam date, from 10:00 AM to 12:00 PM in the same timezone, titled "Study: [Course Code] - Session 2". Set the description of each study session to "Prepare for [Exam Assignment Name] in [Course Name]".
+
+Create an Excel file called exam_review_plan.xlsx in the workspace with a single sheet named "Exam Plan". The columns should be Course_Name, Course_Code, Instructor_Name, Instructor_Email, Exam_Name, Points_Possible, Exam_Date (in YYYY-MM-DD format, or "TBD" if no due date is set), Study_Session_1 (date and time of the first study session in "YYYY-MM-DD HH:MM" format, or "N/A" if no exam date), and Study_Session_2 (same format as Study_Session_1). Sort the rows by Course_Code alphabetically.
+
+Finally, send an email from emily.watson@openuniversity.ac.uk to dept-admin@openuniversity.ac.uk with the subject "Fall 2013 Final Exam Schedule Summary". The body should list each course with its exam date or "TBD" if not set, the instructor name, and points possible, written out in a readable way. At the end of the email body, note how many exams have a scheduled date and how many are still TBD.

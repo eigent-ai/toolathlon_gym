@@ -1,0 +1,7 @@
+The academic advising office needs an analysis of student assignment workload across all courses in the learning management system. Please query all courses and their assignments, counting the number of submissions per assignment and identifying when assignments are due.
+
+Create an Excel file called Workload_Report.xlsx in the workspace with two sheets. The first sheet "Course Workload" should have columns Course_Name, Total_Assignments showing the count of distinct assignments per course, Avg_Submissions showing the average number of submissions per assignment in that course rounded to 1 decimal, and Latest_Due_Date formatted as YYYY-MM-DD. Sort by Total_Assignments descending. The second sheet "Busiest Periods" should list all months that have assignment due dates, with columns Month in YYYY-MM format and Assignment_Count showing how many assignments are due in that month. Sort by Assignment_Count descending.
+
+For the top 3 busiest months, create a calendar event titled "Study Session - [month]" scheduled for the 15th of that month at 14:00 lasting two hours. The event description should note how many assignments are due that month.
+
+Also send an email to academic.advisor@university.example.com with the subject "Assignment Workload Analysis" summarizing the total number of courses analyzed, total assignments across all courses, and the top 3 busiest months with their assignment counts.

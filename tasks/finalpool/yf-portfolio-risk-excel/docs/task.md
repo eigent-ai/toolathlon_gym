@@ -1,0 +1,7 @@
+I am a portfolio manager and I need a risk analysis report for a portfolio consisting of five stocks: GOOGL, AMZN, JPM, JNJ, and XOM. Please retrieve the historical closing price data for each of these five stocks from our financial data source. I need the full available price history for all of them.
+
+Create an Excel file called Portfolio_Risk_Analysis.xlsx in the workspace with three sheets. The first sheet should be named "Price History" and should contain the closing prices for all five stocks organized with a Date column followed by one column per stock ticker showing the closing price for that date. Only include dates where all five stocks have data, and sort by date in ascending order.
+
+The second sheet should be named "Risk Metrics" and should contain a summary table with the following columns: Ticker, Average Close Price, Standard Deviation, Minimum Close, and Maximum Close. All values should be rounded to two decimal places. Calculate these statistics from the full price history data.
+
+The third sheet should be named "Risk Assessment" and should classify each stock into a risk category based on the coefficient of variation, which is the standard deviation divided by the average close price. If the coefficient of variation is below 0.10 the stock should be classified as "Low Risk", if it is between 0.10 and 0.20 inclusive it should be "Medium Risk", and if it is above 0.20 it should be "High Risk". This sheet should have columns Ticker, Coefficient of Variation rounded to four decimal places, and Risk Category.

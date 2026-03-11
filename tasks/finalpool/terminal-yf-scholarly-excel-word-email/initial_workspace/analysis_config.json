@@ -1,0 +1,13 @@
+{
+  "stocks": [
+    "JPM",
+    "XOM"
+  ],
+  "significance_level": 0.05,
+  "tests": [
+    "autocorrelation",
+    "normality"
+  ],
+  "email_recipient": "research-committee@company.org",
+  "report_date": "2026-03-07"
+}

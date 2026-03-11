@@ -1,0 +1,95 @@
+{
+  "monthly": [
+    {
+      "month": "2025-01",
+      "revenue": 115655.71,
+      "orders": 769,
+      "customers": 632,
+      "aov": 150.4
+    },
+    {
+      "month": "2025-02",
+      "revenue": 116430.14,
+      "orders": 735,
+      "customers": 624,
+      "aov": 158.41
+    },
+    {
+      "month": "2025-03",
+      "revenue": 123878.58,
+      "orders": 844,
+      "customers": 679,
+      "aov": 146.78
+    },
+    {
+      "month": "2025-04",
+      "revenue": 130634.57,
+      "orders": 797,
+      "customers": 655,
+      "aov": 163.91
+    },
+    {
+      "month": "2025-05",
+      "revenue": 127379.39,
+      "orders": 833,
+      "customers": 664,
+      "aov": 152.92
+    },
+    {
+      "month": "2025-06",
+      "revenue": 104099.62,
+      "orders": 773,
+      "customers": 627,
+      "aov": 134.67
+    },
+    {
+      "month": "2025-07",
+      "revenue": 120898.58,
+      "orders": 809,
+      "customers": 677,
+      "aov": 149.44
+    },
+    {
+      "month": "2025-08",
+      "revenue": 111374.86,
+      "orders": 789,
+      "customers": 664,
+      "aov": 141.16
+    },
+    {
+      "month": "2025-09",
+      "revenue": 119056.54,
+      "orders": 706,
+      "customers": 605,
+      "aov": 168.64
+    },
+    {
+      "month": "2025-10",
+      "revenue": 126333.75,
+      "orders": 781,
+      "customers": 662,
+      "aov": 161.76
+    },
+    {
+      "month": "2025-11",
+      "revenue": 118232.96,
+      "orders": 821,
+      "customers": 678,
+      "aov": 144.01
+    },
+    {
+      "month": "2025-12",
+      "revenue": 132763.25,
+      "orders": 826,
+      "customers": 681,
+      "aov": 160.73
+    }
+  ],
+  "total_revenue": 1446737.95,
+  "total_orders": 9483,
+  "avg_monthly": 120561.5,
+  "best_month": "2025-12",
+  "worst_month": "2025-06",
+  "h1_revenue": 718078.01,
+  "h2_revenue": 728659.94
+}

@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "key": "A",
+      "value": 100
+    },
+    {
+      "key": "B",
+      "value": 200
+    }
+  ],
+  "source": "Generic API"
+}

@@ -1,0 +1,21 @@
+{
+  "channel": "Veritasium",
+  "year_filter": 2025,
+  "select_top_n": 5,
+  "sessions": {
+    "day_of_week": "Wednesday",
+    "start_time": "14:00",
+    "end_time": "15:30",
+    "first_date": "2026-04-01",
+    "duration_minutes": 90
+  },
+  "form_title": "Science Enrichment Program Feedback",
+  "form_fields": [
+    {"label": "Which video did you watch?", "type": "multiple_choice"},
+    {"label": "How would you rate this session? (1-5)", "type": "linear_scale"},
+    {"label": "What did you find most interesting?", "type": "paragraph"},
+    {"label": "Would you recommend this program to others?", "type": "multiple_choice", "options": ["Yes", "No", "Maybe"]}
+  ],
+  "email_recipient": "students@school.edu",
+  "calendar_description_template": "Science Enrichment Viewing Session - {Video Title}. Please watch in advance and come prepared with questions."
+}

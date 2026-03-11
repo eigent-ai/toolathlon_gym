@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Sector Performance Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 20px; background: #1a1a2e; color: #eee; }
+        h1 { color: #00d4ff; text-align: center; }
+        .subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+        .dashboard { max-width: 1000px; margin: 0 auto; }
+        .sector-card { background: #16213e; border-radius: 8px; padding: 20px; margin: 15px 0; border-left: 4px solid #00d4ff; }
+        .sector-name { font-size: 18px; font-weight: bold; color: #00d4ff; }
+        .metrics { display: flex; justify-content: space-between; margin-top: 10px; }
+        .metric { text-align: center; }
+        .metric-value { font-size: 24px; font-weight: bold; }
+        .metric-label { font-size: 12px; color: #888; }
+        .positive { color: #00ff88; }
+        .negative { color: #ff4444; }
+        .neutral { color: #ffaa00; }
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        th { background: #0f3460; color: #eee; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #333; }
+        .consensus { padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+        .buy { background: #004d00; color: #00ff88; }
+        .hold { background: #4d4d00; color: #ffaa00; }
+        .sell { background: #4d0000; color: #ff4444; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Weekly Market Sector Performance Dashboard</h1>
+        <p class="subtitle">Report Period: March 1-7, 2026 | Data Source: Market Analytics Pro</p>
+
+        <div class="sector-card">
+            <div class="sector-name">Communication Services</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value positive">+2.8%</div>
+                    <div class="metric-label">Weekly Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">118.5</div>
+                    <div class="metric-label">Sector Index</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value positive">+12.4%</div>
+                    <div class="metric-label">YTD Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">High</div>
+                    <div class="metric-label">Volatility</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sector-card">
+            <div class="sector-name">Consumer Cyclical</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value negative">-1.2%</div>
+                    <div class="metric-label">Weekly Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">105.3</div>
+                    <div class="metric-label">Sector Index</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value positive">+5.7%</div>
+                    <div class="metric-label">YTD Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Medium</div>
+                    <div class="metric-label">Volatility</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sector-card">
+            <div class="sector-name">Financial Services</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value positive">+1.5%</div>
+                    <div class="metric-label">Weekly Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">112.8</div>
+                    <div class="metric-label">Sector Index</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value positive">+8.9%</div>
+                    <div class="metric-label">YTD Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Medium</div>
+                    <div class="metric-label">Volatility</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sector-card">
+            <div class="sector-name">Healthcare</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value neutral">+0.3%</div>
+                    <div class="metric-label">Weekly Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">98.7</div>
+                    <div class="metric-label">Sector Index</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value negative">-2.1%</div>
+                    <div class="metric-label">YTD Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">Low</div>
+                    <div class="metric-label">Volatility</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sector-card">
+            <div class="sector-name">Energy</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value positive">+3.1%</div>
+                    <div class="metric-label">Weekly Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">122.4</div>
+                    <div class="metric-label">Sector Index</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value positive">+15.2%</div>
+                    <div class="metric-label">YTD Return</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">High</div>
+                    <div class="metric-label">Volatility</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="color: #00d4ff; margin-top: 40px;">Analyst Consensus Ratings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sector</th>
+                    <th>Consensus</th>
+                    <th>Avg Target Price Upside</th>
+                    <th>Analyst Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Communication Services</td>
+                    <td><span class="consensus buy">Strong Buy</span></td>
+                    <td>+18.5%</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Consumer Cyclical</td>
+                    <td><span class="consensus buy">Buy</span></td>
+                    <td>+12.3%</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>Financial Services</td>
+                    <td><span class="consensus buy">Buy</span></td>
+                    <td>+9.8%</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Healthcare</td>
+                    <td><span class="consensus hold">Hold</span></td>
+                    <td>+5.2%</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Energy</td>
+                    <td><span class="consensus buy">Strong Buy</span></td>
+                    <td>+22.1%</td>
+                    <td>28</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="subtitle" style="margin-top: 30px;">
+            Dashboard generated by Market Analytics Pro v3.2 | Disclaimer: For informational purposes only.
+        </p>
+    </div>
+</body>
+</html>

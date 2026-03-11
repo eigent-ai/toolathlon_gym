@@ -1,0 +1,15 @@
+{
+  "gold_index": 2150.0,
+  "silver_index": 24.5,
+  "copper_index": 4.2,
+  "electronics_materials_index": 112.5,
+  "rare_earth_index": 85.3,
+  "reference_date": "2026-03-01",
+  "source": "Internal Supply Chain Analytics",
+  "notes": "Gold index represents spot price benchmark in USD/oz. Electronics materials index is a composite of semiconductor and PCB material costs (base=100 as of Jan 2025). Rare earth index tracks neodymium, lanthanum, and cerium prices (base=100 as of Jan 2025).",
+  "alerts": [
+    "Gold futures have risen 15% over the past quarter",
+    "Rare earth supply from primary producers remains stable",
+    "Copper prices showing seasonal softening"
+  ]
+}

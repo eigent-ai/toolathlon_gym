@@ -1,0 +1,58 @@
+[
+  {
+    "type": "tutoring",
+    "subject": "Finance",
+    "availability": "Mon-Fri 9-5",
+    "contact": "tutoring-finance@university.edu",
+    "location": "Library Room 201"
+  },
+  {
+    "type": "tutoring",
+    "subject": "Biochemistry",
+    "availability": "Mon-Fri 10-4",
+    "contact": "tutoring-bio@university.edu",
+    "location": "Science Building Room 305"
+  },
+  {
+    "type": "tutoring",
+    "subject": "Analytics",
+    "availability": "Mon-Wed 9-5",
+    "contact": "tutoring-analytics@university.edu",
+    "location": "Computing Center Room 102"
+  },
+  {
+    "type": "tutoring",
+    "subject": "Economics",
+    "availability": "Tue-Thu 10-4",
+    "contact": "tutoring-econ@university.edu",
+    "location": "Social Sciences Room 410"
+  },
+  {
+    "type": "study_group",
+    "subject": "Computing",
+    "availability": "Mon-Fri 2-6pm",
+    "contact": "study-groups@university.edu",
+    "location": "Student Center Room 115"
+  },
+  {
+    "type": "study_group",
+    "subject": "Design",
+    "availability": "Wed-Fri 1-5pm",
+    "contact": "study-groups@university.edu",
+    "location": "Design Lab Room 220"
+  },
+  {
+    "type": "study_group",
+    "subject": "Governance",
+    "availability": "Tue-Thu 2-5pm",
+    "contact": "study-groups@university.edu",
+    "location": "Humanities Building Room 330"
+  },
+  {
+    "type": "counseling",
+    "subject": "General",
+    "availability": "By appointment, Mon-Fri",
+    "contact": "counseling@university.edu",
+    "location": "Student Services Building"
+  }
+]

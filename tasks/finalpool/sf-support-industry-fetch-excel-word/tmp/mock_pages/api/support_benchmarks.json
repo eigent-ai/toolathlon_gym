@@ -1,0 +1,11 @@
+{
+  "industry": "Technology",
+  "benchmarks": {
+    "avg_response_time_hours": 5.2,
+    "resolution_rate_pct": 87.5,
+    "customer_satisfaction": 4.1,
+    "tickets_per_agent": 3500
+  },
+  "source": "Industry Report 2025",
+  "last_updated": "2026-01-15"
+}

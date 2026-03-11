@@ -1,0 +1,14 @@
+{
+  "company_name": "TechMart Electronics",
+  "positioning_statement": "Affordable quality electronics for the modern home",
+  "target_segments": ["Budget-conscious tech enthusiasts", "Home entertainment buyers", "Small business owners"],
+  "pricing_strategy": "Value-based pricing with competitive benchmarking",
+  "margin_targets": {
+    "minimum_margin_pct": 25,
+    "target_margin_pct": 35,
+    "premium_margin_pct": 45
+  },
+  "growth_priorities": ["Electronics", "TV & Home Theater", "Audio"],
+  "cost_optimization_targets": ["Cameras", "Home Appliances"],
+  "market_sensitivity": "Medium - consumer electronics purchases are somewhat discretionary and affected by economic confidence"
+}

@@ -1,0 +1,20 @@
+# YouTube MCP Server (PostgreSQL-backed, no real API calls)
+# Source: https://github.com/ZubeidHendricks/youtube-mcp-server
+# Toolathlon Version: local pg-backed version in local_mcp_servers_copy/youtube-mcp-server
+# Schema: youtube (channels, videos, playlists, playlist_items, transcripts)
+# Toolathlon_GYM: ../../local_servers/youtube-mcp-server
+type: stdio
+name: youtube
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/youtube-mcp-server/dist/index.js"
+  env:
+    PG_HOST: "postgres"
+    PG_PORT: "5432"
+    PG_DATABASE: "toolathlon"
+    PG_USER: "postgres"
+    PG_PASSWORD: "postgres"
+  # cwd: "${agent_workspace}" # do not add this for compatibility
+client_session_timeout_seconds: 120
+cache_tools_list: true

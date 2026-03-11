@@ -1,0 +1,5 @@
+Customer Survey Template:
+- Satisfaction rating (1-5)
+- Product preference
+- Recommendation likelihood (NPS)
+- Open feedback

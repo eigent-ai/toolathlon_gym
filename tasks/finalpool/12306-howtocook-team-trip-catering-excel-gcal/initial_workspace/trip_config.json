@@ -1,0 +1,9 @@
+{
+  "team_size": 15,
+  "travel_date": "2026-03-10",
+  "origin": "Beijing",
+  "destination": "Shanghai",
+  "preferred_class": "二等座",
+  "dinner_time": "18:00",
+  "budget_per_person_cny": 800
+}

@@ -1,0 +1,8 @@
+restriction_type,employee_count,percentage,severity
+Vegetarian,34,17.0,High
+Low-Sodium,28,14.0,High
+Gluten-Free,18,9.0,Medium
+Dairy-Free,15,7.5,Medium
+Nut Allergy,12,6.0,High
+Vegan,8,4.0,Medium
+No Restrictions,85,42.5,None

@@ -1,0 +1,19 @@
+{
+  "task": "Investor Roadshow Preparation",
+  "travel_date": "2026-03-10",
+  "route": "Beijing to Shanghai",
+  "recommended_train": "G1",
+  "seat_class": "Business Class",
+  "stock_ticker": "AMZN",
+  "price_history_days": 5,
+  "output_files": ["Roadshow_Prep.xlsx", "Roadshow_Agenda.pptx"],
+  "email_recipient": "roadshow@bank.com",
+  "email_subject": "Roadshow Travel and Prep Confirmed",
+  "ppt_slides": [
+    "Investor Roadshow - March 2026",
+    "Journey Details",
+    "Portfolio Overview",
+    "Meeting Schedule"
+  ],
+  "instructions": "Query G1 train business class details. Retrieve AMZN stock data including last 5 days closing prices. Combine into Excel, PowerPoint, and email."
+}

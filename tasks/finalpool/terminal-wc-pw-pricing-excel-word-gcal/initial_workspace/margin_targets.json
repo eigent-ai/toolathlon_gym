@@ -1,0 +1,25 @@
+{
+  "minimum_margin_pct": 15,
+  "target_margin_pct": 25,
+  "category_targets": {
+    "Electronics": {
+      "min_margin": 20
+    },
+    "Headphones": {
+      "min_margin": 15
+    },
+    "Speakers": {
+      "min_margin": 18
+    },
+    "Audio": {
+      "min_margin": 20
+    },
+    "Cameras": {
+      "min_margin": 15
+    }
+  },
+  "pricing_rules": {
+    "max_above_competitor_pct": 10,
+    "action_threshold_pct": 10
+  }
+}

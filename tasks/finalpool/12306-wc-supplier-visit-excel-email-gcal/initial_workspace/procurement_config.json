@@ -1,0 +1,7 @@
+{
+  "low_stock_threshold": 10,
+  "visit_criteria": "top 5 suppliers by sales volume",
+  "travel_date": "2026-03-10",
+  "preferred_class": "一等座",
+  "buyer_email": "buyer@company.com"
+}

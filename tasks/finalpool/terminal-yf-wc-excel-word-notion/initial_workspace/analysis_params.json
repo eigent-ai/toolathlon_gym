@@ -1,0 +1,18 @@
+{
+  "financial_symbols": {
+    "commodity_proxy": "GC=F",
+    "consumer_proxy": "AMZN"
+  },
+  "margin_calculation": {
+    "estimated_cost_pct": 0.60,
+    "standard_margin_pct": 0.40
+  },
+  "thresholds": {
+    "gold_significant_change_pct": 50,
+    "reduced_margin_target": 0.35,
+    "standard_margin_target": 0.40
+  },
+  "volatility_measure": "standard_deviation",
+  "price_change_method": "earliest_to_latest_pct",
+  "wiki_database_name": "Market Research Dashboard"
+}

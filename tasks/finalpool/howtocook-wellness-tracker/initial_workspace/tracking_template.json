@@ -1,0 +1,18 @@
+{
+  "daily_tracking": {
+    "date": "YYYY-MM-DD",
+    "meals": [
+      {"meal_type": "lunch", "recipe": "", "wellness_score": 0},
+      {"meal_type": "dinner", "recipe": "", "wellness_score": 0}
+    ],
+    "veggie_servings": 0,
+    "sugar_intake_g": 0,
+    "notes": ""
+  },
+  "weekly_summary": {
+    "avg_wellness_score": 0,
+    "total_veggie_servings": 0,
+    "days_under_sugar_limit": 0,
+    "recommended_meals_count": 0
+  }
+}

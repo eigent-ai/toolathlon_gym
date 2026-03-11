@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Health Scoring Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f8; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); padding: 40px; }
+        h1 { color: #1a3a5c; border-bottom: 3px solid #e67e22; padding-bottom: 15px; }
+        h2 { color: #e67e22; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        th { background: #fdf2e9; font-weight: 600; color: #1a3a5c; }
+        .healthy { color: #27ae60; font-weight: bold; }
+        .at-risk { color: #f39c12; font-weight: bold; }
+        .critical { color: #e74c3c; font-weight: bold; }
+        .nav { margin-bottom: 20px; }
+        .nav a { color: #e67e22; text-decoration: none; margin-right: 20px; font-weight: 600; }
+        .formula { background: #f8f9fa; padding: 15px; border-left: 4px solid #e67e22; margin: 15px 0; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Health Thresholds</a>
+            <a href="scoring.html">Scoring Formula</a>
+        </div>
+
+        <h1>Customer Health Scoring Portal</h1>
+        <p>This portal defines the health scoring methodology used to classify customer accounts and prioritize engagement.</p>
+
+        <h2>Health Status Thresholds</h2>
+        <table>
+            <tr><th>Status</th><th>Score Range</th><th>Action Required</th></tr>
+            <tr>
+                <td><span class="healthy">Healthy</span></td>
+                <td>Score &gt;= 80</td>
+                <td>Regular check-ins, upsell opportunities</td>
+            </tr>
+            <tr>
+                <td><span class="at-risk">At Risk</span></td>
+                <td>Score 50 to 79</td>
+                <td>Proactive outreach, satisfaction survey</td>
+            </tr>
+            <tr>
+                <td><span class="critical">Critical</span></td>
+                <td>Score &lt; 50</td>
+                <td>Immediate follow-up call, executive escalation</td>
+            </tr>
+        </table>
+
+        <h2>Follow-Up Policy</h2>
+        <p>For accounts classified as <span class="critical">Critical</span>, the customer success team must schedule a follow-up call within 5 business days. Critical accounts with health scores below 15 require executive-level intervention and should be scheduled as 30-minute calls starting from the Monday after the analysis date, with one call per day at 10:00 AM.</p>
+
+        <div class="formula">
+            <strong>Quick Reference:</strong><br>
+            Healthy: score &gt;= 80 | At Risk: 50-79 | Critical: &lt; 50
+        </div>
+    </div>
+</body>
+</html>

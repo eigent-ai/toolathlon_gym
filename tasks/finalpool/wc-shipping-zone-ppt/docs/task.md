@@ -1,0 +1,9 @@
+I am on the logistics team and I need to prepare a shipping zone performance review for our upcoming logistics meeting. We use our e-commerce platform for our online store and I need you to analyze how our orders are distributed across our shipping zones.
+
+Please pull all orders from our our e-commerce platform store along with the shipping zone configuration. We have three shipping zones set up: Domestic US, California, and International. For each order, determine which shipping zone it falls into based on the shipping address (California orders go to the California zone, other US orders go to Domestic US, and non-US orders go to International).
+
+Create an Excel file called Shipping_Zone_Report.xlsx in the workspace with two sheets. The first sheet should be named "Zone Performance" with columns Zone_Name, Order_Count, Total_Shipping_Cost (rounded to 2 decimal places), and Avg_Shipping_Cost (rounded to 2 decimal places). Sort rows by Order_Count descending. The second sheet should be named "Summary" with two columns, Metric and Value, containing these rows: Total_Orders (total number of orders), Total_Shipping_Revenue (sum of all shipping costs rounded to 2 decimals), and Zones_Count (number of zones that have at least one order).
+
+Create a PowerPoint presentation called Shipping_Review.pptx in the workspace. The first slide should be a title slide with the title "Shipping Zone Performance Review" and subtitle including the date 2026-03-06. Add one slide per shipping zone that has orders, showing the zone name, order count, total shipping cost, and average shipping cost. Add a final summary slide with the overall totals. The presentation should have at least 4 slides total.
+
+Finally, create a Google Sheet titled "Shipping Performance Dashboard" with a sheet called "Zone Data" containing the same data as the Excel Zone Performance sheet (Zone_Name, Order_Count, Total_Shipping_Cost, Avg_Shipping_Cost).

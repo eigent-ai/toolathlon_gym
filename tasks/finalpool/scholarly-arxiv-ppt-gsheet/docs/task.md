@@ -1,0 +1,7 @@
+I need to put together a research summary on recent approaches to reasoning in large language models. Please search our academic database for papers related to language model reasoning and chain-of-thought approaches. Identify the papers that are most relevant to the topic of LLM reasoning and deliberate problem solving, and skip over any papers that are about unrelated topics like image processing or machine translation.
+
+Create a PowerPoint presentation called LLM_Reasoning_Survey.pptx saved in my workspace. The presentation should begin with a title slide whose title is Survey of LLM Reasoning Methods. Then include one slide per relevant paper that shows the paper title, the names of the authors, and a brief description of the approach described in the paper. Close the presentation with a final summary slide that compares the methods discussed across all the relevant papers.
+
+Also create a Google Sheet called LLM Reasoning Paper Tracker. It should have columns for Title, Authors, ArXiv_ID, Published_Date, and Key_Method, with one row of data per relevant paper that you found.
+
+Finally, create a Word document called LLM_Reasoning_Literature_Review.docx in my workspace. The document should open with a heading called Literature Review: LLM Reasoning Approaches, followed by a brief introduction paragraph about the field. Then include a dedicated section for each relevant paper that covers the paper title, the authors, and a summary of the method described. The Google Sheet and the Word document should cover the same set of relevant papers.

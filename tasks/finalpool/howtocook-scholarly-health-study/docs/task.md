@@ -1,0 +1,7 @@
+I am a wellness researcher studying the nutritional value of traditional Chinese cooking. A nutrition reference file called nutrition_reference.json is available in the workspace, containing calorie and macronutrient data for common Chinese cooking ingredients.
+
+Please browse the recipe database and select 5 dishes from at least 3 different categories. Then search for academic papers related to Chinese diet and health or traditional Asian cuisine nutrition. I expect to find about 4 relevant papers. For each selected dish, estimate its nutritional content using the ingredient data from the reference file.
+
+Create an Excel spreadsheet called Health_Diet_Analysis.xlsx with the following three sheets. The first sheet should be named "Recipe Nutrition" with columns Dish_Name, Category, Estimated_Calories, Protein_g, Fat_g, Carbs_g, and Health_Rating. The Health_Rating should be Low, Medium, or High based on the calorie density of the dish. The second sheet should be named "Research Summary" with columns Paper_Title, Authors, Year, Citation_Count, and Key_Finding. The third sheet should be named "Combined Analysis" with columns Dish_Name, Health_Rating, and Supporting_Research, linking the dishes to relevant research findings.
+
+Also create a Word document called Chinese_Cuisine_Health_Report.docx. The document should have the title "Nutritional Analysis of Traditional Chinese Cuisine" and include the following sections: Introduction, Recipe Analysis, Literature Review, and Conclusions.

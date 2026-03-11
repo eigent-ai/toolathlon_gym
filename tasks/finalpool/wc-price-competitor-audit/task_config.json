@@ -1,0 +1,18 @@
+{
+  "needed_mcp_servers": [
+    "fetch",
+    "terminal",
+    "woocommerce",
+    "excel",
+    "word",
+    "filesystem"
+  ],
+  "needed_local_tools": [
+    "claim_done",
+    "handle_overlong_tool_outputs",
+    "manage_context",
+    "history",
+    "python_execute"
+  ],
+  "meta": {}
+}

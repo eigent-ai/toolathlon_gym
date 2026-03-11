@@ -1,0 +1,17 @@
+[
+  {"course_id": "TC001", "title": "Leadership Excellence", "department": "All", "level": "Senior", "duration_hours": 16, "cost": 1200},
+  {"course_id": "TC002", "title": "Technical Deep Dive", "department": "Engineering", "level": "Mid", "duration_hours": 24, "cost": 1800},
+  {"course_id": "TC003", "title": "Data Analysis Fundamentals", "department": "Finance", "level": "Junior", "duration_hours": 12, "cost": 900},
+  {"course_id": "TC004", "title": "People Management", "department": "HR", "level": "Mid", "duration_hours": 8, "cost": 600},
+  {"course_id": "TC005", "title": "Process Optimization", "department": "Operations", "level": "Mid", "duration_hours": 16, "cost": 1100},
+  {"course_id": "TC006", "title": "Research Methodology", "department": "R&D", "level": "Junior", "duration_hours": 20, "cost": 1500},
+  {"course_id": "TC007", "title": "Negotiation Skills", "department": "Sales", "level": "Mid", "duration_hours": 12, "cost": 950},
+  {"course_id": "TC008", "title": "Customer Service Mastery", "department": "Support", "level": "Junior", "duration_hours": 8, "cost": 700},
+  {"course_id": "TC009", "title": "Communication Skills", "department": "All", "level": "Junior", "duration_hours": 6, "cost": 450},
+  {"course_id": "TC010", "title": "Project Management Professional", "department": "All", "level": "Mid", "duration_hours": 40, "cost": 2000},
+  {"course_id": "TC011", "title": "Advanced Engineering Practices", "department": "Engineering", "level": "Senior", "duration_hours": 32, "cost": 1900},
+  {"course_id": "TC012", "title": "Financial Modeling", "department": "Finance", "level": "Mid", "duration_hours": 16, "cost": 1300},
+  {"course_id": "TC013", "title": "Talent Acquisition Strategy", "department": "HR", "level": "Senior", "duration_hours": 12, "cost": 1000},
+  {"course_id": "TC014", "title": "Supply Chain Management", "department": "Operations", "level": "Senior", "duration_hours": 20, "cost": 1600},
+  {"course_id": "TC015", "title": "Innovation Workshop", "department": "R&D", "level": "Mid", "duration_hours": 16, "cost": 1400}
+]

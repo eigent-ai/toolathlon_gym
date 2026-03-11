@@ -1,0 +1,9 @@
+I am an HR analytics manager and I need to prepare an employee tenure analysis report for our Chief Human Resources Officer. We have a data warehouse with employee records across all departments, and I need to understand the distribution of years of experience across the organization.
+
+Please query the employee data from the HR analytics system to analyze the years of experience column broken down by department. For each of the 7 departments, calculate the average tenure (rounded to 2 decimal places), minimum tenure, maximum tenure, and total employee count.
+
+Create an Excel file called Tenure_Analysis.xlsx in the workspace with two sheets. The first sheet should be named "Department Tenure" with columns Department, Avg_Tenure, Min_Tenure, Max_Tenure, and Employee_Count. Sort rows alphabetically by Department. The second sheet should be named "Summary" with two columns, Metric and Value, containing these rows: Total_Employees (total headcount), Department_Count (number of departments, which should be 7), Highest_Avg_Tenure_Dept (department name with highest average tenure), and Overall_Avg_Tenure (average tenure across all employees, rounded to 2 decimal places).
+
+Create a page in Notion titled "Employee Tenure Dashboard" that profiles each department. For each department, add a heading with the department name followed by a paragraph stating the employee count, average tenure, and tenure range (min to max). Conclude with a summary paragraph identifying which department has the most experienced workforce on average.
+
+Send an email from hr-analytics@company.com to chro@company.com with the subject "Employee Tenure Analysis Report" and a body summarizing the overall findings including total employees, number of departments analyzed, and the department with the highest average tenure.

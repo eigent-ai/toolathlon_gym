@@ -1,0 +1,7 @@
+Target Margins by Category:
+- Electronics: 15-25%
+- Accessories: 35-50%
+- Premium devices: 20-30%
+- Budget items: 10-15%
+
+Revenue at risk = Sales * Price Gap for overpriced items

@@ -1,0 +1,30 @@
+{
+  "market_indicators": [
+    {
+      "symbol": "GOOGL",
+      "target_price": 330.97,
+      "analyst_rating": "Buy"
+    },
+    {
+      "symbol": "AMZN",
+      "target_price": 240.83,
+      "analyst_rating": "Buy"
+    },
+    {
+      "symbol": "JPM",
+      "target_price": 322.91,
+      "analyst_rating": "Buy"
+    },
+    {
+      "symbol": "JNJ",
+      "target_price": 263.59,
+      "analyst_rating": "Hold"
+    },
+    {
+      "symbol": "XOM",
+      "target_price": 165.84,
+      "analyst_rating": "Buy"
+    }
+  ],
+  "source": "Financial Research API"
+}

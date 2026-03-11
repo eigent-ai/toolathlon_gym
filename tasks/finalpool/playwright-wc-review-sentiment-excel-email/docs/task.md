@@ -1,0 +1,11 @@
+I am the product quality manager and I need to compare how our products are perceived internally versus what external consumer review sites are saying. There is an external consumer review aggregator website at http://localhost:30208/reviews.html that displays average ratings, review counts, and the most common complaint categories for products in our catalog. The site covers products across our main categories including Electronics, Cameras, and Home Appliances.
+
+Please start by browsing that review aggregator page and extracting all the external review data shown in the tables there, including the product names, external average ratings, external review counts, and top complaint categories.
+
+Next, query our product catalog and customer reviews to get the internal ratings data. I need the internal average rating and review count for each product that also appears on the external review site. Focus on products from the Electronics, Cameras, and Home Appliances categories since those are the ones covered by the external aggregator.
+
+There is a PDF document called Quality_Standards.pdf in the workspace that defines our quality alert thresholds. Please read it to understand when a product should be flagged for quality review.
+
+Create an Excel file called Review_Comparison_Report.xlsx in the workspace with two sheets. The first sheet should be called "Product Comparison" and have columns for Product_Name, Category, Internal_Avg_Rating, Internal_Review_Count, External_Avg_Rating, External_Review_Count, Rating_Difference (internal minus external, can be positive or negative), and Alert_Flag (Yes or No based on the threshold from the PDF). The second sheet should be called "Category Summary" with columns for Category, Avg_Internal_Rating, Avg_External_Rating, Avg_Rating_Difference, and Products_Flagged_Count. This sheet should have one row per category summarizing the comparison data.
+
+Finally, for any products that are flagged with a quality alert, send an email from quality@company.com to product-team@company.com with the subject "Quality Alert: Product Review Discrepancies" listing each flagged product with its internal rating, external rating, and the rating difference. Include a recommendation to investigate these products.

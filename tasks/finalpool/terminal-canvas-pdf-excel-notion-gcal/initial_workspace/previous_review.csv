@@ -1,0 +1,9 @@
+Criterion_ID,Criterion_Name,Previous_Status,Previous_Score,Notes
+C1,Student Learning Outcomes,Compliant,73.2,Met threshold in 2020 review
+C2,Assessment Diversity,Partial,0.38,Needed more quiz-based courses
+C3,Student Retention,Compliant,3.8,Above minimum
+C4,Faculty Qualifications,Compliant,80.0,Strong faculty credentials
+C5,Curriculum Coverage,Compliant,6,Diverse offerings
+C6,Course Enrollment Adequacy,Compliant,620,Healthy enrollment
+C7,Quiz-Based Assessment,Partial,70.5,Slightly below threshold
+C8,Program Breadth,Compliant,20,Sufficient sections

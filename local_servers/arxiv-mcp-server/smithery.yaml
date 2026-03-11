@@ -1,0 +1,17 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - arxivStoragePath
+    properties:
+      arxivStoragePath:
+        type: string
+        description: The path to store downloaded papers.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'python', args: ['-m', 'arxiv_mcp_server'], env: { ARXIV_STORAGE_PATH: config.arxivStoragePath } })

@@ -1,0 +1,74 @@
+{
+  "all_depts": [
+    {
+      "dept": "R&D",
+      "count": 7083,
+      "avg_sat": 6.51,
+      "avg_wlb": 4.52,
+      "avg_perf": 3.2,
+      "avg_salary": 57905.93
+    },
+    {
+      "dept": "Support",
+      "count": 7244,
+      "avg_sat": 6.53,
+      "avg_wlb": 4.53,
+      "avg_perf": 3.2,
+      "avg_salary": 58400.48
+    },
+    {
+      "dept": "Operations",
+      "count": 7120,
+      "avg_sat": 6.53,
+      "avg_wlb": 4.54,
+      "avg_perf": 3.18,
+      "avg_salary": 57808.74
+    },
+    {
+      "dept": "HR",
+      "count": 7077,
+      "avg_sat": 6.55,
+      "avg_wlb": 4.51,
+      "avg_perf": 3.2,
+      "avg_salary": 58920.45
+    },
+    {
+      "dept": "Engineering",
+      "count": 7096,
+      "avg_sat": 6.58,
+      "avg_wlb": 4.53,
+      "avg_perf": 3.21,
+      "avg_salary": 58991.61
+    },
+    {
+      "dept": "Sales",
+      "count": 7232,
+      "avg_sat": 6.59,
+      "avg_wlb": 4.49,
+      "avg_perf": 3.19,
+      "avg_salary": 58864.79
+    },
+    {
+      "dept": "Finance",
+      "count": 7148,
+      "avg_sat": 6.59,
+      "avg_wlb": 4.54,
+      "avg_perf": 3.21,
+      "avg_salary": 57878.19
+    }
+  ],
+  "low_sat_depts": [
+    {
+      "dept": "R&D",
+      "avg_sat": 6.51
+    },
+    {
+      "dept": "Support",
+      "avg_sat": 6.53
+    },
+    {
+      "dept": "Operations",
+      "avg_sat": 6.53
+    }
+  ]
+}

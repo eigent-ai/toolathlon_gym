@@ -1,0 +1,34 @@
+{
+  "date": "2026-03-05",
+  "source": "Risk Management System",
+  "scenarios": [
+    {
+      "scenario": "Market Crash",
+      "equity_shock": -30,
+      "bond_shock": 5,
+      "gold_shock": 15,
+      "probability": 5
+    },
+    {
+      "scenario": "Rate Hike",
+      "equity_shock": -10,
+      "bond_shock": -5,
+      "gold_shock": 3,
+      "probability": 15
+    },
+    {
+      "scenario": "Recession",
+      "equity_shock": -20,
+      "bond_shock": 8,
+      "gold_shock": 20,
+      "probability": 10
+    },
+    {
+      "scenario": "Stagflation",
+      "equity_shock": -15,
+      "bond_shock": -3,
+      "gold_shock": 25,
+      "probability": 8
+    }
+  ]
+}

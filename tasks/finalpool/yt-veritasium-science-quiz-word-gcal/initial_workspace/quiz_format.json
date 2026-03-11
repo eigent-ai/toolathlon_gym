@@ -1,0 +1,13 @@
+{
+  "title": "Veritasium Science Quiz - Q1 2026",
+  "sections_per_video": 1,
+  "questions_per_video": 3,
+  "difficulty_scale": "1-5",
+  "difficulty_guide": {
+    "1": "Introductory - suitable for high school students",
+    "2": "Undergraduate introductory level",
+    "3": "Undergraduate advanced level",
+    "4": "Graduate introductory level",
+    "5": "Graduate advanced or research level"
+  }
+}

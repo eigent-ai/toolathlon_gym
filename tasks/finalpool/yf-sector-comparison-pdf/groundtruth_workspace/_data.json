@@ -1,0 +1,34 @@
+{
+  "stock_data": [
+    {
+      "symbol": "GOOGL",
+      "sector": "Technology",
+      "latest_close": 300.88,
+      "ytd_return": -4.53
+    },
+    {
+      "symbol": "JPM",
+      "sector": "Finance",
+      "latest_close": 293.55,
+      "ytd_return": -9.4
+    },
+    {
+      "symbol": "JNJ",
+      "sector": "Healthcare",
+      "latest_close": 239.63,
+      "ytd_return": 16.18
+    },
+    {
+      "symbol": "XOM",
+      "sector": "Energy",
+      "latest_close": 150.76,
+      "ytd_return": 23.74
+    }
+  ],
+  "sector_targets": {
+    "Technology": 12.0,
+    "Finance": 8.0,
+    "Healthcare": 5.0,
+    "Energy": 10.0
+  }
+}

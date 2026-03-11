@@ -1,0 +1,19 @@
+{
+    "version": "2.3",
+    "last_updated": "2025-11-01",
+    "auto_escalate_after_hours": {
+        "Low": 72,
+        "Medium": 48,
+        "High": 24,
+        "Critical": 4
+    },
+    "satisfaction_threshold": 3,
+    "response_time_warning_pct": 0.75,
+    "repeat_ticket_threshold": 3,
+    "escalation_contacts": {
+        "tier2_team": "tier2-support@company.com",
+        "tier3_team": "tier3-support@company.com",
+        "management": "support-management@company.com"
+    },
+    "notes": "Tickets with response time exceeding 75% of SLA hours should be flagged as at-risk. Tickets with customer satisfaction below the threshold require follow-up. The response_time_warning_pct field indicates the fraction of SLA time after which a ticket should be considered at risk of breaching SLA."
+}

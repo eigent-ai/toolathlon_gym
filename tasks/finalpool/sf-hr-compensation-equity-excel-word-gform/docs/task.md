@@ -1,0 +1,17 @@
+Hi, I need your help with something important for our HR compliance team. We are conducting an annual pay equity audit and need a thorough analysis of salary distribution across our organization. There is a PDF called Equity_Policy.pdf in the workspace that outlines our compensation equity policy, including how we define experience bands, pay gap thresholds, and equity ratios. Please read through it first so you understand the methodology.
+
+Once you have the policy context, pull employee data from the data warehouse. We need to look at salaries broken down by department, education level, and experience band (the bands are defined in the policy document). Use the terminal for any statistical computations you need.
+
+Create an Excel file called Compensation_Equity.xlsx with three sheets.
+
+The first sheet should be called "Salary Analysis" and should show the salary breakdown for every combination of department, education level, and experience band. Include the employee count, average salary (rounded to 2 decimals), median salary (rounded to 2 decimals), minimum salary, maximum salary, and salary standard deviation (rounded to 2 decimals). Sort the data by department first, then education level, then experience band.
+
+The second sheet should be called "Equity Metrics" and should compare pay across education levels within each department and experience band combination. For each combination, identify which education level group is the highest paid and which is the lowest paid, calculate the pay gap percentage (rounded to 1 decimal, computed as the difference between highest and lowest average salary divided by the highest, times 100), the equity ratio (rounded to 3 decimals, which is the minimum group average divided by the maximum group average), and the equity status based on the thresholds in the policy. Sort by department then experience band.
+
+The third sheet should be called "Summary" and should contain label-value pairs in two columns. Include: Total_Employees_Analyzed, Departments_Analyzed (just the count), Concerning_Gaps_Count, Monitor_Gaps_Count, Acceptable_Gaps_Count, Overall_Equity_Score (the average of all equity ratios, rounded to 2 decimals), Highest_Gap_Dept (department with the largest single pay gap), and Highest_Gap_Band (experience band where the largest single pay gap exists).
+
+After the Excel analysis, write a Word document called Equity_Report.docx that serves as an executive summary of the findings. It should have sections covering an executive summary, the methodology used, department-by-department analysis highlights, key findings about where the most concerning gaps exist, recommendations for addressing those gaps, and a compliance statement.
+
+Finally, create a Google Form called "Compensation Fairness Survey" for collecting anonymous employee feedback on pay equity. It should have five questions: a dropdown asking which department the respondent belongs to, a short answer asking how many years of experience they have, a multiple choice question asking them to rate their satisfaction with their current compensation on a scale from 1 to 5, another multiple choice question asking them to rate the perceived fairness of their pay compared to peers on a scale from 1 to 5, and an open-ended paragraph question for any additional comments about compensation.
+
+Also there is a guide.md file in the workspace that describes the methodology in more detail, please review that too.

@@ -1,0 +1,14 @@
+{
+  "competitors": [
+    {"name": "Alpha Pro", "price": 299, "rating": 4.5, "features": ["Fast", "Reliable"]},
+    {"name": "Beta Suite", "price": 199, "rating": 4.2, "features": ["Affordable", "User-Friendly"]},
+    {"name": "Gamma Ultra", "price": 499, "rating": 4.8, "features": ["Premium", "AI-Powered"]},
+    {"name": "Delta Lite", "price": 89, "rating": 3.9, "features": ["Lightweight", "Portable"]},
+    {"name": "Epsilon Core", "price": 349, "rating": 4.3, "features": ["Scalable", "Secure"]},
+    {"name": "Zeta Max", "price": 599, "rating": 4.7, "features": ["High-Performance", "Enterprise"]},
+    {"name": "Eta Basic", "price": 49, "rating": 3.5, "features": ["Budget", "Simple"]},
+    {"name": "Theta Plus", "price": 249, "rating": 4.1, "features": ["Versatile", "Modular"]},
+    {"name": "Iota Edge", "price": 399, "rating": 4.6, "features": ["Cutting-Edge", "Innovative"]},
+    {"name": "Kappa Flex", "price": 159, "rating": 4.0, "features": ["Flexible", "Customizable"]}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "inventory": [
+    {
+      "product_id": "P001",
+      "product_name": "Widget Alpha",
+      "current_stock": 120,
+      "reorder_point": 50,
+      "warehouse": "Warehouse A"
+    },
+    {
+      "product_id": "P002",
+      "product_name": "Widget Beta",
+      "current_stock": 85,
+      "reorder_point": 40,
+      "warehouse": "Warehouse B"
+    },
+    {
+      "product_id": "P003",
+      "product_name": "Gadget Pro",
+      "current_stock": 45,
+      "reorder_point": 30,
+      "warehouse": "Warehouse A"
+    },
+    {
+      "product_id": "P004",
+      "product_name": "Sensor X1",
+      "current_stock": 15,
+      "reorder_point": 25,
+      "warehouse": "Warehouse C"
+    },
+    {
+      "product_id": "P005",
+      "product_name": "Connector Z",
+      "current_stock": 8,
+      "reorder_point": 20,
+      "warehouse": "Warehouse B"
+    }
+  ],
+  "count": 5
+}

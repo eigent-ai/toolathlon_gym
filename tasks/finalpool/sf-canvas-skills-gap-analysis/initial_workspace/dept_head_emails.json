@@ -1,0 +1,11 @@
+{
+  "department_heads": [
+    {"department": "Engineering", "name": "Sarah Chen", "email": "s.chen@company.com"},
+    {"department": "Sales", "name": "Michael Rodriguez", "email": "m.rodriguez@company.com"},
+    {"department": "Finance", "name": "Jennifer Park", "email": "j.park@company.com"},
+    {"department": "HR", "name": "David Thompson", "email": "d.thompson@company.com"},
+    {"department": "R&D", "name": "Lisa Wang", "email": "l.wang@company.com"},
+    {"department": "Operations", "name": "Robert Kim", "email": "r.kim@company.com"},
+    {"department": "Support", "name": "Amanda Foster", "email": "a.foster@company.com"}
+  ]
+}

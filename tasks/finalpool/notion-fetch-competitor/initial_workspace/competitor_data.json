@@ -1,0 +1,79 @@
+{
+  "our_product": {
+    "company": "TaskFlow Inc",
+    "product": "TaskFlow Pro",
+    "pricing": {
+      "starter": {"name": "Starter", "monthly_price": 12},
+      "pro": {"name": "Pro", "monthly_price": 29},
+      "enterprise": {"name": "Enterprise", "monthly_price": 59}
+    },
+    "features": ["Task Management", "Kanban Boards", "Time Tracking", "Gantt Charts", "Resource Allocation", "Custom Workflows", "API Access", "Reporting Dashboard"],
+    "rating": 4.5,
+    "target_market": "Mid-size teams and growing startups",
+    "market_share": 0.15,
+    "strengths": ["Intuitive UI", "Strong integrations ecosystem", "Competitive pricing"],
+    "weaknesses": ["Limited AI features", "No built-in chat", "Basic resource management"]
+  },
+  "competitors": [
+    {
+      "company": "ProjectHub Inc",
+      "product": "ProjectHub 360",
+      "pricing": {
+        "basic": {"name": "Basic", "monthly_price": 10},
+        "pro": {"name": "Pro", "monthly_price": 25},
+        "business": {"name": "Business", "monthly_price": 45}
+      },
+      "features": ["Task Management", "Kanban Boards", "Built-in Chat", "Video Conferencing", "Time Tracking", "Custom Fields"],
+      "rating": 4.3,
+      "target_market": "Small to mid-size teams needing collaboration tools",
+      "market_share": 0.22,
+      "strengths": ["All-in-one collaboration platform", "Strong mobile app", "Built-in communication tools"],
+      "weaknesses": ["Slower performance with large projects", "Limited reporting", "No Gantt charts"]
+    },
+    {
+      "company": "AgileBoard Co",
+      "product": "AgileBoard Pro",
+      "pricing": {
+        "free": {"name": "Free", "monthly_price": 0},
+        "standard": {"name": "Standard", "monthly_price": 15},
+        "premium": {"name": "Premium", "monthly_price": 35}
+      },
+      "features": ["Kanban Boards", "Scrum Support", "Sprint Planning", "Backlog Management", "Burndown Charts", "API Access"],
+      "rating": 4.6,
+      "target_market": "Agile development teams and software companies",
+      "market_share": 0.18,
+      "strengths": ["Best-in-class agile tooling", "Free tier available", "Excellent developer integrations"],
+      "weaknesses": ["Focused mainly on software teams", "Complex setup for non-technical users", "Limited document management"]
+    },
+    {
+      "company": "WorkStream Ltd",
+      "product": "WorkStream Suite",
+      "pricing": {
+        "starter": {"name": "Starter", "monthly_price": 8},
+        "growth": {"name": "Growth", "monthly_price": 20},
+        "enterprise": {"name": "Enterprise", "monthly_price": 50}
+      },
+      "features": ["Task Management", "Document Management", "Workflow Automation", "Time Tracking", "Resource Allocation", "Client Portal", "Invoicing"],
+      "rating": 4.1,
+      "target_market": "Professional services firms and agencies",
+      "market_share": 0.12,
+      "strengths": ["End-to-end project lifecycle management", "Strong client-facing features", "Built-in invoicing"],
+      "weaknesses": ["Dated user interface", "Steep learning curve", "Expensive add-ons"]
+    },
+    {
+      "company": "TeamSync Corp",
+      "product": "TeamSync Platform",
+      "pricing": {
+        "team": {"name": "Team", "monthly_price": 14},
+        "business": {"name": "Business", "monthly_price": 28},
+        "enterprise": {"name": "Enterprise", "monthly_price": 55}
+      },
+      "features": ["Task Management", "Gantt Charts", "AI Task Suggestions", "Resource Allocation", "Reporting Dashboard", "Custom Workflows", "Goal Tracking"],
+      "rating": 4.4,
+      "target_market": "Enterprise teams and large organizations",
+      "market_share": 0.20,
+      "strengths": ["AI-powered features", "Excellent enterprise security", "Advanced reporting"],
+      "weaknesses": ["No free tier", "Limited third-party integrations", "Higher price point"]
+    }
+  ]
+}

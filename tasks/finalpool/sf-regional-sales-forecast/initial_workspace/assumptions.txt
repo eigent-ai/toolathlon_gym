@@ -1,0 +1,22 @@
+Key Assumptions for Regional Sales Forecast
+=============================================
+
+1. Economic conditions will remain consistent with current indicators through Q1 2026.
+
+2. No major market disruptions, trade policy changes, or geopolitical events will significantly impact sales.
+
+3. Product portfolio and pricing will remain stable through the forecast period.
+
+4. Sales team capacity and coverage will remain at current levels.
+
+5. Currency exchange rates will not materially affect regional revenues.
+
+6. The 3-month trailing average (Oct-Dec 2025) provides a reasonable baseline for near-term projections.
+
+7. GDP growth rates serve as a reasonable proxy for regional demand changes.
+
+8. The forecast should be used as directional guidance and updated monthly with actual results.
+
+9. Consumer confidence and inflation indicators provide additional context but are not directly used in the forecast formula.
+
+10. All revenue figures are in USD equivalent.

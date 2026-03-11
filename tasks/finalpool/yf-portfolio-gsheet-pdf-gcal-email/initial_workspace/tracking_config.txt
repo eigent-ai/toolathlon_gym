@@ -1,0 +1,6 @@
+Portfolio Tracking Configuration:
+Stocks: GOOGL, AMZN, JPM, JNJ, XOM
+Initial investment: $10,000 per stock
+Target allocation: Equal weight (20% each)
+Rebalance trigger: 3% drift from target
+Review frequency: Monthly

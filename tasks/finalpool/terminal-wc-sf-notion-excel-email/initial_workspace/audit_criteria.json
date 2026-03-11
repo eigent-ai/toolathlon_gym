@@ -1,0 +1,23 @@
+{
+  "scoring": {
+    "refund_weight": 30,
+    "review_weight": 40,
+    "formula": "severity_score = refund_count * refund_weight + low_review_count * review_weight"
+  },
+  "thresholds": {
+    "critical_percentile": 80,
+    "high_min_score": 50,
+    "medium_min_score": 25,
+    "low_min_score": 1
+  },
+  "sla_targets": {
+    "High": 24,
+    "Medium": 48,
+    "Low": 72
+  },
+  "contacts": {
+    "support_team": "support_team@company.com",
+    "product_team": "product_team@company.com",
+    "vp_customer_experience": "vp_cx@company.com"
+  }
+}

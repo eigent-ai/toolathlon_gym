@@ -1,0 +1,9 @@
+You are an HR analyst tasked with setting up an annual performance review process. Your first step is to analyze the current state of employee performance ratings across all departments using the company's data warehouse.
+
+Query the Snowflake database to retrieve performance rating statistics for each department. Use the HR_ANALYTICS__PUBLIC__EMPLOYEES table and group the results by DEPARTMENT. For each department, calculate the total employee count, the average performance rating rounded to two decimal places, the count of low performers (employees with a performance rating below 3), and the count of high performers (employees with a performance rating of 4 or above).
+
+Create an Excel workbook called Performance_Review_Setup.xlsx in your workspace with a single sheet named "Performance Analysis". Include columns Department, Employee_Count, Avg_Performance, Low_Performers_Count, and High_Performers_Count. Include one row for each of the seven departments: Engineering, Finance, HR, Operations, R&D, Sales, and Support. The data should match the actual values from the Snowflake query.
+
+Create a Google Form called "Annual Performance Review Form" with the following six questions in order: first, an Employee ID text question; second, a Department radio question with options Engineering, Finance, HR, Operations, R&D, Sales, and Support; third, a Performance Rating radio question with options 1-Needs Improvement, 2-Below Expectations, 3-Meets Expectations, 4-Exceeds Expectations, and 5-Outstanding; fourth, a Key Achievements this year text question; fifth, an Areas for Improvement text question; and sixth, a Goals for next year text question.
+
+Send an email to hr_director@company.com with subject "Annual Performance Review Process Setup Complete" that summarizes the current performance distribution across departments and confirms that the review form and Excel report have been prepared.

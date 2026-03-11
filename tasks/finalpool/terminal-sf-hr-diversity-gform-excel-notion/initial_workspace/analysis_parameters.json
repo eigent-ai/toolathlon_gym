@@ -1,0 +1,14 @@
+{
+  "diversity_metric": "Shannon Entropy (H)",
+  "formula": "H = -SUM(p_i * ln(p_i))",
+  "target_threshold": 1.2,
+  "education_levels": ["Bachelor's", "Diploma", "High School", "Master's", "PhD"],
+  "departments_to_analyze": "all",
+  "report_decimal_places": {
+    "diversity_index": 4,
+    "percentages": 1,
+    "performance_rating": 2
+  },
+  "survey_questions_count": 5,
+  "notion_pages_per_department": true
+}

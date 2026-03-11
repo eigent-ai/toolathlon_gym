@@ -1,0 +1,10 @@
+{
+  "finance_advisor": "finance-advisor@uni.edu",
+  "computing_advisor": "comp-advisor@uni.edu",
+  "biochemistry_advisor": "bio-advisor@uni.edu",
+  "design_advisor": "design-advisor@uni.edu",
+  "economics_advisor": "econ-advisor@uni.edu",
+  "governance_advisor": "gov-advisor@uni.edu",
+  "analytics_advisor": "analytics-advisor@uni.edu",
+  "general": "academic-support@uni.edu"
+}

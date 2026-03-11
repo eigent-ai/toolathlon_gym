@@ -1,0 +1,20 @@
+{
+  "review_week": {
+    "start_date": "2026-03-09",
+    "end_date": "2026-03-13"
+  },
+  "default_meeting_time": "14:00",
+  "meeting_duration_hours": 1,
+  "overflow_time": "16:00",
+  "department_managers": {
+    "Engineering": "eng_manager@company.com",
+    "Finance": "fin_manager@company.com",
+    "HR": "hr_manager@company.com",
+    "Operations": "ops_manager@company.com",
+    "R&D": "rd_manager@company.com",
+    "Sales": "sales_manager@company.com",
+    "Support": "support_manager@company.com"
+  },
+  "hr_leadership_email": "hr_leadership@company.com",
+  "notification_subject_prefix": "Annual Performance Review Cycle"
+}

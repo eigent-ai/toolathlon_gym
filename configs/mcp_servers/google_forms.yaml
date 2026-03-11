@@ -1,0 +1,17 @@
+# Google Forms
+# Source: https://github.com/matteoantoci/google-forms-mcp
+# Toolathlon Version: The same
+# Toolathlon_GYM: ../../local_servers/google-forms-mcp
+type: stdio
+name: google_forms
+params:
+  command: node
+  args:
+    - "${local_servers_paths}/google-forms-mcp/build/index.js"
+  env:
+    GOOGLE_CLIENT_ID: "placeholder"
+    GOOGLE_CLIENT_SECRET: "placeholder"
+    GOOGLE_REFRESH_TOKEN: "placeholder"
+  # cwd: "${agent_workspace}" # do not add this for compatibility
+client_session_timeout_seconds: 20
+cache_tools_list: true

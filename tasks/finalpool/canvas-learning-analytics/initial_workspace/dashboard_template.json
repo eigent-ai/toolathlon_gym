@@ -1,0 +1,21 @@
+{
+  "page_title": "Learning Analytics Dashboard",
+  "sections": [
+    {
+      "heading": "Course Performance Overview",
+      "description": "Summary of KPIs across all courses with benchmark comparison"
+    },
+    {
+      "heading": "Courses Meeting Benchmarks",
+      "description": "List of courses that meet all KPI targets"
+    },
+    {
+      "heading": "Courses Needing Attention",
+      "description": "Courses below benchmark with specific areas of concern"
+    },
+    {
+      "heading": "Recommendations",
+      "description": "Action items for improving underperforming courses"
+    }
+  ]
+}

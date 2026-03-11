@@ -1,0 +1,20 @@
+{
+  "needed_mcp_servers": [
+    "filesystem",
+    "word",
+    "excel",
+    "arxiv-latex",
+    "emails",
+    "google_calendar",
+    "terminal",
+    "pdf-tools"
+  ],
+  "needed_local_tools": [
+    "claim_done",
+    "handle_overlong_tool_outputs",
+    "manage_context",
+    "history",
+    "python_execute"
+  ],
+  "meta": {}
+}

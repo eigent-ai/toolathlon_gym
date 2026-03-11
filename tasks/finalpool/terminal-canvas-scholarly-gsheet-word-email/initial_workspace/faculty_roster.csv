@@ -1,0 +1,5 @@
+faculty_name,department,course_id,research_area,dept_head_email
+Dr. Sarah Chen,Biochemistry,3,protein folding and enzyme kinetics,head_biochem@university.edu
+Dr. James Okafor,Biochemistry,4,gene expression regulation,head_biochem@university.edu
+Dr. Maria Gonzalez,Bioinformatics,5,sequence alignment algorithms,head_bioinfo@university.edu
+Dr. Raj Patel,Bioinformatics,6,machine learning for genomics,head_bioinfo@university.edu

@@ -1,0 +1,28 @@
+{
+  "channel": "Fireship",
+  "metric": "engagement_rate",
+  "formula": "like_count / view_count * 100",
+  "output_precision": 3,
+  "report_sections": [
+    "Overview",
+    "Methodology",
+    "Key Findings",
+    "Monthly Trends",
+    "Conclusions"
+  ],
+  "gsheet_columns": [
+    "Video_ID",
+    "Title",
+    "Published_Date",
+    "View_Count",
+    "Like_Count",
+    "Comment_Count",
+    "Engagement_Rate"
+  ],
+  "thresholds": {
+    "high_engagement_pct": 5.0,
+    "low_engagement_pct": 1.0
+  },
+  "sort_by": "engagement_rate",
+  "sort_order": "descending"
+}

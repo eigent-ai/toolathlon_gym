@@ -1,0 +1,9 @@
+I want to design an employee satisfaction improvement program based on our HR data. Start by pulling employee satisfaction and work-life balance data from our company data warehouse, broken down by department. Look at satisfaction ratings, work-life balance scores, and performance ratings to understand the current state.
+
+Use the terminal to create and run a Python script called satisfaction_analyzer.py that reads hr_satisfaction_data.json (create it first), identifies departments with the lowest satisfaction and work-life balance, calculates key statistics, and outputs satisfaction_analysis.json.
+
+Based on the analysis, create a feedback survey using our forms tool. The survey should be titled "Employee Wellness Check-In" with questions covering overall job satisfaction (1-5 scale radio), work-life balance rating (1-5 scale radio), biggest workplace challenge (text), what would improve your experience (text), and department (radio with all 7 department options).
+
+Create an Excel file called Satisfaction_Program_Report.xlsx with three sheets. The first sheet Department_Analysis should have columns Department, Employee_Count, Avg_Satisfaction (round to 2 decimals), Avg_WorkLife_Balance (round to 2 decimals), Avg_Performance (round to 2 decimals), and Priority_Level ("High" if satisfaction below 3.0, "Medium" if below 3.5, "Low" otherwise), sorted alphabetically by Department. The second sheet Program_Plan should have Initiative, Target_Department, Expected_Impact, and Timeline columns with at least 5 improvement initiatives. The third sheet Metrics should have Metric and Value columns with Overall_Avg_Satisfaction, Overall_Avg_WorkLife, Lowest_Satisfaction_Dept, Highest_Satisfaction_Dept, and Departments_Below_Avg.
+
+Schedule a calendar event "Wellness Program Kickoff" on March 15, 2026 from 2:00 PM to 3:30 PM UTC with a description mentioning the target departments and planned initiatives.

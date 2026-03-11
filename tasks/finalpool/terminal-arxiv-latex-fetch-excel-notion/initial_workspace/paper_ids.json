@@ -1,0 +1,5 @@
+{
+  "target_papers": ["2301.07041", "2203.11171", "2205.01068"],
+  "conference_api": "http://localhost:30412/api/conference.json",
+  "presentation_date": "2026-03-28"
+}
