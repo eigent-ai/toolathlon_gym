@@ -56,6 +56,8 @@ RUN for dir in \
         /opt/local_servers/google-forms-mcp \
         /opt/local_servers/mcp-google-sheets \
         /opt/local_servers/youtube-mcp-server \
+        /opt/local_servers/filesystem \
+        /opt/local_servers/HowToCook-mcp \
         /opt/local_servers/servers; do \
     [ -f "$dir/package.json" ] && \
         echo "=== $dir ===" && cd "$dir" && npm install && (npm run build 2>/dev/null || true) && cd /workspace || true; \
@@ -65,7 +67,6 @@ RUN for dir in \
         /opt/local_servers/arxiv-mcp-server \
         /opt/local_servers/arxiv-latex-mcp \
         /opt/local_servers/yahoo-finance-mcp \
-        /opt/local_servers/HowToCook-mcp \
         /opt/local_servers/emails-mcp \
         /opt/local_servers/mcp-snowflake-server \
         /opt/local_servers/mcp-scholarly \
@@ -76,7 +77,7 @@ RUN for dir in \
         /opt/local_servers/mcp-youtube-transcript \
         /opt/local_servers/cli-mcp-server; do \
     [ -f "$dir/pyproject.toml" ] && \
-        echo "=== $dir ===" && cd "$dir" && uv sync 2>/dev/null || true && cd /workspace || true; \
+        echo "=== $dir ===" && cd "$dir" && uv sync || true && cd /workspace || true; \
 done
 
 # Copy project code
