@@ -227,3 +227,7 @@ If you use Toolathlon-GYM in your research, please cite:
   url       = {https://github.com/eigent-ai/toolathlon_gym}
 }
 ```
+
+## Contact
+
+If you would like to get in touch, please contact info@eigent.ai
