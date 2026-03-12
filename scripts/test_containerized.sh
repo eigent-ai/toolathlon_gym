@@ -125,7 +125,7 @@ fi
 section "Test 5: postgres connectivity from container"
 if (( FAIL == 0 )) || docker image inspect "$IMAGE" >/dev/null 2>&1; then
     pg_result="$(run_in_temp_container "pgconn" \
-        bash -c 'PGPASSWORD=camel psql -h toolathlon_pg -U postgres -d toolathlon -tAc "SELECT 1"' \
+        bash -c 'PGPASSWORD=camel psql -h toolathlon_pg -U eigent -d toolathlon_gym -tAc "SELECT 1"' \
         2>/dev/null || echo "error")"
     if [[ "$pg_result" == "1" ]]; then
         pass "Container can reach toolathlon_pg and query the database"
