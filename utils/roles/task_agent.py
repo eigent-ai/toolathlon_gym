@@ -267,7 +267,8 @@ class TaskAgent:
             self._workspace = workspace
             self._run_preprocess()
 
-            mcp_clients = build_mcp_clients(self.task_config.needed_mcp_servers, workspace)
+            task_src_dir = os.path.abspath(os.path.join("tasks/finalpool", self.task_config.task_dir))
+            mcp_clients = build_mcp_clients(self.task_config.needed_mcp_servers, workspace, task_dir=task_src_dir)
             toolkit = MCPToolkit(clients=mcp_clients)
             await toolkit.connect()
 

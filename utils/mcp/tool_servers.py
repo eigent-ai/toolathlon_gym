@@ -9,22 +9,25 @@ from typing import List
 from camel.utils.mcp_client import MCPClient, ServerConfig
 
 
-def _resolve(value, local_servers_path: str, agent_workspace: str) -> str:
+def _resolve(value, local_servers_path: str, agent_workspace: str, task_dir: str = "") -> str:
     if not isinstance(value, str):
         return value
     return (value
             .replace("${local_servers_paths}", local_servers_path)
-            .replace("${agent_workspace}", agent_workspace))
+            .replace("${agent_workspace}", agent_workspace)
+            .replace("${task_dir}", task_dir))
 
 
 def build_mcp_clients(
     needed_servers: List[str],
     agent_workspace: str,
     config_dir: str = "configs/mcp_servers",
+    task_dir: str = "",
 ) -> List[MCPClient]:
     """Build MCPClient list from yaml configs for the requested servers."""
     local_servers_path = os.environ.get("LOCAL_SERVERS_PATH", os.path.abspath("./local_servers"))
     agent_workspace = os.path.abspath(agent_workspace)
+    task_dir = os.path.abspath(task_dir) if task_dir else ""
 
     clients: List[MCPClient] = []
     config_path = Path(config_dir)
@@ -41,7 +44,7 @@ def build_mcp_clients(
             continue
 
         params = cfg.get("params", {})
-        resolve = lambda v: _resolve(v, local_servers_path, agent_workspace)
+        resolve = lambda v: _resolve(v, local_servers_path, agent_workspace, task_dir)
 
         command = resolve(params.get("command", ""))
         args = [resolve(a) for a in params.get("args", [])]
