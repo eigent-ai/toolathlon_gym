@@ -128,8 +128,10 @@ def _translate_query(query: str):
             return match.group(0)          # already handled above
         return f'sf_data."{d}__{s}__{t}"'
 
+    # Match both quoted and unquoted three-part references:
+    #   HR_ANALYTICS.PUBLIC.EMPLOYEES  or  "HR_ANALYTICS"."PUBLIC"."EMPLOYEES"
     translated = re.sub(
-        r'\b([A-Za-z_]\w*)\.([A-Za-z_]\w*)\.([A-Za-z_]\w*)\b',
+        r'"?([A-Za-z_]\w*)"?\."?([A-Za-z_]\w*)"?\."?([A-Za-z_]\w*)"?',
         _replace_ref,
         q,
     )

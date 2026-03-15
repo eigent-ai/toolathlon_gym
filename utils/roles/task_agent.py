@@ -315,6 +315,8 @@ class TaskAgent:
                 all_tools = mcp_tools[:128 - len(local_tools)] + local_tools
 
 
+            print_color(f"[agent] Total tools: {len(all_tools)} (MCP: {len(mcp_tools)}, local: {len(local_tools)})", "cyan")
+            print_color(f"[agent] Tool names: {[t.get_function_name() for t in all_tools]}", "cyan")
             if self.debug:
                 print_color(f"[agent] MCP tools ({len(mcp_tools)}): {[t.get_function_name() for t in mcp_tools]}", "cyan")
                 print_color(f"[agent] Local tools: {[t.get_function_name() for t in local_tools]}", "cyan")

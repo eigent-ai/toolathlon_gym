@@ -16,19 +16,23 @@ params:
     - "--warehouse"
     - "local"
     - "--user"
-    - "postgres"
+    - "eigent"
     - "--private_key_path"
     - ""
     - "--role"
     - "PUBLIC"
     - "--database"
-    - "toolathlon"
+    - "toolathlon_gym"
     - "--schema"
     - "sf"
-    - "--allowed_databases"
-    - "toolathlon"
     - "--allow_write"
     - "--exclude-json-results"
+  env:
+    PG_USER: eigent
+    PG_PASSWORD: camel
+    PG_HOST: toolathlon_pg
+    PG_PORT: "5432"
+    PG_DATABASE: toolathlon_gym
   cwd: "${agent_workspace}"
 client_session_timeout_seconds: 120
 cache_tools_list: true
