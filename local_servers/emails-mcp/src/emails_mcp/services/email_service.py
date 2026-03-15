@@ -165,7 +165,10 @@ class EmailService:
             )
             
             # If sending was successful and save_to_sent is True, save to Sent folder
-            if success and save_to_sent and message_string:
+            # Skip if using PgSMTPBackend — it already saves to Sent internally
+            from emails_mcp.backends.pg_backend import PgSMTPBackend
+            is_pg = isinstance(self.smtp_backend, PgSMTPBackend)
+            if success and save_to_sent and message_string and not is_pg:
                 try:
                     # Try common sent folder names
                     sent_folders = ["Sent", "INBOX.Sent", "Sent Messages", "Sent Items"]

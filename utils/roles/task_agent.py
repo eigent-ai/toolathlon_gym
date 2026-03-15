@@ -38,9 +38,24 @@ def _fix_schema(schema: dict, strict_openai: bool = False):
     """
     if not isinstance(schema, dict):
         return
+    # Fix type arrays like ["boolean", "null"] → first non-null type (Gemini rejects type arrays)
+    if isinstance(schema.get("type"), list):
+        types = schema["type"]
+        non_null = [t for t in types if t != "null"]
+        schema["type"] = non_null[0] if non_null else "string"
+    # Flatten anyOf: [{type: X}, {type: null}] → {type: X} (Gemini rejects anyOf with null)
+    if "anyOf" in schema and not any(k in schema for k in ("type", "$ref")):
+        non_null_variants = [s for s in schema["anyOf"] if s.get("type") != "null" and s != {"type": "null"}]
+        if len(non_null_variants) == 1:
+            winner = non_null_variants[0]
+            schema.pop("anyOf")
+            schema.update(winner)
     # Fix enum on non-string fields
     if "enum" in schema and schema.get("type", "string") != "string":
         del schema["enum"]
+    # Remove additionalProperties: true from object types (Gemini rejects it)
+    if schema.get("type") == "object" and schema.get("additionalProperties") is True:
+        del schema["additionalProperties"]
     # Fix array items missing type
     if schema.get("type") == "array" and "items" in schema:
         items = schema["items"]
@@ -268,8 +283,24 @@ class TaskAgent:
             self._run_preprocess()
 
             task_src_dir = os.path.abspath(os.path.join("tasks/finalpool", self.task_config.task_dir))
-            mcp_clients = build_mcp_clients(self.task_config.needed_mcp_servers, workspace, task_dir=task_src_dir)
-            toolkit = MCPToolkit(clients=mcp_clients)
+            # Support HTTP MCPs (e.g., Harbor sidecar containers) via env var
+            # Format: MCP_HTTP_URLS=name1=http://host:port/mcp,name2=http://...
+            http_mcp_urls = None
+            http_mcp_timeout = float(os.environ.get("MCP_HTTP_TIMEOUT", "600"))
+            _raw_urls = os.environ.get("MCP_HTTP_URLS", "")
+            if _raw_urls:
+                http_mcp_urls = {}
+                for item in _raw_urls.split(","):
+                    if "=" in item:
+                        k, v = item.split("=", 1)
+                        http_mcp_urls[k.strip()] = v.strip()
+            mcp_clients = build_mcp_clients(
+                self.task_config.needed_mcp_servers, workspace,
+                task_dir=task_src_dir,
+                http_mcp_urls=http_mcp_urls,
+                http_mcp_timeout=http_mcp_timeout,
+            )
+            toolkit = MCPToolkit(clients=mcp_clients, timeout=http_mcp_timeout)
             await toolkit.connect()
 
             mcp_tools = toolkit.get_tools()
@@ -282,6 +313,7 @@ class TaskAgent:
                     and len(all_tools) > 128):
                 print_color(f"[agent] OpenAI tool limit: {len(all_tools)} tools, trimming to 128.", "yellow")
                 all_tools = mcp_tools[:128 - len(local_tools)] + local_tools
+
 
             if self.debug:
                 print_color(f"[agent] MCP tools ({len(mcp_tools)}): {[t.get_function_name() for t in mcp_tools]}", "cyan")
@@ -304,6 +336,7 @@ class TaskAgent:
                 max_iteration=self.max_steps,
                 step_timeout=600,
                 tool_execution_timeout=120,
+                summarize_threshold=None,  # disable context summarization — stop on token limit
             )
 
             task_str = self.task_config.task_str

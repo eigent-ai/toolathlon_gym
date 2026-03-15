@@ -173,11 +173,7 @@ function filterTicketsInfo(
 }
 
 function checkDate(date: string): boolean {
-    const nowInShanghai = toZonedTime(new Date(), 'Asia/Shanghai');
-    nowInShanghai.setHours(0, 0, 0, 0);
-    const inputDate = toZonedTime(new Date(date), 'Asia/Shanghai');
-    inputDate.setHours(0, 0, 0, 0);
-    return inputDate >= nowInShanghai;
+    return true; // date check disabled — mock data uses historical dates
 }
 
 // ---------------------------------------------------------------------------
