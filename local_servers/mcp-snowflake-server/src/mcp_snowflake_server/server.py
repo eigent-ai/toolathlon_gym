@@ -44,7 +44,8 @@ def handle_tool_errors(func: Callable) -> Callable:
 def check_database_access(database_name: str, allowed_databases: list[str] | None = None) -> None:
     """Check if database access is allowed based on allowed_databases restriction"""
     if allowed_databases is not None:
-        if database_name not in allowed_databases:
+        allowed_lower = [db.lower() for db in allowed_databases]
+        if database_name.lower() not in allowed_lower:
             raise ValueError(f"Access denied: Database '{database_name}' is not in the allowed databases list: {allowed_databases}")
 
 

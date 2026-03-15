@@ -67,7 +67,7 @@ async function loadRecipeData() {
   try {
     recipes = await fetchRecipes();
     categories = getAllCategories(recipes);
-    console.log(`📚 已加载 ${recipes.length} 个菜谱`);
+    console.error(`📚 已加载 ${recipes.length} 个菜谱`);
   } catch (error) {
     console.error('加载菜谱数据失败:', error);
     recipes = [];
@@ -171,14 +171,14 @@ async function main() {
     });
 
     httpServer.listen(PORT, () => {
-      console.log(`🚀 HowToCook MCP ${TRANSPORT_TYPE.toUpperCase()} 服务器启动成功`);
+      console.error(`🚀 HowToCook MCP ${TRANSPORT_TYPE.toUpperCase()} 服务器启动成功`);
       if(TRANSPORT_TYPE === "http"){
-        console.log(`🔗 MCP 端点: http://localhost:${PORT}/mcp`);
+        console.error(`🔗 MCP 端点: http://localhost:${PORT}/mcp`);
       }else if(TRANSPORT_TYPE === "sse"){
-        console.log(`🔗 MCP 端点: http://localhost:${PORT}/sse`);
+        console.error(`🔗 MCP 端点: http://localhost:${PORT}/sse`);
       }
-      console.log(`💡 健康检查: http://localhost:${PORT}/health`);
-      console.log(`ℹ️  服务器信息: http://localhost:${PORT}/info`);
+      console.error(`💡 健康检查: http://localhost:${PORT}/health`);
+      console.error(`ℹ️  服务器信息: http://localhost:${PORT}/info`);
     });
   } else {
     // stdio 模式
@@ -186,7 +186,7 @@ async function main() {
     const transport = new StdioServerTransport();
     try {
       await server.connect(transport);
-      console.log('HowToCook MCP STDIO 服务器启动成功');
+      console.error('HowToCook MCP STDIO 服务器启动成功');
     } catch (error) {
       console.error('服务器启动失败:', error);
       process.exit(1);
@@ -196,12 +196,12 @@ async function main() {
 
 // 优雅关闭
 process.on('SIGINT', async () => {
-  console.log('\n正在关闭服务器...');
+  console.error('\n正在关闭服务器...');
   process.exit(0);
 });
 
 process.on('SIGTERM', async () => {
-  console.log('\n收到终止信号，正在关闭服务器...');
+  console.error('\n收到终止信号，正在关闭服务器...');
   process.exit(0);
 });
 
