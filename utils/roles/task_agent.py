@@ -330,6 +330,8 @@ class TaskAgent:
             sys_msg = default_sys_msg
             if self.task_config.system_prompts and self.task_config.system_prompts.agent:
                 sys_msg = self.task_config.system_prompts.agent
+                # Fix tool name mismatch: original Toolathlon uses "local-" prefix
+                sys_msg = sys_msg.replace("local-claim_done", "claim_done")
 
             agent = ChatAgent(
                 system_message=sys_msg,
