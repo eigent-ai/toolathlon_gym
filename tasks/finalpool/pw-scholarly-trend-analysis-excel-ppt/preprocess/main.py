@@ -4,7 +4,7 @@ import argparse, json, os, sys, shutil, tarfile, subprocess, time
 from datetime import datetime, timedelta
 
 DB_CONFIG = {
-    "host": os.environ.get("PGHOST", "localhost"), "port": 5432,
+    "host": os.environ.get("PGHOST", "localhost"), "port": int(os.environ.get("PGPORT", "5432")),
     "dbname": os.environ.get("PGDATABASE", "toolathlon_gym"),
     "user": "eigent", "password": "camel"
 }
@@ -31,9 +31,9 @@ def inject_data(launch_time):
     launch_dt = datetime.strptime(launch_time, "%Y-%m-%d %H:%M:%S")
     
     cur.execute("""INSERT INTO scholarly.arxiv_papers (id, title, authors, abstract, categories, primary_category, pdf_url, published) VALUES
-        ('2301.01234', 'Scaling Laws for Large Language Models', '[{{"name": "J. Kaplan"}}]'::jsonb,
+        ('2301.01234', 'Scaling Laws for Large Language Models', '[{"name": "J. Kaplan"}]'::jsonb,
          'We study empirical scaling laws.', '["cs.CL"]'::jsonb, 'cs.CL', 'https://arxiv.org/pdf/2301.01234', '2023-01-15'),
-        ('2302.05678', 'Advances in Vision Transformers', '[{{"name": "A. Dosovitskiy"}}]'::jsonb,
+        ('2302.05678', 'Advances in Vision Transformers', '[{"name": "A. Dosovitskiy"}]'::jsonb,
          'We survey vision transformers.', '["cs.CV"]'::jsonb, 'cs.CV', 'https://arxiv.org/pdf/2302.05678', '2023-02-20')""")
     conn.commit()
     cur.close()

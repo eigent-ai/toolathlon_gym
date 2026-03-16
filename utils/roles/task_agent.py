@@ -173,10 +173,15 @@ class TaskAgent:
         init = self.task_config.initialization
         if init and init.process_command:
             cmd = init.process_command
-            # process_command may be a uv run -m ... command or a file path
+            # Append --agent_workspace and --launch_time if the preprocess script expects them
+            cmd += f" --agent_workspace {self.task_config.agent_workspace}"
+            # Strip weekday name (e.g. "Sunday") from launch_time for preprocess compatibility
+            lt = self.task_config.launch_time or ""
+            lt_clean = " ".join(lt.split()[:2])  # keep only "YYYY-MM-DD HH:MM:SS"
+            cmd += f" --launch_time \"{lt_clean}\""
             if True:
                 print_color("[preprocess] running...", "yellow")
-                r = subprocess.run(cmd.split(), capture_output=not self.debug, text=True)
+                r = subprocess.run(cmd, shell=True, capture_output=not self.debug, text=True)
                 if r.returncode != 0:
                     print_color(f"[preprocess] failed: {(r.stderr or '')[:300]}", "red")
                 else:

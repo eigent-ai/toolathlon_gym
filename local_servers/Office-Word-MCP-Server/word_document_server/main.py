@@ -6,7 +6,15 @@ Supports multiple transports: stdio, sse, and streamable-http using standalone F
 
 import os
 import sys
+import builtins
 from dotenv import load_dotenv
+
+# Redirect print to stderr to avoid polluting MCP stdio protocol
+_original_print = builtins.print
+def _stderr_print(*args, **kwargs):
+    kwargs.setdefault('file', sys.stderr)
+    _original_print(*args, **kwargs)
+builtins.print = _stderr_print
 
 # Load environment variables from .env file
 print("Loading configuration from .env file...")

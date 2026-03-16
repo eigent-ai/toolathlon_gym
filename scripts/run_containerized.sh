@@ -209,6 +209,21 @@ run_task() {
     log "Running task: $TASK (max_steps=$MAX_STEPS) ..."
     log "Output directory: $OUTPUT_DIR"
 
+    # Fix sent_log foreign key (init.sql.gz lacks ON DELETE CASCADE)
+    docker exec "$CONTAINER_NAME" \
+        /opt/venv/bin/python3 -c "
+import psycopg2, os
+conn = psycopg2.connect(host=os.environ['PGHOST'], database=os.environ['PGDATABASE'],
+                        user=os.environ['PGUSER'], password=os.environ['PGPASSWORD'])
+conn.autocommit = True
+cur = conn.cursor()
+try:
+    cur.execute('ALTER TABLE email.sent_log DROP CONSTRAINT sent_log_message_id_fkey')
+    cur.execute('ALTER TABLE email.sent_log ADD CONSTRAINT sent_log_message_id_fkey FOREIGN KEY (message_id) REFERENCES email.messages(id) ON DELETE CASCADE')
+except: pass
+conn.close()
+" 2>/dev/null || true
+
     # main.py picks up MODEL_* env vars automatically; the eval_config inside
     # the image supplies all other defaults (model, provider, dump_path).
     docker exec "$CONTAINER_NAME" \

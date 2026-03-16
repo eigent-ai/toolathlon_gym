@@ -1,10 +1,6 @@
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import {
-    CallToolRequestSchema,
-    ListToolsRequestSchema,
-} from '@modelcontextprotocol/sdk/types.js';
-
+import { CallToolRequestSchema, ListToolsRequestSchema, } from '@modelcontextprotocol/sdk/types.js';
 import { ProductService } from './services/products.js';
 import { OrderService } from './services/orders.js';
 import { CustomerService } from './services/customers.js';
@@ -13,20 +9,15 @@ import { ShippingService } from './services/shipping.js';
 import { TaxService } from './services/tax.js';
 import { ReportService } from './services/reports.js';
 import { SystemService } from './services/system.js';
-
 export async function startMcpServer() {
-    const server = new Server(
-        {
-            name: 'woocommerce-mcp-server',
-            version: '1.0.6',
+    const server = new Server({
+        name: 'woocommerce-mcp-server',
+        version: '1.0.6',
+    }, {
+        capabilities: {
+            tools: {},
         },
-        {
-            capabilities: {
-                tools: {},
-            },
-        }
-    );
-
+    });
     // Initialize services
     const productService = new ProductService();
     const orderService = new OrderService();
@@ -36,10 +27,8 @@ export async function startMcpServer() {
     const taxService = new TaxService();
     const reportService = new ReportService();
     const systemService = new SystemService();
-
     // Store tools count for logging
     let toolsCount = 0;
-
     server.setRequestHandler(ListToolsRequestSchema, async () => {
         const tools = [
             // Product tools
@@ -273,7 +262,6 @@ export async function startMcpServer() {
                     }
                 }
             },
-
             // Order tools
             {
                 name: 'woo_orders_list',
@@ -363,8 +351,8 @@ export async function startMcpServer() {
                     type: 'object',
                     properties: {
                         orderId: { type: 'integer', description: 'Order ID' },
-                        orderData: { 
-                            type: 'object', 
+                        orderData: {
+                            type: 'object',
                             description: 'Order data to update',
                             additionalProperties: true
                         }
@@ -463,7 +451,6 @@ export async function startMcpServer() {
                     required: ['orderId']
                 }
             },
-
             // Customer tools
             {
                 name: 'woo_customers_list',
@@ -550,7 +537,6 @@ export async function startMcpServer() {
                     required: ['customerId', 'customerData']
                 }
             },
-
             // Coupon tools
             {
                 name: 'woo_coupons_list',
@@ -643,7 +629,6 @@ export async function startMcpServer() {
                     required: ['couponId']
                 }
             },
-
             // Report tools
             {
                 name: 'woo_reports_sales',
@@ -731,7 +716,6 @@ export async function startMcpServer() {
                     }
                 }
             },
-
             // Shipping tools
             {
                 name: 'woo_shipping_zones_list',
@@ -797,8 +781,8 @@ export async function startMcpServer() {
                         zoneId: { type: 'integer', description: 'Zone ID' },
                         methodId: { type: 'string', description: 'Method ID' },
                         enabled: { type: 'boolean', description: 'Is enabled', default: true },
-                        settings: { 
-                            type: 'object', 
+                        settings: {
+                            type: 'object',
                             description: 'Method settings',
                             additionalProperties: true
                         }
@@ -806,7 +790,6 @@ export async function startMcpServer() {
                     required: ['zoneId', 'methodId']
                 }
             },
-
             // Tax tools
             {
                 name: 'woo_tax_rates_list',
@@ -857,7 +840,6 @@ export async function startMcpServer() {
                     properties: {}
                 }
             },
-
             // System tools
             {
                 name: 'woo_system_status',
@@ -881,8 +863,8 @@ export async function startMcpServer() {
                 inputSchema: {
                     type: 'object',
                     properties: {
-                        toolId: { 
-                            type: 'string', 
+                        toolId: {
+                            type: 'string',
                             description: 'Tool ID',
                             enum: ['clear_transients', 'clear_expired_transients', 'clear_orphaned_variations', 'add_order_indexes', 'recount_terms', 'reset_roles', 'clear_sessions', 'clear_template_cache', 'clear_system_status_theme_info_cache']
                         }
@@ -904,8 +886,8 @@ export async function startMcpServer() {
                 inputSchema: {
                     type: 'object',
                     properties: {
-                        groupId: { 
-                            type: 'string', 
+                        groupId: {
+                            type: 'string',
                             description: 'Settings group ID',
                             enum: ['general', 'products', 'tax', 'shipping', 'checkout', 'account', 'email', 'integration', 'advanced', 'rest-api']
                         }
@@ -942,8 +924,8 @@ export async function startMcpServer() {
                         enabled: { type: 'boolean', description: 'Is enabled' },
                         title: { type: 'string', description: 'Gateway title' },
                         description: { type: 'string', description: 'Gateway description' },
-                        settings: { 
-                            type: 'object', 
+                        settings: {
+                            type: 'object',
                             description: 'Gateway settings',
                             additionalProperties: true
                         }
@@ -970,8 +952,8 @@ export async function startMcpServer() {
                     type: 'object',
                     properties: {
                         name: { type: 'string', description: 'Webhook name' },
-                        topic: { 
-                            type: 'string', 
+                        topic: {
+                            type: 'string',
                             description: 'Webhook topic',
                             enum: ['coupon.created', 'coupon.updated', 'coupon.deleted', 'customer.created', 'customer.updated', 'customer.deleted', 'order.created', 'order.updated', 'order.deleted', 'product.created', 'product.updated', 'product.deleted']
                         },
@@ -983,82 +965,76 @@ export async function startMcpServer() {
                 }
             }
         ];
-        
         toolsCount = tools.length;
-        
         return { tools };
     });
-
     server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const { name, arguments: args = {} } = request.params;
-
         try {
-            let result: any;
-
+            let result;
             switch (name) {
                 // Product tools
                 case 'woo_products_list':
-                    result = await productService.listProducts(args as any);
+                    result = await productService.listProducts(args);
                     break;
                 case 'woo_products_get':
-                    result = await productService.getProduct(args as any);
+                    result = await productService.getProduct(args);
                     break;
                 case 'woo_products_create':
-                    result = await productService.createProduct(args as any);
+                    result = await productService.createProduct(args);
                     break;
                 case 'woo_products_update':
-                    result = await productService.updateProduct(args as any);
+                    result = await productService.updateProduct(args);
                     break;
                 case 'woo_products_delete':
-                    result = await productService.deleteProduct(args as any);
+                    result = await productService.deleteProduct(args);
                     break;
                 case 'woo_products_batch_update':
-                    result = await productService.batchUpdateProducts(args as any);
+                    result = await productService.batchUpdateProducts(args);
                     break;
                 case 'woo_products_variations_list':
-                    result = await productService.listVariations(args as any);
+                    result = await productService.listVariations(args);
                     break;
                 case 'woo_products_categories_list':
-                    result = await productService.listCategories(args as any);
+                    result = await productService.listCategories(args);
                     break;
                 case 'woo_products_categories_create':
-                    result = await productService.createCategory((args as any).categoryData);
+                    result = await productService.createCategory(args.categoryData);
                     break;
                 case 'woo_products_tags_list':
-                    result = await productService.listTags(args as any);
+                    result = await productService.listTags(args);
                     break;
                 case 'woo_products_reviews_list':
-                    result = await productService.listReviews(args as any);
+                    result = await productService.listReviews(args);
                     break;
-
                 // Order tools
                 case 'woo_orders_list':
-                    result = await orderService.listOrders(args as any);
+                    result = await orderService.listOrders(args);
                     break;
                 case 'woo_orders_get':
-                    result = await orderService.getOrder(args as any);
+                    result = await orderService.getOrder(args);
                     break;
                 case 'woo_orders_create':
-                    result = await orderService.createOrder(args as any);
+                    result = await orderService.createOrder(args);
                     break;
                 case 'woo_orders_update':
-                    result = await orderService.updateOrder(args as any);
+                    result = await orderService.updateOrder(args);
                     break;
                 case 'woo_orders_delete':
-                    result = await orderService.deleteOrder(args as any);
+                    result = await orderService.deleteOrder(args);
                     break;
                 case 'woo_orders_batch_update':
-                    result = await orderService.batchUpdateOrders(args as any);
+                    result = await orderService.batchUpdateOrders(args);
                     break;
                 case 'woo_orders_notes_create':
-                    const noteArgs = args as any;
+                    const noteArgs = args;
                     result = await orderService.createOrderNote(noteArgs.orderId, {
                         note: noteArgs.note,
                         customer_note: noteArgs.customerNote || false
                     });
                     break;
                 case 'woo_orders_refunds_create':
-                    const refundArgs = args as any;
+                    const refundArgs = args;
                     result = await orderService.createRefund(refundArgs.orderId, {
                         amount: refundArgs.amount,
                         reason: refundArgs.reason,
@@ -1068,80 +1044,76 @@ export async function startMcpServer() {
                         api_refund: refundArgs.refundPayment || false
                     });
                     break;
-
                 // Customer tools
                 case 'woo_customers_list':
-                    result = await customerService.listCustomers(args as any);
+                    result = await customerService.listCustomers(args);
                     break;
                 case 'woo_customers_get':
-                    result = await customerService.getCustomer(args as any);
+                    result = await customerService.getCustomer(args);
                     break;
                 case 'woo_customers_create':
-                    result = await customerService.createCustomer(args as any);
+                    result = await customerService.createCustomer(args);
                     break;
                 case 'woo_customers_update':
-                    result = await customerService.updateCustomer(args as any);
+                    result = await customerService.updateCustomer(args);
                     break;
-
                 // Coupon tools
                 case 'woo_coupons_list':
-                    result = await couponService.listCoupons(args as any);
+                    result = await couponService.listCoupons(args);
                     break;
                 case 'woo_coupons_get':
-                    result = await couponService.getCoupon(args as any);
+                    result = await couponService.getCoupon(args);
                     break;
                 case 'woo_coupons_create':
-                    result = await couponService.createCoupon(args as any);
+                    result = await couponService.createCoupon(args);
                     break;
                 case 'woo_coupons_update':
-                    result = await couponService.updateCoupon(args as any);
+                    result = await couponService.updateCoupon(args);
                     break;
                 case 'woo_coupons_delete':
-                    result = await couponService.deleteCoupon(args as any);
+                    result = await couponService.deleteCoupon(args);
                     break;
-
                 // Report tools
                 case 'woo_reports_sales':
-                    result = await reportService.getSalesReport(args as any);
+                    result = await reportService.getSalesReport(args);
                     break;
                 case 'woo_reports_top_sellers':
-                    result = await reportService.getTopSellersReport(args as any);
+                    result = await reportService.getTopSellersReport(args);
                     break;
                 case 'woo_reports_customers':
-                    result = await reportService.getCustomersReport(args as any);
+                    result = await reportService.getCustomersReport(args);
                     break;
                 case 'woo_reports_orders':
-                    result = await reportService.getOrdersReport(args as any);
+                    result = await reportService.getOrdersReport(args);
                     break;
                 case 'woo_reports_products':
-                    result = await reportService.getProductsReport(args as any);
+                    result = await reportService.getProductsReport(args);
                     break;
                 case 'woo_reports_stock':
-                    result = await reportService.getStockReport(args as any);
+                    result = await reportService.getStockReport(args);
                     break;
                 case 'woo_reports_low_stock':
-                    result = await reportService.getLowStockReport(args as any);
+                    result = await reportService.getLowStockReport(args);
                     break;
-
                 // Shipping tools
                 case 'woo_shipping_zones_list':
                     result = await shippingService.listShippingZones();
                     break;
                 case 'woo_shipping_zones_get':
-                    result = await shippingService.getShippingZone(args as any);
+                    result = await shippingService.getShippingZone(args);
                     break;
                 case 'woo_shipping_zones_create':
-                    result = await shippingService.createShippingZone(args as any);
+                    result = await shippingService.createShippingZone(args);
                     break;
                 case 'woo_shipping_zones_update':
-                    const zoneUpdateArgs = args as any;
+                    const zoneUpdateArgs = args;
                     result = await shippingService.updateShippingZone(zoneUpdateArgs.zoneId, zoneUpdateArgs);
                     break;
                 case 'woo_shipping_zone_methods_list':
-                    result = await shippingService.listShippingZoneMethods(args as any);
+                    result = await shippingService.listShippingZoneMethods(args);
                     break;
                 case 'woo_shipping_zone_methods_create':
-                    const methodCreateArgs = args as any;
+                    const methodCreateArgs = args;
                     result = await shippingService.createShippingZoneMethod({
                         zoneId: methodCreateArgs.zoneId,
                         methodData: {
@@ -1151,21 +1123,19 @@ export async function startMcpServer() {
                         }
                     });
                     break;
-
                 // Tax tools
                 case 'woo_tax_rates_list':
-                    result = await taxService.listTaxRates(args as any);
+                    result = await taxService.listTaxRates(args);
                     break;
                 case 'woo_tax_rates_get':
-                    result = await taxService.getTaxRate(args as any);
+                    result = await taxService.getTaxRate(args);
                     break;
                 case 'woo_tax_rates_create':
-                    result = await taxService.createTaxRate(args as any);
+                    result = await taxService.createTaxRate(args);
                     break;
                 case 'woo_tax_classes_list':
                     result = await taxService.listTaxClasses();
                     break;
-
                 // System tools
                 case 'woo_system_status':
                     result = await systemService.getSystemStatus();
@@ -1174,63 +1144,60 @@ export async function startMcpServer() {
                     result = await systemService.listSystemStatusTools();
                     break;
                 case 'woo_system_tools_run':
-                    const toolArgs = args as any;
+                    const toolArgs = args;
                     result = await systemService.runSystemStatusTool(toolArgs.toolId);
                     break;
                 case 'woo_settings_list':
                     result = await systemService.listSettings();
                     break;
                 case 'woo_settings_get':
-                    const settingsArgs = args as any;
+                    const settingsArgs = args;
                     result = await systemService.getSettingsGroup(settingsArgs.groupId);
                     break;
                 case 'woo_payment_gateways_list':
                     result = await systemService.listPaymentGateways();
                     break;
-                    case 'woo_payment_gateways_get':
-                        const gatewayGetArgs = args as any;
-                        result = await systemService.getPaymentGateway(gatewayGetArgs.gatewayId);
-                        break;
-                    case 'woo_payment_gateways_update':
-                        const gatewayUpdateArgs = args as any;
-                        result = await systemService.updatePaymentGateway(gatewayUpdateArgs.gatewayId, gatewayUpdateArgs);
-                        break;
-                    case 'woo_webhooks_list':
-                        result = await systemService.listWebhooks(args as any);
-                        break;
-                    case 'woo_webhooks_create':
-                        result = await systemService.createWebhook(args as any);
-                        break;
-    
-                    default:
-                        throw new Error(`Unknown tool: ${name}`);
-                }
-    
-                return {
-                    content: [{
+                case 'woo_payment_gateways_get':
+                    const gatewayGetArgs = args;
+                    result = await systemService.getPaymentGateway(gatewayGetArgs.gatewayId);
+                    break;
+                case 'woo_payment_gateways_update':
+                    const gatewayUpdateArgs = args;
+                    result = await systemService.updatePaymentGateway(gatewayUpdateArgs.gatewayId, gatewayUpdateArgs);
+                    break;
+                case 'woo_webhooks_list':
+                    result = await systemService.listWebhooks(args);
+                    break;
+                case 'woo_webhooks_create':
+                    result = await systemService.createWebhook(args);
+                    break;
+                default:
+                    throw new Error(`Unknown tool: ${name}`);
+            }
+            return {
+                content: [{
                         type: 'text',
                         text: JSON.stringify(result, null, 2).replace(/\\/g, '')
                     }]
-                };
-            } catch (error) {
-                return {
-                    content: [{
+            };
+        }
+        catch (error) {
+            return {
+                content: [{
                         type: 'text',
                         text: `Error: ${error instanceof Error ? error.message : String(error)}`
                     }],
-                    isError: true
-                };
-            }
-        });
-    
-        // Create transport and connect
-        const transport = new StdioServerTransport();
-        await server.connect(transport);
-        
-        // Log the server info
-        console.error(`WooCommerce MCP Server v1.0.6 started successfully`);
-        console.error(`Connected to: ${process.env.WORDPRESS_SITE_URL}`);
-        console.error(`Available tools: ${toolsCount}`);
-        
-        return server;
-    }
+                isError: true
+            };
+        }
+    });
+    // Create transport and connect
+    const transport = new StdioServerTransport();
+    await server.connect(transport);
+    // Log the server info
+    console.error(`WooCommerce MCP Server v1.0.6 started successfully`);
+    console.error(`Connected to: ${process.env.WORDPRESS_SITE_URL}`);
+    console.error(`Available tools: ${toolsCount}`);
+    return server;
+}
+//# sourceMappingURL=server.js.map
