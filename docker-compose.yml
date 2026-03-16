@@ -23,6 +23,7 @@ services:
   # For isolated per-task runs use scripts/run_containerized.sh instead.
   toolathlon:
     build: .
+    image: toolathlon-pack:latest
     container_name: toolathlon_agent
     depends_on:
       postgres:
