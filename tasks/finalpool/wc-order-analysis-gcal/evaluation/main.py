@@ -26,26 +26,18 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
-        d = (detail[:200] + "...") if len(detail) > 200 else detail
+        FAIL_COUNT += 1
+        d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
 
@@ -199,7 +191,7 @@ def check_calendar():
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection for gcal check", False, str(e), db=True)
+        check("DB connection for gcal check", False, str(e))
         return
 
     cur.execute("SELECT summary, description, start_datetime, end_datetime FROM gcal.events")
@@ -207,31 +199,31 @@ def check_calendar():
     conn.close()
 
     check("At least one calendar event exists", len(events) > 0,
-          f"Found {len(events)} events", db=True)
+          f"Found {len(events)} events")
 
     found_meeting = False
     for ev in events:
         summary = str(ev[0] or "").strip().lower()
         if "restock" in summary and "planning" in summary:
             found_meeting = True
-            check("Event title contains 'Restock Planning Meeting'", True, db=True)
+            check("Event title contains 'Restock Planning Meeting'", True)
 
             # Check date is 2026-03-10
             if ev[2]:
                 dt_str = str(ev[2])
                 check("Event is on 2026-03-10",
                       "2026-03-10" in dt_str,
-                      f"Got start: {dt_str}", db=True)
+                      f"Got start: {dt_str}")
 
             # Check description mentions low stock products
             desc = str(ev[3] or "")
             check("Event description is not empty", len(desc) > 10,
-                  f"Description length: {len(desc)}", db=True)
+                  f"Description length: {len(desc)}")
             break
 
     if not found_meeting:
         check("Restock Planning Meeting event found", False,
-              f"Events found: {[e[0] for e in events]}", db=True)
+              f"Events found: {[e[0] for e in events]}")
 
 
 def check_excel_gt(agent_workspace, groundtruth_workspace):
@@ -271,31 +263,28 @@ def run_evaluation(agent_workspace, groundtruth_workspace, launch_time, res_log_
 
     check_calendar()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if res_log_file:
         result = {
             "passed": total_pass,
             "failed": total_fail,
-            "file_passed": FILE_PASS,
-            "file_failed": FILE_FAIL,
-            "db_passed": DB_PASS,
-            "db_failed": DB_FAIL,
-            "success": file_ok,
+            "file_passed": PASS_COUNT,
+            "file_failed": FAIL_COUNT,
+            "db_passed": PASS_COUNT,
+            "db_failed": FAIL_COUNT,
+            "success": all_ok,
         }
         with open(res_log_file, "w") as f:
             json.dump(result, f, indent=2)
 
-    return file_ok, f"Passed: {total_pass}, Failed: {total_fail}"
+    return all_ok, f"Passed: {total_pass}, Failed: {total_fail}"
 
 
 def main():

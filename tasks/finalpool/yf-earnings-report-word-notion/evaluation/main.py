@@ -9,25 +9,17 @@ import psycopg2
 
 DB = dict(host=os.environ.get("PGHOST", "localhost"), port=5432, dbname="toolathlon_gym", user="eigent", password="camel")
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
+        FAIL_COUNT += 1
         d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
@@ -144,8 +136,8 @@ def check_word_doc(agent_workspace, groundtruth_workspace):
 
 
 def check_notion():
-    """Check Notion page (non-blocking)."""
-    print("\n=== Checking Notion (non-blocking) ===")
+    """Check Notion page ."""
+    print("\n=== Checking Notion  ===")
     conn = psycopg2.connect(**DB)
     cur = conn.cursor()
     cur.execute("SELECT id, properties FROM notion.pages")
@@ -156,7 +148,7 @@ def check_notion():
     conn.close()
 
     check("At least 1 Notion page created", len(pages) >= 1,
-          f"Found {len(pages)}", db=True)
+          f"Found {len(pages)}")
 
     if pages:
         # Check page title
@@ -166,16 +158,15 @@ def check_notion():
             if "earnings" in props_str or "insights" in props_str:
                 found_earnings = True
                 break
-        check("Notion page mentions earnings or insights", found_earnings,
-              db=True)
+        check("Notion page mentions earnings or insights", found_earnings)
 
     check("At least 1 Notion block created", len(blocks) >= 1,
-          f"Found {len(blocks)}", db=True)
+          f"Found {len(blocks)}")
 
     if blocks:
         block_text = " ".join(str(b[2] or "") for b in blocks).lower()
         has_revenue = "revenue" in block_text or "googl" in block_text or "amzn" in block_text
-        check("Notion blocks mention revenue or companies", has_revenue, db=True)
+        check("Notion blocks mention revenue or companies", has_revenue)
 
 
 def main():
@@ -196,22 +187,19 @@ def main():
     check_word_doc(args.agent_workspace, gt_dir)
     check_notion()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
         with open(args.res_log_file, "w") as f:
-            json.dump({"passed": total_pass, "failed": total_fail, "success": file_ok}, f, indent=2)
+            json.dump({"passed": total_pass, "failed": total_fail, "success": all_ok}, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

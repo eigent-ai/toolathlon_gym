@@ -21,25 +21,17 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
+        FAIL_COUNT += 1
         d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
@@ -184,7 +176,7 @@ def check_email():
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection for email check", False, str(e), db=True)
+        check("DB connection for email check", False, str(e))
         return
 
     cur.execute("""
@@ -205,7 +197,7 @@ def check_email():
             break
 
     check(f"Email sent to {target}", found is not None,
-          f"Found {len(all_emails)} total emails", db=True)
+          f"Found {len(all_emails)} total emails")
 
     if found:
         subj, from_addr, to_addr, body = found
@@ -214,15 +206,15 @@ def check_email():
 
         check("Email subject mentions category/performance/report",
               "category" in subj_lower or "performance" in subj_lower or "report" in subj_lower,
-              f"Subject: {(subj or '')[:100]}", db=True)
+              f"Subject: {(subj or '')[:100]}")
 
         check("Email body mentions highest revenue category 'Headphones'",
               "headphones" in body_lower,
-              "Headphones not found in body", db=True)
+              "Headphones not found in body")
 
         check("Email body mentions lowest category 'TV & Home Theater' or similar",
               "tv" in body_lower and "theater" in body_lower or "tv & home theater" in body_lower,
-              "TV & Home Theater not found in body", db=True)
+              "TV & Home Theater not found in body")
 
 
 def main():
@@ -239,22 +231,19 @@ def main():
     check_excel(args.agent_workspace, gt_dir)
     check_email()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
         with open(args.res_log_file, "w") as f:
-            json.dump({"passed": total_pass, "failed": total_fail, "success": file_ok}, f, indent=2)
+            json.dump({"passed": total_pass, "failed": total_fail, "success": all_ok}, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

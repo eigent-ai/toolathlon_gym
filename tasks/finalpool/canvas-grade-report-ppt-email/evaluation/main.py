@@ -3,35 +3,27 @@ Evaluation for canvas-grade-report-ppt-email task.
 
 Checks:
 1. PowerPoint Grade_Report.pptx with correct grade data
-2. Email sent to instructors@university.edu (non-blocking DB check)
+2. Email sent to instructors@university.edu ( DB check)
 """
 import argparse
 import sys
 import os
 from pathlib import Path
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 COURSE_ID = 1
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
-        d = detail[:300] if len(detail) > 300 else detail
+        FAIL_COUNT += 1
+        d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
 
@@ -136,7 +128,7 @@ def check_pptx(workspace, course_name, grade_dist, summary):
 
 
 def check_email(course_name, summary):
-    """Check email was sent (non-blocking DB check)."""
+    """Check email was sent ( DB check)."""
     import psycopg2
 
     print("\n=== Checking Email ===")
@@ -147,7 +139,7 @@ def check_email(course_name, summary):
         )
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection", False, str(e), db=True)
+        check("DB connection", False, str(e))
         return
 
     cur.execute("""
@@ -167,7 +159,7 @@ def check_email(course_name, summary):
             break
 
     check(f"Email sent to {target}", found is not None,
-          f"Found {len(all_emails)} total emails", db=True)
+          f"Found {len(all_emails)} total emails")
 
     if found:
         subj, _, _, body = found
@@ -176,17 +168,17 @@ def check_email(course_name, summary):
 
         check("Email subject mentions grade/analytics",
               "grade" in subj_lower or "analytics" in subj_lower or "analysis" in subj_lower,
-              f"Subject: {(subj or '')[:100]}", db=True)
+              f"Subject: {(subj or '')[:100]}")
 
         check("Email body mentions overall avg score",
               str(summary[2]) in (body or ""),
-              f"Expected {summary[2]} in body", db=True)
+              f"Expected {summary[2]} in body")
 
         total_graded_count = summary[1]
         total_enrolled = summary[0]
         check("Email body mentions total enrolled",
               str(total_enrolled) in (body or ""),
-              f"Expected {total_enrolled} in body", db=True)
+              f"Expected {total_enrolled} in body")
 
 
 if __name__ == "__main__":
@@ -206,16 +198,13 @@ if __name__ == "__main__":
     check_pptx(args.agent_workspace, course_name, grade_dist, summary)
     check_email(course_name, summary)
 
-    file_ok = FILE_FAIL == 0
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
-    if file_ok:
+    if all_ok:
         print("\nPass all tests!")
         sys.exit(0)
     else:

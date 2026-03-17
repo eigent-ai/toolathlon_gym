@@ -23,25 +23,23 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
 def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+    global PASS_COUNT, FAIL_COUNT
     if condition:
         if db:
-            DB_PASS += 1
+            PASS_COUNT += 1
         else:
-            FILE_PASS += 1
+            PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
         if db:
-            DB_FAIL += 1
+            FAIL_COUNT += 1
         else:
-            FILE_FAIL += 1
+            FAIL_COUNT += 1
         detail_str = f": {detail[:300]}" if detail else ""
         print(f"  [FAIL] {name}{detail_str}")
 
@@ -152,7 +150,7 @@ def check_calendar():
     ]
     check("At least 3 calendar events with dividend in summary",
           len(dividend_events) >= 3,
-          f"Found {len(dividend_events)} dividend events", db=True)
+          f"Found {len(dividend_events)} dividend events")
 
     return len(dividend_events) >= 3
 
@@ -174,7 +172,7 @@ def check_gsheet():
     ]
     check("Google Sheet with 'dividend' in title exists",
           len(dividend_sheets) > 0,
-          f"Sheet titles: {[s[1] for s in sheets]}", db=True)
+          f"Sheet titles: {[s[1] for s in sheets]}")
 
     return len(dividend_sheets) > 0
 
@@ -194,23 +192,20 @@ def main():
     check_calendar()
     check_gsheet()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
-        result = {"passed": total_pass, "failed": total_fail, "success": file_ok}
+        result = {"passed": total_pass, "failed": total_fail, "success": all_ok}
         with open(args.res_log_file, "w") as f:
             json.dump(result, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

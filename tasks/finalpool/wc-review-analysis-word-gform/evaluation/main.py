@@ -9,25 +9,17 @@ import psycopg2
 
 DB = dict(host=os.environ.get("PGHOST", "localhost"), port=5432, dbname="toolathlon_gym", user="eigent", password="camel")
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
+        FAIL_COUNT += 1
         d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
@@ -130,8 +122,8 @@ def check_word_doc(agent_workspace, groundtruth_workspace):
 
 
 def check_gform():
-    """Check Google Form (non-blocking)."""
-    print("\n=== Checking Google Form (non-blocking) ===")
+    """Check Google Form ."""
+    print("\n=== Checking Google Form  ===")
     conn = psycopg2.connect(**DB)
     cur = conn.cursor()
     cur.execute("SELECT id, title FROM gform.forms")
@@ -142,25 +134,25 @@ def check_gform():
     conn.close()
 
     check("At least 1 form created", len(forms) >= 1,
-          f"Found {len(forms)}", db=True)
+          f"Found {len(forms)}")
 
     if forms:
         found_feedback = any("feedback" in (f[1] or "").lower() or "improvement" in (f[1] or "").lower()
                             for f in forms)
         check("Form title mentions feedback or improvement", found_feedback,
-              f"Forms: {[f[1] for f in forms]}", db=True)
+              f"Forms: {[f[1] for f in forms]}")
 
     check("At least 3 questions created", len(questions) >= 3,
-          f"Found {len(questions)}", db=True)
+          f"Found {len(questions)}")
 
     if questions:
         q_texts = " ".join((q[1] or "") for q in questions).lower()
         has_category_q = "category" in q_texts
         has_rating_q = "experience" in q_texts or "rate" in q_texts
         has_suggestion_q = "improve" in q_texts or "suggest" in q_texts
-        check("Has category question", has_category_q, db=True)
-        check("Has rating question", has_rating_q, db=True)
-        check("Has suggestion question", has_suggestion_q, db=True)
+        check("Has category question", has_category_q)
+        check("Has rating question", has_rating_q)
+        check("Has suggestion question", has_suggestion_q)
 
 
 def main():
@@ -181,22 +173,19 @@ def main():
     check_word_doc(args.agent_workspace, gt_dir)
     check_gform()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
         with open(args.res_log_file, "w") as f:
-            json.dump({"passed": total_pass, "failed": total_fail, "success": file_ok}, f, indent=2)
+            json.dump({"passed": total_pass, "failed": total_fail, "success": all_ok}, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

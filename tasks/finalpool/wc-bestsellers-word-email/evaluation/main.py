@@ -3,33 +3,25 @@ Evaluation for wc-bestsellers-word-email task.
 
 Checks:
 1. Word document Bestsellers_Report.docx with correct top 10 products
-2. Email sent to sales-leads@store.com (non-blocking DB check)
+2. Email sent to sales-leads@store.com ( DB check)
 """
 import argparse
 import sys
 import os
 from pathlib import Path
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
-        d = detail[:300] if len(detail) > 300 else detail
+        FAIL_COUNT += 1
+        d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
 
@@ -120,7 +112,7 @@ def check_word(workspace, expected):
 
 
 def check_email(expected):
-    """Check email was sent (non-blocking DB check)."""
+    """Check email was sent ( DB check)."""
     import psycopg2
 
     print("\n=== Checking Email ===")
@@ -131,7 +123,7 @@ def check_email(expected):
         )
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection", False, str(e), db=True)
+        check("DB connection", False, str(e))
         return
 
     cur.execute("""
@@ -151,7 +143,7 @@ def check_email(expected):
             break
 
     check(f"Email sent to {target}", found is not None,
-          f"Found {len(all_emails)} total emails", db=True)
+          f"Found {len(all_emails)} total emails")
 
     if found:
         subj, _, _, body = found
@@ -160,16 +152,16 @@ def check_email(expected):
 
         check("Email subject mentions bestsellers/top",
               "bestseller" in subj_lower or "top" in subj_lower or "best" in subj_lower,
-              f"Subject: {(subj or '')[:100]}", db=True)
+              f"Subject: {(subj or '')[:100]}")
 
         top_name_short = expected[0][0][:20].lower()
         check("Email body mentions top product",
               top_name_short in body_lower,
-              f"Expected '{top_name_short}' in body", db=True)
+              f"Expected '{top_name_short}' in body")
 
         check("Email body mentions top product units",
               str(expected[0][1]) in (body or ""),
-              f"Expected '{expected[0][1]}' in body", db=True)
+              f"Expected '{expected[0][1]}' in body")
 
 
 if __name__ == "__main__":
@@ -187,16 +179,13 @@ if __name__ == "__main__":
     check_word(args.agent_workspace, expected)
     check_email(expected)
 
-    file_ok = FILE_FAIL == 0
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
-    if file_ok:
+    if all_ok:
         print("\nPass all tests!")
         sys.exit(0)
     else:

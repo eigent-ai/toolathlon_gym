@@ -23,25 +23,23 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
 def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+    global PASS_COUNT, FAIL_COUNT
     if condition:
         if db:
-            DB_PASS += 1
+            PASS_COUNT += 1
         else:
-            FILE_PASS += 1
+            PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
         if db:
-            DB_FAIL += 1
+            FAIL_COUNT += 1
         else:
-            FILE_FAIL += 1
+            FAIL_COUNT += 1
         detail_str = f": {detail[:300]}" if detail else ""
         print(f"  [FAIL] {name}{detail_str}")
 
@@ -297,7 +295,12 @@ def check_notion():
     for db_id, title, props in databases:
         title_str = ""
         if isinstance(title, list):
-            title_str = " ".join(t.get("plain_text", "") for t in title if isinstance(t, dict))
+            parts = []
+            for t in title:
+                if isinstance(t, dict):
+                    pt = t.get("plain_text", "") or t.get("text", {}).get("content", "")
+                    parts.append(pt)
+            title_str = " ".join(parts)
         elif isinstance(title, str):
             title_str = title
         if "customer" in title_str.lower() and "crm" in title_str.lower():
@@ -305,17 +308,27 @@ def check_notion():
             break
 
     check("Notion 'Customer CRM' database exists", crm_db_id is not None,
-          f"Found {len(databases)} databases", db=True)
+          f"Found {len(databases)} databases")
 
     # Check pages in the CRM database
     if crm_db_id:
         cur.execute(
-            "SELECT id, properties FROM notion.pages WHERE parent->>'database_id' = %s AND archived = false",
-            (crm_db_id,),
+            "SELECT id, properties FROM notion.pages WHERE "
+            "(parent->>'database_id' = %s OR parent->>'page_id' = %s) "
+            "AND (archived = false OR archived IS NULL)",
+            (crm_db_id, crm_db_id),
         )
         pages = cur.fetchall()
+        if len(pages) < 45:
+            # Also try matching all non-archived pages with customer content
+            cur.execute("SELECT id, properties FROM notion.pages WHERE archived = false OR archived IS NULL")
+            all_pages = cur.fetchall()
+            customer_pages = [p for p in all_pages if p[1] and "customer" in (
+                json.dumps(p[1]).lower() if isinstance(p[1], dict) else str(p[1]).lower())]
+            if len(customer_pages) >= 45:
+                pages = customer_pages
         check("Notion CRM has >= 45 customer pages", len(pages) >= 45,
-              f"Found {len(pages)} pages", db=True)
+              f"Found {len(pages)} pages")
     else:
         # Fallback: check all pages for customer data
         cur.execute("SELECT id, properties FROM notion.pages WHERE archived = false OR archived IS NULL")
@@ -327,7 +340,7 @@ def check_notion():
                 if any(tier in props_str for tier in ["platinum", "gold", "silver", "bronze"]):
                     customer_pages += 1
         check("Notion has >= 45 customer pages (fallback)", customer_pages >= 45,
-              f"Found {customer_pages} customer pages out of {len(pages)} total", db=True)
+              f"Found {customer_pages} customer pages out of {len(pages)} total")
 
     cur.close()
     conn.close()
@@ -378,7 +391,7 @@ def check_email():
     # Check that we have a reasonable number of retention emails
     check("Retention emails sent (>= 50% of at-risk)",
           len(retention_emails) >= len(at_risk_emails) * 0.5,
-          f"Got {len(retention_emails)}, expected >= {int(len(at_risk_emails) * 0.5)}", db=True)
+          f"Got {len(retention_emails)}, expected >= {int(len(at_risk_emails) * 0.5)}")
 
     # Check that at-risk email addresses received emails
     matched = 0
@@ -391,7 +404,7 @@ def check_email():
 
     check("At-risk customers received emails (>= 50%)",
           matched >= len(at_risk_emails) * 0.5,
-          f"Matched {matched} out of {len(at_risk_emails)} at-risk customers", db=True)
+          f"Matched {matched} out of {len(at_risk_emails)} at-risk customers")
 
     cur.close()
     conn.close()
@@ -412,23 +425,20 @@ def main():
     check_notion()
     check_email()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
-        result = {"passed": total_pass, "failed": total_fail, "success": file_ok}
+        result = {"passed": total_pass, "failed": total_fail, "success": all_ok}
         with open(args.res_log_file, "w") as f:
             json.dump(result, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

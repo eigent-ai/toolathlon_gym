@@ -26,26 +26,18 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
-        d = (detail[:200] + "...") if len(detail) > 200 else detail
+        FAIL_COUNT += 1
+        d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
 
@@ -198,7 +190,7 @@ def check_notion(expected):
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection for notion check", False, str(e), db=True)
+        check("DB connection for notion check", False, str(e))
         return
 
     cur.execute("SELECT id, properties FROM notion.pages")
@@ -206,7 +198,7 @@ def check_notion(expected):
     conn.close()
 
     check("At least one Notion page exists", len(pages) > 0,
-          f"Found {len(pages)} pages", db=True)
+          f"Found {len(pages)} pages")
 
     found_dashboard = False
     for page in pages:
@@ -215,7 +207,7 @@ def check_notion(expected):
         page_str = json.dumps(props).lower()
         if "market dashboard" in page_str:
             found_dashboard = True
-            check("Notion page 'Market Dashboard' found", True, db=True)
+            check("Notion page 'Market Dashboard' found", True)
             break
 
     if not found_dashboard:
@@ -234,12 +226,12 @@ def check_notion(expected):
                             found_dashboard = True
                             break
             if found_dashboard:
-                check("Notion page 'Market Dashboard' found", True, db=True)
+                check("Notion page 'Market Dashboard' found", True)
                 break
 
     if not found_dashboard:
         check("Notion page 'Market Dashboard' found", False,
-              f"Pages: {[json.dumps(p[1])[:100] for p in pages]}", db=True)
+              f"Pages: {[json.dumps(p[1])[:100] for p in pages]}")
 
 
 def check_excel_gt(agent_workspace, groundtruth_workspace):
@@ -273,23 +265,20 @@ def run_evaluation(agent_workspace, groundtruth_workspace, launch_time, res_log_
 
     check_notion(expected)
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if res_log_file:
-        result = {"passed": total_pass, "failed": total_fail, "success": file_ok}
+        result = {"passed": total_pass, "failed": total_fail, "success": all_ok}
         with open(res_log_file, "w") as f:
             json.dump(result, f, indent=2)
 
-    return file_ok, f"Passed: {total_pass}, Failed: {total_fail}"
+    return all_ok, f"Passed: {total_pass}, Failed: {total_fail}"
 
 
 def main():

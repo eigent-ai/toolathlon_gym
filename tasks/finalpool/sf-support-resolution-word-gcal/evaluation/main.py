@@ -9,25 +9,17 @@ import psycopg2
 
 DB = dict(host=os.environ.get("PGHOST", "localhost"), port=5432, dbname="toolathlon_gym", user="eigent", password="camel")
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
+        FAIL_COUNT += 1
         d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
@@ -161,8 +153,8 @@ def check_word_doc(agent_workspace, groundtruth_workspace):
 
 
 def check_gcal():
-    """Check Google Calendar event (non-blocking)."""
-    print("\n=== Checking Google Calendar (non-blocking) ===")
+    """Check Google Calendar event ."""
+    print("\n=== Checking Google Calendar  ===")
     conn = psycopg2.connect(**DB)
     cur = conn.cursor()
     cur.execute("""
@@ -175,17 +167,17 @@ def check_gcal():
     conn.close()
 
     check("At least 1 calendar event created", len(events) >= 1,
-          f"Found {len(events)}", db=True)
+          f"Found {len(events)}")
 
     if events:
         found_review = any("resolution" in (e[0] or "").lower() or "review" in (e[0] or "").lower()
                           for e in events)
         check("Event title mentions resolution or review", found_review,
-              f"Events: {[e[0] for e in events]}", db=True)
+              f"Events: {[e[0] for e in events]}")
 
         found_date = any("2026-03-12" in str(e[2] or "") for e in events)
         check("Event scheduled for 2026-03-12", found_date,
-              f"Dates: {[str(e[2]) for e in events]}", db=True)
+              f"Dates: {[str(e[2]) for e in events]}")
 
 
 def main():
@@ -206,22 +198,19 @@ def main():
     check_word_doc(args.agent_workspace, gt_dir)
     check_gcal()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
         with open(args.res_log_file, "w") as f:
-            json.dump({"passed": total_pass, "failed": total_fail, "success": file_ok}, f, indent=2)
+            json.dump({"passed": total_pass, "failed": total_fail, "success": all_ok}, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":

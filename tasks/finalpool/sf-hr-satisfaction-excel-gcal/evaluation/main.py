@@ -21,25 +21,17 @@ DB_CONFIG = {
     "password": "camel",
 }
 
-FILE_PASS = 0
-FILE_FAIL = 0
-DB_PASS = 0
-DB_FAIL = 0
+PASS_COUNT = 0
+FAIL_COUNT = 0
 
 
-def check(name, condition, detail="", db=False):
-    global FILE_PASS, FILE_FAIL, DB_PASS, DB_FAIL
+def check(name, condition, detail=""):
+    global PASS_COUNT, FAIL_COUNT
     if condition:
-        if db:
-            DB_PASS += 1
-        else:
-            FILE_PASS += 1
+        PASS_COUNT += 1
         print(f"  [PASS] {name}")
     else:
-        if db:
-            DB_FAIL += 1
-        else:
-            FILE_FAIL += 1
+        FAIL_COUNT += 1
         d = (detail[:300]) if len(detail) > 300 else detail
         print(f"  [FAIL] {name}: {d}")
 
@@ -193,7 +185,7 @@ def check_gcal():
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
     except Exception as e:
-        check("DB connection for gcal check", False, str(e), db=True)
+        check("DB connection for gcal check", False, str(e))
         return
 
     cur.execute("""
@@ -207,7 +199,7 @@ def check_gcal():
     conn.close()
 
     check("At least 2 wellness review events", len(events) >= 2,
-          f"Found {len(events)}", db=True)
+          f"Found {len(events)}")
 
     # The 2 lowest satisfaction departments are R&D and Support
     expected_depts = ["r&d", "support"]
@@ -215,7 +207,7 @@ def check_gcal():
         found = any(dept in (e[0] or "").lower() or dept in (e[1] or "").lower()
                      for e in events)
         check(f"Event for department '{dept}'", found,
-              f"Not found among {len(events)} events", db=True)
+              f"Not found among {len(events)} events")
 
     # Check dates
     if len(events) >= 2:
@@ -223,10 +215,10 @@ def check_gcal():
         d2 = events[1][2]
         check("First event on 2026-03-13",
               d1 is not None and "2026-03-13" in str(d1),
-              f"Got {d1}", db=True)
+              f"Got {d1}")
         check("Second event on 2026-03-14",
               d2 is not None and "2026-03-14" in str(d2),
-              f"Got {d2}", db=True)
+              f"Got {d2}")
 
 
 def main():
@@ -243,22 +235,19 @@ def main():
     check_excel(args.agent_workspace, gt_dir)
     check_gcal()
 
-    total_pass = FILE_PASS + DB_PASS
-    total_fail = FILE_FAIL + DB_FAIL
-    file_ok = FILE_FAIL == 0
+    total_pass = PASS_COUNT
+    total_fail = FAIL_COUNT
+    all_ok = FAIL_COUNT == 0
 
     print(f"\n=== SUMMARY ===")
-    print(f"  File checks - Passed: {FILE_PASS}, Failed: {FILE_FAIL}")
-    print(f"  DB checks   - Passed: {DB_PASS}, Failed: {DB_FAIL}")
-    if DB_FAIL > 0:
-        print(f"  WARNING: {DB_FAIL} DB checks failed (not blocking)")
-    print(f"  Overall: {'PASS' if file_ok else 'FAIL'}")
+    print(f"  Total checks - Passed: {PASS_COUNT}, Failed: {FAIL_COUNT}")
+    print(f"  Overall: {'PASS' if all_ok else 'FAIL'}")
 
     if args.res_log_file:
         with open(args.res_log_file, "w") as f:
-            json.dump({"passed": total_pass, "failed": total_fail, "success": file_ok}, f, indent=2)
+            json.dump({"passed": total_pass, "failed": total_fail, "success": all_ok}, f, indent=2)
 
-    sys.exit(0 if file_ok else 1)
+    sys.exit(0 if all_ok else 1)
 
 
 if __name__ == "__main__":
