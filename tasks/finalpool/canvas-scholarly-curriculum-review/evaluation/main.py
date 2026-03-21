@@ -136,8 +136,8 @@ def check_notion():
             host=os.environ.get("PGHOST", "localhost"),
             port=5432,
             dbname=os.environ.get("PGDATABASE", "toolathlon_gym"),
-            user="postgres",
-            password="postgres",
+            user=os.environ.get("PGUSER", "eigent"),
+            password=os.environ.get("PGPASSWORD", "camel"),
         )
         cur = conn.cursor()
         cur.execute(
@@ -157,8 +157,8 @@ def check_notion():
                 host=os.environ.get("PGHOST", "localhost"),
                 port=5432,
                 dbname=os.environ.get("PGDATABASE", "toolathlon_gym"),
-                user="postgres",
-                password="postgres",
+                user=os.environ.get("PGUSER", "eigent"),
+                password=os.environ.get("PGPASSWORD", "camel"),
             )
             cur2 = conn2.cursor()
             cur2.execute("SELECT COUNT(*) FROM notion.pages")

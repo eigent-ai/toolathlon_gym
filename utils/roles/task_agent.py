@@ -343,9 +343,11 @@ class TaskAgent:
                 model=self.model,
                 tools=all_tools,
                 max_iteration=self.max_steps,
-                step_timeout=600,
+                step_timeout=1200,
                 tool_execution_timeout=120,
                 summarize_threshold=None,  # disable context summarization — stop on token limit
+                retry_attempts=999,  # effectively infinite retry on rate limit
+                retry_delay=5.0,     # start at 5s, exponential backoff up to 60s
             )
 
             task_str = self.task_config.task_str

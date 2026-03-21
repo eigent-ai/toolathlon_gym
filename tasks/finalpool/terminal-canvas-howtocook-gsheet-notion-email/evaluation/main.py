@@ -21,8 +21,8 @@ DB = dict(
     host=os.environ.get("PGHOST", "localhost"),
     port=5432,
     dbname=os.environ.get("PGDATABASE", "toolathlon_gym"),
-    user="postgres",
-    password="postgres",
+    user=os.environ.get("PGUSER", "eigent"),
+    password=os.environ.get("PGPASSWORD", "camel"),
 )
 
 PASS_COUNT = 0
