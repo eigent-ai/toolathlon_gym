@@ -29,7 +29,7 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 
 DB_CONFIG = dict(host=os.environ.get('PGHOST', 'localhost'), port=5432, database='toolathlon_gym',
-                 user='postgres', password='postgres')
+                 user=os.environ.get('PGUSER', 'eigent'), password=os.environ.get('PGPASSWORD', 'camel'))
 
 # Valid HowToCook categories (Chinese)
 VALID_RECIPE_CATEGORIES = {

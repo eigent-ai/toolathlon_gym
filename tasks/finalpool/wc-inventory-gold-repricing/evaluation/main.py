@@ -47,7 +47,7 @@ CATEGORY_MULTIPLIERS = {
     'Speakers': 1.00,
 }
 
-DB_CONFIG = dict(host=os.environ.get('PGHOST', 'localhost'), port=5432, database='toolathlon_gym', user='postgres', password='postgres')
+DB_CONFIG = dict(host=os.environ.get('PGHOST', 'localhost'), port=5432, database='toolathlon_gym', user=os.environ.get('PGUSER', 'eigent'), password=os.environ.get('PGPASSWORD', 'camel'))
 
 
 def check(name, condition, detail=""):

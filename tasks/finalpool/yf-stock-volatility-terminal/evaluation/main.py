@@ -46,7 +46,7 @@ SECTOR_BENCHMARKS = {
 }
 # Risk thresholds: Conservative < 15%, 15% <= Moderate <= 25%, Aggressive > 25%
 
-DB_CONFIG = dict(host=os.environ.get('PGHOST', 'localhost'), port=5432, database='toolathlon_gym', user='postgres', password='postgres')
+DB_CONFIG = dict(host=os.environ.get('PGHOST', 'localhost'), port=5432, database='toolathlon_gym', user=os.environ.get('PGUSER', 'eigent'), password=os.environ.get('PGPASSWORD', 'camel'))
 
 
 def compute_expected_from_db():
