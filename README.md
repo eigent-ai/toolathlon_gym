@@ -31,7 +31,7 @@ docker compose up -d postgres
 
 `toolathlon_pg` (PostgreSQL 15) is auto-initialized from `db/init.sql.gz` on first start. The agent image is kept separate — a fresh container is spawned per task.
 
-### 2. Run a Task
+### 2. Run a Single Task
 
 Each task runs in its own ephemeral Docker container — the same isolation strategy used by the original Toolathlon. The container is created fresh for every task and destroyed on exit. Only the PostgreSQL instance (`toolathlon_pg`) is shared across tasks, so tasks must run sequentially (the script enforces this with a lock file).
 
@@ -56,6 +56,40 @@ Task output is written to `dumps/<task>/<timestamp>/` on the host. Full conversa
 ```bash
 bash scripts/test_containerized.sh
 ```
+
+### 3. Run Tasks in Parallel
+
+For large-scale evaluation, use `run_parallel.sh` to run multiple tasks concurrently. Each task gets its own fully isolated environment (dedicated PostgreSQL + agent container + Docker network), so there is no shared state between tasks.
+
+```bash
+# Run all 503 tasks, up to 10 running concurrently
+GEMINI_API_KEY=AIza-xxx \
+MODEL=gemini-3-flash-preview \
+PROVIDER=gemini \
+IMAGE=toolathlon-pack:latest \
+bash run_parallel.sh 10
+
+# Run specific tasks, up to 5 concurrently
+MODEL_PLATFORM=openai_compatible \
+MODEL_NAME=claude-sonnet-4-5 \
+MODEL_API_KEY=sk-xxx \
+MODEL_API_URL=https://aihubmix.com/v1 \
+IMAGE=toolathlon-pack:latest \
+bash run_parallel.sh 5 howtocook-meal-plan-gcal wc-sales-tax-summary yf-stock-volatility-terminal
+```
+
+Concurrency is controlled by a FIFO-based semaphore — the first argument sets the maximum number of tasks running at the same time. Results are collected into a summary CSV at `benchmark_logs/fully_parallel_<timestamp>/summary.csv`, with per-task logs in the same directory.
+
+| Environment variable | Default | Description |
+|---|---|---|
+| `MODEL` | `gemini-3-flash-preview` | Model name |
+| `PROVIDER` | `gemini` | Provider key (`gemini`, `openai`, `anthropic`, etc.) |
+| `MAX_STEPS` | `100` | Max agent steps per task |
+| `IMAGE` | `toolathlon_pack-toolathlon:latest` | Docker image to use |
+| `GEMINI_API_KEY` | — | API key for Gemini provider |
+| `MODEL_API_KEY` | — | API key for other providers |
+| `MODEL_PLATFORM` | — | Platform override (e.g. `openai_compatible`) |
+| `MODEL_API_URL` | — | Base URL for OpenAI-compatible endpoints |
 
 ---
 
