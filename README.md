@@ -33,7 +33,7 @@ docker compose up -d postgres
 
 ### 2. Run a Single Task
 
-Each task runs in its own ephemeral Docker container — the same isolation strategy used by the original Toolathlon. The container is created fresh for every task and destroyed on exit. Only the PostgreSQL instance (`toolathlon_pg`) is shared across tasks, so tasks must run sequentially (the script enforces this with a lock file).
+Each task runs in its own ephemeral Docker container. The container is created fresh for every task and destroyed on exit. For running multiple tasks concurrently, see [Run Tasks in Parallel](#3-run-tasks-in-parallel) below.
 
 ```bash
 MODEL_PLATFORM=openai_compatible \
