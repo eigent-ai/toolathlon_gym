@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Base system deps
 RUN apt-get update && apt-get install -y \
     curl wget git ca-certificates gnupg \
-    python3 python3-pip rsync postgresql-client \
+    python3 python3-pip rsync postgresql-client libffi-dev \
     libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
     libcups2 libdrm2 libdbus-1-3 libatspi2.0-0 \
     libx11-6 libxcomposite1 libxdamage1 libxext6 \
@@ -60,7 +60,7 @@ RUN for dir in \
         /opt/local_servers/HowToCook-mcp \
         /opt/local_servers/servers; do \
     [ -f "$dir/package.json" ] && \
-        echo "=== $dir ===" && cd "$dir" && npm install && (npm run build 2>/dev/null || true) && cd /workspace || true; \
+        echo "=== $dir ===" && cd "$dir" && npm install --ignore-scripts && (npm run build 2>/dev/null || true) && cd /workspace || true; \
 done
 
 RUN for dir in \
@@ -77,7 +77,7 @@ RUN for dir in \
         /opt/local_servers/mcp-youtube-transcript \
         /opt/local_servers/cli-mcp-server; do \
     [ -f "$dir/pyproject.toml" ] && \
-        echo "=== $dir ===" && cd "$dir" && uv sync || true && cd /workspace || true; \
+        echo "=== $dir ===" && cd "$dir" && uv sync --python 3.12 || true && cd /workspace || true; \
 done
 
 # Copy project code

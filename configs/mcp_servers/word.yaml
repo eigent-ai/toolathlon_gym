@@ -10,6 +10,8 @@ params:
     - "--directory"
     - "${local_servers_paths}/Office-Word-MCP-Server"
     - "run"
+    - "--python"
+    - "3.12"
     - "word_mcp_server"
   cwd: "${agent_workspace}"
 client_session_timeout_seconds: 10
