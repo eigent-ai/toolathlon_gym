@@ -36,6 +36,7 @@ run_in_temp_container() {
     local suffix="$1"; shift
     local name="toolathlon-test-${suffix}-$$"
     docker run --rm \
+        --entrypoint "" \
         --name "$name" \
         --network toolathlon_net \
         -e PGHOST=toolathlon_pg \
