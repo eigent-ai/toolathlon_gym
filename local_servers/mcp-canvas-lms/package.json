@@ -78,10 +78,12 @@
     "@types/form-data": "^2.2.1",
     "axios": "^1.7.2",
     "dotenv": "^16.4.7",
-    "form-data": "^4.0.4"
+    "form-data": "^4.0.4",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
+    "@types/pg": "^8.23.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitest/coverage-v8": "^3.2.4",
