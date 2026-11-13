@@ -45,8 +45,9 @@ RUN uv venv /opt/venv && uv pip install --python /opt/venv/bin/python \
 ENV PATH="/opt/venv/bin:$PATH"
 ENV VIRTUAL_ENV="/opt/venv"
 
-# Install Playwright browser
-RUN playwright install chromium || true
+# Chromium refuses to run as root with its sandbox on; playwright-mcp reads this to pass --no-sandbox
+ENV PLAYWRIGHT_MCP_SANDBOX=false
+
 
 # Build Node-based and Python MCP servers from /opt/local_servers
 # (keeps compiled artifacts outside the volume-mounted /workspace)
@@ -58,10 +59,19 @@ RUN for dir in \
         /opt/local_servers/youtube-mcp-server \
         /opt/local_servers/filesystem \
         /opt/local_servers/HowToCook-mcp \
-        /opt/local_servers/servers; do \
+        /opt/local_servers/servers \
+        /opt/local_servers/12306-mcp \
+        /opt/local_servers/mcp-canvas-lms \
+        /opt/local_servers/notion-mcp-server \
+        /opt/local_servers/mcp-npx-fetch \
+        /opt/local_servers/playwright-mcp \
+        /opt/local_servers/woocommerce-mcp; do \
     [ -f "$dir/package.json" ] && \
         echo "=== $dir ===" && cd "$dir" && npm install --ignore-scripts && (npm run build 2>/dev/null || true) && cd /workspace || true; \
 done
+
+# Chromium for playwright-mcp (the venv has no `playwright` command, so install it via npx)
+RUN cd /opt/local_servers/playwright-mcp && npx playwright install chromium
 
 RUN for dir in \
         /opt/local_servers/arxiv-mcp-server \
